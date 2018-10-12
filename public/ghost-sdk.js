@@ -1,5 +1,5 @@
 (function () {
-        var apiUrl = '//localhost/ghost/api/v0.1/',
+        var apiUrl = '//rdrn.me/ghost/api/v0.1/',
         clientId,
         clientSecret,
         url,
