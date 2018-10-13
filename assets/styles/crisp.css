@@ -87,6 +87,38 @@ a {
 	text-decoration:none;
 	color: #3182bd; /* Change Link Color */
 }
+
+
+
+
+#new-social a:link {
+  color: #2c2f33;
+  padding-right: 0.3em;
+}
+#new-social a:visited, #new-social a:hover, #new-social a:active {
+  color: #000000;
+  text-decoration:none;
+}
+/* Every post, on every page, gets this style on its <article> tag */
+.post {
+    width: 80%;
+    max-width: 710px;
+    padding-bottom: 0rem;
+    border-bottom: #EBF2F6 1px solid;
+    word-wrap: break-word;
+}
+.read-more {
+  color: #000000;
+}
+.post-excerpt p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+
+
+
+
 a:hover {
 	text-decoration:underline;
 }
