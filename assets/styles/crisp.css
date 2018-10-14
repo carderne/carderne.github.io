@@ -90,12 +90,12 @@ a {
 
 
 
-
-#new-social a:link {
+#icons a:link {
+  font-size: 2em;
   color: #2c2f33;
   padding-right: 0.3em;
 }
-#new-social a:visited, #new-social a:hover, #new-social a:active {
+#icons a:visited, #icons a:hover, #icons a:active {
   color: #000000;
   text-decoration:none;
 }
