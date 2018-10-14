@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: http://rdrn.me/sitemap.xml
+Disallow: /ghost/
+Disallow: /p/
