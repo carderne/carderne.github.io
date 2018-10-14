@@ -92,6 +92,7 @@ a {
 
 
 #new-social a:link {
+  font-size: 2em;
   color: #2c2f33;
   padding-right: 0.3em;
 }
