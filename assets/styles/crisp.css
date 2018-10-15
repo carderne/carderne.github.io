@@ -85,7 +85,7 @@ img, iframe {
 a {
 	font-weight:700;
 	text-decoration:none;
-	color: #3182bd; /* Change Link Color */
+	color: #3a4549; /* Change Link Color */
 }
 
 #icons a:link {
@@ -109,7 +109,7 @@ a {
     word-wrap: break-word;
 }
 .read-more {
-  color: #737c7f;
+  color: #3a4549;
 }
 .post-excerpt p {
     margin: 0;
