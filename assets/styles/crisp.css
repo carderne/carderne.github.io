@@ -46,10 +46,22 @@ p, hr, h4, h5, h6 {
 	margin-top: 0.9em;
 	margin-bottom: 0.9em;
 }
+
+a {
+	/* font-weight:700; */
+	text-decoration:none;
+	color: #458CD5;
+}
+#internal_link a {
+        color: #3a4549;
+}
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Bree Serif", serif;
 	font-weight: 400 !important;
+        color: #3a4549; /* Change Link Color */
+        text-decoration:none;
 }
 h1 {
 	font-size: 2.5em;
@@ -68,12 +80,14 @@ h3 {
 	line-height: 1.3em;
 	margin-top: 0.8em;
 	margin-bottom: 0.8em;	
+        color: #3a4549;
 }
 h4 {
 	font-size:1.3em;
 }
 h5 {
 	font-size:1.2em;
+        color: #3a4549;
 }
 h6 {
 	font-size:1.1em;
@@ -82,11 +96,7 @@ h6 {
 img, iframe {
 	max-width: 100%;
 }
-a {
-	font-weight:700;
-	text-decoration:none;
-	color: #3a4549; /* Change Link Color */
-}
+
 
 #icons a:link {
   width: 50%;
@@ -110,6 +120,7 @@ a {
 }
 .read-more {
   color: #3a4549;
+  font-weight:700;
 }
 .post-excerpt p {
     margin: 0;
