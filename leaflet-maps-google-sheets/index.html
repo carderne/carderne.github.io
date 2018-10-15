@@ -9,7 +9,7 @@
 			<link href="//fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 
 			<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=311906d16a">
+			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=008e19d848">
 	    <meta name="HandheldFriendly" content="True">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,13 +25,13 @@
     <meta property="og:site_name" content="Chris Arderne">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Simple Leaflet map pulling from Google Sheets">
-    <meta property="og:description" content="To help a friend">
+    <meta property="og:description" content="A friend needed a map of the US displayed with points at specific locations with attached information, and overviews for certain states with summaries. And for this to be done (and updated) as easily as possible by people with no coding knowledge. Their solution was Google My Maps, which was">
     <meta property="og:url" content="//rdrn.me/leaflet-maps-google-sheets/">
     <meta property="article:published_time" content="2018-10-15T06:47:34.000Z">
-    <meta property="article:modified_time" content="2018-10-15T06:55:55.000Z">
+    <meta property="article:modified_time" content="2018-10-15T08:36:55.000Z">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Simple Leaflet map pulling from Google Sheets">
-    <meta name="twitter:description" content="To help a friend">
+    <meta name="twitter:description" content="A friend needed a map of the US displayed with points at specific locations with attached information, and overviews for certain states with summaries. And for this to be done (and updated) as easily as possible by people with no coding knowledge. Their solution was Google My Maps, which was">
     <meta name="twitter:url" content="//rdrn.me/leaflet-maps-google-sheets/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Chris Arderne">
@@ -59,8 +59,8 @@
     "headline": "Simple Leaflet map pulling from Google Sheets",
     "url": "//rdrn.me/leaflet-maps-google-sheets/",
     "datePublished": "2018-10-15T06:47:34.000Z",
-    "dateModified": "2018-10-15T06:55:55.000Z",
-    "description": "To help a friend",
+    "dateModified": "2018-10-15T08:36:55.000Z",
+    "description": "A friend needed a map of the US displayed with points at specific locations with attached information, and overviews for certain states with summaries. And for this to be done (and updated) as easily as possible by people with no coding knowledge. Their solution was Google My Maps, which was",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "//rdrn.me/"
@@ -68,7 +68,7 @@
 }
     </script>
 
-    <script src="../public/ghost-sdk.min.js?v=311906d16a"></script>
+    <script src="../public/ghost-sdk.min.js?v=008e19d848"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -97,12 +97,37 @@ ghost.init({
 			<article id="5bc2ec443e94a80ccd4f5547" class="post">
 	<div class="post-stamp">October 15, 2018<span class="taglist"></span></div>
 	<h1 class="post-title">Simple Leaflet map pulling from Google Sheets</h1>
-	<p>To help a friend </p><iframe src="https://rdrn.me/leaflet-maps-google-sheets/map.html" style="width: 100%; height: 600px" name="internal"></iframe>
+	<p>A friend needed a map of the US displayed with points at specific locations with attached information, and overviews for certain states with summaries. And for this to be done (and updated) as easily as possible by people with no coding knowledge. Their solution was <a href="https://www.google.com/mymaps">Google My Maps</a>, which was probably more than adequate for what they're trying to achieve.</p><p>So (mostly for the fun of it) I decided to see if I could help out, using Leaflet (through <a href="https://github.com/python-visualization/folium">Folium</a> because I much prefer Python) and some simple .csv input files. My first proposal ("just run this Jupyter notebook and embed the html file you get") didn't go over well. So I decided to explore how to make it as simple as possible, and this is what I came up with.</p><div style="text-align:center;"><svg xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" width="499px" version="1.1" viewbox="0 0 499 252" style="max-width:100%;max-height:252px;"><defs></defs><g transform="translate(0.5,0.5)"><a xlink:href="https://developers.google.com/apis-explorer/"><path d="M 70 31 L 184.03 31" fill="none" stroke="#d79b00" stroke-miterlimit="10"></path><path d="M 189.28 31 L 182.28 34.5 L 184.03 31 L 182.28 27.5 Z" fill="#d79b00" stroke="#d79b00" stroke-miterlimit="10"></path><g transform="translate(84.5,15.5)"><switch><foreignobject style="overflow:visible;" pointer-events="all" width="70" height="11" requiredfeatures="//www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="//www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="//www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Google APIs</div></div></foreignobject><text x="35" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Verdana">Google APIs</text></switch></g></a><a xlink:href="https://www.google.com/sheets/about/"><rect x="0" y="11" width="70" height="40" fill="#ffe6cc" stroke="#d79b00"></rect><g transform="translate(1.5,18.5)"><switch><foreignobject style="overflow:visible;" pointer-events="all" width="66" height="24" requiredfeatures="//www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="//www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 66px; white-space: normal; overflow-wrap: normal; text-align: center;"><div xmlns="//www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Google Sheets</div></div></foreignobject><text x="33" y="18" fill="#000000" text-anchor="middle" font-size="11px" font-family="Verdana">Google Sheets</text></switch></g></a><a xlink:href="//geopandas.org/"><path d="M 225 51 L 225 144.63" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"></path><path d="M 225 149.88 L 221.5 142.88 L 225 144.63 L 228.5 142.88 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-miterlimit="10"></path><g transform="translate(178.5,89.5)rotate(-90,31,5.5)"><switch><foreignobject style="overflow:visible;" pointer-events="all" width="62" height="11" requiredfeatures="//www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="//www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="//www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">geopandas</div></div></foreignobject><text x="31" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Verdana">geopandas</text></switch></g></a><a xlink:href="https://github.com/burnash/gspread"><rect x="190" y="11" width="70" height="40" fill="#dae8fc" stroke="#6c8ebf"></rect><g transform="translate(201.5,25.5)"><switch><foreignobject style="overflow:visible;" pointer-events="all" width="46" height="11" requiredfeatures="//www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="//www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 47px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="//www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">gspread</div></div></foreignobject><text x="23" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Verdana">gspread</text></switch></g></a><path d="M 260 171 L 343.63 171" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"></path><path d="M 348.88 171 L 341.88 174.5 L 343.63 171 L 341.88 167.5 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-miterlimit="10"></path><g transform="translate(281.5,155.5)"><switch><foreignobject style="overflow:visible;" pointer-events="all" width="45" height="11" requiredfeatures="//www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="//www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="//www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;"><div style="font-size: 11px">git push</div></div></div></foreignobject><text x="23" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Verdana">[Not supported by viewer]</text></switch></g><a xlink:href="https://github.com/python-visualization/folium"><rect x="190" y="151" width="70" height="40" fill="#dae8fc" stroke="#6c8ebf"></rect><g transform="translate(206.5,165.5)"><switch><foreignobject style="overflow:visible;" pointer-events="all" width="37" height="11" requiredfeatures="//www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="//www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 38px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="//www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Folium</div></div></foreignobject><text x="19" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Verdana">Folium</text></switch></g></a><path d="M 420 171 L 483.63 171" fill="none" stroke="#82b366" stroke-miterlimit="10" stroke-dasharray="3 3"></path><path d="M 488.88 171 L 481.88 174.5 L 483.63 171 L 481.88 167.5 Z" fill="#82b366" stroke="#82b366" stroke-miterlimit="10"></path><g transform="translate(427.5,155.5)"><switch><foreignobject style="overflow:visible;" pointer-events="all" width="54" height="11" requiredfeatures="//www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="//www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="//www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;"><div style="font-size: 11px">map.html</div></div></div></foreignobject><text x="27" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Verdana">[Not supported by viewer]</text></switch></g><a xlink:href="https://github.com/carderne/environmental-mapping"><rect x="350" y="151" width="70" height="40" fill="#d5e8d4" stroke="#82b366"></rect><g transform="translate(365.5,165.5)"><switch><foreignobject style="overflow:visible;" pointer-events="all" width="38" height="11" requiredfeatures="//www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="//www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 39px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="//www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><div style="font-size: 11px">GitHub</div></div></div></foreignobject><text x="19" y="11" fill="#000000" text-anchor="middle" font-size="11px" font-family="Verdana">[Not supported by viewer]</text></switch></g></a><rect x="180" y="1" width="90" height="250" fill="none" stroke="#7ea6e0" stroke-width="2" stroke-dasharray="6 6"></rect><a xlink:href="https://cloud.google.com/compute/"><rect x="180" y="201" width="90" height="50" fill="none" stroke="none"></rect><g transform="translate(180.5,206.5)"><switch><foreignobject style="overflow:visible;" pointer-events="all" width="88" height="38" requiredfeatures="//www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="//www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 88px; white-space: normal; overflow-wrap: normal; text-align: center;"><div xmlns="//www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Google Compute Engine</div></div></foreignobject><text x="44" y="25" fill="#000000" text-anchor="middle" font-size="11px" font-family="Verdana">Google Compute Engine</text></switch></g></a></g></svg></div><p>Firstly there are two Google Sheets with a simple format. The <a href="https://github.com/carderne/environmental-mapping/blob/master/laws.csv">first</a> contains specific point data with coordinates in decimal degrees.</p><figure class="kg-card kg-image-card"><img src="../content/images/2018/10/1.png" class="kg-image"></figure><p>And the <a href="https://github.com/carderne/environmental-mapping/blob/master/states.csv">second</a> contains summary state-level data with polygon representations of each state. These are shared with anyone who might need access to updating the map data.</p><figure class="kg-card kg-image-card"><img src="../content/images/2018/10/3-1.png" class="kg-image"></figure><p>Then the Python package <a href="https://github.com/burnash/gspread">gspread</a> makes it extremely easy to pull this data. (It has great instructions on how to set up a Google API key and access specific sheets. It's only a few lines of code to pull the data and convert into a <a href="https://pandas.pydata.org/">pandas</a> DataFrame.</p><pre><code class="language-python">scope = ['https://spreadsheets.google.com/feeds',
+         'https://www.googleapis.com/auth/drive']
+credentials = ServiceAccountCredentials.from_json_keyfile_name(
+    'enviromap.json', scope)
+gc = gspread.authorize(credentials)
+
+wks = gc.open("my_sheet").sheet1
+wks_vals = wks_laws.get_all_values()
+df = pd.DataFrame(wks_vals[1:], columns=wks_vals[0])
+</code></pre>
+<p>And then a few more to convert this into a <a href="//geopandas.org/">GeoPandas</a> GeoDataFrame, which extends pandas with a <em>geometry</em> attribute and provides easy access to the geospatial packages <a href="//toblerity.org/shapely/">Shapely</a> and <a href="//toblerity.org/fiona/">Fiona</a>. More importantly, they play nicely with Folium, my preferred shortcut to easy JavaScript web-maps.</p><pre><code class="language-python">df = df.astype({'X': int, 'Y':int})
+geo = [Point(xy) for xy in zip(laws['Y'], laws['X'])]
+gdf = gpd.GeoDataFrame(df, crs={'init':'epsg:4326'}, geometry=geo)
+</code></pre>
+<p>With a similar process for the other Sheet, it is a simple process to create a basic map based on this GeoDataFrame. Please have a look at my <a href="https://github.com/carderne/environmental-mapping/blob/master/EnvironmentalMapping.ipynb">notebook here</a> for the complete code.</p><pre><code class="language-python">m = folium.Map([40, -100], zoom_start=5)
+c = folium.GeoJson(gdf)     
+c.add_to(m)  
+display(m)
+</code></pre>
+<p>The final step is to make this all happen in a predictable way that doesn't force anyone to get their hands covered in code, who doesn't particularly want to. So we set this code up on a Google Compute instance and have it output the results as an embeddable html file. To avoid dealing with servers and firewalls, I cloned into a new <a href="https://github.com/carderne/environmental-mapping">GitHub repo</a> and set up a cron-job to run the following script every <em>x</em> hours.</p><pre><code class="language-bash">python enviro_map.py
+git add .
+git commit -m "Hourly map update"
+git pull --no-edit
+git push
+</code></pre>
+<p>This pushes the updated html file to the repo, where my so-called clients can easily access it to embed in their <a href="https://rdrn.me/environmental-mapping/">website</a> (a basic mock-up I created). Then all they have to do to update their website is edit the Google Sheets and wait for the new results to appear embedded in their website.</p><iframe src="https://rdrn.me/leaflet-maps-google-sheets/map.html" style="width: 100%; height: 600px" name="internal" frameborder="0"></iframe>
 </article>  
 
 		</main>
 		<footer id="footer">
-			<section id="footer-message">© 2018 Chris Arderne. All rights reserved.</section>
+			<section id="footer-message">© 2018 Chris Arderne.</section>
 		</footer>
 	
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
