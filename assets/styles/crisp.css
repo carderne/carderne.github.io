@@ -171,6 +171,11 @@ input {
 	font-size:1em;
 	padding: 0.3em;
 }
+
+blockquote {
+        font-size:1em
+}
+
 /* Sidebar */
 header h1 {
 	font-size:1.9em;
