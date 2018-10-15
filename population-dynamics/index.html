@@ -9,7 +9,7 @@
 			<link href="//fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 
 			<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=3704b2044e">
+			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=a4b4562251">
 	    <meta name="HandheldFriendly" content="True">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -74,7 +74,7 @@
 }
     </script>
 
-    <script src="../public/ghost-sdk.min.js?v=3704b2044e"></script>
+    <script src="../public/ghost-sdk.min.js?v=a4b4562251"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -100,7 +100,7 @@ ghost.init({
 		</header>
 		<main id="content"> 
 			<article id="5bc07fe4f6b2f324744f5439" class="post tag-inside">
-	<div class="post-stamp">October 23, 2014<span class="taglist"> · <a href="../tag/inside/">Inside</a></span></div>
+	<div class="post-stamp">23 October 2014<span class="taglist"> · <a href="../tag/inside/">Inside</a></span></div>
 	<h1 class="post-title">Fun with population dynamics</h1>
 	<p>Some time, several years ago when I still very excited about Java, and read a lot of books on evolution, I had the fun idea to combine the two. I created a simple Java program (<a href="https://github.com/carderne/Altruism">here on GitHub</a>) to model one of the more interesting examples of game theory used to explain the origins of altruism (and its evolutionary benefits): <a href="https://en.wikipedia.org/wiki/Ultimatum_game">The Ultimatum Game</a>.</p><p>I'll let Wikipedia explain:</p><blockquote>One player, the proposer, is endowed with a sum of money. They are  tasked with splitting it with another player, the responder. Once the  proposer communicates their decision, the responder may accept it or  reject it. If the responder accepts, the money is split per the  proposal; if the responder rejects, both players receive nothing.</blockquote><p> So I created a simple algorithm, and since I was neck-deep in the Object-Oriented Programming way of thinking, the players in the game were naturally represented with Classes and Objects! I set up the model to accept an arbitrary number of players (in the obnoxious GIF below it was 4000) and assign each player with a 'strategy': what kind of offers they make and what kind they accept. These are represented by numbers in the model:</p><ol><li>Very generous: offers large amounts, but accepts any amount offered</li><li>...</li><li>...</li><li>...</li><li>The middling player: offers half, but only accepts if half or more is offered</li><li>...</li><li>...</li><li>...</li><li>Stingy: offers small amounts, and only accepts large offers</li></ol><p>The players then randomly play against each other, and keep track of how much they've won or not. After each round, the player with least in their coffers is... killed. Then they play again and again until there are only a few players left.</p><p>As you can see in the video below, the 5's last the longest, with there in-between strategy! Note that I didn't allow players to combine strategies, as this would have complicated it a bit, and (if I remember) there is a suggestion that the <em>offer </em>and <em>accept </em>parameters are somehow linked evolutionarily.</p><div style="width:100%;height:0;padding-bottom:79%;position:relative;"><iframe src="https://giphy.com/embed/t6leavMMQwBQIrYiTo" width="100%" height="100%" style="position:absolute" frameborder="0" class="giphy-embed" allowfullscreen></iframe></div><p><a href="https://giphy.com/gifs/t6leavMMQwBQIrYiTo">via GIPHY</a></p>
 </article>  
