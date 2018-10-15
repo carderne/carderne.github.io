@@ -4,12 +4,12 @@
             <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	    <title>Outside - Chris Arderne</title>
+	    <title>Simple Leaflet map pulling from Google Sheets</title>
 	    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700" rel="stylesheet" type="text/css">
 			<link href="//fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 
 			<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-			<link rel="stylesheet" type="text/css" href="../../assets/styles/crisp.css?v=311906d16a">
+			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=311906d16a">
 	    <meta name="HandheldFriendly" content="True">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,23 +18,28 @@
 				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 			<![endif]-->
 			
-	    <link rel="shortcut icon" href="../../favicon.png" type="image/png">
-    <link rel="canonical" href="//rdrn.me/tag/outside/">
+	    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="canonical" href="//rdrn.me/leaflet-maps-google-sheets/">
     <meta name="referrer" content="no-referrer-when-downgrade">
     
     <meta property="og:site_name" content="Chris Arderne">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Outside - Chris Arderne">
-    <meta property="og:url" content="//rdrn.me/tag/outside/">
-    <meta property="article:modified_time" content="2018-10-12T10:41:34.000Z">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Simple Leaflet map pulling from Google Sheets">
+    <meta property="og:description" content="To help a friend">
+    <meta property="og:url" content="//rdrn.me/leaflet-maps-google-sheets/">
+    <meta property="article:published_time" content="2018-10-15T06:47:34.000Z">
+    <meta property="article:modified_time" content="2018-10-15T06:47:34.000Z">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Outside - Chris Arderne">
-    <meta name="twitter:url" content="//rdrn.me/tag/outside/">
+    <meta name="twitter:title" content="Simple Leaflet map pulling from Google Sheets">
+    <meta name="twitter:description" content="To help a friend">
+    <meta name="twitter:url" content="//rdrn.me/leaflet-maps-google-sheets/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Chris Arderne">
     
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Series",
+    "@type": "Article",
     "publisher": {
         "@type": "Organization",
         "name": "Chris Arderne",
@@ -45,8 +50,17 @@
             "height": 60
         }
     },
-    "url": "//rdrn.me/tag/outside/",
-    "name": "Outside",
+    "author": {
+        "@type": "Person",
+        "name": "Chris Arderne",
+        "url": "//rdrn.me/author/chris/",
+        "sameAs": []
+    },
+    "headline": "Simple Leaflet map pulling from Google Sheets",
+    "url": "//rdrn.me/leaflet-maps-google-sheets/",
+    "datePublished": "2018-10-15T06:47:34.000Z",
+    "dateModified": "2018-10-15T06:47:34.000Z",
+    "description": "To help a friend",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "//rdrn.me/"
@@ -54,7 +68,7 @@
 }
     </script>
 
-    <script src="../../public/ghost-sdk.min.js?v=311906d16a"></script>
+    <script src="../public/ghost-sdk.min.js?v=311906d16a"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -64,9 +78,9 @@ ghost.init({
     <meta name="generator" content="Ghost 2.2">
     <link rel="alternate" type="application/rss+xml" title="Chris Arderne" href="//rdrn.me/rss/">
 	</head>
-	<body class="tag-template tag-outside">
+	<body class="post-template">
 		<header id="header">
-			<a id="logo" href="//rdrn.me"><img src="../../content/images/2018/10/face3.png" alt="Chris Arderne"></a>
+			<a id="logo" href="//rdrn.me"><img src="../content/images/2018/10/face3.png" alt="Chris Arderne"></a>
 			<h1><a href="//rdrn.me">Chris Arderne</a></h1>
                         <p>A personal blog with adventures from outside and inside.</p>
 			<div id="icons">
@@ -80,39 +94,11 @@ ghost.init({
 
 		</header>
 		<main id="content"> 
-			<h1 class="post-title">Outside</h1> 
-<article class="post tag-outside tag-mountains">
-    <h3><a href="../../primero-somos-tontos/">Primero, somos tontos</a></h3>
-<section class="post-excerpt">
-        <p>Chris Arderne, Michael Kloos, Rick KotzeWe knew this already, but our three weeks in Mexico drove the message home on an almost daily basis. This is <a class="read-more" href="../../primero-somos-tontos/">»</a></p>
-</section>
-    <footer class="post-meta">
-        <time class="post-date" datetime="2017-02-07">7 February 2017</time>
-    </footer>
-</article>
-<article class="post tag-outside">
-    <h3><a href="../../rudderless-richtersveld/">Rudderless in the Richtersveld</a></h3>
-<section class="post-excerpt">
-        <p>At the end of June I joined my brothers in South Africa for a jaunt  to the border of Namibia and the |Ai-|Ais/Richtersveld Transfrontier <a class="read-more" href="../../rudderless-richtersveld/">»</a></p>
-</section>
-    <footer class="post-meta">
-        <time class="post-date" datetime="2016-07-20">20 July 2016</time>
-    </footer>
-</article>
-<article class="post tag-outside tag-mountains">
-    <h3><a href="../../summer-in-europe/">Summer in Europe</a></h3>
-<section class="post-excerpt">
-        <p>This year I was lucky enough to join two UIAA youth meets. Youth rock climbing in Catalonia, organised by the FEEC, and the Kazbek mountaineering expedition, <a class="read-more" href="../../summer-in-europe/">»</a></p>
-</section>
-    <footer class="post-meta">
-        <time class="post-date" datetime="2015-09-10">10 September 2015</time>
-    </footer>
-</article>
-<nav class="pagination" role="pagination">
-    
-    <span class="page-number">Page 1 of 1</span>
-    
-</nav>
+			<article id="5bc2ec443e94a80ccd4f5547" class="post">
+	<div class="post-stamp">October 15, 2018<span class="taglist"></span></div>
+	<h1 class="post-title">Simple Leaflet map pulling from Google Sheets</h1>
+	<p>To help a friend </p><iframe src="https://github.com/carderne/environmental-mapping/blob/master/map.html" style="width: 100%; height: 1000px" name="internal"></iframe>
+</article>  
 
 		</main>
 		<footer id="footer">
