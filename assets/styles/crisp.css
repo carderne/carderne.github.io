@@ -88,15 +88,16 @@ a {
 	color: #3182bd; /* Change Link Color */
 }
 
-
-
 #icons a:link {
-  font-size: 2em;
-  color: #2c2f33;
+  width: 50%;
+  font-size: 1.5em;
+  color: #737c7f;
   padding-right: 0.3em;
+  padding: 0px 0px 0px 0px;
+  line-height:0em;
 }
 #icons a:visited, #icons a:hover, #icons a:active {
-  color: #000000;
+  color: #737c7f;
   text-decoration:none;
 }
 /* Every post, on every page, gets this style on its <article> tag */
@@ -108,15 +109,13 @@ a {
     word-wrap: break-word;
 }
 .read-more {
-  color: #000000;
+  color: #737c7f;
 }
 .post-excerpt p {
     margin: 0;
     font-size: 0.9em;
     line-height: 1.7em;
 }
-
-
 
 
 a:hover {
