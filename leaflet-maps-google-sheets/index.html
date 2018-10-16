@@ -29,7 +29,7 @@
     <meta property="og:description" content="A friend needed a map of the US displayed with points at specific locations with attached information, and overviews for certain states with summaries. And for this to be done (and updated) as easily as possible by people with no coding knowledge.">
     <meta property="og:url" content="//rdrn.me/leaflet-maps-google-sheets/">
     <meta property="article:published_time" content="2018-10-15T06:47:34.000Z">
-    <meta property="article:modified_time" content="2018-10-16T07:36:45.000Z">
+    <meta property="article:modified_time" content="2018-10-16T07:38:58.000Z">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Simple Leaflet map pulling from Google Sheets">
     <meta name="twitter:description" content="A friend needed a map of the US displayed with points at specific locations with attached information, and overviews for certain states with summaries. And for this to be done (and updated) as easily as possible by people with no coding knowledge.">
@@ -60,7 +60,7 @@
     "headline": "Simple Leaflet map pulling from Google Sheets",
     "url": "//rdrn.me/leaflet-maps-google-sheets/",
     "datePublished": "2018-10-15T06:47:34.000Z",
-    "dateModified": "2018-10-16T07:36:45.000Z",
+    "dateModified": "2018-10-16T07:38:58.000Z",
     "description": "A friend needed a map of the US displayed with points at specific locations with attached information, and overviews for certain states with summaries. And for this to be done (and updated) as easily as possible by people with no coding knowledge.",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -128,9 +128,9 @@ c.add_to(m)
 # m.save('map.html')
 </code></pre>
 <p>The final step is to make this all happen in a predictable way that doesn't force anyone to get their hands covered in code, who doesn't particularly want to. So we set this code up on a Google Compute instance and have it output the results as an embeddable html file. To avoid dealing with servers and firewalls, I cloned into a new <a href="https://github.com/carderne/environmental-mapping">GitHub repo</a> and set up a cron-job to run the following script every hour.</p><p>cron entry:</p>
-<pre><code class="language-bash">0 * * * * /home/me/update_map.sh
+<pre><code class="language-bash">0 * * * * /home/username/update_map.sh
 </code></pre>
-<p>update_map.sh</p>
+<p>update_map.sh:</p>
 <pre><code class="language-bash">python enviro_map.py
 git add .
 git commit -m "Hourly map update"
