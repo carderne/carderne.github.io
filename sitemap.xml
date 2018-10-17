@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/</loc>
+    <loc>https://rdrn.me/</loc>
   </url>
   <url>
-    <loc>/about/</loc>
+    <loc>https://rdrn.me/about/</loc>
   </url>
   <url>
-    <loc>/leaflet-maps-google-sheets/</loc>
+    <loc>https://rdrn.me/leaflet-maps-google-sheets/</loc>
   </url>
   <url>
-    <loc>/hackathon-irise-mogadishu/</loc>
+    <loc>https://rdrn.me/hackathon-irise-mogadishu/</loc>
   </url>
   <url>
-    <loc>/open-data-access-tanzania/</loc>
+    <loc>https://rdrn.me/open-data-access-tanzania/</loc>
   </url>
   <url>
-    <loc>/primero-somos-tontos/</loc>
+    <loc>https://rdrn.me/primero-somos-tontos/</loc>
   </url>
   <url>
-    <loc>/lighting-the-world/</loc>
+    <loc>https://rdrn.me/lighting-the-world/</loc>
   </url>
   <url>
-    <loc>/rudderless-richtersveld/</loc>
+    <loc>https://rdrn.me/rudderless-richtersveld/</loc>
   </url>
   <url>
-    <loc>/summer-in-europe/</loc>
+    <loc>https://rdrn.me/summer-in-europe/</loc>
   </url>
   <url>
-    <loc>/population-dynamics/</loc>
+    <loc>https://rdrn.me/population-dynamics/</loc>
   </url>
   <url>
-    <loc>/music-app-for-me/</loc>
+    <loc>https://rdrn.me/music-app-for-me/</loc>
   </url>
   <url>
-    <loc>/tag/inside/</loc>
+    <loc>https://rdrn.me/tag/inside/</loc>
   </url>
   <url>
-    <loc>/tag/outside/</loc>
+    <loc>https://rdrn.me/tag/outside/</loc>
   </url>
   <url>
-    <loc>/tag/mountains/</loc>
+    <loc>https://rdrn.me/tag/mountains/</loc>
   </url>
 </urlset>
