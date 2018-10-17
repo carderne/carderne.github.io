@@ -97,6 +97,21 @@ img, iframe {
 	max-width: 100%;
 }
 
+figure {
+	width: 100%;
+}
+
+.kg-width-wide, .kg-width-full {
+	width: 200%;
+}
+
+figcaption {
+	color: #666666;
+	font-size: 0.8em;
+	margin-left: 2em;
+}
+
+
 
 #icons a:link {
   width: 50%;
