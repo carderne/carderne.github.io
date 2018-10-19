@@ -1,6 +1,4 @@
-User-agent: *
-Sitemap: https://rdrn.me/sitemap.xml
-Disallow: /ghost/
-Disallow: /p/
-Disallow: /about/cv.pdf
-Disallow: /environmental-mapping/
+user-agent: *
+sitemap: https://rdrn.me/sitemap.xml
+disallow: /web-mapping/
+disallow: /about/cv.pdf
