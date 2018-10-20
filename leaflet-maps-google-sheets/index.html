@@ -9,7 +9,7 @@
 			<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=b54fb36885">
+			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=cdc57561fe">
 	    <meta name="HandheldFriendly" content="True">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,7 +29,7 @@
     <meta property="og:description" content="I love working with Python, but as soon as you want to put something online, JavaScript's ability to process in the browser is a clear winner. In this post I'm going to go through making a web map in JavaScript that pulls data from Google Sheets – where non-coders can easily make updates.">
     <meta property="og:url" content="/leaflet-maps-google-sheets/">
     <meta property="article:published_time" content="2018-10-19T17:51:19.000Z">
-    <meta property="article:modified_time" content="2018-10-19T17:52:28.000Z">
+    <meta property="article:modified_time" content="2018-10-20T14:38:06.000Z">
     <meta property="article:tag" content="Inside">
     
     <meta name="twitter:card" content="summary">
@@ -64,7 +64,7 @@
     "headline": "Leaflet maps with data from Google Sheets",
     "url": "/leaflet-maps-google-sheets/",
     "datePublished": "2018-10-19T17:51:19.000Z",
-    "dateModified": "2018-10-19T17:52:28.000Z",
+    "dateModified": "2018-10-20T14:38:06.000Z",
     "keywords": "Inside",
     "description": "I love working with Python, but as soon as you want to put something online, JavaScript&#x27;s ability to process in the browser is a clear winner. In this post I&#x27;m going to go through making a web map in JavaScript that pulls data from Google Sheets – where non-coders can easily make updates.",
     "mainEntityOfPage": {
@@ -74,7 +74,7 @@
 }
     </script>
 
-    <script src="../public/ghost-sdk.min.js?v=b54fb36885"></script>
+    <script src="../public/ghost-sdk.min.js?v=cdc57561fe"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -103,7 +103,83 @@ ghost.init({
 			<article id="5bc9f471fb49665c9058d756" class="post tag-inside">
 	<div class="post-stamp">19 October 2018<span class="taglist"> · <a href="../tag/inside/">Inside</a></span></div>
 	<h1 class="post-title">Leaflet maps with data from Google Sheets</h1>
-	<p>Note: I wrote another post <a href="/python-mapping-automatic-updating/">here</a>, outlining how this can be achieved without stepping out of a Python environment.</p><p>I love working with Python, but as soon as you want to put something online, JavaScript's ability to process in the browser is a clear winner. For one, you can have statically served HTML files performing complex tasks, whereas with Python you need a cloud instance running and a system for communicating between front- and back-end.</p><p>In this post I'm going to go through making a web map in JavaScript that pulls data from Google Sheets – where non-coders can easily make updates. This seems to be a common request and something that is not well covered by the various GUI solutions.</p><h3 id="server-side-vs-client-side">Server-side vs client-side</h3><p>Lorem ipsum.</p><h3 id="mapping-libraries-available-in-javascript">Mapping libraries available in JavaScript</h3><p>Lorem ipsum.</p><h3 id="using-tabletop-js-to-pull-data-from-google-sheets">Using Tabletop.js to pull data from Google Sheets</h3><p>Lorem ipsum.</p><h3 id="putting-it-together-for-an-easy-web-map">Putting it together for an easy web map</h3><p>Lorem ipsum.</p>
+	<p><em>Note: I wrote another post <a href="/python-mapping-automatic-updating/">here</a>, outlining how this can be achieved without stepping out of a Python environment.</em></p><p>I love working with Python, but as soon as you want to put something online, JavaScript's ability to process in the browser is a clear winner. For one, you can have statically served HTML files performing complex tasks, whereas with Python you'd need a cloud instance running and a system for communicating between front- and back-end.</p><p>In this post I'm going to go through making a web map in JavaScript that pulls data from Google Sheets – where non-coders can easily make updates. This seems to be a common request and something that is not well covered by the various GUI solutions. Two other solutions I found (<a href="https://github.com/jlord/mappy">mappy</a> and a <a href="https://www.datavizforall.org/leaflet/with-google-sheets/">Data Visualization for All</a> guide) didn't seem to work well – potentially due to changes in Google's API.</p><p><em>(Skip the first two sections if you just want the juicy stuff, or go straight to the <a href="https://github.com/carderne/web-mapping">repo</a>.)</em></p><h3 id="client-side-programming">Client-side programming</h3><p>JavaScript is unique in being used on both the client- and server-sides of a web application. This means it can run directly in a user's browser without anything happening on the server, but can also be used on the back-end (via Node.js) for moving data around and doing the heavy lifting. For this example, I'm basically taking advantage of the user's computer to do the processing, so that I don't have to pay Amazon/Google/Microsoft to do it for me on a cloud instance. This dual nature of JavaScript is one of the reasons for its booming popularity in web development.</p><h3 id="mapping-libraries-available-in-javascript">Mapping libraries available in JavaScript</h3><p>Another reason for JavaScript's ubiquity is the endless variety of libraries available, and the ease with which these can (sometimes) be used, due, in part, to <a href="https://blog.codinghorror.com/the-principle-of-least-power/">Atwood's Law</a>:</p><blockquote>any application that <em>can</em> be written in JavaScript, <em>will</em> eventually be written in JavaScript</blockquote><p>As for web mapping, there are a few obvious choices:</p><ul><li>Leaflet</li><li>Mapbox (and Mapbox GL)</li><li>Google Maps JavaScript API</li></ul><p>Although Mapbox allows easier integration with its extended suite of tools (such as Mapbox Studio and geocoding), I used Leaflet for this project for its simplicity and because I'm more familiar with its design. I'm not as familiar with Google's offering, but it has limited base layer options, and I prefer open source tools (noting the irony that this post is all about Google Sheets).</p><h3 id="pulling-data-from-google-sheets">Pulling data from Google Sheets</h3><p><em>Note: in all the code excerpts, I'm stripping it to the bare essentials for readability. The full code is available at the <a href="https://github.com/carderne/web-mapping">repo</a>.</em></p><p>To make maps from Google Sheets, we first need to get data <em>from </em>Google Sheets. This is made exceedingly easy by <a href="https://github.com/jsoma/tabletop">Tabletop.js</a>, a simple library for pulling in entire sheets as JSON objects. This is done in a few simple lines of code:</p><pre><code class="language-JavaScript">function init() {
+    Tabletop.init({
+        key: sheetsUrl,
+        callback: myFunction,
+        simpleSheet: true
+    })
+}
+
+window.addEventListener('DOMContentLoaded', init)
+
+function myFunction(data, tabletop) {
+    console.log(data);
+}
+</code></pre>
+<p>You just need to get the public sharing link from your Sheet (follow the instructions at the Tabletop.js repo) and assign it to <code>sheetsUrl</code> and you're done! </p><p>The data I pulled in for this web map was two tables, which you can preview <a href="https://github.com/carderne/web-mapping/blob/master/data-sources/US-environmental-laws.csv">here</a> and <a href="https://github.com/carderne/web-mapping/blob/master/data-sources/US-states-leaflet.csv">here</a>. The first has simple <code>lat</code> and <code>long</code> coordinates for a few points, while the second has a more complicated <code>geometry</code> column with polygon representations of each US state. In addition they each have extra columns with more information.</p><h3 id="putting-it-together-for-an-easy-web-map">Putting it together for an easy web map</h3><p>My objective for this web map was to show these point and polygon items on a map of the US, with pop-ups for each element showing additional information. Further, the points are coloured by a <code>category</code> column.</p><p>Firstly, let's create a basic HTML file to hold our map. You'll probably want more than this, but this provides the bare minimum of Tabletop.js, Leaflet.js and the Leaflet CSS styling. It then creates a <code>div</code> with <code>id="map"</code>, which is where our map will go, and then imports <code>leaflet-example.js</code>, which is where our JavaScript code goes.</p><pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'&gt;&lt;/script&gt;
+    &lt;link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/&gt;
+    &lt;script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id="map"&gt;&lt;/div&gt;
+    &lt;script type="text/javascript" src="leaflet-example.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<p>With that set up, let's create a Leaflet map with and insert into our <code>div</code>, and add a beautiful basemap (basically a background map). A number of basemap options are demoed <a href="https://leaflet-extras.github.io/leaflet-providers/preview/">here</a> – just copy the URL and other settings into the code below.</p><pre><code class="language-JavaScript">// the map starts centered on startLat and startLong
+// startZoom is the initial zoom level, between 1 and 18
+var map = L.map('map-div').setView([startLat, startLong], startZoom);
+
+L.tileLayer(baseMapURL).addTo(map);
+</code></pre>
+<p>Next we need to add things to the map!</p><p>The points are easier, and we can add them by simply looping through every item in the JSON and adding a Leaflet <code>marker</code> for it. This function is called by the <code>init()</code> function from further up, once the data has been retrieved from Google Sheets.</p><pre><code class="language-JavaScript">function addPoints(data, tabletop) {
+    for (var row in data) {
+    	var marker = L.marker([
+            data[row].lat,
+            data[row].long
+        ]).addTo(map);
+      	marker.bindPopup(data[row].category);
+    }
+}
+</code></pre>
+<p>The polygons are slightly more complicated, as Leaflet needs a <a href="https://macwright.org/2015/03/23/geojson-second-bite.html#featurecollection">GeoJSON</a> object to represent them. So in a new function like the previous one (also called by the <code>init()</code> function), we have the following code to create a single GeoJSON containing all of our polygons.</p><pre><code class="language-JavaScript">function addPolygons(data, tabletop) {
+    // the empty GeoJSON waiting to be populated with features
+    var polygons = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+
+    for (var row in data) {
+        // JSON.parse converts the geometry strings into JSON objects
+        var coords = JSON.parse(data[row].geometry);
+
+        polygons.features.push({
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": coords
+            },
+            "properties": {
+                "name": data[row].name,
+            }
+        });
+    }
+}
+</code></pre>
+<p>This sets up an empty GeoJSON and then loops through each element in <code>data</code> and inserts the coordinates and names as <code>Feature</code> elements within the GeoJSON. With this set up, it's just a few lines to add this new object to our Leaflet map. The lines below can be added at the bottom of the <code>addPolygon</code> function for simplicity.</p><pre><code class="language-JavaScript">polygonMarkers = L.geoJSON(polygons, {
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.name);
+    },
+}).addTo(map);
+</code></pre>
+<p>As for the points further up, this includes the code to add a popup, but nothing on styling. That's probably a post for another day, but you can have a look at the <a href="https://github.com/carderne/web-mapping">repo</a> if you want to see what I used for this example.</p><p>And we're done! The result (with styling) is shown below, or click <a href="/web-mapping/leaflet-polygons/leaflet-polygons.html">here</a> to see it full screen. Every time a user loads this map in their browser, it will automatically hop over to the specified Google Sheets and pull the latest data to display it.</p><iframe src="/web-mapping/leaflet-polygons/leaflet-polygons.html" style="width: 100%; height: 600px" name="internal" frameborder="0"></iframe>
 </article>  
 
 		</main>
