@@ -9,7 +9,7 @@
 			<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=0b073687be">
+			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=8110b7ec51">
 	    <meta name="HandheldFriendly" content="True">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,7 +29,7 @@
     <meta property="og:description" content="I love working with Python, but as soon as you want to put something online, JavaScript's ability to process in the browser is a clear winner. In this post I'm going to go through making a web map in JavaScript that pulls data from Google Sheets – where non-coders can easily make updates.">
     <meta property="og:url" content="/leaflet-maps-google-sheets/">
     <meta property="article:published_time" content="2018-10-19T17:51:19.000Z">
-    <meta property="article:modified_time" content="2018-10-21T09:47:17.000Z">
+    <meta property="article:modified_time" content="2018-10-22T07:05:55.000Z">
     <meta property="article:tag" content="Inside">
     
     <meta name="twitter:card" content="summary">
@@ -64,7 +64,7 @@
     "headline": "Leaflet maps with data from Google Sheets",
     "url": "/leaflet-maps-google-sheets/",
     "datePublished": "2018-10-19T17:51:19.000Z",
-    "dateModified": "2018-10-21T09:47:17.000Z",
+    "dateModified": "2018-10-22T07:05:55.000Z",
     "keywords": "Inside",
     "description": "I love working with Python, but as soon as you want to put something online, JavaScript&#x27;s ability to process in the browser is a clear winner. In this post I&#x27;m going to go through making a web map in JavaScript that pulls data from Google Sheets – where non-coders can easily make updates.",
     "mainEntityOfPage": {
@@ -74,7 +74,7 @@
 }
     </script>
 
-    <script src="../public/ghost-sdk.min.js?v=0b073687be"></script>
+    <script src="../public/ghost-sdk.min.js?v=8110b7ec51"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -117,7 +117,7 @@ function myFunction(data, tabletop) {
     console.log(data);
 }
 </code></pre>
-<p>You just need to get the public sharing link from your Sheet (follow the instructions at the Tabletop.js repo) and assign it to <code>sheetsUrl</code> and you're done! </p><p>The data I pulled in for this web map was two separate tables, which you can preview <a href="https://github.com/carderne/leaflet-gsheets/blob/master/data-sources/US-environmental-laws.csv">here</a> and <a href="https://github.com/carderne/leaflet-gsheets/blob/master/data-sources/US-states-leaflet.csv">here</a>. The first has simple <code>lat</code> and <code>long</code> coordinates for a few points, while the second has a more complicated <code>geometry</code> column with polygon representations of each US state. In addition they each have extra columns with more information.</p><h3 id="putting-it-together-for-an-easy-web-map">Putting it together for an easy web map</h3><p>My objective for this web map was to show these point and polygon items on a map of the US, with pop-ups for each element showing additional information. With a few more steps, it's easy to style each element based on other columns in the data.</p><p>Firstly, let's create a basic HTML file to hold our map. The example below provides the bare minimum of importing Tabletop.js, Leaflet.js and the Leaflet CSS styling. It then creates a <code>div</code> with <code>id="map"</code>, which is where our map will go, and then imports <code>leaflet-example.js</code>, which is where our new JavaScript code goes.</p><pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
+<p>You just need to get the public sharing link from your Sheet (follow the instructions at the Tabletop.js repo) and assign it to <code>sheetsUrl</code> and you're done! </p><p>The data I pulled in for this web map was two separate tables, which you can preview <a href="https://github.com/carderne/leaflet-gsheets/blob/master/data-sources/US-points.csv">here</a> and <a href="https://github.com/carderne/leaflet-gsheets/blob/master/data-sources/US-states-leaflet.csv">here</a>. The first has simple <code>lat</code> and <code>long</code> coordinates for a few points, while the second has a more complicated <code>geometry</code> column with polygon representations of each US state. In addition they each have extra columns with more information.</p><h3 id="putting-it-together-for-an-easy-web-map">Putting it together for an easy web map</h3><p>My objective for this web map was to show these point and polygon items on a map of the US, with pop-ups for each element showing additional information. With a few more steps, it's easy to style each element based on other columns in the data.</p><p>Firstly, let's create a basic HTML file to hold our map. The example below provides the bare minimum of importing Tabletop.js, Leaflet.js and the Leaflet CSS styling. It then creates a <code>div</code> with <code>id="map"</code>, which is where our map will go, and then imports <code>leaflet-example.js</code>, which is where our new JavaScript code goes.</p><pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
 &lt;head&gt;
