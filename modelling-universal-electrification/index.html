@@ -8,7 +8,7 @@
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700" rel="stylesheet" type="text/css">
 			<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
-			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=05a082bc3e">
+			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=b483fbeb13">
 	    <meta name="HandheldFriendly" content="True">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,7 +27,7 @@
     <meta property="og:description" content="Building on the algorithms I developed for mini-grids, I decided to move up a level of abstraction and look at the country- rather than village-level. What follows is the outline of a model that use population and other input data, and techno-economic parameters, to develop a nationally optimised pathway to">
     <meta property="og:url" content="/modelling-universal-electrification/">
     <meta property="article:published_time" content="2018-09-27T13:22:00.000Z">
-    <meta property="article:modified_time" content="2018-11-08T10:37:59.000Z">
+    <meta property="article:modified_time" content="2018-11-09T14:23:12.000Z">
     <meta property="article:tag" content="Inside">
     
     <meta name="twitter:card" content="summary">
@@ -62,7 +62,7 @@
     "headline": "Modelling the optimum way to achieve universal electrification",
     "url": "/modelling-universal-electrification/",
     "datePublished": "2018-09-27T13:22:00.000Z",
-    "dateModified": "2018-11-08T10:37:59.000Z",
+    "dateModified": "2018-11-09T14:23:12.000Z",
     "keywords": "Inside",
     "description": "Building on the algorithms I developed for mini-grids, I decided to move up a level of abstraction and look at the country- rather than village-level. What follows is the outline of a model that use population and other input data, and techno-economic parameters, to develop a nationally optimised pathway to",
     "mainEntityOfPage": {
@@ -72,7 +72,7 @@
 }
     </script>
 
-    <script src="../public/ghost-sdk.min.js?v=05a082bc3e"></script>
+    <script src="../public/ghost-sdk.min.js?v=b483fbeb13"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -174,7 +174,7 @@ pop_poly['pop'] = [x['sum'] for x in pop_sums]
                 best ← conect_neighbours(village, arc, best, current)  
     return best
 </code></pre>
-<p>For this example, the <code>while</code> loop from two blocks up ran eight times, and found a total of 2,686 new villages to connect, with a remaining 263 that were deemed cheaper to connect with off-grid technology. The final results are shown in the image below, following the same colour scheme as before.</p><figure class="kg-card kg-image-card"><img src="../content/images/2018/11/res.png" class="kg-image"></figure><p>Let's do a quick sanity check of these results. The current population of Uganda is around 43 million, of whom <a href="https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS">about 30%</a> have access to electricity, or 13 million people. According to my heuristic that any cluster within 1 km of the grid has electricity access, and of these 60% have electricity in their house, the number is 15 million people, so not too far from the official measurements. What about the remaining 40% of urban people that aren't considered by this model? Most likely the government should be focusing on <a href="https://endev.info/content/Grid_Densification_Challenge_Fund">grid densification</a> – providing electricity to those already in sight of the grid.</p><p>There are 12 million people in the 2,686 new villages to connect, and hopefully more than 60% of these would get electricity access if the grid arrives. There are a further 230,000 people in the 263 off-grid villages, where a mini-grid solar PV system is probably best. According to the model, the combined cost to connect these people to the grid USD 4.5 billion – but note that this is based on extremely rough guesses of infrastructure costs.</p><p>Finally, what about the people that were left out when we created the clusters? That process ignored 4 million people (about 9%) from the least densely populated parts of Uganda, who are potentially the most in need of public support. It's difficult to model how best to include this group if they are very rural, dispersed populations, it's probably to safe to say that the quickest and cheapest would be to for them to use solar-home systems, such as solar lanterns and individual roof-mounted solar panels.</p>
+<p>For this example, the <code>while</code> loop from two blocks up ran eight times, and found a total of 2,686 new villages to connect, with a remaining 263 that were deemed cheaper to connect with off-grid technology. The final results are shown in the image below, following the same colour scheme as before.</p><figure class="kg-card kg-image-card"><img src="../content/images/2018/11/res.png" class="kg-image"></figure><p>Let's do a quick sanity check of these results. The current population of Uganda is around 43 million, of whom <a href="https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS">about 30%</a> have access to electricity, or 13 million people. According to my heuristic that any cluster within 1 km of the grid has electricity access, and of these 60% have electricity in their house, the number is 15 million people, so not too far from the official measurements. What about the remaining 40% of urban people that aren't considered by this model? Most likely the government should be focusing on <a href="https://endev.info/content/Grid_Densification_Challenge_Fund">grid densification</a> – providing electricity to those already in sight of the grid.</p><p>There are 12 million people in the 2,686 new villages to connect, and hopefully more than 60% of these would get electricity access if the grid arrives. There are a further 230,000 people in the 263 off-grid villages, where a mini-grid solar PV system is probably best. According to the model, the combined cost to connect these people to the grid USD 4.5 billion – but note that this is based on extremely rough guesses of infrastructure costs.</p><p>Finally, what about the people that were left out when we created the clusters? That process ignored 4 million people (about 9%) from the least densely populated parts of Uganda, who are potentially the most in need of public support. It's difficult to model how best to include this group if they are very rural, dispersed populations, it's probably to safe to say that the quickest and cheapest would be to for them to use solar-home systems, such as solar lanterns and individual roof-mounted solar panels.</p><p>You can view a static version of the entire Python notebook <a href="https://nbviewer.jupyter.org/github/carderne/electrification-planner/blob/master/electrify.ipynb">here</a>, or visit the <a href="https://github.com/carderne/electrification-planner">GitHub repo</a> to see the entire package.</p>
 </article>  
 
 		</main>
