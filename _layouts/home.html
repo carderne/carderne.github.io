@@ -1,0 +1,13 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% for post in site.posts %}
+  {% unless post.exclude %} 
+    {% include archive-single.html %}
+  {% endunless %}
+{% endfor %}
+
+
