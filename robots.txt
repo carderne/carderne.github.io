@@ -1,3 +1,2 @@
 user-agent: *
 sitemap: https://rdrn.me/sitemap.xml
-disallow: /about/cv.pdf
