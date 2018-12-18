@@ -4,9 +4,6 @@
     <loc>https://rdrn.me/</loc>
   </url>
   <url>
-    <loc>https://rdrn.me/about/</loc>
-  </url>
-  <url>
     <loc>https://rdrn.me/leaflet-maps-google-sheets/</loc>
   </url>
   <url>
@@ -52,15 +49,12 @@
     <loc>https://rdrn.me/music-app-for-me/</loc>
   </url>
   <url>
-    <loc>https://rdrn.me/tag/inside/</loc>
-  </url>
-  <url>
     <loc>https://rdrn.me/leaflet-gsheets/leaflet-gsheets.html</loc>
   </url>
   <url>
-    <loc>https://rdrn.me/tag/outside/</loc>
+    <loc>https://rdrn.me/about/</loc>
   </url>
   <url>
-    <loc>https://rdrn.me/tag/mountains/</loc>
+    <loc>https://rdrn.me/assets/pdf/cv.pdf</loc>
   </url>
 </urlset>
