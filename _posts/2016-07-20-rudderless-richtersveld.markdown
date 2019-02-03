@@ -2,12 +2,12 @@
 layout: single
 title: Rudderless in the Richtersveld
 date: '2016-07-20 19:17:00'
-excerpt: "At the end of June I joined my brothers in South Africa for a jaunt to the border of Namibia and the |Ai-|Ais/Richtersveld Transfrontier Park. It’s a harsh and barren landscape, with the tail end of the Orange River providing the only evidence that water ever reaches the area."
+excerpt: "At the end of June I joined my brothers in South Africa for a jaunt to the border of Namibia and the &#124;Ai-&#124;Ais/Richtersveld Transfrontier Park. It’s a harsh and barren landscape, with the tail end of the Orange River providing the only evidence that water ever reaches the area."
 tags:
 - outside
 ---
 
-At the end of June I joined my brothers in South Africa for a jaunt  to the border of Namibia and the Ai-Ais/Richtersveld Transfrontier  Park. It’s a harsh and barren landscape, with the tail end of the Orange  River providing the only evidence that water ever reaches the area. The  80 km of super-corrugated mining roads at the end of our drive reminded  us repeatedly and shakily that we’d left the city.
+At the end of June I joined my brothers in South Africa for a jaunt  to the border of Namibia and the &#124;Ai-&#124;Ais/Richtersveld Transfrontier Park. It’s a harsh and barren landscape, with the tail end of the Orange  River providing the only evidence that water ever reaches the area. The  80 km of super-corrugated mining roads at the end of our drive reminded  us repeatedly and shakily that we’d left the city.
 
 When we arrived, the very frantic park ranger told us that he didn’t  think there’d be any water in the entire area, so it might not be  possible to complete the hike. We decided to shorten our target to three  days, ditched any non-essentials, and loaded about twelve litres of  water into our bags.
 
