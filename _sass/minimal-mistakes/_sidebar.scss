@@ -8,7 +8,8 @@
 
 .sidebar {
   padding-right: 0.5em;
-  border-right: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+  
   @include clearfix();
   @include breakpoint(max-width $large) {
     /* fix z-index order of follow links */
@@ -19,6 +20,8 @@
   }
 
   @include breakpoint($large) {
+    border-bottom: 0;
+    border-right: 1px #eee solid;
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
     opacity: 0.9;
@@ -118,41 +121,28 @@
    ========================================================================== */
 
 .author__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 9em;
-  height: 9em;
-  padding-left: 2em;
-  padding-right: 2em;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include breakpoint($large) {
-    display: block;
-    width: auto;
-    height: auto;
-  }
+  display: block;
+  width: 10em;
+  // padding-left: 2em;
+  // padding-right: 2em;
+  margin: auto;
 
   img {
     max-width: 9em;
-    border-radius: 50%;
-
-    @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
-    }
+    //border-radius: 50%;
   }
 }
 
 .author__content {
-  display: table-cell;
-  vertical-align: top;
+  display: block;
+  text-align: center;
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
 
   @include breakpoint($large) {
     display: block;
+    text-align: unset;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -178,8 +168,12 @@
 }
 
 .navigation a {
+  text-align: center;
   color: #3a4549;
   font-size: $type-size-3;
+  @include breakpoint($large) {
+    text-align: unset;
+  }
 }
 
 #author__bio {
