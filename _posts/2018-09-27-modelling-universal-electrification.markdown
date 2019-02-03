@@ -2,6 +2,7 @@
 layout: single
 title: Modelling the optimum way to achieve universal electrification
 date: '2018-09-27 13:22:00'
+excerpt: "Building on the algorithms I developed for mini-grids, I decided to move up a level of abstraction and look at the country- rather than village-level. What follows is the outline of a model that use population and other input data, and techno-economic parameters, to develop a nationally optimised pathway to achieving universal electrification per the UN’s Sustainable Development Goal 7."
 tags:
 - inside
 ---

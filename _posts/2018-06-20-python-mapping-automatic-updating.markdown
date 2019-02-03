@@ -2,6 +2,7 @@
 layout: single
 title: A workflow for Python mapping with automatic updating
 date: '2018-06-20 06:47:00'
+excerpt: "A friend needed a map of the US displayed with points at specific locations with attached information, and overviews for certain states with summaries. And for this to be done (and updated) as easily as possible by people with no coding knowledge."
 tags:
 - inside
 ---

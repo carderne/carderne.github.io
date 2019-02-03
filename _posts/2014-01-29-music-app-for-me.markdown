@@ -2,6 +2,7 @@
 layout: single
 title: A music app in Java, that still works eight years later!
 date: '2014-01-29 12:25:00'
+excerpt: "My high school IT class (so, 2010) culminated in a programming project – we were free to create whatever we wanted (in Java), so long as we demonstrated what we'd learned in the class."
 tags:
 - inside
 ---

@@ -2,6 +2,7 @@
 layout: single
 title: Modelling hydrological networks at massive scale
 date: '2017-04-15 13:26:00'
+excerpt: "Ironically, a large part of my work at KTH's Division of Energy Systems Analysis was modelling complex hydrological systems. I set out to create a model that would conduct massive scale hydrological modelling."
 tags:
 - inside
 ---

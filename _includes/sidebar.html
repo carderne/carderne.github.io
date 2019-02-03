@@ -1,24 +1,48 @@
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | relative_url }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+<div class="sidebar sticky">
+{% assign author = site.author %}
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  {% if author.avatar %}
+    <div class="author__avatar">
+      {% if author.avatar contains "://" %}
+        {% assign author_src = author.avatar %}
+      {% else %}
+        {% assign author_src = author.avatar | relative_url %}
       {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-      {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
+
+      {% if author.home %}
+        {% if author.home contains "://" %}
+          {% assign author_link = author.home %}
+        {% else %}
+          {% assign author_link = author.home | relative_url %}
+        {% endif %}
+        <a href="{{ author_link }}">
+          <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+        </a>
+      {% else %}
+        <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+      {% endif %}
+    </div>
   {% endif %}
+
+  <div class="author__content">
+    <a href="{{ author_link }}"><h4 class="author__name" itemprop="name">{{ author.name }}</h4></a>
+
+    <div id="icons">
+      <a href="mailto:chris@rdrn.me"><i class="fa fa-envelope-square"></i></a>
+      <a href="https://www.linkedin.com/in/chris-arderne" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+      <a href="https://github.com/carderne" target="_blank"><i class="fa fa-github-square"></i></a>
+    </div> 
   </div>
-{% endif %}
+  <div class="navigation">
+    <a href="/"><h5>Home</h5></a>
+    <a href="/about"><h5>About</h5></a>
+  </div>
+
+  <p id="author__bio" itemprop="description">
+    {{ author.bio }}
+  </p>
+
+</div>
+</div>

@@ -2,6 +2,7 @@
 layout: single
 title: About
 date: '2018-10-13 11:45:57'
+excerpt: "My name is Chris  and I'm an engineer (because that's what I studied) from South Africa, working on global development issues (energy and finance). This involves exploring cool techniques in data analysis and modelling, but also working with stakeholders at all levels of various systems."
 exclude: true
 ---
 

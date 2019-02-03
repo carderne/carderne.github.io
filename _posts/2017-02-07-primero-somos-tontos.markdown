@@ -2,6 +2,7 @@
 layout: single
 title: Primero, somos tontos (firstly, we're fools)
 date: '2017-02-07 08:17:00'
+excerpt: "We knew this already, but our three weeks in Mexico drove the message home on an almost daily basis. This is the story of three South African amigos fumbling their way up a few volcanoes and some jagged rock faces in the land of chillies, tortillas, piñatas and moustaches."
 tags:
 - mountains
 - outside

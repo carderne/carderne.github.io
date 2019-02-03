@@ -21,6 +21,16 @@ body {
   }
 }
 
+a {
+  /* font-weight:700; */
+  text-decoration:none;
+  color: #458CD5;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
 h1,
 h2,
 h3,
@@ -354,4 +364,18 @@ input[type="submit"],
 .archive__item-teaser {
   -webkit-transition: $global-transition;
   transition: $global-transition;
+}
+
+
+#icons a:link {
+  width: 50%;
+  font-size: 1.5em;
+  color: #737c7f;
+  padding-right: 0.3em;
+  padding: 0px 0px 0px 0px;
+  line-height:0em;
+}
+#icons a:visited, #icons a:hover, #icons a:active {
+  color: #737c7f;
+  text-decoration:none;
 }

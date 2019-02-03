@@ -4,6 +4,7 @@
 
 #main {
   @include clearfix;
+  padding-top: 1em;
   margin-left: 0;
   margin-right: auto;
   padding-left: 2em;
@@ -23,12 +24,12 @@
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    //padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    //padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -53,8 +54,9 @@
 }
 
 .page__title {
-  margin-top: 0;
+  margin-top: 1em;
   line-height: 1;
+  font-size: $type-size-2;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -122,6 +124,10 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+}
+
+.page__date {
+  color: #888;
 }
 
 .page__hero {
@@ -280,19 +286,27 @@
   }
 }
 
-.page__taxonomy-item {
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 8px;
-  padding: 5px 10px;
-  text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
-  border-radius: $border-radius;
+.taglist a {
+	background-color:#ccc;
+	color:#fff;
+	display: inline-block;   
+  line-height: 1.5em;
+  margin-left: 2em;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  
+	vertical-align:20%;  
+	font-size:0.5em;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700 !important;
+	text-transform:uppercase;
+	letter-spacing:0.05em;
+	border-radius:0.25em;
+	-moz-border-radius: 0.25em;
+	-webkit-border-radius: 0.25em;
+}
 
-  &:hover {
-    text-decoration: none;
-    color: $link-color-hover;
-  }
+.page__taxonomy-item {
+  margin-left: 0.5em
 }
 
 .taxonomy__section {

@@ -2,6 +2,7 @@
 layout: single
 title: A Flask app for mini-grid planning with a cost-optimised spanning tree
 date: '2018-03-18 13:20:00'
+excerpt: "We've mapped over 4 million buildings in Tanzania. This post explores the possibilities of this data for off-grid planning using a simple Flask web app."
 tags:
 - inside
 ---

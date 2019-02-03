@@ -2,6 +2,7 @@
 layout: single
 title: Fun with population dynamics
 date: '2014-10-23 11:41:00'
+excerpt: "Some time, several years ago when I still very excited about Java, and read a lot of books on evolution, I had the fun idea to combine the two. I created a simple program to model one of the more interesting examples of game theory used to explain the origins of altruism: The Ultimatum Game."
 tags:
 - inside
 ---
