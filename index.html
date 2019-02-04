@@ -1,4 +1,15 @@
 ---
-layout: home
-author_profile: true
+layout: default
 ---
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    {% for post in site.posts %}
+      {% unless post.exclude %} 
+        {% include archive-single.html %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>

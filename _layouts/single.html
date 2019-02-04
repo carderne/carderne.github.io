@@ -15,13 +15,23 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           <span class="page__date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B %Y" }}</time></span>
-          {% include tags.html %}
+          
+          {% capture page_tags %}{% for tag in page.tags %}{{ tag | downcase }}#{{ tag }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_hashes = page_tags | split: ',' | sort %}
+<span class="taglist" itemprop="keywords">
+{% for hash in tag_hashes %}
+  {% assign keyValue = hash | split: '#' %}
+  {% capture tag_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
+  <a href="{{ tag_word | slugify | prepend: '#' | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep"> </span>{% endunless %}
+{% endfor %}
+</span>
+          
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-          {% if site.data.ui-text[site.locale].meta_label %}
+        {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {{ content }}
