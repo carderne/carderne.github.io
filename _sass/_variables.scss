@@ -104,44 +104,29 @@ $medium: 768px !default;
 $large: 1024px !default;
 $x-large: 1280px !default;
 
-////////////
-////////////
-
-
-// Small devices
 @mixin sm {
    @media (min-width: #{$small}) {
        @content;
    }
 }
 
-// Medium devices
 @mixin md {
    @media (min-width: #{$medium}) {
        @content;
    }
 }
 
-// Large devices
 @mixin lg {
    @media (min-width: #{$large}) {
        @content;
    }
 }
 
-// Extra large devices
 @mixin xl {
    @media (min-width: #{$x-large}) {
        @content;
    }
 }
-
-
-
-
-//////////// 
-///////////
-
 
 /*
    Grid

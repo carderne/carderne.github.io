@@ -6,7 +6,7 @@
   padding-right: 0.5em;
   border-bottom: 1px #eee solid;
   
-  @include breakpoint(max-width $large) {
+  @include lg {
     /* fix z-index order of follow links */
     position: relative;
     z-index: 10;
@@ -14,7 +14,7 @@
     transform: translate3d(0, 0, 0);
   }
 
-  @include breakpoint($large) {
+  @include lg {
     border-bottom: 0;
     border-right: 1px #eee solid;
     float: left;
@@ -36,7 +36,7 @@
     }
   }
 
-  @include breakpoint($x-large) {
+  @include xl {
     width: calc(#{$right-sidebar-width} - 1em);
   }
 
@@ -75,7 +75,7 @@
 .sidebar__right {
   margin-bottom: 1em;
 
-  @include breakpoint($large) {
+  @include lg {
     position: absolute;
     top: 0;
     right: 0;
@@ -92,20 +92,20 @@
     }
   }
 
-  @include breakpoint($x-large) {
+  @include xl {
     width: $right-sidebar-width;
     margin-right: -1 * $right-sidebar-width;
   }
 }
 
 .splash .sidebar__right {
-  @include breakpoint($large) {
+  @include lg {
     position: relative;
     float: right;
     margin-right: 0;
   }
 
-  @include breakpoint($x-large) {
+  @include xl {
     margin-right: 0;
   }
 }
@@ -134,7 +134,7 @@
   padding-right: 25px;
   line-height: 1;
 
-  @include breakpoint($large) {
+  @include lg {
     display: block;
     text-align: unset;
     width: 100%;
@@ -151,7 +151,7 @@
 .author__name {
   margin: 0;
 
-  @include breakpoint($large) {
+  @include lg {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -165,7 +165,7 @@
   text-align: center;
   color: #3a4549;
   font-size: $type-size-3;
-  @include breakpoint($large) {
+  @include lg {
     text-align: unset;
   }
 }
@@ -174,7 +174,7 @@
   margin: 0;
   font-size: $type-size-5;
 
-  @include breakpoint($large) {
+  @include lg {
     margin-top: 10px;
     margin-bottom: 20px;
   }
@@ -195,14 +195,14 @@
     }
   }
 
-  @include breakpoint($large) {
+  @include lg {
     display: block;
   }
 
   button {
     margin-bottom: 0;
 
-    @include breakpoint($large) {
+    @include lg {
       display: none;
     }
   }

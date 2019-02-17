@@ -9,13 +9,13 @@
   padding-left: 1em;
   padding-right: 1em;
 
-  @include breakpoint($large) {
+  @include lg {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
     //padding-right: $right-sidebar-width-narrow;
   }
 
-  @include breakpoint($x-large) {
+  @include xl {
     width: calc(100% - #{$right-sidebar-width});
     //padding-right: $right-sidebar-width;
   }

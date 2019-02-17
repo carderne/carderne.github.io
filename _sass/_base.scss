@@ -10,15 +10,15 @@
      background-color: $background-color;
      font-size: 16px;
    
-     @include breakpoint($medium) {
+     @include md {
        font-size: 18px;
      }
    
-     @include breakpoint($large) {
+     @include lg {
        font-size: 20px;
      }
    
-     @include breakpoint($x-large) {
+     @include xl {
        font-size: 22px;
      }
    
@@ -420,7 +420,7 @@ figure {
   &.half {
     > a,
     > img {
-      @include breakpoint($small) {
+      @include sm {
         width: calc(50% - 0.5em);
       }
     }
@@ -433,7 +433,7 @@ figure {
   &.third {
     > a,
     > img {
-      @include breakpoint($small) {
+      @include sm {
         width: calc(33.3333% - 0.5em);
       }
     }
