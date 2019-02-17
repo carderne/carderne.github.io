@@ -2,7 +2,17 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
+@mixin clearfix {
+  clear: both;
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+ }
+
 #main {
+  @include clearfix;
   padding-top: 1em;
   margin-left: 0;
   margin-right: auto;
