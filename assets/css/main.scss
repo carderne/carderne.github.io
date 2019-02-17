@@ -1,24 +1,11 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @charset "utf-8";
-
 @import "variables";
-
-@import "vendor/breakpoint/breakpoint";
-@include breakpoint-set("to ems", true);
-@import "vendor/susy/susy";
-@import "mixins";
-
-@import "reset";
+@import "breakpoint/breakpoint";
 @import "base";
-@import "forms";
-@import "tables";
-@import "syntax";
-@import "utilities";
-
 @import "page";
 @import "archive";
 @import "sidebar";
-@import "print";
+@import "syntax";
