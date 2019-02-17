@@ -7,9 +7,9 @@ tags:
 - inside
 ---
 
-As part of ongoing work on energy access in Tanzania, we (the [IFC](https://www.ifc.org), together with Tanzania's Rural Energy Agency) have mapped over 4 million buildings in rural parts of the country. This gives loads of new possibilities to those looking to work in these areas, and not only in the energy sector. One of these is the ability to conduct detailed site assessments,including sensible estimates of household populations and potential demand,along with wiring requirements to connect a village.
+As part of ongoing work on energy access in Tanzania, we (the [IFC](https://www.ifc.org), together with Tanzania's Rural Energy Agency) have mapped over 4 million buildings in rural parts of the country. This gives loads of [new possibilities](https://rdrn.me/tanzaniamapping/) to those looking to work in these areas, and not only in the energy sector. One of these is the ability to conduct detailed site assessments, including sensible estimates of household populations and potential demand,along with wiring requirements to connect a village.
 
-Apart from  the potential for use in state planning for new grid extensions,this data is valuable to private developers looking to sell off-grid services such as stand-alone solar systems (such as those sold by [M-Kopa](https://www.bloomberg.com/features/2015-mkopa-solar-in-africa/) as well as more capital intensive mini-grid systems (with a power source and grid connecting households, but no connection to the national grid), which [some suggest](https://www.greentechmedia.com/articles/read/minigrids-are-the-cheapest-way-to-electrify-100-million-africans-today)  are a key to tackling energy access issues.
+Apart from  the potential for use in state planning for new grid extensions,this data is valuable to private developers looking to sell off-grid services such as stand-alone solar systems (such as those sold by [M-Kopa](https://www.bloomberg.com/features/2015-mkopa-solar-in-africa/) as well as more capital intensive mini-grid systems (with a power source and grid connecting households, but no connection to the national grid), which [some suggest](https://www.greentechmedia.com/articles/read/minigrids-are-the-cheapest-way-to-electrify-100-million-africans-today) are a key to tackling energy access issues.
 
 In this post I'm focusing on mini-grids, mostly because it's a more interesting problem to analyse. However, I also provide some cost comparisons with national grid connections. This post is split into two main sections:
 
@@ -21,7 +21,7 @@ So if you just want an example of a basic Flask app, go ahead and skip to the se
 ## Optimising mini-grids in rural villages
 As I've covered [elsewhere](https://rdrn.me/open-data-access-tanzania/), data is one of the key barriers to ramping up off-grid development and investment.Machine learning and ML-supported manual mapping in OpenStreetMap (a strategy we applied in Tanzania) are starting to make inroads into this problem, at least for assessing demand.
 
-As a test case, I've chosen the village of Sipungu  in the Tabora region ofTanzania. To start off with, let's see how this village looks in OpenStreetMap compared to Google Maps. Each of the 444 little shapes on the left is a building, accurately traced by the [HOT team](https://www.hotosm.org/where-we-work/tanzania/) team in Dar es Salaam as part of the IFC project. Some are homes, some are stores, some are schools. As you can see, there's no information in Google Maps about this village – not even the road in.
+As a test case, I've chosen the village of Sipungu  in the Tabora region of Tanzania. To start off with, let's see how this village looks in OpenStreetMap compared to Google Maps. Each of the 444 little shapes on the left is a building, accurately traced by the [HOT team](https://www.hotosm.org/where-we-work/tanzania/) team in Dar es Salaam as part of the IFC project. Some are homes, some are stores, some are schools. As you can see, there's no information in Google Maps about this village – not even the road in.
 
 ![Compare][mg1]
 
