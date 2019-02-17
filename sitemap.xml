@@ -1,60 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rdrn.me/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/leaflet-maps-google-sheets/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/modelling-universal-electrification/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/scientific-look-acclimatization/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/hackathon-irise-mogadishu/</loc>
-  </url>
-  <url>
     <loc>https://rdrn.me/python-mapping-automatic-updating/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/flask-optimize-minigrid/</loc>
   </url>
   <url>
     <loc>https://rdrn.me/visualizing-book-club-ai/</loc>
   </url>
   <url>
-    <loc>https://rdrn.me/open-data-access-tanzania/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/modelling-hydrological-networks/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/primero-somos-tontos/</loc>
-  </url>
-  <url>
     <loc>https://rdrn.me/lighting-the-world/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/rudderless-richtersveld/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/summer-in-europe/</loc>
-  </url>
-  <url>
-    <loc>https://rdrn.me/population-dynamics/</loc>
   </url>
   <url>
     <loc>https://rdrn.me/music-app-for-me/</loc>
   </url>
   <url>
+    <loc>http://rdrn.me/about/</loc>
+  </url>
+  <url>
     <loc>https://rdrn.me/leaflet-gsheets/leaflet-gsheets.html</loc>
   </url>
   <url>
-    <loc>https://rdrn.me/about/</loc>
+    <loc>http://rdrn.me/assets/pdf/cv.pdf</loc>
   </url>
   <url>
-    <loc>https://rdrn.me/assets/pdf/cv.pdf</loc>
+    <loc>http://rdrn.me/python-mapping-automatic-updating/</loc>
+  </url>
+  <url>
+    <loc>http://rdrn.me/visualizing-book-club-ai/</loc>
+  </url>
+  <url>
+    <loc>http://rdrn.me/lighting-the-world/</loc>
+  </url>
+  <url>
+    <loc>http://rdrn.me/music-app-for-me/</loc>
   </url>
 </urlset>
