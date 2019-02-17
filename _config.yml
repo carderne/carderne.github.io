@@ -15,12 +15,16 @@ description              : "A blog for adventurous trip reports, explorations of
 url                      : "https://rdrn.me"
 home                     : "/"
 avatar                   : "/assets/images/face.png" 
-  
+
+plugins:
+  - jekyll-sitemap
+
 # Reading Files
 exclude:
   - .sass-cache
   - Gemfile
   - LICENSE
+  - create-sitemap.sh
 keep_files:
   - .git
 encoding: "utf-8"
