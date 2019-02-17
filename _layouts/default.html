@@ -8,22 +8,12 @@ layout: compress
     <meta charset="utf-8">
 
     {%- assign seo_url = site.url | append: site.baseurl -%}
-
-    {% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
-
-    {%- if page.title -%}
-      {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
-    {%- endif -%}
-    {%- if seo_title -%}
-      {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
-    {%- endif -%}
-
+    {% assign title_separator = '-' %}
+    {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
+    {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
     {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
-
     {%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
-    {%- if seo_description -%}
-      {%- assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once -%}
-    {%- endif -%}
+    {%- assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once -%}
 
     {%- if page.date -%}
       {%- assign og_type = "article" -%}
@@ -31,7 +21,7 @@ layout: compress
       {%- assign og_type = "website" -%}
     {%- endif -%}
 
-    <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
+    <title>{{ seo_title }}</title>
     <meta name="description" content="{{ seo_description }}">
 
     <meta property="og:type" content="{{ og_type }}">
@@ -50,22 +40,50 @@ layout: compress
 
     <link rel="canonical" href="{{ canonical_url }}">
 
-    {% if paginator.previous_page %}
-      <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
-    {% endif %}
-    {% if paginator.next_page %}
-      <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
-    {% endif %}
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   </head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  <body class="layout--{{ page.layout | default: layout.layout }}">
 
     <div class="initial-content">
-      {{ content }}
+        <div id="main" role="main">
+            <div class="sidebar sticky">
+              {% assign author = site.author %}
+              <div itemscope itemtype="https://schema.org/Person">
+            
+                <div class="author__avatar">
+                  {% assign author_src = site.avatar | relative_url %}
+                  {% assign author_link = site.home | relative_url %}
+                  <a href="{{ author_link }}">
+                    <img src="{{ author_src }}" alt="{{ site.title }}" itemprop="image">
+                  </a>
+                </div>
+            
+                <div class="author__content">
+                  <a href="{{ author_link }}"><h4 class="author__name" itemprop="name">{{ site.title }}</h4></a>
+                  <div id="icons">
+                    <a href="mailto:chris@rdrn.me"><i class="fa fa-envelope-square"></i></a>
+                    <a href="https://www.linkedin.com/in/chris-arderne" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://github.com/carderne" target="_blank"><i class="fa fa-github-square"></i></a>
+                  </div> 
+                </div>
+            
+                <div class="navigation">
+                  <a href="/"><h5>Home</h5></a>
+                  <a href="/about"><h5>About</h5></a>
+                </div>
+                
+                <p id="author__bio" itemprop="description">
+                  {{ site.description }}
+                </p>
+            
+              </div>
+            </div>
+
+          {{ content }}
+        </div>
     </div>
 
   </body>
