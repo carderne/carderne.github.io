@@ -29,10 +29,7 @@
 
     &.sticky {
       overflow-y: hidden;
-      /* calculate height of nav list
-         viewport height - nav height - masthead x-padding
-      */
-      height: calc(100vh - #{$nav-height} - 2em);
+      height: calc(100vh - #{$nav-height});
     }
   }
 
@@ -72,58 +69,13 @@
   }
 }
 
-.sidebar__right {
-  margin-bottom: 1em;
-
-  @include lg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: $right-sidebar-width-narrow;
-    margin-right: -1 * $right-sidebar-width-narrow;
-    padding-left: 1em;
-    z-index: 10;
-
-    &.sticky {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 2em;
-      float: right;
-    }
-  }
-
-  @include xl {
-    width: $right-sidebar-width;
-    margin-right: -1 * $right-sidebar-width;
-  }
-}
-
-.splash .sidebar__right {
-  @include lg {
-    position: relative;
-    float: right;
-    margin-right: 0;
-  }
-
-  @include xl {
-    margin-right: 0;
-  }
-}
-
-/*
-   Author profile and links
-   ========================================================================== */
-
 .author__avatar {
   display: block;
   width: 10em;
-  // padding-left: 2em;
-  // padding-right: 2em;
   margin: auto;
 
   img {
     max-width: 9em;
-    //border-radius: 50%;
   }
 }
 
@@ -177,34 +129,6 @@
   @include lg {
     margin-top: 10px;
     margin-bottom: 20px;
-  }
-}
-
-.author__urls-wrapper {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: $sans-serif;
-  z-index: 10;
-  position: relative;
-  cursor: pointer;
-
-  li:last-child {
-    a {
-      margin-bottom: 0;
-    }
-  }
-
-  @include lg {
-    display: block;
-  }
-
-  button {
-    margin-bottom: 0;
-
-    @include lg {
-      display: none;
-    }
   }
 }
 

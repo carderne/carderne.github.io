@@ -2,17 +2,14 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
-@mixin clearfix {
+#main {
   clear: both;
   &::after {
     clear: both;
     content: "";
     display: table;
   }
- }
 
-#main {
-  @include clearfix;
   padding-top: 1em;
   margin-left: 0;
   margin-right: auto;
@@ -37,12 +34,10 @@
   @include lg {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    //padding-right: $right-sidebar-width-narrow;
   }
 
   @include xl {
     width: calc(100% - #{$right-sidebar-width});
-    //padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -138,10 +133,6 @@
   color: #888;
 }
 
-/*
-   Page taxonomy
-   ========================================================================== */
-
 .page__taxonomy {
   .sep {
     display: none;
@@ -169,8 +160,4 @@
 	border-radius:0.25em;
 	-moz-border-radius: 0.25em;
 	-webkit-border-radius: 0.25em;
-}
-
-.page__taxonomy-item {
-  margin-left: 0.5em
 }
