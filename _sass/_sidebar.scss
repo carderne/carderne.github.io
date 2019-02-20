@@ -73,10 +73,7 @@
   display: block;
   width: 10em;
   margin: auto;
-
-  img {
-    max-width: 9em;
-  }
+  max-width: 9em;
 }
 
 .author__content {
@@ -84,7 +81,7 @@
   text-align: center;
   padding-left: 15px;
   padding-right: 25px;
-  line-height: 1;
+  line-height: 0;
 
   @include lg {
     display: block;
@@ -102,33 +99,30 @@
 
 .author__name {
   margin: 0;
+  font-size: $type-size-3;
+}
 
-  @include lg {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.icon {
+  font-size: 1.4em;
+  color: #737c7f;
+
+  &:hover {
+    color: black;
   }
 }
-.sidebar .author__name {
-  font-family: $sans-serif;
-  font-size: $type-size-3;
-}
 
-.navigation a {
+.author__content h5 {
   text-align: center;
-  color: #3a4549;
-  font-size: $type-size-3;
+  color: #737c7f;
+  font-size: $type-size-4;
+  margin-top:-15px;
   @include lg {
     text-align: unset;
   }
-}
 
-#author__bio {
-  margin: 0;
-  font-size: $type-size-5;
-
-  @include lg {
-    margin-top: 10px;
-    margin-bottom: 20px;
+  &:hover {
+    text-decoration: underline;
+    color: black;
   }
 }
 
@@ -143,3 +137,46 @@
     }
   }
 }
+
+/* ==========================================================================
+   FONT AWESOME
+   ========================================================================== */
+
+   @font-face {
+    font-family: 'fa';
+    src: url('../font/fa.eot?93019596');
+    src: url('../font/fa.eot?93019596#iefix') format('embedded-opentype'),
+          url('../font/fa.woff2?93019596') format('woff2'),
+          url('../font/fa.woff?93019596') format('woff'),
+          url('../font/fa.ttf?93019596') format('truetype'),
+          url('../font/fa.svg?93019596#fa') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fa";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+  
+    font-variant: normal;
+    text-transform: none;
+  
+    line-height: 0.5em;
+    margin-left: .2em;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
+    
+  .icon-mail:before { content: '\e800'; }
+  .icon-github-circled:before { content: '\f09b'; }
+  .icon-li:before { content: '\f0e1'; }
