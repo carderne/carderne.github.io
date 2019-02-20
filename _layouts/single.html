@@ -10,7 +10,9 @@ layout: default
 
   <div class="page__inner-wrap">
     <header>
-      <span class="page__date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B %Y" }}</time></span>
+      {%- if page.date -%}
+        <span class="page__date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B %Y" }}</time></span>
+      {%- endif -%}
       
       {% capture page_tags %}{% for tag in page.tags %}{{ tag | downcase }}#{{ tag }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
       {% assign tag_hashes = page_tags | split: ',' | sort %}
