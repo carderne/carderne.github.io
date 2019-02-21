@@ -45,25 +45,26 @@ layout: compress
   </head>
 
   <body>
-    <div id="main" role="main">
-        <div class="sidebar sticky">
-          {% assign author = site.author %}
-          <div itemscope itemtype="https://schema.org/Person">
-            <img src="{{ site.avatar }}" alt="{{ site.title }}" class="author__avatar" itemprop="image">
-            <div class="author__content">
-              <h4 class="author__name" itemprop="name">{{ site.title }}</h4>
-              <a href="/"><h5>Home</h5></a>
-              <a href="/about"><h5>About</h5></a>
-              <a href="/books"><h5>Books</h5></a>
-              <a href="mailto:chris@rdrn.me"><i class="icon icon-mail"></i></a>
-              <a href="https://www.linkedin.com/in/chris-arderne" target="_blank"><i class="icon icon-li"></i></a>
-              <a href="https://github.com/carderne" target="_blank"><i class="icon icon-github-circled"></i></a>
-            </div>
-
+    <div class="main" role="main">
+      <div class="sidebar sticky">
+        {% assign author = site.author %}
+        <div itemscope itemtype="https://schema.org/Person">
+          <img src="{{ site.avatar }}" alt="{{ site.title }}" class="author-avatar" itemprop="image">
+          <div class="author-content">
+            <h4 itemprop="name">{{ site.title }}</h4>
+            <a href="/"><h5>Home</h5></a>
+            <a href="/about"><h5>About</h5></a>
+            <a href="/books"><h5>Books</h5></a>
+            <a href="mailto:chris@rdrn.me"><i class="icon icon-mail"></i></a>
+            <a href="https://www.linkedin.com/in/chris-arderne" target="_blank"><i class="icon icon-li"></i></a>
+            <a href="https://github.com/carderne" target="_blank"><i class="icon icon-github-circled"></i></a>
           </div>
-        </div>
 
-      {{ content }}
+        </div>
+      </div>
+      <div class="body">
+          {{ content }}
+      </div>
     </div>
   </body>
 </html>

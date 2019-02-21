@@ -2,20 +2,16 @@
 layout: default
 ---
 
-<div class="archive">
-  {% for post in site.posts %}
-    {% unless post.exclude %} 
-      
-      <div class="{{ include.type | default: "list" }}__item">
-        <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-          <h2 class="archive__item-title" itemprop="headline">
-            <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
-          </h2>
-          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify |  truncate: 250 }}</p>
-          <p class="archive__item-date"> <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%e %B %Y" }}</time></p>
-        </article>
-      </div>
+{% for post in site.posts %}
+  {% unless post.exclude %} 
+    
+    <article class="archive-item" itemscope itemtype="https://schema.org/CreativeWork">
+      <h2 class="archive-item-title" itemprop="headline">
+        <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+      </h2>
+      <p class="archive-item-excerpt" itemprop="description">{{ post.excerpt | markdownify |  truncate: 250 }}</p>
+      <p class="archive-item-date"> <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%e %B %Y" }}</time></p>
+    </article>
 
-    {% endunless %}
-  {% endfor %}
-</div>
+  {% endunless %}
+{% endfor %}
