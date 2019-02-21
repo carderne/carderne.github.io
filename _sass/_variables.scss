@@ -97,7 +97,7 @@ $base0f: #ff5370 !default;
 $small: 600px !default;
 $medium: 768px !default;
 $large: 1024px !default;
-$x-large: 1280px !default;
+$x-large: 1500px !default;
 
 @mixin sm {
    @media (min-width: #{$small}) {

@@ -24,11 +24,11 @@
   @include lg {
     padding-top: calc(100vh - 100%);
     margin-top: 2em;
-    margin-left: calc(0.5 * #{$sidebar-width});
+    margin-left: calc(0.2 * #{$sidebar-width});
   }
 
   @include xl {
-    max-width: $x-large;
+    margin-left: calc(50% - #{$body-width}/2 - #{$sidebar-width});
   }
 }
 
@@ -41,6 +41,7 @@
   @include lg {
     margin-top: 0;
     width: calc(100% - #{$sidebar-width});
+    max-width: $body-width;
   }
 }
 
