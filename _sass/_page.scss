@@ -11,7 +11,7 @@
   }
 
   padding-top: 1em;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
@@ -23,10 +23,12 @@
 
   @include lg {
     padding-left: 1em;
+    margin-left: calc(0.5 * #{$right-sidebar-width-narrow});
   }
 
   @include xl {
     max-width: $x-large;
+    margin-left: calc(0.5 * #{$right-sidebar-width});
   }
 }
 

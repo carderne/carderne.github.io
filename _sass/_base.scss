@@ -26,15 +26,15 @@ html {
   -ms-text-size-adjust: 100%;
 
   position: relative;
-min-height: 100%;
+  min-height: 100%;
 }
    
 body {
-margin: 0;
-padding: 0;
-color: $text-color;
-font-family: $global-font-family;
-line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-family: $global-font-family;
+  line-height: 1.5;
   &.overflow--hidden {
     overflow: hidden;
   }
@@ -92,7 +92,7 @@ a:active {
 }
 
 a:hover {
-text-decoration:underline;
+  text-decoration:underline;
 }
 
 /* Prevent sub and sup affecting line-height in all browsers */
