@@ -41,7 +41,15 @@ layout: compress
     <link rel="canonical" href="{{ canonical_url }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" type="text/css">
+
+    {% capture styles %}
+      {% include style.scss %}
+    {% endcapture %}
+
+    <style>
+      {{ styles | scssify }}
+    </style>
+
   </head>
 
   <body>
