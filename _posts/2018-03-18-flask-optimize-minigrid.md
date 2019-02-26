@@ -7,7 +7,7 @@ tags:
 - inside
 ---
 
-As part of ongoing work on energy access in Tanzania, we (the [IFC](https://www.ifc.org), together with Tanzania's Rural Energy Agency) have mapped over 4 million buildings in rural parts of the country. This gives loads of [new possibilities](https://rdrn.me/tanzaniamapping/) to those looking to work in these areas, and not only in the energy sector. One of these is the ability to conduct detailed site assessments, including sensible estimates of household populations and potential demand,along with wiring requirements to connect a village.
+As part of ongoing work on energy access in Tanzania, we (the [IFC](https://www.ifc.org), together with Tanzania's Rural Energy Agency) have mapped over 4 million buildings in rural parts of the country. This gives loads of [new possibilities](https://tzmapping.github.io/) to those looking to work in these areas, and not only in the energy sector. One of these is the ability to conduct detailed site assessments, including sensible estimates of household populations and potential demand,along with wiring requirements to connect a village.
 
 Apart from  the potential for use in state planning for new grid extensions,this data is valuable to private developers looking to sell off-grid services such as stand-alone solar systems (such as those sold by [M-Kopa](https://www.bloomberg.com/features/2015-mkopa-solar-in-africa/) as well as more capital intensive mini-grid systems (with a power source and grid connecting households, but no connection to the national grid), which [some suggest](https://www.greentechmedia.com/articles/read/minigrids-are-the-cheapest-way-to-electrify-100-million-africans-today) are a key to tackling energy access issues.
 
