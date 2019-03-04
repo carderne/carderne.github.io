@@ -11,11 +11,11 @@ A lot of the work I do relates to finding the cost-optimal of bringing electrici
 
 One method for guessing (dare I call it a heuristic?) is using NASA's [Night Time Lights](https://www.nasa.gov/feature/goddard/2017/new-night-lights-maps-open-up-possible-real-time-applications) satellite imagery - processed satellite photographs taken at 2 a.m. around the world. The hypothesis is that locations that show up at night (once filtered of reflections and fires), are places that have electricity access. And places that have electricity access (by and large) get it from electrical grid infrastructure. As you can imagine, it takes a bit of light to be visible from space, so a few small lamps and phone chargers powered by off-grid PV are unlikely to show up and break our assumption.
 
-The steps to get from this assumption to a made-up map of medium voltage grid lines is as follows. (As always, skip over to the GitHub repo if you prefer: [https://github.com/carderne/gridfinder](https://github.com/carderne/gridfinder).)
+The steps to get from this assumption to a made-up map of medium voltage grid lines is as follows. (As always, skip over to the GitHub repo if you prefer: [https://github.com/carderne/gridfinder](https://github.com/carderne/gridfinder).) This method is based on [this](https://code.fb.com/connectivity/electrical-grid-mapping/) blog post from Facebook.
 
 ## From satellite imagery to a target and costs
 
-Firstly, we combine a range of monthly satellite images to average out any aberrations. I took a year's worth, but you could easily do more. By taking the *x*th percentile for each pixel, we ensure that only those places that are lit up that percentage of the time are included. So a fire that burned for two months is excluded from the final product. We should also filter for things like water features, which can have reflections of the moon, but it seems like NASA has already done a decent job of cleaning up this stuff. The result of that process is the image below (for Uganda).
+Firstly, we combine a range of monthly satellite images to average out any aberrations. By taking the *x*th percentile for each pixel, we ensure that only those places that are lit up that percentage of the time are included. So a fire that burned for two months is excluded from the final product. We should also filter for things like water features, which can have reflections of the moon, but it seems like NASA has already done a decent job of cleaning up this stuff. The result of that process is the image below (for Uganda).
 
 ![Merged NTL](/assets/images/2019/gf1.png)
 
@@ -29,7 +29,7 @@ So now we have the two inputs needed to algorithmically 'create' a Ugandan grid 
 
 ## So many algorithms to choose from
 
-Minimum spanning trees have had a lot of interest over the years as a problem in network theory, with many different solutions proposed, each with its own uses and drawbacks in speed and complexity. For this I used Djikstra's, because it's one of the simplest to implement. Basically, it goes as follows:
+Minimum spanning trees have had a lot of interest over the years as a problem in network theory, with many different solutions proposed, each with its own uses and drawbacks in speed and complexity. For this we use Djikstra's, because it's one of the simplest to implement. Basically, it goes as follows:
 
 1) Start at a connected point.  
 2) Branch outward (typically along network edges, but in this case between raster cells) keeping track of the cost as the total distance to a known connected location, adding each cell to the queue as we go.  
