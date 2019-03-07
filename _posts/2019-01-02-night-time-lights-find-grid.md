@@ -29,7 +29,7 @@ So now we have the two inputs needed to algorithmically 'create' a Ugandan grid 
 
 ## So many algorithms to choose from
 
-Minimum spanning trees have had a lot of interest over the years as a problem in network theory, with many different solutions proposed, each with its own uses and drawbacks in speed and complexity. For this we use Djikstra's, because it's one of the simplest to implement. Basically, it goes as follows:
+Minimum spanning trees have had a lot of interest over the years as a problem in network theory, with many different solutions proposed, each with its own uses and drawbacks in speed and complexity. For this we use Dijkstra's, because it's one of the simplest to implement. Basically, it goes as follows:
 
 1) Start at a connected point.  
 2) Branch outward (typically along network edges, but in this case between raster cells) keeping track of the cost as the total distance to a known connected location, adding each cell to the queue as we go.  
