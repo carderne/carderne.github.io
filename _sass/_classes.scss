@@ -16,15 +16,9 @@
   padding-left: 0.3em;
   padding-right: 0.3em;
 
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-
   @include lg {
     padding-left: 1em;
     padding-right: 1em;
-    // padding-top: calc(100vh - 100%);
     margin-top: 2em;
     margin-left: calc(0.2 * #{$sidebar-width});
   }
@@ -243,13 +237,6 @@
     border-bottom: 0;
     float: left;
     width: calc(#{$sidebar-width} - 1em);
-    opacity: 0.8;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 
   h4, h5 {
