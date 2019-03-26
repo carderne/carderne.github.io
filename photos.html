@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="photos">
+  {% for photo in site.data.photos %}
+  {% assign a = photo.src | split: '/20' %}
+  {% assign id = a[1] | split: '.' %}
+  {% assign id = id[0] %}
+  <div class="thumb">
+    <label for={{ id }}>
+      <img class="thumb-image" src={{ photo.src }} alt={{ photo.caption }}>
+      <div class="caption">
+        <span class="photo-date">{{ photo.date }} </span>
+        <span class="photo-caption">{{ photo.caption }}</span>
+      </div>
+    </label>
+    <input class="modal-state" id={{ id }} type="checkbox">
+    <div class="modal">
+      <label for={{ id }}>
+        <div class="modal-content">
+          <img class="modal-photo" src={{ photo.src }} alt={{ photo.caption }}>
+          <div>
+            <span class="photo-date">{{ photo.date }} </span>
+            <span class="photo-caption">{{ photo.caption }}</span>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+  {% endfor %}
+</div>

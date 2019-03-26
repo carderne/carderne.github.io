@@ -15,6 +15,7 @@
   margin-right: auto;
   padding-left: 0.3em;
   padding-right: 0.3em;
+  padding-bottom: 0.4em;
 
   @include lg {
     padding-left: 1em;
@@ -223,6 +224,117 @@
   height: 12px;
   display: inline-block;
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuMzA5IDkuMjJMMi40MDkgMTJsMS40NC00LjU2N0wwIDQuNTgzbDQuNzg4LS4wNDJMNi4zMDggMCA3LjgzIDQuNTRsNC43ODkuMDQ0LTMuODUgMi44NDlMMTAuMjA5IDEyeiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+);
+}
+
+/* ==========================================================================
+  PHOTOS
+========================================================================== */
+
+.photos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: 30vh;
+}
+
+.thumb {
+    position: relative;
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    background:#000
+}
+
+.thumb .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(100,100,100,0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.thumb .thumb-image {
+    display: block;
+    object-fit: cover;
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.photo-date {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.photo-caption {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 30px;
+}
+
+.modal-content .photo-date,
+.modal-content .photo-caption {
+    width: 80%;
+    margin-left: -40%;
+    color: #fff;
+    opacity: 1;
+    left: 50%;
+    text-align: center;
+    @include md {
+        width: 600px;
+	margin-left: -300px;
+    }
+}
+
+.thumb:hover div {
+    opacity: 1;
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .8);
+  transition: opacity .25s ease;
+  z-index: 99;
+}
+
+.modal-content {
+	width: 100%;
+	height: 100%;
+}
+
+.modal-photo {
+   width: 70%;
+   max-height: 80%;
+   position: absolute;
+   left: 50%;
+   top: 10%; 
+   margin-left: -35%;
+   object-fit: cover;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* ==========================================================================
