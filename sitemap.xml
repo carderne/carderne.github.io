@@ -12,7 +12,7 @@
     <lastmod>2019-03-02T00:00:00+01:00</lastmod>
   </url>
   <url>
-    <loc>{{ 'couscous/' | absolute_url }}<loc>
+    <loc>{{ 'couscous/' | absolute_url }}</loc>
     <lastmod>2019-03-22T00:00:00+01:00</lastmod>
   </url>
 
