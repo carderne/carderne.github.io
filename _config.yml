@@ -8,7 +8,7 @@ home                     : "/"
 avatar                   : "/assets/images/face.jpg" 
 
 plugins:
-  - jekyll-sitemap
+#  - jekyll-sitemap
   - jekyll-feed
 
 # Reading Files
