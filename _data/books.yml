@@ -1,3 +1,11 @@
+- author: Husain Haddawy
+  date: '2019-04-01'
+  rating: 4
+  title: The Arabian Nights
+- author: Laurence Housman
+  date: '2019-03-15'
+  rating: 4
+  title: Sindbad the Sailor and Other Stories from The Arabian Nights
 - author: Peter Snow
   date: '2019-02-14'
   rating: 3
@@ -290,6 +298,10 @@
   date: '2017-09-05'
   rating: 5
   title: 'Understanding Power: The Indispensable Chomsky'
+- author: Amitav Ghosh
+  date: '2017-08-28'
+  rating: 5
+  title: The Hungry Tide
 - author: Joseph E. Stiglitz
   date: '2017-08-28'
   rating: 3
@@ -299,10 +311,6 @@
   rating: 4
   title: 'The Tyranny of Experts: Economists, Dictators, and the Forgotten Rights
     of the Poor'
-- author: Amitav Ghosh
-  date: '2017-08-28'
-  rating: 5
-  title: The Hungry Tide
 - author: Mark Helprin
   date: '2017-08-03'
   rating: 4
@@ -1090,14 +1098,14 @@
   date: '2013-03-22'
   rating: 4
   title: The Wonderful Story of Henry Sugar and Six More
-- author: Stendhal
-  date: '2013-02-13'
-  rating: 2
-  title: 'Cures for Love  (Great Loves, #5)'
 - author: Giacomo Casanova
   date: '2013-02-13'
   rating: 4
   title: 'Of Mistresses, Tigresses and Other Conquests (Great Loves, #4)'
+- author: Stendhal
+  date: '2013-02-13'
+  rating: 2
+  title: 'Cures for Love  (Great Loves, #5)'
 - author: Salman Rushdie
   date: '2013-01-14'
   rating: 5
@@ -1313,18 +1321,18 @@
   date: '2011-01-01'
   rating: 4
   title: 'The Clan of the Cave Bear (Earth''s Children, #1)'
-- author: Richard Dawkins
-  date: '2011-01-01'
-  rating: 4
-  title: 'The Greatest Show on Earth: The Evidence for Evolution'
-- author: Oscar Wilde
-  date: '2011-01-01'
-  rating: 5
-  title: The Picture of Dorian Gray
 - author: Leo Tolstoy
   date: '2011-01-01'
   rating: 5
   title: Anna Karenina
+- author: Oscar Wilde
+  date: '2011-01-01'
+  rating: 5
+  title: The Picture of Dorian Gray
+- author: Richard Dawkins
+  date: '2011-01-01'
+  rating: 4
+  title: 'The Greatest Show on Earth: The Evidence for Evolution'
 - author: Stephen Hawking
   date: '2011-01-01'
   rating: 4
@@ -1345,10 +1353,10 @@
   date: '2011-01-01'
   rating: 5
   title: Slaughterhouse-Five
-- author: Markus Zusak
+- author: Stieg Larsson
   date: '2011-01-01'
-  rating: 3
-  title: The Book Thief
+  rating: 2
+  title: 'The Girl Who Kicked the Hornet''s Nest (Millennium, #3)'
 - author: John Steinbeck
   date: '2011-01-01'
   rating: 5
@@ -1388,7 +1396,7 @@
 - author: Stieg Larsson
   date: '2011-01-01'
   rating: 2
-  title: 'The Girl Who Kicked the Hornet''s Nest (Millennium, #3)'
+  title: 'The Girl Who Played with Fire (Millennium, #2)'
 - author: Hermann Hesse
   date: '2011-01-01'
   rating: 4
@@ -1405,10 +1413,10 @@
   date: '2011-01-01'
   rating: 1
   title: Bossypants
-- author: Christopher Hitchens
+- author: Markus Zusak
   date: '2011-01-01'
-  rating: 4
-  title: 'God is Not Great: How Religion Poisons Everything'
+  rating: 3
+  title: The Book Thief
 - author: Hugh Williams
   date: '2011-01-01'
   rating: 3
@@ -1421,10 +1429,10 @@
   date: '2011-01-01'
   rating: 3
   title: 'The Bad Beginning (A Series of Unfortunate Events, #1)'
-- author: Stieg Larsson
+- author: Christopher Hitchens
   date: '2011-01-01'
-  rating: 2
-  title: 'The Girl Who Played with Fire (Millennium, #2)'
+  rating: 4
+  title: 'God is Not Great: How Religion Poisons Everything'
 - author: Malcolm Gladwell
   date: '2011-01-01'
   rating: 3
