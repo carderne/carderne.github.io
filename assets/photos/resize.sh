@@ -1,20 +1,9 @@
-#!/usr/bin/env bash
-# Batch image resizer
+#!/bin/bash
 
-# absolute path to image folder
-FOLDER="."
-
-# max height
-WIDTH=1600
-
-# max width
-HEIGHT=1600
-
-#resize png or jpg to either height or width, keeps proportions using imagemagick
-#find ${FOLDER} -iname '*.jpg' -o -iname '*.png' -exec convert \{} -verbose -resize $WIDTHx$HEIGHT\> \{} \;
-
-#resize png to either height or width, keeps proportions using imagemagick
-#find ${FOLDER} -iname '*.png' -exec convert \{} -verbose -resize $WIDTHx$HEIGHT\> \{} \;
-
-#resize jpg only to either height or width, keeps proportions using imagemagick
-find ${FOLDER} -maxdepth 1 -iname '*.jpg' -exec convert \{} -verbose -quality 70 -resize $WIDTHx$HEIGHT\> \{} \;
+for f in originals/*.jpg; do
+    name=$(echo $f | sed -r "s/.+\/(.+)\..+/\1/");
+    out=$name.jpg
+    if [ ! -f $out ]; then
+        convert $f -resize 1600x1600 -quality 70 $out
+    fi
+done
