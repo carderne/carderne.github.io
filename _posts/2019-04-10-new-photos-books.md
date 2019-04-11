@@ -2,7 +2,7 @@
 layout: single
 title: "New sections for photos and books"
 date: "2019-04-10"
-excerpt: "A added two new sections to this site, one for photos and the other for books. And some couscous for good measure. Have a look!"
+excerpt: "I added two new sections to this site, one for photos and the other for books. And some couscous for good measure. Have a look!"
 tags:
 - inside
 ---
