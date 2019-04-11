@@ -1,3 +1,7 @@
+- author: Yan Lianke
+  date: '2019-04-11'
+  rating: 4
+  title: The Day the Sun Died
 - author: Husain Haddawy
   date: '2019-04-01'
   rating: 4
@@ -202,14 +206,14 @@
   date: '2018-03-13'
   rating: 5
   title: The Bad Girl
-- author: Ahmed Saadawi
-  date: '2018-03-09'
-  rating: 4
-  title: Frankenstein in Baghdad
 - author: Warren Ingram
   date: '2018-03-09'
   rating: 1
   title: Become Your Own Financial Advisor
+- author: Ahmed Saadawi
+  date: '2018-03-09'
+  rating: 4
+  title: Frankenstein in Baghdad
 - author: Cal Newport
   date: '2018-03-06'
   rating: 3
@@ -298,6 +302,11 @@
   date: '2017-09-05'
   rating: 5
   title: 'Understanding Power: The Indispensable Chomsky'
+- author: William Easterly
+  date: '2017-08-28'
+  rating: 4
+  title: 'The Tyranny of Experts: Economists, Dictators, and the Forgotten Rights
+    of the Poor'
 - author: Amitav Ghosh
   date: '2017-08-28'
   rating: 5
@@ -306,11 +315,6 @@
   date: '2017-08-28'
   rating: 3
   title: Globalization and Its Discontents
-- author: William Easterly
-  date: '2017-08-28'
-  rating: 4
-  title: 'The Tyranny of Experts: Economists, Dictators, and the Forgotten Rights
-    of the Poor'
 - author: Mark Helprin
   date: '2017-08-03'
   rating: 4
