@@ -38,21 +38,6 @@ body {
   font-family: $global-font-family;
   line-height: 1.5;
 }
-   
-/* Selected elements */
-::-moz-selection {
-  color: #fff;
-  background: #000;
-}
-::selection {
-  color: #fff;
-  background: #000;
-}
-
-/* Prevents modern browsers from displaying 'audio' without controls */
-audio:not([controls]) {
-  display: none;
-}
 
 a {
   color: $link-color;
@@ -61,10 +46,10 @@ a {
 }
    
 /* Remove outline from links */
-a:hover,
-a:active {
-  outline: 0;
-}
+//a:hover,
+//a:active {
+  //outline: 0;
+//}
 
 a:hover {
   text-decoration:underline;
@@ -87,16 +72,11 @@ sub {
   bottom: -0.25em;
 }
 
-/* img border in anchor's and image quality */
 img {
-  /* Responsive images (ensure images don't scale beyond their parents) */
-  max-width: 100%; /* part 1: Set a maximum relative to the parent*/
-  width: auto\9; /* IE7-8 need help adjusting responsive images*/
-  height: auto; /* part 2: Scale the height according to the width, otherwise you get stretching*/
-
+  max-width: 100%;
+  height: auto;
   vertical-align: middle;
   border: 0;
-  -ms-interpolation-mode: bicubic;
 }
 
 h1,
@@ -155,20 +135,6 @@ ins {
 
 del a {
   color: inherit;
-}
-
-/* reduce orphans and widows when printing */
-p,
-pre,
-blockquote,
-ul,
-ol,
-dl,
-figure,
-table,
-fieldset {
-  orphans: 3;
-  widows: 3;
 }
 
 /* blockquotes */

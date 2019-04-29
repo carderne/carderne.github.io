@@ -1,3 +1,7 @@
+- author: Gerald Durrell
+  date: '2019-04-29'
+  rating: 4
+  title: My Family and Other Animals
 - author: Yan Lianke
   date: '2019-04-11'
   rating: 4
@@ -206,14 +210,14 @@
   date: '2018-03-13'
   rating: 5
   title: The Bad Girl
-- author: Warren Ingram
-  date: '2018-03-09'
-  rating: 1
-  title: Become Your Own Financial Advisor
 - author: Ahmed Saadawi
   date: '2018-03-09'
   rating: 4
   title: Frankenstein in Baghdad
+- author: Warren Ingram
+  date: '2018-03-09'
+  rating: 1
+  title: Become Your Own Financial Advisor
 - author: Cal Newport
   date: '2018-03-06'
   rating: 3
@@ -492,12 +496,12 @@
   title: 'Paradiso (The Divine Comedy, #3)'
 - author: Rudyard Kipling
   date: '2016-07-25'
-  rating: 4
-  title: The Second Jungle Book
-- author: Rudyard Kipling
-  date: '2016-07-25'
   rating: 0
   title: In the Rukh
+- author: Rudyard Kipling
+  date: '2016-07-25'
+  rating: 4
+  title: The Second Jungle Book
 - author: Rudyard Kipling
   date: '2016-07-20'
   rating: 4
@@ -852,14 +856,14 @@
   date: '2014-05-07'
   rating: 5
   title: War and Peace
-- author: Benjamin Hoff
-  date: '2014-04-26'
-  rating: 1
-  title: The Tao of Pooh
 - author: Charles C. Mann
   date: '2014-04-26'
   rating: 5
   title: '1493: Uncovering the New World Columbus Created'
+- author: Benjamin Hoff
+  date: '2014-04-26'
+  rating: 1
+  title: The Tao of Pooh
 - author: Jonathan Swift
   date: '2014-04-24'
   rating: 3
