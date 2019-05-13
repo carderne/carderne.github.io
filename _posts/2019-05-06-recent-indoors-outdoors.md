@@ -12,7 +12,7 @@ A few days ago I found this [cool library](https://github.com/ColCarroll/ridge_m
 
 ![cape1](/assets/images/2019/cape1.png)
 
-In the meantime, my blog post about our work with gridfinder finally got published on the World Bank blogs website: [see here](http://blogs.worldbank.org/energy/using-night-lights-map-electrical-grid-infrastructure). I'm currently working with some very smart people from inside out outside the World Bank on extending this work to more countries and more uses. Hope to share an update here before too long.
+In the meantime, my blog post about our work with gridfinder finally got published on the World Bank blogs website: [see here](http://blogs.worldbank.org/energy/using-night-lights-map-electrical-grid-infrastructure). I'm currently working with some very smart people from inside and outside the World Bank on extending this work to more countries and more uses. Hope to share an update here before too long.
 
 ![gridfinder](http://blogs.worldbank.org/energy/files/energy/fig2_uganda_animated.gif)
 
