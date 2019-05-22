@@ -1,3 +1,7 @@
+- author: Terry Pratchett
+  date: '2019-05-22'
+  rating: 5
+  title: Good Omens
 - author: Edgar Allan Poe
   date: '2019-05-13'
   rating: 4
@@ -214,14 +218,14 @@
   date: '2018-03-13'
   rating: 5
   title: The Bad Girl
-- author: Ahmed Saadawi
-  date: '2018-03-09'
-  rating: 4
-  title: Frankenstein in Baghdad
 - author: Warren Ingram
   date: '2018-03-09'
   rating: 1
   title: Become Your Own Financial Advisor
+- author: Ahmed Saadawi
+  date: '2018-03-09'
+  rating: 4
+  title: Frankenstein in Baghdad
 - author: Cal Newport
   date: '2018-03-06'
   rating: 3
@@ -298,39 +302,39 @@
   date: '2017-09-13'
   rating: 4
   title: A Universal History of Infamy
-- author: Max Du Preez
-  date: '2017-09-11'
-  rating: 3
-  title: 'Of Warriors, Lovers and Prophets: Unusual Stories from South Africa''s Past'
 - author: Peter Moskowitz
   date: '2017-09-11'
   rating: 3
   title: 'How to Kill a City: Gentrification, Inequality, and the Fight for the Neighborhood'
+- author: Max Du Preez
+  date: '2017-09-11'
+  rating: 3
+  title: 'Of Warriors, Lovers and Prophets: Unusual Stories from South Africa''s Past'
 - author: Noam Chomsky
   date: '2017-09-05'
   rating: 5
   title: 'Understanding Power: The Indispensable Chomsky'
+- author: Amitav Ghosh
+  date: '2017-08-28'
+  rating: 5
+  title: The Hungry Tide
 - author: William Easterly
   date: '2017-08-28'
   rating: 4
   title: 'The Tyranny of Experts: Economists, Dictators, and the Forgotten Rights
     of the Poor'
-- author: Amitav Ghosh
-  date: '2017-08-28'
-  rating: 5
-  title: The Hungry Tide
 - author: Joseph E. Stiglitz
   date: '2017-08-28'
   rating: 3
   title: Globalization and Its Discontents
-- author: Mark Helprin
-  date: '2017-08-03'
-  rating: 4
-  title: Winter's Tale
 - author: Isaac Asimov
   date: '2017-08-03'
   rating: 3
   title: The Gods Themselves
+- author: Mark Helprin
+  date: '2017-08-03'
+  rating: 4
+  title: Winter's Tale
 - author: Isaac Asimov
   date: '2017-07-22'
   rating: 3
@@ -860,14 +864,14 @@
   date: '2014-05-07'
   rating: 5
   title: War and Peace
-- author: Charles C. Mann
-  date: '2014-04-26'
-  rating: 5
-  title: '1493: Uncovering the New World Columbus Created'
 - author: Benjamin Hoff
   date: '2014-04-26'
   rating: 1
   title: The Tao of Pooh
+- author: Charles C. Mann
+  date: '2014-04-26'
+  rating: 5
+  title: '1493: Uncovering the New World Columbus Created'
 - author: Jonathan Swift
   date: '2014-04-24'
   rating: 3
@@ -1058,14 +1062,14 @@
   date: '2013-05-24'
   rating: 5
   title: Christabel
-- author: John Updike
-  date: '2013-05-20'
-  rating: 3
-  title: 'The Women Who Got Away (Great Loves, #20)'
 - author: William Trevor
   date: '2013-05-20'
   rating: 3
   title: 'Bodily Secrets (Great Loves, #19)'
+- author: John Updike
+  date: '2013-05-20'
+  rating: 3
+  title: 'The Women Who Got Away (Great Loves, #20)'
 - author: "Ana\xEFs Nin"
   date: '2013-05-19'
   rating: 2
@@ -1110,14 +1114,14 @@
   date: '2013-03-22'
   rating: 4
   title: The Wonderful Story of Henry Sugar and Six More
-- author: Giacomo Casanova
-  date: '2013-02-13'
-  rating: 4
-  title: 'Of Mistresses, Tigresses and Other Conquests (Great Loves, #4)'
 - author: Stendhal
   date: '2013-02-13'
   rating: 2
   title: 'Cures for Love  (Great Loves, #5)'
+- author: Giacomo Casanova
+  date: '2013-02-13'
+  rating: 4
+  title: 'Of Mistresses, Tigresses and Other Conquests (Great Loves, #4)'
 - author: Salman Rushdie
   date: '2013-01-14'
   rating: 5
@@ -1333,10 +1337,10 @@
   date: '2011-01-01'
   rating: 4
   title: 'The Clan of the Cave Bear (Earth''s Children, #1)'
-- author: Leo Tolstoy
+- author: Jared Diamond
   date: '2011-01-01'
-  rating: 5
-  title: Anna Karenina
+  rating: 4
+  title: 'The Third Chimpanzee: The Evolution and Future of the Human Animal'
 - author: Oscar Wilde
   date: '2011-01-01'
   rating: 5
@@ -1349,10 +1353,10 @@
   date: '2011-01-01'
   rating: 4
   title: A Brief History of Time
-- author: Jared Diamond
+- author: Leo Tolstoy
   date: '2011-01-01'
-  rating: 4
-  title: 'The Third Chimpanzee: The Evolution and Future of the Human Animal'
+  rating: 5
+  title: Anna Karenina
 - author: Malcolm Gladwell
   date: '2011-01-01'
   rating: 4
@@ -1368,7 +1372,7 @@
 - author: Stieg Larsson
   date: '2011-01-01'
   rating: 2
-  title: 'The Girl Who Kicked the Hornet''s Nest (Millennium, #3)'
+  title: 'The Girl Who Played with Fire (Millennium, #2)'
 - author: John Steinbeck
   date: '2011-01-01'
   rating: 5
@@ -1405,10 +1409,10 @@
   date: '2011-01-01'
   rating: 4
   title: 'Closing Time (Catch-22, #2)'
-- author: Stieg Larsson
+- author: Tina Fey
   date: '2011-01-01'
-  rating: 2
-  title: 'The Girl Who Played with Fire (Millennium, #2)'
+  rating: 1
+  title: Bossypants
 - author: Hermann Hesse
   date: '2011-01-01'
   rating: 4
@@ -1421,10 +1425,10 @@
   date: '2011-01-01'
   rating: 1
   title: 'Lord of Chaos (Wheel of Time, #6)'
-- author: Tina Fey
+- author: Christopher Hitchens
   date: '2011-01-01'
-  rating: 1
-  title: Bossypants
+  rating: 4
+  title: 'God is Not Great: How Religion Poisons Everything'
 - author: Markus Zusak
   date: '2011-01-01'
   rating: 3
@@ -1441,10 +1445,10 @@
   date: '2011-01-01'
   rating: 3
   title: 'The Bad Beginning (A Series of Unfortunate Events, #1)'
-- author: Christopher Hitchens
+- author: Stieg Larsson
   date: '2011-01-01'
-  rating: 4
-  title: 'God is Not Great: How Religion Poisons Everything'
+  rating: 2
+  title: 'The Girl Who Kicked the Hornet''s Nest (Millennium, #3)'
 - author: Malcolm Gladwell
   date: '2011-01-01'
   rating: 3
