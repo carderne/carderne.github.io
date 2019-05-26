@@ -1,3 +1,7 @@
+- author: Philip K. Dick
+  date: '2019-05-26'
+  rating: 4
+  title: The Man in the High Castle
 - author: Terry Pratchett & Neil Gaiman
   date: '2019-05-22'
   rating: 5
@@ -16,7 +20,7 @@
   title: The Day the Sun Died
 - author: Husain Haddawy
   date: '2019-04-01'
-  rating: 4
+  rating: 5
   title: The Arabian Nights
 - author: Laurence Housman
   date: '2019-03-15'
@@ -302,31 +306,31 @@
   date: '2017-09-13'
   rating: 4
   title: A Universal History of Infamy
-- author: Peter Moskowitz
-  date: '2017-09-11'
-  rating: 3
-  title: 'How to Kill a City: Gentrification, Inequality, and the Fight for the Neighborhood'
 - author: Max Du Preez
   date: '2017-09-11'
   rating: 3
   title: 'Of Warriors, Lovers and Prophets: Unusual Stories from South Africa''s Past'
+- author: Peter Moskowitz
+  date: '2017-09-10'
+  rating: 3
+  title: 'How to Kill a City: Gentrification, Inequality, and the Fight for the Neighborhood'
 - author: Noam Chomsky
   date: '2017-09-05'
   rating: 5
   title: 'Understanding Power: The Indispensable Chomsky'
-- author: Amitav Ghosh
-  date: '2017-08-28'
-  rating: 5
-  title: The Hungry Tide
-- author: William Easterly
-  date: '2017-08-28'
-  rating: 4
-  title: 'The Tyranny of Experts: Economists, Dictators, and the Forgotten Rights
-    of the Poor'
 - author: Joseph E. Stiglitz
   date: '2017-08-28'
   rating: 3
   title: Globalization and Its Discontents
+- author: William Easterly
+  date: '2017-08-20'
+  rating: 4
+  title: 'The Tyranny of Experts: Economists, Dictators, and the Forgotten Rights
+    of the Poor'
+- author: Amitav Ghosh
+  date: '2017-08-15'
+  rating: 5
+  title: The Hungry Tide
 - author: Isaac Asimov
   date: '2017-08-03'
   rating: 3
@@ -535,7 +539,7 @@
   rating: 4
   title: 'The Caves of Steel (Robot #1)'
 - author: Isaac Asimov
-  date: '2016-05-03'
+  date: '2016-05-02'
   rating: 4
   title: 'The Naked Sun (Robot #2)'
 - author: Greg Marinovich
