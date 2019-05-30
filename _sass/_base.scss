@@ -44,12 +44,6 @@ a {
   text-decoration:none;
   color: #458CD5;
 }
-   
-/* Remove outline from links */
-//a:hover,
-//a:active {
-  //outline: 0;
-//}
 
 a:hover {
   text-decoration:underline;
@@ -137,7 +131,6 @@ del a {
   color: inherit;
 }
 
-/* blockquotes */
 blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
@@ -155,7 +148,6 @@ blockquote {
   }
 }
 
-/* links */
 a {
   &:visited {
     color: $link-color-visited;
@@ -167,7 +159,6 @@ a {
   }
 }
 
-/* code */
 tt,
 code,
 kbd,
@@ -198,7 +189,6 @@ td > code {
   }
 }
 
-/* horizontal rule */
 hr {
   display: block;
   margin: 1em 0;
@@ -206,7 +196,6 @@ hr {
   border-top: 1px solid $border-color;
 }
 
-/* lists */
 ul li,
 ol li {
   margin-bottom: 0.5em;
