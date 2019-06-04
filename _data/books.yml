@@ -1,3 +1,7 @@
+- author: Umberto Eco
+  date: 04 Jun '19
+  rating: 5
+  title: The Name of the Rose
 - author: Philip K. Dick
   date: 26 May '19
   rating: 4
@@ -70,6 +74,10 @@
   date: 01 Nov '18
   rating: 3
   title: When Gravity Fails
+- author: "Carlos Ruiz Zaf\xF3n"
+  date: 25 Oct '18
+  rating: 1
+  title: The Labyrinth of the Spirits
 - author: Arthur Conan Doyle
   date: 21 Oct '18
   rating: 3
@@ -868,14 +876,14 @@
   date: 07 May '14
   rating: 5
   title: War and Peace
-- author: Benjamin Hoff
-  date: 26 Apr '14
-  rating: 1
-  title: The Tao of Pooh
 - author: Charles C. Mann
   date: 26 Apr '14
   rating: 5
   title: '1493: Uncovering the New World Columbus Created'
+- author: Benjamin Hoff
+  date: 26 Apr '14
+  rating: 1
+  title: The Tao of Pooh
 - author: Jonathan Swift
   date: 24 Apr '14
   rating: 3
@@ -986,14 +994,14 @@
   date: 08 Nov '13
   rating: 4
   title: Heart of Darkness
-- author: Kurt Vonnegut
-  date: 06 Nov '13
-  rating: 3
-  title: 2BR02B
 - author: Douglas Adams
   date: 06 Nov '13
   rating: 3
   title: 'Life, the Universe and Everything (Hitchhiker''s Guide, #3)'
+- author: Kurt Vonnegut
+  date: 06 Nov '13
+  rating: 3
+  title: 2BR02B
 - author: Vladimir Nabokov
   date: 02 Nov '13
   rating: 5
@@ -1066,14 +1074,14 @@
   date: 24 May '13
   rating: 5
   title: Christabel
-- author: William Trevor
-  date: 20 May '13
-  rating: 3
-  title: 'Bodily Secrets (Great Loves, #19)'
 - author: John Updike
   date: 20 May '13
   rating: 3
   title: 'The Women Who Got Away (Great Loves, #20)'
+- author: William Trevor
+  date: 20 May '13
+  rating: 3
+  title: 'Bodily Secrets (Great Loves, #19)'
 - author: "Ana\xEFs Nin"
   date: 19 May '13
   rating: 2
@@ -1329,256 +1337,252 @@
   date: 14 Sep '11
   rating: 3
   title: The Old Man and the Sea
-- author: Naomi Wolf
-  date: 30 Aug '11
-  rating: 3
-  title: The Beauty Myth
 - author: John Keegan
   date: 30 Aug '11
   rating: 4
   title: The First World War
-- author: Jean M. Auel
-  date: 01 Jan '11
-  rating: 4
-  title: 'The Clan of the Cave Bear (Earth''s Children, #1)'
-- author: Jared Diamond
-  date: 01 Jan '11
-  rating: 4
-  title: 'The Third Chimpanzee: The Evolution and Future of the Human Animal'
-- author: Oscar Wilde
-  date: 01 Jan '11
-  rating: 5
-  title: The Picture of Dorian Gray
-- author: Richard Dawkins
-  date: 01 Jan '11
-  rating: 4
-  title: 'The Greatest Show on Earth: The Evidence for Evolution'
-- author: Stephen Hawking
-  date: 01 Jan '11
-  rating: 4
-  title: A Brief History of Time
-- author: Leo Tolstoy
-  date: 01 Jan '11
-  rating: 5
-  title: Anna Karenina
-- author: Malcolm Gladwell
-  date: 01 Jan '11
-  rating: 4
-  title: 'The Tipping Point: How Little Things Can Make a Big Difference'
-- author: Stephen Hawking
-  date: 01 Jan '11
-  rating: 4
-  title: The Grand Design
-- author: Kurt Vonnegut
-  date: 01 Jan '11
-  rating: 5
-  title: Slaughterhouse-Five
+- author: Naomi Wolf
+  date: 30 Aug '11
+  rating: 3
+  title: The Beauty Myth
+- author: Robert Jordan
+  date: 05 Aug '11
+  rating: 1
+  title: 'Lord of Chaos (Wheel of Time, #6)'
+- author: Tina Fey
+  date: 04 Aug '11
+  rating: 1
+  title: Bossypants
 - author: Stieg Larsson
-  date: 01 Jan '11
+  date: 03 Aug '11
   rating: 2
   title: 'The Girl Who Played with Fire (Millennium, #2)'
+- author: Stieg Larsson
+  date: 02 Aug '11
+  rating: 2
+  title: 'The Girl Who Kicked the Hornet''s Nest (Millennium, #3)'
+- author: Markus Zusak
+  date: 01 Aug '11
+  rating: 3
+  title: The Book Thief
+- author: Hugh Williams
+  date: 07 Jul '11
+  rating: 3
+  title: Fifty Things You Need to Know about World History
+- author: Sun Tzu
+  date: 06 Jul '11
+  rating: 3
+  title: The Art of War
+- author: Lemony Snicket
+  date: 05 Jul '11
+  rating: 3
+  title: 'The Bad Beginning (A Series of Unfortunate Events, #1)'
+- author: Stieg Larsson
+  date: 04 Jul '11
+  rating: 3
+  title: 'The Girl with the Dragon Tattoo (Millennium, #1)'
+- author: Malcolm Gladwell
+  date: 03 Jul '11
+  rating: 3
+  title: 'Blink: The Power of Thinking Without Thinking'
+- author: Paulo Coelho
+  date: 02 Jul '11
+  rating: 3
+  title: The Witch Of Portobello
+- author: Jeffrey Archer
+  date: 01 Jul '11
+  rating: 3
+  title: 'Kane and Abel (Kane and Abel, #1)'
+- author: J.R.R. Tolkien
+  date: 04 Jun '11
+  rating: 4
+  title: "Unfinished Tales of N\xFAmenor and Middle-Earth"
+- author: George Orwell
+  date: 03 Jun '11
+  rating: 4
+  title: Narrative Essays
+- author: Yann Martel
+  date: 02 Jun '11
+  rating: 4
+  title: Life of Pi
+- author: Jon Krakauer
+  date: 01 Jun '11
+  rating: 4
+  title: Into the Wild
+- author: Christopher Hitchens
+  date: 04 May '11
+  rating: 4
+  title: 'God is Not Great: How Religion Poisons Everything'
+- author: Hermann Hesse
+  date: 03 May '11
+  rating: 4
+  title: Siddhartha
+- author: Joseph Heller
+  date: 02 May '11
+  rating: 4
+  title: Something Happened
+- author: Joseph Heller
+  date: 01 May '11
+  rating: 4
+  title: 'Closing Time (Catch-22, #2)'
+- author: Stephen Hawking
+  date: 04 Apr '11
+  rating: 4
+  title: A Brief History of Time
+- author: Stephen Hawking
+  date: 03 Apr '11
+  rating: 4
+  title: The Grand Design
+- author: Malcolm Gladwell
+  date: 02 Apr '11
+  rating: 4
+  title: 'The Tipping Point: How Little Things Can Make a Big Difference'
+- author: Jared Diamond
+  date: 01 Apr '11
+  rating: 4
+  title: 'The Third Chimpanzee: The Evolution and Future of the Human Animal'
+- author: Richard Dawkins
+  date: 04 Mar '11
+  rating: 4
+  title: 'The Greatest Show on Earth: The Evidence for Evolution'
+- author: Jean M. Auel
+  date: 03 Mar '11
+  rating: 4
+  title: 'The Clan of the Cave Bear (Earth''s Children, #1)'
+- author: Oscar Wilde
+  date: 02 Mar '11
+  rating: 5
+  title: The Picture of Dorian Gray
+- author: Kurt Vonnegut
+  date: 01 Mar '11
+  rating: 5
+  title: Slaughterhouse-Five
+- author: Leo Tolstoy
+  date: 04 Feb '11
+  rating: 5
+  title: Anna Karenina
 - author: John Steinbeck
-  date: 01 Jan '11
+  date: 03 Feb '11
   rating: 5
   title: Of Mice and Men
 - author: Salman Rushdie
-  date: 01 Jan '11
+  date: 02 Feb '11
   rating: 5
   title: The Satanic Verses
 - author: Erich Maria Remarque
-  date: 01 Jan '11
+  date: 01 Feb '11
   rating: 5
   title: All Quiet on the Western Front
 - author: Boris Pasternak
-  date: 01 Jan '11
+  date: 04 Jan '11
   rating: 5
   title: Doctor Zhivago
 - author: Vladimir Nabokov
-  date: 01 Jan '11
+  date: 03 Jan '11
   rating: 5
   title: The Defense
 - author: Ernesto Che Guevara
-  date: 01 Jan '11
+  date: 02 Jan '11
   rating: 5
   title: 'The Motorcycle Diaries: Notes on a Latin American Journey'
 - author: Antony Beevor
   date: 01 Jan '11
   rating: 5
   title: 'The Battle for Spain: The Spanish Civil War 1936-1939'
-- author: Joseph Heller
-  date: 01 Jan '11
-  rating: 4
-  title: Something Happened
-- author: Joseph Heller
-  date: 01 Jan '11
-  rating: 4
-  title: 'Closing Time (Catch-22, #2)'
-- author: Tina Fey
-  date: 01 Jan '11
-  rating: 1
-  title: Bossypants
-- author: Hermann Hesse
-  date: 01 Jan '11
-  rating: 4
-  title: Siddhartha
-- author: Stieg Larsson
-  date: 01 Jan '11
-  rating: 3
-  title: 'The Girl with the Dragon Tattoo (Millennium, #1)'
 - author: Robert Jordan
-  date: 01 Jan '11
-  rating: 1
-  title: 'Lord of Chaos (Wheel of Time, #6)'
-- author: Christopher Hitchens
-  date: 01 Jan '11
-  rating: 4
-  title: 'God is Not Great: How Religion Poisons Everything'
-- author: Markus Zusak
-  date: 01 Jan '11
-  rating: 3
-  title: The Book Thief
-- author: Hugh Williams
-  date: 01 Jan '11
-  rating: 3
-  title: Fifty Things You Need to Know about World History
-- author: Sun Tzu
-  date: 01 Jan '11
-  rating: 3
-  title: The Art of War
-- author: Lemony Snicket
-  date: 01 Jan '11
-  rating: 3
-  title: 'The Bad Beginning (A Series of Unfortunate Events, #1)'
-- author: Stieg Larsson
-  date: 01 Jan '11
+  date: 02 Dec '10
   rating: 2
-  title: 'The Girl Who Kicked the Hornet''s Nest (Millennium, #3)'
-- author: Malcolm Gladwell
-  date: 01 Jan '11
+  title: 'The Fires of Heaven (Wheel of Time, #5)'
+- author: Rupert Woodfin
+  date: 01 Dec '10
   rating: 3
-  title: 'Blink: The Power of Thinking Without Thinking'
-- author: Jeffrey Archer
-  date: 01 Jan '11
+  title: Introducing Marxism
+- author: Ziauddin Sardar
+  date: 02 Nov '10
   rating: 3
-  title: 'Kane and Abel (Kane and Abel, #1)'
-- author: J.R.R. Tolkien
-  date: 01 Jan '11
-  rating: 4
-  title: "Unfinished Tales of N\xFAmenor and Middle-Earth"
-- author: George Orwell
-  date: 01 Jan '11
-  rating: 4
-  title: Narrative Essays
-- author: Yann Martel
-  date: 01 Jan '11
-  rating: 4
-  title: Life of Pi
-- author: Jon Krakauer
-  date: 01 Jan '11
-  rating: 4
-  title: Into the Wild
-- author: Paulo Coelho
-  date: 01 Jan '11
+  title: Introducing Chaos (Introducing...)
+- author: Robert Jordan
+  date: 01 Nov '10
   rating: 3
-  title: The Witch Of Portobello
-- author: Vladimir Nabokov
-  date: 01 Jan '10
-  rating: 5
-  title: Lolita
+  title: 'The Dragon Reborn (Wheel of Time, #3)'
+- author: Robert Jordan
+  date: 02 Oct '10
+  rating: 3
+  title: 'The Shadow Rising (Wheel of Time, #4)'
+- author: David Bodanis
+  date: 01 Oct '10
+  rating: 3
+  title: "E=mc\xB2: A Biography of the World's Most Famous Equation"
+- author: "Carlos Ruiz Zaf\xF3n"
+  date: 02 Sep '10
+  rating: 4
+  title: 'The Angel''s Game (The Cemetery of Forgotten Books, #2)'
+- author: Alex Vilenkin
+  date: 01 Sep '10
+  rating: 4
+  title: 'Many Worlds in One: The Search for Other Universes'
+- author: J.D. Salinger
+  date: 02 Aug '10
+  rating: 4
+  title: The Catcher in the Rye
+- author: J.P.   McEvoy
+  date: 01 Aug '10
+  rating: 4
+  title: Introducing Quantum Theory
+- author: Harper Lee
+  date: 02 Jul '10
+  rating: 4
+  title: To Kill a Mockingbird
+- author: Robert Jordan
+  date: 01 Jul '10
+  rating: 4
+  title: 'The Eye of the World (Wheel of Time, #1)'
+- author: Robert Jordan
+  date: 02 Jun '10
+  rating: 4
+  title: 'The Great Hunt (Wheel of Time, #2)'
+- author: David Edmonds
+  date: 01 Jun '10
+  rating: 4
+  title: 'Bobby Fischer Goes to War: How the Soviets Lost the Most Extraordinary Chess
+    Match of All Time'
 - author: Craig Callender
-  date: 01 Jan '10
+  date: 02 May '10
   rating: 4
   title: Introducing Time
 - author: Bill Bryson
-  date: 01 Jan '10
+  date: 01 May '10
   rating: 4
   title: 'Neither Here nor There: Travels in Europe'
 - author: Bill Bryson
-  date: 01 Jan '10
+  date: 02 Apr '10
   rating: 4
   title: The Life and Times of the Thunderbolt Kid
 - author: Bruce Bassett
-  date: 01 Jan '10
+  date: 01 Apr '10
   rating: 4
   title: Introducing Relativity, New Edition (Introducing... S.)
 - author: Henry David Thoreau
-  date: 01 Jan '10
+  date: 02 Mar '10
   rating: 5
   title: Walden
-- author: Richard Dawkins
-  date: 01 Jan '10
+- author: Vladimir Nabokov
+  date: 01 Mar '10
   rating: 5
-  title: The God Delusion
+  title: Lolita
 - author: Jared Diamond
-  date: 01 Jan '10
+  date: 02 Feb '10
   rating: 5
   title: 'Guns, Germs and Steel: The Fates of Human Societies'
 - author: Jared Diamond
-  date: 01 Jan '10
+  date: 01 Feb '10
   rating: 5
   title: 'Collapse: How Societies Choose to Fail or Succeed'
+- author: Richard Dawkins
+  date: 02 Jan '10
+  rating: 5
+  title: The God Delusion
 - author: Richard Dawkins
   date: 01 Jan '10
   rating: 5
   title: 'The Ancestor''s Tale: A Pilgrimage to the Dawn of Evolution'
-- author: Anthony Burgess
-  date: 01 Jan '10
-  rating: 5
-  title: A Clockwork Orange
-- author: Robert Jordan
-  date: 01 Jan '10
-  rating: 4
-  title: 'The Great Hunt (Wheel of Time, #2)'
-- author: David Edmonds
-  date: 01 Jan '10
-  rating: 4
-  title: 'Bobby Fischer Goes to War: How the Soviets Lost the Most Extraordinary Chess
-    Match of All Time'
-- author: Alex Vilenkin
-  date: 01 Jan '10
-  rating: 4
-  title: 'Many Worlds in One: The Search for Other Universes'
-- author: Robert Jordan
-  date: 01 Jan '10
-  rating: 4
-  title: 'The Eye of the World (Wheel of Time, #1)'
-- author: Robert Jordan
-  date: 01 Jan '10
-  rating: 3
-  title: 'The Shadow Rising (Wheel of Time, #4)'
-- author: Robert Jordan
-  date: 01 Jan '10
-  rating: 2
-  title: 'The Fires of Heaven (Wheel of Time, #5)'
-- author: Rupert Woodfin
-  date: 01 Jan '10
-  rating: 3
-  title: Introducing Marxism
-- author: Harper Lee
-  date: 01 Jan '10
-  rating: 4
-  title: To Kill a Mockingbird
-- author: Robert Jordan
-  date: 01 Jan '10
-  rating: 3
-  title: 'The Dragon Reborn (Wheel of Time, #3)'
-- author: Ziauddin Sardar
-  date: 01 Jan '10
-  rating: 3
-  title: Introducing Chaos (Introducing...)
-- author: David Bodanis
-  date: 01 Jan '10
-  rating: 3
-  title: "E=mc\xB2: A Biography of the World's Most Famous Equation"
-- author: "Carlos Ruiz Zaf\xF3n"
-  date: 01 Jan '10
-  rating: 4
-  title: 'The Angel''s Game (The Cemetery of Forgotten Books, #2)'
-- author: J.D. Salinger
-  date: 01 Jan '10
-  rating: 4
-  title: The Catcher in the Rye
-- author: J.P.   McEvoy
-  date: 01 Jan '10
-  rating: 4
-  title: Introducing Quantum Theory
