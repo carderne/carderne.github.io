@@ -1,3 +1,11 @@
+- author: Jenny Odell
+  date: 11 Aug '19
+  rating: 4
+  title: How To Do Nothing
+- author: Robert Greene
+  date: 20 Jul '19
+  rating: 1
+  title: The Laws of Human Nature
 - author: Alfred Lansing
   date: 10 Jul '19
   rating: 5
@@ -892,14 +900,14 @@
   date: 07 May '14
   rating: 5
   title: War and Peace
-- author: Charles C. Mann
-  date: 26 Apr '14
-  rating: 5
-  title: '1493: Uncovering the New World Columbus Created'
 - author: Benjamin Hoff
   date: 26 Apr '14
   rating: 1
   title: The Tao of Pooh
+- author: Charles C. Mann
+  date: 26 Apr '14
+  rating: 5
+  title: '1493: Uncovering the New World Columbus Created'
 - author: Jonathan Swift
   date: 24 Apr '14
   rating: 3
@@ -998,14 +1006,14 @@
   date: 15 Nov '13
   rating: 3
   title: The War of the Worlds
-- author: Kahlil Gibran
-  date: 10 Nov '13
-  rating: 3
-  title: The Prophet
 - author: J.R.R. Tolkien
   date: 10 Nov '13
   rating: 5
   title: "The Children of H\xFArin"
+- author: Kahlil Gibran
+  date: 10 Nov '13
+  rating: 3
+  title: The Prophet
 - author: Joseph Conrad
   date: 08 Nov '13
   rating: 4
@@ -1110,14 +1118,14 @@
   date: 13 May '13
   rating: 3
   title: The Virgin and the Gipsy
-- author: Katherine Mansfield
-  date: 11 May '13
-  rating: 3
-  title: 'Something Childish But Very Natural (Great Loves, #13)'
 - author: Jules Verne
   date: 11 May '13
   rating: 3
   title: Twenty Thousand Leagues Under the Sea
+- author: Katherine Mansfield
+  date: 11 May '13
+  rating: 3
+  title: 'Something Childish But Very Natural (Great Loves, #13)'
 - author: "Jos\xE9 Saramago"
   date: 28 Apr '13
   rating: 5
@@ -1353,14 +1361,14 @@
   date: 14 Sep '11
   rating: 3
   title: The Old Man and the Sea
-- author: Naomi Wolf
-  date: 30 Aug '11
-  rating: 3
-  title: The Beauty Myth
 - author: John Keegan
   date: 30 Aug '11
   rating: 4
   title: The First World War
+- author: Naomi Wolf
+  date: 30 Aug '11
+  rating: 3
+  title: The Beauty Myth
 - author: Robert Jordan
   date: 05 Aug '11
   rating: 1
