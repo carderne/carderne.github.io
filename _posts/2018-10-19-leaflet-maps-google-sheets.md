@@ -54,7 +54,7 @@ function myFunction(data, tabletop) {
 
 You just need to get the public sharing link from your Sheet (follow the instructions at the Tabletop.js repo) and assign it to `sheetsUrl` and you're done! 
 
-The data I pulled in for this web map was two separate tables, which you can preview [here](https://docs.google.com/spreadsheets/d/1WyZNokrgj5NmbyYrRIOQDa2mZ0_SEdbjBohR2RmKXp8/edit?usp=sharing) and [here](https://docs.google.com/spreadsheets/d/1p9pdXDgaLLVFj1agny5m1Y5gHSeRYJP-K0hrENLkfJo/edit?usp=sharing). The first has simple `lat` and `long` coordinates for a few points, while the second has a more complicated `geometry` column with polygon representations of each US state. In addition they each have extra columns with more information.
+The data I pulled in for this web map was two separate tables, which you can preview [here](https://docs.google.com/spreadsheets/d/1kjJVPF0LyaiaDYF8z_x23UulGciGtBALQ1a1pK0coRM/edit?usp=sharing) and [here](https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing). The first has simple `lat` and `long` coordinates for a few points, while the second has a more complicated `geometry` column with polygon representations of each US state. In addition they each have extra columns with more information.
 
 ## Putting it together for an easy web map
 My objective for this web map was to show these point and polygon items on a map of the US, with pop-ups for each element showing additional information. With a few more steps, it's easy to style each element based on other columns in the data.
@@ -140,6 +140,6 @@ polygonMarkers = L.geoJSON(polygons, {
 
 As for the points further up, this includes the code to add a popup, but nothing on styling. That's probably a post for another day, but you can have a look at the [repo](https://github.com/carderne/leaflet-gsheets) if you want to see what I used for this example.
 
-And we're done! The result (with styling) is shown below, or click [here](https://rdrn.me/leaflet-gsheets/leaflet-gsheets.html) to see it full screen. Every time a user loads this map in their browser, it will automatically hop over to the specified Google Sheets and pull the latest data to display it.
+And we're done! The result (with styling) is shown below, or click [here](https://rdrn.me/leaflet-gsheets) to see it full screen. Every time a user loads this map in their browser, it will automatically hop over to the specified Google Sheets and pull the latest data to display it.
 
 <iframe src="/assets/html/leaflet-gsheets-nosidebar.html" style="width: 100%; height: 600px" name="internal" frameborder="0"></iframe>

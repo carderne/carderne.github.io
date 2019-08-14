@@ -57,13 +57,13 @@ function init() {
 
     // these URLs come from Google Sheets "shareable link" form
     // the first is the polygon layer and the second the points
-    var statesURL = "https://docs.google.com/spreadsheets/d/1p9pdXDgaLLVFj1agny5m1Y5gHSeRYJP-K0hrENLkfJo/edit?usp=sharing";
-    var lawsURL = "https://docs.google.com/spreadsheets/d/1WyZNokrgj5NmbyYrRIOQDa2mZ0_SEdbjBohR2RmKXp8/edit?usp=sharing";
+  var polyURL = "https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
+  var pointsURL = "https://docs.google.com/spreadsheets/d/1kjJVPF0LyaiaDYF8z_x23UulGciGtBALQ1a1pK0coRM/edit?usp=sharing";
 
-    Tabletop.init( { key: lawsURL,
+    Tabletop.init( { key: pointsURL,
                      callback: addPoints,
                      simpleSheet: true } );  // simpleSheet assumes there is only one table and automatically sends its data
-    Tabletop.init( { key: statesURL,
+    Tabletop.init( { key: polyURL,
                      callback: addPolygons,
                      simpleSheet: true } );
 }
