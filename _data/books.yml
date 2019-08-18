@@ -1,3 +1,7 @@
+- author: Deneys Reitz
+  date: 17 Aug '19
+  rating: 4
+  title: Commando
 - author: Jenny Odell
   date: 11 Aug '19
   rating: 4
@@ -383,14 +387,14 @@
   date: 11 Jul '17
   rating: 4
   title: The Sirens of Titan
-- author: Stefan Zweig
-  date: 05 Jul '17
-  rating: 5
-  title: Chess Story
 - author: Jalaluddin Rumi
   date: 05 Jul '17
   rating: 0
   title: 'The Masnavi: Book One'
+- author: Stefan Zweig
+  date: 05 Jul '17
+  rating: 5
+  title: Chess Story
 - author: William Faulkner
   date: 02 Jul '17
   rating: 0
@@ -900,14 +904,14 @@
   date: 07 May '14
   rating: 5
   title: War and Peace
-- author: Benjamin Hoff
-  date: 26 Apr '14
-  rating: 1
-  title: The Tao of Pooh
 - author: Charles C. Mann
   date: 26 Apr '14
   rating: 5
   title: '1493: Uncovering the New World Columbus Created'
+- author: Benjamin Hoff
+  date: 26 Apr '14
+  rating: 1
+  title: The Tao of Pooh
 - author: Jonathan Swift
   date: 24 Apr '14
   rating: 3
@@ -1118,14 +1122,14 @@
   date: 13 May '13
   rating: 3
   title: The Virgin and the Gipsy
-- author: Jules Verne
-  date: 11 May '13
-  rating: 3
-  title: Twenty Thousand Leagues Under the Sea
 - author: Katherine Mansfield
   date: 11 May '13
   rating: 3
   title: 'Something Childish But Very Natural (Great Loves, #13)'
+- author: Jules Verne
+  date: 11 May '13
+  rating: 3
+  title: Twenty Thousand Leagues Under the Sea
 - author: "Jos\xE9 Saramago"
   date: 28 Apr '13
   rating: 5
