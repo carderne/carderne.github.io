@@ -1,3 +1,15 @@
+- author: Herman Melville
+  date: 09 Oct '19
+  rating: 5
+  title: Moby-Dick
+- author: Richard Powers
+  date: 05 Oct '19
+  rating: 5
+  title: The Overstory
+- author: Delia Owens
+  date: 01 Oct '19
+  rating: 3
+  title: Where the Crawdads Sing
 - author: Deneys Reitz
   date: 17 Aug '19
   rating: 4
@@ -258,14 +270,14 @@
   date: 13 Mar '18
   rating: 5
   title: The Bad Girl
-- author: Warren Ingram
-  date: 09 Mar '18
-  rating: 1
-  title: Become Your Own Financial Advisor
 - author: Ahmed Saadawi
   date: 09 Mar '18
   rating: 4
   title: Frankenstein in Baghdad
+- author: Warren Ingram
+  date: 09 Mar '18
+  rating: 1
+  title: Become Your Own Financial Advisor
 - author: Cal Newport
   date: 06 Mar '18
   rating: 3
@@ -367,14 +379,14 @@
   date: 15 Aug '17
   rating: 5
   title: The Hungry Tide
-- author: Isaac Asimov
-  date: 03 Aug '17
-  rating: 3
-  title: The Gods Themselves
 - author: Mark Helprin
   date: 03 Aug '17
   rating: 4
   title: Winter's Tale
+- author: Isaac Asimov
+  date: 03 Aug '17
+  rating: 3
+  title: The Gods Themselves
 - author: Isaac Asimov
   date: 22 Jul '17
   rating: 3
@@ -904,14 +916,14 @@
   date: 07 May '14
   rating: 5
   title: War and Peace
-- author: Charles C. Mann
-  date: 26 Apr '14
-  rating: 5
-  title: '1493: Uncovering the New World Columbus Created'
 - author: Benjamin Hoff
   date: 26 Apr '14
   rating: 1
   title: The Tao of Pooh
+- author: Charles C. Mann
+  date: 26 Apr '14
+  rating: 5
+  title: '1493: Uncovering the New World Columbus Created'
 - author: Jonathan Swift
   date: 24 Apr '14
   rating: 3
@@ -1022,14 +1034,14 @@
   date: 08 Nov '13
   rating: 4
   title: Heart of Darkness
-- author: Douglas Adams
-  date: 06 Nov '13
-  rating: 3
-  title: 'Life, the Universe and Everything (Hitchhiker''s Guide, #3)'
 - author: Kurt Vonnegut
   date: 06 Nov '13
   rating: 3
   title: 2BR02B
+- author: Douglas Adams
+  date: 06 Nov '13
+  rating: 3
+  title: 'Life, the Universe and Everything (Hitchhiker''s Guide, #3)'
 - author: Vladimir Nabokov
   date: 02 Nov '13
   rating: 5
@@ -1074,14 +1086,14 @@
   date: 26 Jun '13
   rating: 4
   title: Cosmos
-- author: Norman Davies
-  date: 19 Jun '13
-  rating: 5
-  title: Europe
 - author: Sigmund Freud
   date: 19 Jun '13
   rating: 3
   title: 'Deviant Love (Great Loves, #11)'
+- author: Norman Davies
+  date: 19 Jun '13
+  rating: 5
+  title: Europe
 - author: James Joyce
   date: 14 Jun '13
   rating: 4
@@ -1122,14 +1134,14 @@
   date: 13 May '13
   rating: 3
   title: The Virgin and the Gipsy
-- author: Katherine Mansfield
-  date: 11 May '13
-  rating: 3
-  title: 'Something Childish But Very Natural (Great Loves, #13)'
 - author: Jules Verne
   date: 11 May '13
   rating: 3
   title: Twenty Thousand Leagues Under the Sea
+- author: Katherine Mansfield
+  date: 11 May '13
+  rating: 3
+  title: 'Something Childish But Very Natural (Great Loves, #13)'
 - author: "Jos\xE9 Saramago"
   date: 28 Apr '13
   rating: 5
