@@ -1,3 +1,7 @@
+- author: Andrew Blum
+  date: 14 Oct '19
+  rating: 2
+  title: The Weather Machine
 - author: Herman Melville
   date: 09 Oct '19
   rating: 5
@@ -270,14 +274,14 @@
   date: 13 Mar '18
   rating: 5
   title: The Bad Girl
-- author: Ahmed Saadawi
-  date: 09 Mar '18
-  rating: 4
-  title: Frankenstein in Baghdad
 - author: Warren Ingram
   date: 09 Mar '18
   rating: 1
   title: Become Your Own Financial Advisor
+- author: Ahmed Saadawi
+  date: 09 Mar '18
+  rating: 4
+  title: Frankenstein in Baghdad
 - author: Cal Newport
   date: 06 Mar '18
   rating: 3
@@ -556,12 +560,12 @@
   title: 'Paradiso (The Divine Comedy, #3)'
 - author: Rudyard Kipling
   date: 25 Jul '16
-  rating: 0
-  title: In the Rukh
-- author: Rudyard Kipling
-  date: 25 Jul '16
   rating: 4
   title: The Second Jungle Book
+- author: Rudyard Kipling
+  date: 25 Jul '16
+  rating: 0
+  title: In the Rukh
 - author: Rudyard Kipling
   date: 20 Jul '16
   rating: 4
