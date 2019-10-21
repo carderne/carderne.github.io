@@ -1,3 +1,11 @@
+- author: Ursula K. Le Guin
+  date: 21 Oct '19
+  rating: 5
+  title: The Left Hand of Darkness
+- author: Herman Melville
+  date: 16 Oct '19
+  rating: 5
+  title: Bartleby, the Scrivener
 - author: Andrew Blum
   date: 14 Oct '19
   rating: 2
@@ -383,14 +391,14 @@
   date: 15 Aug '17
   rating: 5
   title: The Hungry Tide
-- author: Mark Helprin
-  date: 03 Aug '17
-  rating: 4
-  title: Winter's Tale
 - author: Isaac Asimov
   date: 03 Aug '17
   rating: 3
   title: The Gods Themselves
+- author: Mark Helprin
+  date: 03 Aug '17
+  rating: 4
+  title: Winter's Tale
 - author: Isaac Asimov
   date: 22 Jul '17
   rating: 3
@@ -1138,14 +1146,14 @@
   date: 13 May '13
   rating: 3
   title: The Virgin and the Gipsy
-- author: Jules Verne
-  date: 11 May '13
-  rating: 3
-  title: Twenty Thousand Leagues Under the Sea
 - author: Katherine Mansfield
   date: 11 May '13
   rating: 3
   title: 'Something Childish But Very Natural (Great Loves, #13)'
+- author: Jules Verne
+  date: 11 May '13
+  rating: 3
+  title: Twenty Thousand Leagues Under the Sea
 - author: "Jos\xE9 Saramago"
   date: 28 Apr '13
   rating: 5
