@@ -20,13 +20,13 @@ What follows is basically the notes I took (so that I wouldn't forget which pin 
 ## What's needed?
 Basic computer knowledge on Linux, a soldering iron, a breadboard and bits of wire, and the following components:
 - Raspberry Pi: any one that has WiFi built-in
-- microSD card: above 8 GB or so (the OS and scripts go here)
-- microUSB power adapter: at least 2 A, preferably more
+- micro-SD card: above 8 GB or so (the OS and scripts go here)
+- micro-USB power adapter: at least 2 A, preferably more
 - RGB LED: I used something like [this](https://www.adafruit.com/product/2530)
 - 3x MOSFETs: one for each colour channel, needed because you can't drive a high-power LED directly from a logic pin; I used [these](https://www.adafruit.com/product/2530)
 - resistors: a couple of 100 Ω and 10 kΩ logic-level (1/4 W) resistors are needed to go with the MOSFETs; you'll also need some higher-power (2W or so) resistors for the LEDs, the value of which will depend on the LED voltage ([this](https://ledcalculator.net/) may be useful)
 - button: any clicky momentary button
-- heatsink: a chunk of metal to help the LED dissipate heat
+- heat-sink: a chunk of metal to help the LED dissipate heat
 
 ## Setting up the Raspberry Pi
 Before playing with the electronics, we need to get the Pi working. Most of the following comes from [this](https://ivancarosati.com/raspbian-stretch-headless-setup-for-raspberry-pi/) very useful post. The first thing is to get an operating system onto the SD card. Start by downloading the [Raspbian Buster Lite image from here](https://www.raspberrypi.org/downloads/raspbian/). Then install and run [balenaEtcher](https://www.balena.io/etcher/) and point it at the zip file you just downloaded and the SD card you just inserted.
@@ -327,7 +327,7 @@ Now for the hardware, which is much more exciting! (I managed to break 6 of my 4
 
 ![BCM numbers](/assets/images/2019/raspberry-pi-pinout.png)
 
-The easiest way to get everything going is to get a reasonably sized breadboard (mine is way too small), a big handful of different coloured male-male and male-female jumper wires and a decent variet of resistors. If you can get a low-current RGB LED working, it will be easier to then move on to the higher current one, which needs to be drive by MOSFETs.
+The easiest way to get everything going is to get a reasonably sized breadboard (mine is way too small), a big handful of different coloured male-male and male-female jumper wires and a decent variety of resistors. If you can get a low-current RGB LED working, it will be easier to then move to the higher current one, which needs to be driven by MOSFETs.
 
 My circuit diagram is shown below, and you can click [here](https://crcit.net/c/6a70f01efec64144a5f891bd44966b72) to get an editable copy for yourself. The left side is the LED setup, and the simple bit on the right is for the button. The MOSFET's are the bits in the middle, with each one have Gate on the left (where they're 'controlled'), Source on top and Drain to earth on the bottom. Note that three LEDs are typically on physical object, but are electrically separate. Some LEDs are either common-anode (+ together) or common cathode (- together); mine was all separate but I wired the anodes (+ side) together, as that was how the low-current LED I played with was wired. If yours is common-cathode, you'll need to put it on the Drain rather than source side of the MOSFETs.
 
