@@ -233,7 +233,7 @@ if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=80)
 ```
 
-Be careful where you run this, the below setup is normally a bad idea! Running with `debug=True` can give potential attackers much more information, so disable it once everything is working. Using `host="0.0.0.0"` potentially means your server is open to the wide web -- make sure your router firewall is configured to block this from happening. And finally, running with `port=80` requires the app to be run with `sudo` privileges, which really completes the insecure soup. In this case `sudo` is needed anyway, as the cron schedule and lights scripts need to be run as sudo. This is all terrible practise, but for a simple light on a local network I feel it's a fine trade-off over the complications of doing it properly. Hopefully, the consequences of a hacked wake-up light aren't huge!
+Be careful where you run this -- this setup is normally a bad idea! Running with `debug=True` can give potential attackers much more information, so disable it once everything is working. Using `host="0.0.0.0"` potentially means your server is open to the wide web -- make sure your router firewall is configured to block this from happening. And finally, running with `port=80` requires the app to be run with `sudo` privileges, which really completes the insecure soup. In this case `sudo` is needed anyway, as the cron schedule and lights scripts need to be run as sudo. This is all terrible practise, but for a simple light on a local network I feel it's a fine trade-off over the complications of doing it properly. Hopefully, the consequences of a hacked wake-up light aren't huge!
 
 We need a quick bit of HTML and JavaScript for the web page. This just has an input form and a button to submit what is entered. In the full version, I've styled this nicely and used restricted drop-downs instead of a bare text box. I also made it so that your previous choice is displayed on the website so you aren't guessing what the current setting is! For now just place this in `templates/index.html`:
 
@@ -282,7 +282,7 @@ and hopefully it works! To test it, go to `http://wake.local/` on a device conne
 And again, feel free to just clone my code from [the GitHub repo](https://github.com/carderne/wake-up-light) to save yourself some time.
 
 ## Make it all start up automatically
-We don't want to have to SSH in re-start everything any time we unplug the device, so let's add them as services to systemd. Navigate to `/etc/systemd/system/` create `app.service`: (and similar for `button.py` and `pigpio`)
+We don't want to have to SSH in re-start everything any time we unplug the device, so let's add them as services to systemd. Navigate to `/etc/systemd/system/` create `app.service`:
 
 ```
 [Unit]
