@@ -1,248 +1,196 @@
-/* ==========================================================================
+/*
   OVERAL STYLING
-========================================================================== */
-
+*/
 .main {
-  clear: both;
-  &::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.4em;
 
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
-  padding-bottom: 0.4em;
+    @include lg {
+        display: flex;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 2em;
+        margin-left: calc(0.2 * #{$sidebar-width});
+    }
 
-  @include lg {
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 2em;
-    margin-left: calc(0.2 * #{$sidebar-width});
-  }
-
-  @include xl {
-    margin-left: calc(50% - #{$body-width}/2 - #{$sidebar-width});
-  }
+    @include xl {
+        margin-left: calc(50% - #{$body-width}/2 - #{$sidebar-width});
+    }
 }
 
 .body {
-  float: left;
-  margin-top: 1em;
-  width: 100%;
+    width: 100%;
 
-  @include lg {
-    margin-top: 0;
-    width: calc(100% - #{$sidebar-width});
-    max-width: $body-width;
-  }
+    @include lg {
+        flex-grow: 1;
+        max-width: $body-width;
+    }
 }
 
-/* ==========================================================================
+/*
   ARCHIVE
-========================================================================== */
-
+*/
 .archive-item {
-  position: relative;
+    position: relative;
 }
 
 .archive-item-date {
-  color: #888;
-  font-size: $type-size-6;
+    color: #888;
+    float: right;
 }
 
 .archive-item-title a {
-  color: #3a4549;
-  margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
-  line-height: initial;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  a + a {
-    opacity: 0.5;
-  }
+    font-size: $type-size-3;
+    color: $darker-gray;
+    float: left;
 }
 
-.archive-item-excerp {
-  margin-top: 0;
-  font-size: $type-size-6;
-
-  & + p {
-    text-indent: 0;
-  }
-
-  a {
-    position: relative;
-  }
+.archive-item-excerpt {
+    clear: both;
+    margin-top: 0;
 }
 
-/* ==========================================================================
+/*
   SINGLE PAGE/POST
-========================================================================== */
-
+*/
 .page-title {
-  margin-top: 0.3em;
-  line-height: 1;
-  font-size: $type-size-2;
+    font-size: $type-size-3;
+    float: left;
 }
 
 .page-date {
-  color: #888;
+    color: #888;
+    float: right;
 }
 
-.taglist a {
-	background-color:#ccc;
-	color:#fff;
-	display: inline-block;   
-  line-height: 1.5em;
-  margin-left: 2em;
-  padding: 0.3em 0.6em 0.3em 0.6em;
-  
-	vertical-align:20%;  
-	font-size:0.5em;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 700 !important;
-	text-transform:uppercase;
-	letter-spacing:0.05em;
-	border-radius:0.25em;
-	-moz-border-radius: 0.25em;
-	-webkit-border-radius: 0.25em;
+.vert-center {
+    min-height: 30px;
+    display: inline-flex;
+    align-items: center;
+}
+
+header, .header {
+    overflow: auto;
 }
 
 .page-content {
-  position: relative;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  clear: both;
+    clear: both;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    clear: both;
 
-  h2 {
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
-  }
-
-  p,
-  li,
-  dl {
-    font-size: 1em;
-  }
-
-  /* paragraph indents */
-  p {
-    margin: 0 0 $indent-var;
-
-    /* sibling indentation*/
-    @if $paragraph-indent == true {
-      & + p {
-        text-indent: $indent-var;
-        margin-top: -($indent-var);
-      }
+    h2 {
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid $border-color;
     }
-  }
 
-  a:not(.btn) {
-    &:hover {
-      text-decoration: underline;
-
-      img {
-        box-shadow: 0 0 10px rgba(#000, 0.25);
-      }
+    p,
+    li,
+    dl {
+        font-size: 1em;
     }
-  }
 
-  dt {
-    margin-top: 1em;
-    font-family: $sans-serif;
-    font-weight: bold;
-  }
+    /* paragraph indents */
+    p {
+        margin: 0 0 $indent-var;
+    }
 
-  dd {
-    margin-left: 1em;
-    font-family: $sans-serif;
-    font-size: $type-size-6;
-  }
+    a:not(.btn) {
+        &:hover {
+            text-decoration: underline;
 
-  .small {
-    font-size: $type-size-6;
-  }
+            img {
+                box-shadow: 0 0 10px rgba(#000, 0.25);
+            }
+        }
+    }
 
-  blockquote + .small {
-    margin-top: -1.5em;
-    padding-left: 1.25rem;
-  }
+    dt {
+        margin-top: 1em;
+        font-family: $sans-serif;
+        font-weight: bold;
+    }
+
+    dd {
+        margin-left: 1em;
+        font-family: $sans-serif;
+        font-size: $type-size-6;
+    }
+
+    .small {
+        font-size: $type-size-6;
+    }
+
+    blockquote + .small {
+        margin-top: -1.5em;
+        padding-left: 1.25rem;
+    }
 }
 
-/* ==========================================================================
+/*
   BOOKS
-========================================================================== */
+*/
+.books > div {
+    grid-template-columns: 1fr .75fr 70px;
+    display: grid;
+    grid-column-gap: 5px;
+    padding-top: 5px;
 
-.books>div {
-  grid-template-columns: 1fr .75fr 70px;
-  display: grid;
-  grid-column-gap: 5px;
-  padding-top: 5px;
-  @include md {
-    grid-template-columns: 1fr .75fr min-content 70px;
-  }
+    @include md {
+        grid-template-columns: 1fr .75fr min-content 70px;
+    }
 }
 
-.books>div div {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.books > div div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.books>div div:nth-child(3) {
-  display: none;
-  @include md {
-    display: block;
-    padding-right: .25em;
-    color: #888;
-    font-size: 90%;
-    padding-top: 1px;
-    font-variant-numeric: tabular-nums;
-    letter-spacing: -.012em;
-  }
+.books > div div:nth-child(3) {
+    display: none;
+
+    @include md {
+        display: block;
+        padding-right: .25em;
+        color: #888;
+        font-size: 90%;
+        padding-top: 1px;
+        font-variant-numeric: tabular-nums;
+        letter-spacing: -.012em;
+    }
 }
 
 .star {
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAA1klEQVQokZ3SMUpDQRDG8d8+QgghSCqxCCleKanEUjyBZ/AURryIJ8gJtEmniI1gLQiChY2lIIgakbFZw/J4Ac0uC8Pu95+Z/XZTCP8dVdtmkoZJ6v4ZyuJT7K0sFY2JA3zirHlWaFTYQI19XCHwjkNsYwudEtrFHHd4xleGAi94wC1OUP1CPRznlqJlfeMa9bJSJns4wlsLdIlxeacqm/GBC7y2eHUT4mmV5TUGOX4sEkyaWTpFvIl7zHCOEaYYJqkbYrFUFjbWGDXeo48dhd0hpHX+3g+KsWiwq4//gAAAAABJRU5ErkJggg==);
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAA1klEQVQokZ3SMUpDQRDG8d8+QgghSCqxCCleKanEUjyBZ/AURryIJ8gJtEmniI1gLQiChY2lIIgakbFZw/J4Ac0uC8Pu95+Z/XZTCP8dVdtmkoZJ6v4ZyuJT7K0sFY2JA3zirHlWaFTYQI19XCHwjkNsYwudEtrFHHd4xleGAi94wC1OUP1CPRznlqJlfeMa9bJSJns4wlsLdIlxeacqm/GBC7y2eHUT4mmV5TUGOX4sEkyaWTpFvIl7zHCOEaYYJqkbYrFUFjbWGDXeo48dhd0hpHX+3g+KsWiwq4//gAAAAABJRU5ErkJggg==);
 }
 
-/* ==========================================================================
+/*
   PHOTOS
-========================================================================== */
+*/
 
 .photos {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
-	grid-auto-rows: 30vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 30vh;
 }
 
 .thumb {
     position: relative;
-    width:100%;
-    overflow:hidden;
-    position:relative;
-    background:#000
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #000;
 }
 
 .thumb .caption {
@@ -251,7 +199,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(100,100,100,0.5);
+    background: rgba(100, 100, 100, 0.5);
     color: #fff;
     opacity: 0;
     transition: opacity 0.5s;
@@ -260,9 +208,9 @@
 .thumb .thumb-image {
     display: block;
     object-fit: cover;
-    position:absolute;
-    width:100%;
-    height:100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .photo-date {
@@ -289,9 +237,10 @@
     opacity: 1;
     left: 50%;
     text-align: center;
+
     @include md {
         width: 600px;
-	margin-left: -300px;
+        margin-left: -300px;
     }
 }
 
@@ -300,159 +249,79 @@
 }
 
 .modal {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: left;
-  background: rgba(0,0,0, .8);
-  transition: opacity .25s ease;
-  z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity .25s ease;
+    z-index: 99;
 }
 
 .modal-content {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .modal-photo {
-   width: 70%;
-   max-height: 80%;
-   position: absolute;
-   left: 50%;
-   top: 10%; 
-   margin-left: -35%;
-   object-fit: cover;
+    width: 70%;
+    max-height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin-left: -35%;
+    object-fit: cover;
 }
 
 .modal-state {
-  display: none;
+    display: none;
 }
 
 .modal-state:checked + .modal {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
-/* ==========================================================================
+/*
   SIDEBAR
-========================================================================== */
-
+*/
 .sidebar {
-  padding-bottom: 1em;
-  border-bottom: 1px $gray solid;
-  
-  @include lg {
-    border-bottom: 0;
-    float: left;
-    width: calc(#{$sidebar-width} - 1em);
-  }
-
-  h4, h5 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-family: $sans-serif-narrow;
-  }
-}
-
-.author-avatar {
-  display: block;
-  width: 10em;
-  margin: auto;
-  max-width: 9em;
-}
-
-.author-content {
-  display: block;
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 25px;
-  line-height: 0;
-  
-  h4 {
-    font-size: $type-size-3;
-  }
-
-  h5 {
-    text-align: inherit;
-    color: #737c7f;
-    font-size: $type-size-4;
-    margin-top:-15px;
-  
-    &:hover {
-      text-decoration: underline;
-      color: black;
-    }
-  }
-  
-  @include lg {
-    text-align: unset;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.icon {
-  font-size: 1.4em;
-  color: #737c7f;
-
-  &:hover {
-    color: black;
-  }
-}
-
-.sticky {
-  @include lg {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 2em;
-    height: calc(100%);
-  }
-}
-
-/* ==========================================================================
-  FONT AWESOME
-========================================================================== */
-
-@font-face {
-  font-family: 'fa';
-  src: url('/assets/font/fa.eot?93019596');
-  src: url('/assets/font/fa.eot?93019596#iefix') format('embedded-opentype'),
-        url('/assets/font/fa.woff2?93019596') format('woff2'),
-        url('/assets/font/fa.woff?93019596') format('woff'),
-        url('/assets/font/fa.ttf?93019596') format('truetype'),
-        url('/assets/font/fa.svg?93019596#fa') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  }
-  
-  [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "fa";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
+    padding-bottom: 1em;
+    border-bottom: 1px $gray solid;
+    display: block;
     text-align: center;
-  
-    font-variant: normal;
-    text-transform: none;
-  
-    line-height: 0.5em;
-    margin-left: .2em;
-    
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    
-  }
-    
-  .icon-mail:before { content: '\e800'; }
-  .icon-github-circled:before { content: '\f09b'; }
-  .icon-li:before { content: '\f0e1'; }
+    padding-left: 15px;
+    padding-right: 25px;
+
+    @include lg {
+        border-bottom: 0;
+        flex-basis: calc(#{$sidebar-width} - 1em);
+        text-align: unset;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: $text-color;
+        font-size: $type-size-4;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+}

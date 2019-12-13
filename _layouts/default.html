@@ -2,7 +2,7 @@
 ---
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
 
@@ -54,22 +54,14 @@
 
   <body>
     <div class="main" role="main">
-      <div class="sidebar sticky">
-        {% assign author = site.author %}
-        <div itemscope itemtype="https://schema.org/Person">
-          <img src="{{ site.avatar }}" alt="{{ site.title }}" class="author-avatar" itemprop="image">
-          <div class="author-content">
-            <h4 itemprop="name">{{ site.title }}</h4>
-            <a href="/"><h5>Home</h5></a>
-            <a href="/about/"><h5>About</h5></a>
-            <a href="/books/"><h5>Books</h5></a>
-            <a href="/photos/"><h5>Photos</h5></a>
-            <a href="mailto:chris@rdrn.me"><i class="icon icon-mail"></i></a>
-            <a href="https://www.linkedin.com/in/chris-arderne" target="_blank"><i class="icon icon-li"></i></a>
-            <a href="https://github.com/carderne" target="_blank"><i class="icon icon-github-circled"></i></a>
-          </div>
-
-        </div>
+      <div class="sidebar">
+        <h2>Chris Arderne</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/books/">Books</a></li>
+            <li><a href="/photos/">Photos</a></li>
+        </ul>
       </div>
       <div class="body">
           {{ content }}
