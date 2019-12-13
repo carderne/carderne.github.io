@@ -29,6 +29,11 @@ body {
     line-height: 1.5;
 }
 
+h2, h3 {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
 a {
     color: $link-color;
     text-decoration: none;

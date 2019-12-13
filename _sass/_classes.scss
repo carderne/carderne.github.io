@@ -85,11 +85,6 @@ header, .header {
     width: 100%;
     clear: both;
 
-    h2 {
-        padding-bottom: 0.5em;
-        border-bottom: 1px solid $border-color;
-    }
-
     p,
     li,
     dl {
@@ -291,14 +286,12 @@ header, .header {
 */
 .sidebar {
     padding-bottom: 1em;
-    border-bottom: 1px $gray solid;
     display: block;
     text-align: center;
     padding-left: 15px;
     padding-right: 25px;
 
     @include lg {
-        border-bottom: 0;
         flex-basis: calc(#{$sidebar-width} - 1em);
         text-align: unset;
         padding-left: 0;
