@@ -1,3 +1,7 @@
+- author: Michael Pollan
+  date: 08 Dec '19
+  rating: 4
+  title: How to Change Your Mind
 - author: "Honor\xE9 de Balzac"
   date: 26 Nov '19
   rating: 4
@@ -1046,14 +1050,14 @@
   date: 15 Nov '13
   rating: 3
   title: The War of the Worlds
-- author: J.R.R. Tolkien
-  date: 10 Nov '13
-  rating: 5
-  title: "The Children of H\xFArin"
 - author: Kahlil Gibran
   date: 10 Nov '13
   rating: 3
   title: The Prophet
+- author: J.R.R. Tolkien
+  date: 10 Nov '13
+  rating: 5
+  title: "The Children of H\xFArin"
 - author: Joseph Conrad
   date: 08 Nov '13
   rating: 4
@@ -1138,14 +1142,14 @@
   date: 24 May '13
   rating: 5
   title: Christabel
-- author: John Updike
-  date: 20 May '13
-  rating: 3
-  title: 'The Women Who Got Away (Great Loves, #20)'
 - author: William Trevor
   date: 20 May '13
   rating: 3
   title: 'Bodily Secrets (Great Loves, #19)'
+- author: John Updike
+  date: 20 May '13
+  rating: 3
+  title: 'The Women Who Got Away (Great Loves, #20)'
 - author: "Ana\xEFs Nin"
   date: 19 May '13
   rating: 2
@@ -1401,14 +1405,14 @@
   date: 14 Sep '11
   rating: 3
   title: The Old Man and the Sea
-- author: John Keegan
-  date: 30 Aug '11
-  rating: 4
-  title: The First World War
 - author: Naomi Wolf
   date: 30 Aug '11
   rating: 3
   title: The Beauty Myth
+- author: John Keegan
+  date: 30 Aug '11
+  rating: 4
+  title: The First World War
 - author: Robert Jordan
   date: 05 Aug '11
   rating: 1
