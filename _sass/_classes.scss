@@ -24,6 +24,7 @@
 
 .body {
     width: 100%;
+    clear: both;
 
     @include lg {
         flex-grow: 1;
@@ -41,17 +42,32 @@
 .archive-item-date {
     color: #888;
     float: right;
+    font-size: $type-size-6;
 }
 
 .archive-item-title a {
-    font-size: $type-size-3;
+    font-size: $type-size-5;
     color: $darker-gray;
     float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 110px);
+
+    @include lg {
+        font-size: $type-size-3;
+        max-width: 700px;
+    }
 }
 
 .archive-item-excerpt {
     clear: both;
     margin-top: 0;
+    display: none !important;
+
+    @include lg {
+        display: block !important;
+    }
 }
 
 /*
@@ -284,12 +300,26 @@ header, .header {
 /*
   SIDEBAR
 */
+
+.sidebar:after {
+    position: absolute;
+    left: 0;
+    content: " ";
+    display: block;
+    border-bottom: 1px solid $gray;
+    width: 100%;
+
+    @include lg {
+        border-bottom: none;
+    }
+}
+
 .sidebar {
     padding-bottom: 1em;
     display: block;
     text-align: center;
-    padding-left: 15px;
-    padding-right: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
 
     @include lg {
         flex-basis: calc(#{$sidebar-width} - 1em);
@@ -300,18 +330,29 @@ header, .header {
 
     ul {
         list-style: none;
+        width: 100%;
         padding: 0;
         margin: 0;
     }
 
     li {
-        padding: 0;
+        padding: 8px;
+        display: inline;
         margin: 0;
+
+        @include lg {
+            display: block;
+            padding: 0
+        }
     }
 
     a {
         color: $text-color;
         font-size: $type-size-4;
+
+        @include lg {
+            font-size: $type-size-4;
+        }
     }
 
     h2 {
