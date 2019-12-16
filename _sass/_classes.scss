@@ -40,14 +40,14 @@
 }
 
 .archive-item-date {
-    color: #888;
+    color: $muted-text-color;
     float: right;
     font-size: $type-size-6;
 }
 
 .archive-item-title a {
     font-size: $type-size-5;
-    color: $darker-gray;
+    color: $text-color;
     float: left;
     white-space: nowrap;
     overflow: hidden;
@@ -79,7 +79,7 @@
 }
 
 .page-date {
-    color: #888;
+    color: $muted-text-color;
     float: right;
 }
 
@@ -109,17 +109,11 @@ header, .header {
 
     /* paragraph indents */
     p {
-        margin: 0 0 $indent-var;
+        margin: 0 0 1.3em;
     }
 
-    a:not(.btn) {
-        &:hover {
-            text-decoration: underline;
-
-            img {
-                box-shadow: 0 0 10px rgba(#000, 0.25);
-            }
-        }
+    a:hover {
+        text-decoration: underline;
     }
 
     dt {
@@ -170,7 +164,7 @@ header, .header {
     @include md {
         display: block;
         padding-right: .25em;
-        color: #888;
+        color: $muted-text-color;
         font-size: 90%;
         padding-top: 1px;
         font-variant-numeric: tabular-nums;
@@ -188,7 +182,6 @@ header, .header {
 /*
   PHOTOS
 */
-
 .photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -201,7 +194,6 @@ header, .header {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: #000;
 }
 
 .thumb .caption {
@@ -211,7 +203,7 @@ header, .header {
     top: 0;
     left: 0;
     background: rgba(100, 100, 100, 0.5);
-    color: #fff;
+    color: white;
     opacity: 0;
     transition: opacity 0.5s;
 }
@@ -244,7 +236,7 @@ header, .header {
 .modal-content .photo-caption {
     width: 80%;
     margin-left: -40%;
-    color: #fff;
+    color: $off-white;
     opacity: 1;
     left: 50%;
     text-align: center;
@@ -306,7 +298,7 @@ header, .header {
     left: 0;
     content: " ";
     display: block;
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $border-color;
     width: 100%;
 
     @include lg {
@@ -349,10 +341,6 @@ header, .header {
     a {
         color: $text-color;
         font-size: $type-size-4;
-
-        @include lg {
-            font-size: $type-size-4;
-        }
     }
 
     h2 {

@@ -86,7 +86,7 @@ blockquote {
     padding-left: 1em;
     padding-right: 1em;
     font-style: italic;
-    border-left: 0.25em solid $primary-color;
+    border-left: 0.25em solid $border-color;
 
     cite {
         font-style: italic;
@@ -100,46 +100,12 @@ blockquote {
 
 a {
     &:visited {
-        color: $link-color-visited;
+        color: $link-color-hover;
     }
 
     &:hover {
         color: $link-color-hover;
         outline: 0;
-    }
-}
-
-tt,
-code,
-kbd,
-samp,
-pre {
-    font-family: $monospace;
-}
-
-pre {
-    overflow-x: auto;
-
-    /* add scrollbars to wide code blocks*/
-}
-
-p > code,
-a > code,
-li > code,
-figcaption > code,
-td > code {
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    font-size: 0.8em;
-    background: $code-background-color;
-    border-radius: $border-radius;
-
-    &:before,
-    &:after {
-        letter-spacing: -0.2em;
-        content: "\00a0";
-
-        /* non-breaking space*/
     }
 }
 
@@ -177,28 +143,9 @@ figure {
 
     img {
         width: 100%;
-        border-radius: $border-radius;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
     }
 
     > a {
         display: block;
-    }
-}
-
-figcaption {
-    margin-bottom: 0.5em;
-    color: $muted-text-color;
-    font-family: $serif;
-    font-size: $type-size-6;
-
-    a {
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-
-        &:hover {
-            color: $link-color-hover;
-        }
     }
 }
