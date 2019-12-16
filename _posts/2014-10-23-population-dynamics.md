@@ -30,4 +30,8 @@ The players then randomly play against each other, and keep track of how much mo
 
 As you can see in the video below, the 5's last the longest, with their in-between strategy! Note that I didn't allow players to combine strategies, as this would have complicated it a bit, and (if I remember) there is a suggestion that the offer and accept parameters are somehow linked evolutionarily.
 
-<iframe src="https://giphy.com/embed/t6leavMMQwBQIrYiTo" width="480" height="378" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/t6leavMMQwBQIrYiTo"></a></p>
+<video width="100%" height="500" controls>
+    <source src="/assets/videos/altruism.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </source>
+</video>
