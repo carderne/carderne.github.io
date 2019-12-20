@@ -1,29 +1,15 @@
-/*
-   Variables
-*/
 $body-width: 900px;
 $sidebar-width: 330px;
 $border-radius: 4px;
 
-/* Typography */
 $sans-serif: Carlito, Calibri, sans-serif;
 $monospace: Monaco, Consolas, monospace;
 
-/* type scale */
 $type-size-3: 1.563em;
-
-// ~25.008px
 $type-size-4: 1.25em;
-
-// ~20px
 $type-size-5: 1em;
-
-// ~16px
 $type-size-6: 0.75em;
 
-// ~12px
-
-/* Colors */
 $gray: #7a8288;
 $background-color: #F6F6F6;
 $text-color: mix(black, $gray, 40%);
@@ -33,25 +19,21 @@ $link-color: #458CD5;
 $link-color-hover: mix(black, $link-color, 25%);
 $off-white: #F6F6F6;
 
-/* Breakpoints */
 @mixin sm {
     @media (min-width: #{600px}) {
         @content;
     }
 }
-
 @mixin md {
     @media (min-width: #{768px}) {
         @content;
     }
 }
-
 @mixin lg {
     @media (min-width: #{1024px}) {
         @content;
     }
 }
-
 @mixin xl {
     @media (min-width: #{1500px}) {
         @content;

@@ -4,7 +4,7 @@ title: Books
 ---
 
 <div class="books">
-  {% for book in site.data.books %}
+  {%- for book in site.data.books -%}
     <div itemprop=mainEntity itemscope itemtype=http://schema.org/Book>
       <div itemprop=name>{{ book.title }}</div>
       <div itemprop=author>{{ book.author }}</div>
@@ -13,5 +13,5 @@ title: Books
         <div itemprop=reviewRating class=star style=width:{{ book.rating | times: 13 }}px></div>
       </div>
     </div>
-  {% endfor %}
+  {%- endfor -%}
 </div>

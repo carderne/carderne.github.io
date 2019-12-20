@@ -1,6 +1,4 @@
-/*
-  OVERAL STYLING
-*/
+// Main page structure
 .main {
     max-width: 100%;
     margin-left: auto;
@@ -32,9 +30,7 @@
     }
 }
 
-/*
-  ARCHIVE
-*/
+// Archive list items
 .archive-item {
     position: relative;
 }
@@ -70,9 +66,7 @@
     }
 }
 
-/*
-  SINGLE PAGE/POST
-*/
+// Single post
 .page-title {
     font-size: $type-size-3;
     float: left;
@@ -107,7 +101,6 @@ header, .header {
         font-size: 1em;
     }
 
-    /* paragraph indents */
     p {
         margin: 0 0 1.3em;
     }
@@ -138,9 +131,7 @@ header, .header {
     }
 }
 
-/*
-  BOOKS
-*/
+// Books
 .books > div {
     grid-template-columns: 1fr .75fr 70px;
     display: grid;
@@ -179,9 +170,7 @@ header, .header {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAA1klEQVQokZ3SMUpDQRDG8d8+QgghSCqxCCleKanEUjyBZ/AURryIJ8gJtEmniI1gLQiChY2lIIgakbFZw/J4Ac0uC8Pu95+Z/XZTCP8dVdtmkoZJ6v4ZyuJT7K0sFY2JA3zirHlWaFTYQI19XCHwjkNsYwudEtrFHHd4xleGAi94wC1OUP1CPRznlqJlfeMa9bJSJns4wlsLdIlxeacqm/GBC7y2eHUT4mmV5TUGOX4sEkyaWTpFvIl7zHCOEaYYJqkbYrFUFjbWGDXeo48dhd0hpHX+3g+KsWiwq4//gAAAAABJRU5ErkJggg==);
 }
 
-/*
-  PHOTOS
-*/
+// Photos
 .photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -289,10 +278,7 @@ header, .header {
     visibility: visible;
 }
 
-/*
-  SIDEBAR
-*/
-
+// Sidebar
 .sidebar:after {
     position: absolute;
     left: 0;
