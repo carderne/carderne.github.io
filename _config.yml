@@ -5,7 +5,6 @@ author                   : "Chris Arderne"
 description              : "A blog for adventurous trip reports, explorations of data and code, and sometimes even things from my day job. Use the links above to learn more, see my work and get in touch."
 url                      : "https://rdrn.me"
 home                     : "/"
-avatar                   : "/assets/images/face.jpg" 
 
 plugins:
   - jekyll-feed
@@ -36,12 +35,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Sass/SCSS
 sass:
-  sass_dir: _sass
   style: compressed
 
 permalink: /:title/
-
-compress_html:
-  clippings: all
