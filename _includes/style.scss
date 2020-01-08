@@ -64,9 +64,17 @@ body {
     line-height: 1.5;
 }
 
-h2, h3 {
+h1, h2, h3 {
     border-bottom: 0;
     margin-bottom: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.17em;
 }
 
 a {
@@ -519,7 +527,7 @@ header, .header {
         font-size: $type-size-4;
     }
 
-    h2 {
+    h1, h2 {
         margin-top: 0;
     }
 }
@@ -558,6 +566,14 @@ figure.highlight {
     margin: 0;
     padding: 1em;
   }
+}
+
+code.highlighter-rouge {
+    background: mix(white, $gray, 50%);
+    font-family: $monospace;
+    font-size: $type-size-6;
+    border-radius: $border-radius;
+    padding: 0.1em 0.2em;
 }
 
 .highlight {
