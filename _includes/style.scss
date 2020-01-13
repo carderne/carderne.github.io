@@ -169,14 +169,16 @@ li ol {
 }
 
 figure {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: start;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     margin: 2em 0;
+
+    @include lg {
+        flex-wrap: nowrap;
+        width: 125%;
+    }
 
     img,
     iframe {
@@ -185,10 +187,24 @@ figure {
 
     img {
         width: 100%;
+        @include lg {
+            width: 80%;
+        }
     }
 
     > a {
         display: block;
+    }
+}
+
+figcaption {
+    color: $muted-text-color;
+    font-style: italic;
+    margin-top: -15px;
+    //padding-top: -20px;
+    @include lg {
+        width: 20%;
+        padding-left: 1em;
     }
 }
 
