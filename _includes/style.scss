@@ -3,7 +3,7 @@ $sidebar-width: 330px;
 $border-radius: 4px;
 $sans-serif: Carlito, Calibri, sans-serif;
 $monospace: Monaco, Consolas, monospace;
-$type-size-3: 1.563em;
+$type-size-3: 1.5em;
 $type-size-4: 1.25em;
 $type-size-5: 1em;
 $type-size-6: 0.75em;
@@ -15,6 +15,7 @@ $border-color: #7a8288;
 $link-color: #458CD5;
 $link-color-hover: mix(black, $link-color, 25%);
 $off-white: #F6F6F6;
+$hor-space: 1.5em;
 @mixin sm {
     @media (min-width: #{600px}) {
         @content;
@@ -70,7 +71,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: $type-size-4;
 }
 
 h2 {
@@ -175,7 +176,7 @@ figure {
     flex-wrap: wrap;
     margin: 2em 0;
 
-    @include lg {
+    @include xl {
         flex-wrap: nowrap;
         width: 125%;
     }
@@ -187,7 +188,7 @@ figure {
 
     img {
         width: 100%;
-        @include lg {
+        @include xl {
             width: 80%;
         }
     }
@@ -201,10 +202,10 @@ figcaption {
     color: $muted-text-color;
     font-style: italic;
     margin-top: -15px;
-    //padding-top: -20px;
-    @include lg {
+    @include xl {
         width: 20%;
-        padding-left: 1em;
+        padding-left: $hor-space;
+        margin-top: 0;
     }
 }
 
@@ -222,7 +223,7 @@ figcaption {
         padding-left: 1em;
         padding-right: 1em;
         margin-top: 2em;
-        margin-left: calc(0.2 * #{$sidebar-width});
+        margin-left: calc(0.2 * #{$sidebar-width} - 60px);
     }
 
     @include xl {
@@ -515,9 +516,9 @@ header, .header {
 
     @include lg {
         flex-basis: calc(#{$sidebar-width} - 1em);
-        text-align: unset;
+        text-align: right;
         padding-left: 0;
-        padding-right: 0;
+        padding-right: $hor-space;
     }
 
     ul {
@@ -538,7 +539,7 @@ header, .header {
         }
     }
 
-    a {
+    li * {
         color: $text-color;
         font-size: $type-size-4;
     }
