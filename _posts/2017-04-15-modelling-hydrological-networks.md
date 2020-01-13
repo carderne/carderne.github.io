@@ -27,11 +27,7 @@ At a rough estimate, I achieved about 3/4 of this, and realised run-off modellin
 ## Create direction-aware river networks
 The model uses the wonderful [GeoPandas](http://geopandas.org/) library to read in the river network data from [HydroSHEDS](http://www.hydrosheds.org/). It is very happy crunching the data for the whole African continent, but to make this easier, I've clipped out a small river called Dieprivier  just outside Cape Town(yes, they exist).
 
-![Dieprivier][hydro1]
-
-If we zoom into a small section, we see the the model-generated layer (purple)matches pretty well with the painstakingly traced data (light blue) fromOpenStreetMap.
-
-![Section][hydro2]
+{% include image.html url="/assets/images/2017/hydro1.jpg" description="Dieprivier to the north of Cape Town." %}
 
 The model then goes through a couple of steps to convert this GIS data into something we can use for modelling.
 
@@ -41,7 +37,7 @@ The model then goes through a couple of steps to convert this GIS data into some
 
 A small section of the resulting layers is shown below, with the nodes at the intersections of river arcs. The large green node knows which arcs are connected to it (also in green) and they in turn know about it.
 
-![Nodes][hydro3]
+{% include image.html url="/assets/images/2017/hydro3.jpg" description="Nodes and arcs (edges) for a small section of the river." %}
 
 ## Giving the network some order
 This is all very well, but it's still just a bunch of lines and dots. To make this network a lot easier to use, we must assign [stream order](https://en.wikipedia.org/wiki/Stream_order) to the arcs – essentially indicating how many upstream branches they have. This is a useful proxy for how 'big' any part of a river is relative to the network, but also allows the model to easily orientate itself to what is up- and down-stream of any node.
@@ -77,7 +73,7 @@ def shreve(arc_index, direction_node_id, network, nodes):
 
 Applied to the entire river network, it looks something like this.
 
-![Stream order][hydro4]
+{% include image.html url="/assets/images/2017/hydro4.jpg" description="Dieprivier coloured by stream order." %}
 
 ## Adding data layers and doing things
 Now that we have the network set up and ordered, it's time to do something with it! In addition to the run-off data mentioned further up, there are a few other important layers:
@@ -88,9 +84,7 @@ Now that we have the network set up and ordered, it's time to do something with 
  * ETo, the reference evapo-transpiration for an area, also available from the FAO
  * Precipitation, from many sources, hopefully monthly, never easy to use
 
-For example, here's our same river overlaid with the DEM elevation data.
-
-![DEM][hydro5]
+{% include image.html url="/assets/images/2017/hydro5.jpg" description="For example, here's our same river overlaid with the DEM elevation data." %}
 
 Previously I used the laborious and buggy [ArcPy](http://pro.arcgis.com/en/pro-app/arcpy/get-started/what-is-arcpy-.htm)  t oextract all of this information in the network and nodes data structures, but now [rasterio](https://github.com/mapbox/rasterio) makes this a walk in the park. It's a straightforward library for reading raster GIS data and sampling and manipulating it, and takes only a few lines to load all of this new data.
 
@@ -109,9 +103,7 @@ where catchment-area is the total area upstream of the selected point.Multiplyin
 
 Applying this to Dieprivier, the model creates a point every 500 metres and calculates the head over the preceding 500 metres. By filtering to only include those with at least 10 metres of head and more than 100 kW output, we get the following suggested point of 162 kW, with 12 metres of head and flow rate of 2.75 m3/s.
 
-![Hydropower][hydro6]
-
-Note that this is an unchecked, un-calibrated example result, I'm not at all suggesting someone should build a mini-hydropower site there.
+{% include image.html url="/assets/images/2017/hydro6.jpg" description="Note that this is an unchecked, un-calibrated example result, I'm not at all suggesting someone should build a mini-hydropower site there!" %}
 
 ## Going further with rainfall run-off and discharge
 The result above was calculated using the GSCD, which provides only a single value, with no monthly or yearly variations. This doesn't provide much information about seasonal changes, nor allow for any calibrations with stream gauges, which will likely be on a daily or monthly basis.

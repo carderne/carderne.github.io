@@ -21,7 +21,7 @@ After hiking for ten hours on the first day (30-odd km and 2500 vertical metres)
 
 [Black Peak!](https://www.summitpost.org/black-peak/150936) We had considered some more difficult objectives, but the Class 3 scramble up the South Ridge of Black Peak (2734 m) seemed like the right starting point for us newcomers to the North Cascades. It was a beautiful, mostly off-trail hike up to the two still semi-frozen lakes that would serve as our high camp. We were up early the next morning to cross the talus and small snowfield with a few jitters -- what exactly does Class 3 mean to whichever grizzled old climber first came here? It turned out to be pretty straightforward, with some serious exposure followed by the easy Class 3 step onto the summit.
 
-![Coming down from Black Peak](/assets/images/2017/pnw1.jpg)
+{% include image.html url="/assets/images/2017/pnw1.jpg" description="Coming down from the summit of Black Peak in the North Cascades." %}
 
 Back down and after another diner-stop we had to split up for a day: I quested north into Canada to pick up Valter at Vancouver Airport (don't worry officer I'll be back across the border in a few hours officer), and then we pointed south to get to Mt Adams (3743 m) in time for the Great American Solar Eclipse (TM) of 2017! Apple Maps led us completely astray heading through the back woods between Adams and Mt St Helens, but luckily Max had also been misled, so we got the ranger station around the same time.
 
@@ -36,7 +36,7 @@ We girded our car tires with chicken wire (against mini bears and porcupines), l
 
 Finally the next day, we would head for our big objective: [Pigeon Spire](https://www.summitpost.org/west-ridge-ii-5-4/229111) (3156 m, YDS 5.4), the imposing granite spire out in the glacier field. We crossed the Snowpatch-Bugaboo col, crossed the glacier, and swapped our crampons and boots for climbing shoes. What followed was a few hours of super-exposed extremely fun scrambling (roped the whole way, unlike some braver people) along the West Ridge. We got to the small ledge just below the summit (maybe 20 metres) and it hit 14:00 — the time we'd agreed to turn around. We took a last look at the summit, and started winding our way back. We take time limits seriously in the alpine (although some people consider The Bugaboos a bit of a playground) and in the end were very glad to get down the Snowpatch col rappell before nightfall.
 
-![Valter getting some exposure on Pigeon Spire](/assets/photos/2017-08-26-c.jpg)
+{% include image.html url="/assets/photos/2017-08-26-c.jpg" description="Valter getting some serious exposure on one of Pigeon Spire's knife ridges." %}
 
 ## Epilogue
 After a big day, we decided not to attempt Bugaboo Spire after all: we'd had a big enough adventure already. After a final day messing around on the glacier practising crevasse rescue (conclusion: not possible in a group of two), we trekked back down the mountain and head for a Canmore, where a kind second cousin had a luxurious basement room waiting for us. We hiked to Moraine Lake (obligatory, it seems), and spent a breezy couple of days hiking near Mt Hector. An amazing time in the mountains of the West came to an end as we faced the long-suffering rental car towards Calgary and our flights home (yes officer hope to be back soon officer).

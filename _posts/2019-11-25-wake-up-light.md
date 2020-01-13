@@ -9,7 +9,7 @@ tags:
 
 We need help getting up in the morning. I was moments from buying a [Philips Wake-up Light](https://www.usa.philips.com/c-p/HF3500_60/-), but the cheap one doesn't seem bright enough, and the expensive ones are expensive. So I decided to build one instead! I probably ended up spending more, but the money went to fun and learning rather a plastic thing on the shelf (plus I now have a soldering iron and a breadboard and bits of plastic).
 
-![wake-up-light](/assets/images/2019/wake-up-light.jpg)
+{% include image.html url="/assets/images/2019/wake-up-light.jpg" description="The nearly completed wake-up lighting giving off a warm glow." %}
 
 The basic idea is to have a light that automatically turns on in the morning, and slowly gets brighter and whiter like a sunrise. So: some kind of RGB lights and a timing system. My first thought was to use an Arduino, but this would require buttons and some kind of screen for a UI, which sound difficult and more expensive. So instead I decided to get a [Raspberry Pi Zero W](https://www.raspberrypi.org/pi-zero-w/). Whereas an Arduino runs a single script over and over, a Raspberry Pi is basically just a small computer, which can run a full Linux OS. This means instead of directly handling WiFi connections or button presses, I can just install Flask and create a simple web page to control the lights from a phone.
 
@@ -70,7 +70,7 @@ sudo raspi-config
 
 at the Pi terminal. This should bring up a menu with a couple of options.
 
-![rasp-config screen](/assets/images/2019/raspi-config.png)
+{% include image.html url="/assets/images/2019/raspi-config.png" description="raspi-config and its menu options" %}
 
 We want to make the following changes:
 
@@ -325,7 +325,7 @@ Now restart the Pi (`sudo shutdown -r now`) and if all goes well, the app, the b
 ## The fun part!
 Now for the hardware, which is much more exciting! (I managed to break 6 of my 40 GPIO pins getting it going...) The pins on the 40 pin Pis are configured according to the image below. Important for this project are the `+5V` in red, `+3.3V` in yellow, `ground` in black, and `GPIO` pins in green. Note that these are the BCM numbers -- remember in `button.py` I set `RPi` to use BCM numbering.
 
-![BCM numbers](/assets/images/2019/raspberry-pi-pinout.png)
+{% include image.html url="/assets/images/2019/raspberry-pi-pinout.png" description="BCM numbering scheme for 40-pin Pis" %}
 
 The easiest way to get everything going is to get a reasonably sized breadboard (mine is way too small), a big handful of different coloured male-male and male-female jumper wires and a decent variety of resistors. If you can get a low-current RGB LED working, it will be easier to then move to the higher current one, which needs to be driven by MOSFETs.
 
@@ -333,11 +333,11 @@ My circuit diagram is shown below, and you can click [here](https://crcit.net/c/
 
 The 100 Ω and 10 kΩ resistors on the Gate side of the MOSFETs are something I read about<sup>[citation needed]</sup> and are to prevent high current from leaking into the GPIO pins, and to make sure the Gates properly close, respectively. Be careful that you have everything wired correctly, as pumping 300 mA+ (needed for bright LEDs) into your GPIO pins will quickly fry them (and potentially more).
 
-![circuit diagram](/assets/images/2019/circuit.svg)
+{% include image.html url="/assets/images/2019/circuit.svg" description="Final circuit diagram (ignoring the fact that I had two of each LED)" %}
 
 When I put this together, it came out looking like this. Does it look anything like the neat diagram above? Not exactly professional but it seems to work. By the way, I've got *two* RGB LEDs, because it didn't seem bright enough with just one (they're 3W each). So, for example, the bottom MOSFET drives both red LEDs, but they each get their own resistor (the big maroon ones). I swapped out for a bigger button once I'd checked that it all worked.
 
-![circuit prototype](/assets/images/2019/circuit-prototype.jpg)
+{% include image.html url="/assets/images/2019/circuit-prototype.jpg" description="And the not-as-pretty real-world result" %}
 
 I then decided to ditch the breadboard and, as far as possible, solder everything together directly, to save space in the little cardboard box I found. This was super fiddly, so I think I'll probably get a little [prototype board](https://duckduckgo.com/?q=prototype+board&ia=images&iax=images) for my next project.
 

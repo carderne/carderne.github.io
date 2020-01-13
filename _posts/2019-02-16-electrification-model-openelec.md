@@ -9,8 +9,7 @@ tags:
 
 In my work in electricity access and related issues, an issue that often comes up, and often frustrates me, is the lack of good open source tools. I've been part of discussions where various planners are obliged to choose proprietary systems that come with significant lock-in, simply because the alternatives aren't as capable, or they aren't aware of them. Apart from being expensive and closed source, these tools are typically incapable of being adapted to a team's existing processes and workflows.
 
-![openelec in action][oe1]
-*[openelec.me](https://openelec.me/) in action for a national plan of Lesotho, showing the second of four time steps*
+{% include image.html url="/assets/images/2019/oe1.png" description="openelec.me in action for a national plan of Lesotho, showing the second of four time steps" %}
 
 There are [existing open source tools](https://onlinelibrary.wiley.com/doi/full/10.1002/wene.305) (including [one](https://rdrn.me/lighting-the-world/) that I was extensively involved in) in this category, but none of them are open source in a meaningful way, and all have significant and non-trivial shortcomings. So building from [these](https://rdrn.me/flask-optimize-minigrid/) [two](https://rdrn.me/modelling-universal-electrification/) developments, I've started to make inroads on this issue by creating [openelec](https://github.com/carderne/openelec). In contrast to the other tools, it is truly open source, modular, and has an evolving but sensible API that allows it to be plugged into a variety of front-ends, such as Jupyter, QGIS or a web interface. It is built with proper network analysis and optimisation at its core, with the same components used for different scales (national, local) and objectives (private, public). It is easy to add data points as available and replace the decision calculus (currently CAPEX) with any other, such as LCOE or social goals. It can be made to run in multiple time steps of any granularity and with any prioritisation algorithm.
 
@@ -19,8 +18,7 @@ I discussed most of the model development in my other blog posts ([one](https://
 2. Using the same sources to select the most suitable villages for private sector ventures, depending on input requirements.
 3. Design of LV networks for villages and towns, whether for on- or off-grid application, using mostly [OpenStreetMap](https://www.openstreetmap.org/) data.
 
-![local planning][oe2]
-*[openelec.me](https://openelec.me/) in local planning mode with some sample output*
+{% include image.html url="/assets/images/2019/oe2.png" description="openelec.me in local planning mode with some sample output" %}
 
 ## From model to tool
 For advanced users and modifying/adding functionality, it is probably easiest to use openelec via Jupyter notebooks or direct scripting. I provided simple instructions on the GitHub repository to `pip install` or `git clone` the openelec code. The base [data requirements](https://github.com/carderne/openelec/tree/master/test_data) are also provided in the repository.
@@ -39,6 +37,3 @@ For more routine use, and in internet constrained environments, a QGIS Plugin is
 
 ## Get involved
 I'm still working on getting the code as developer-friendly as possible, but code contributions, suggestions and ideas are very welcome! It's all completely open source and I have no intention of trying to monetise it. Please also get in touch if you'd like to use openelec in whatever capacity and need help doing so.
-
-[oe1]: /assets/images/2019/oe1.png
-[oe2]: /assets/images/2019/oe2.png

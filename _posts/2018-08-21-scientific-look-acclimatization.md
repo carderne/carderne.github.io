@@ -28,7 +28,7 @@ The only time I've suffered altitude sickness was on our first Orizaba attempt(M
 
 The chart makes clear that Kazbek was easily the most steady ascent, and the graph doesn't even show that I'd been up to around 3,000 m in [Spain](https://en.wikipedia.org/wiki/GR_11_(Spain)) just over a week before – as a result, the 5,047 m summit was a breeze, physically.
 
-![Mountains][acc1]
+{% include image.html url="/assets/images/2018/acc1.png" description="Even if the only goal was to make a chart of mountains that looks like mountains... I think I've succeeded." %}
 
 The above is very attractive, but it doesn't make it very easy to compare altitudes. The bar chart below ditches the time axis to make this a bit easier.Each vertical jump represents a time where I ascended higher than I had previously been on that trip, ignoring times when I stayed still or descended.Bolivia starts at 2,810 m because I spent weeks in [Sucre](https://en.wikipedia.org/wiki/Sucre), so that almost became my 'sea level'.
 
@@ -36,11 +36,8 @@ Most of the big jumps are sensibly below 4,000 m, where altitude effects are gen
 
 Another big jump was in Kyrgyzstan. After a 35 hour flight and one night's sleep in Bishkek, we ascended 2,500 metres to our camp site. Although Huayna Potosí inBolivia is still the highest elevation I've reached, I never ascended more than 1,000 in a single day, and my baseline was already extremely high. Result – I felt great, even at 6,088 metres above sea level!
 
-![Delta][acc2]
+{% include image.html url="/assets/images/2018/acc2.png" description="Admittedly this mountain chart looks a little less like mountains." %}
 
 Note that because this graph has no temporal information, it masks how quickly these pushes happened. So although Mexico and Kyrgyzstan look quite similar, in reality we spent several rest days at altitude in Kyrgyzstan before daring to above 4,800 metres, whereas in Mexico we rushed straight at it without a moment's pause.
 
 What both of these charts lose is technical difficulty: Korona is the only mountain that required steep ice climbing near the summit – not easy at around 4,800 metres!
-
-[acc1]: /assets/images/2018/acc1.png
-[acc2]: /assets/images/2018/acc2.png

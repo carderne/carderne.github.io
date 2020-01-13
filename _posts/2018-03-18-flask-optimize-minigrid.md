@@ -23,11 +23,11 @@ As I've covered [elsewhere](https://rdrn.me/open-data-access-tanzania/), data is
 
 As a test case, I've chosen the village of Sipungu  in the Tabora region of Tanzania. To start off with, let's see how this village looks in OpenStreetMap compared to Google Maps. Each of the 444 little shapes on the left is a building, accurately traced by the [HOT team](https://www.hotosm.org/where-we-work/tanzania/) team in Dar es Salaam as part of the IFC project. Some are homes, some are stores, some are schools. As you can see, there's no information in Google Maps about this village – not even the road in.
 
-![Compare][mg1]
+{% include image.html url="/assets/images/2018/mg1.png" description="Let it never be said that I started out with a favourite in mind." %}
 
 To find the optimum way of connecting all these buildings to a mini-grid system,we turn to network theory, and in particular, the [minimum spanning tree](https://en.wikipedia.org/wiki/Minimum_spanning_tree). This is the set of lines that connects a group of points with the minimum total distance (or other cost function). For the village of Sipungu, this looks as follows, where each blue dot is a building (very small ones filtered) and the green point a randomly chosen location for the solar PV installation. I haven't yet extensive testing on speed with larger datasets, but my solution for now is a combination of a [k-neighbors graph](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.kneighbors_graph.html) and scipy's built-in [minimum_spanning_tree](https://docs.scipy.org/doc/scipy-0.15.1/reference/generated/scipy.sparse.csgraph.minimum_spanning_tree.html) function.
 
-![MST][mg2]
+{% include image.html url="/assets/images/2018/mg2.png" description="I do love a good MST." %}
 
 Our goal then is to determine, based on some criteria, which of these connections to maintain. The first step is to direct the network from the PV installation outwards, so that the model knows where to start in looking for connections to drop or keep. We don't want to accidentally disconnect the PV system itself! This is a process not dissimilar to the stream ordering used in my [hydrological modelling](https://rdrn.me/modelling-hydrological-networks/). Conceptually they fall in with a broad range of physical, mathematical and [social](https://rdrn.me/visualizing-book-club-ai/) problems where [network theory]([https://en.wikipedia.org/wiki/Network_theory) is applied.
 
@@ -54,7 +54,7 @@ So I did. To explore the relationship between village density and economics, and
 
 As you can see, there are not many villages that can sustain a mini-grid at that demand level and tariff. Even at extremely high demand levels, around 0.24USD/kWh is still needed for projects to be feasible. However, grid electricity in Tanzania is below 0.10 USD/kWh, so this is unlikely to be possible for poor rural villages. One possible solution: subsidies.
 
-![Tariffs][mg3]
+{% include image.html url="/assets/images/2018/mg3.png" description="Comparison of tariff needed for sustainable systems at different demand levels." %}
 
 ## Creating a simple GIS web app with Flask
 A web app interface to the model would make it a lot more accessibly to non-coders. So I set out to create a basic app that would allow a user to select a village and the desired input parameters, and get an interactive map and summary results in-browser.
@@ -70,13 +70,13 @@ def hello():
     return 'Hello World!'
 ```
 
-Most of the time you want your result to look better than that, so you use anHTML template, into which Flask inserts results as follows using the module render_template. I set up a template with buttons and selectors for the model parameters, and a big window where the mapped results can be displayed. When the user first arrives, they are greeted with an overview map of Tanzania and a selector list on the left. Once they've chosen a village, selected the generator site, and inserts the other parameters, they are shown the mapped results – as in the example below for Nakiu.
+Most of the time you want your result to look better than that, so you use an HTML template, into which Flask inserts results as follows using the module render_template. I set up a template with buttons and selectors for the model parameters, and a big window where the mapped results can be displayed. When the user first arrives, they are greeted with an overview map of Tanzania and a selector list on the left. Once they've chosen a village, selected the generator site, and inserts the other parameters, they are shown the mapped results – as in the example below for Nakiu.
 
-<a href="https://gfycat.com/CarefreeRemarkableAardwolf"><img src="https://thumbs.gfycat.com/FirstWiltedGreyhounddog-size_restricted.gif" alt="Web App demo"></a>
-
-Or below for the slightly larger village of Uwemba.
-
-![Uwemba][mg4]
+<video width="100%" height="500" controls>
+    <source src="/assets/videos/mg4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </source>
+</video>
 
 The front-end is set up with JavaScript to make AJAX calls to the server when necessary. So, for example, when the user clicks 'Run (and be patient)' the client sends a request with all the necessary data to the server app, which uses this data in whatever way, and then responds with a JSON representation of its output. The front-end then uses this data to update the user interface in some way – in this case by displaying results and updating the map.
 

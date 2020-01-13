@@ -9,7 +9,7 @@ tags:
 
 I did my Master's thesis at KTH University of Technology on [A climate, land-use, energy and water nexus assessment of Bolivia](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Akth%3Adiva-189473). That is, I used various models and approaches to attempt to look holistically at Bolivia's land, energy and water use, taking into account the expected impacts of climate change. One of the models I used is called [OnSSET](http://www.onsset.org/) (EU-funding requires silly acronyms, apparently). This model (developed at KTH) is used to determine the best way to achieve universal electrification, by suggesting for each location in a country whether to extend the electrical grid, use a mini-grid system, or rather to rely on stand-alone household solar PV systems.
 
-![Onsset Bolivia][onsset1]
+{% include image.html url="/assets/images/2016/onsset1.jpg" description="My visualization skills have improved since I made this!" %}
 
 Essentially the model takes in a variety of data on population distribution, energy infrastructure, solar intensity, night-time satellite imagery, as well as social and techno-economic factors. As a starting point, it uses this to estimate where the settlements are that already have electricity access. From there, the model spreads outwards from electrified locations, and for each new location, comparing the cost of connecting by the three different options. An exhaustive (-ing?) process.
 
@@ -17,7 +17,7 @@ I started overhauling this model while using it for my thesis, and as a result w
 
 This made modelling a country a few orders of magnitude faster, and much easier to batch process huge jobs. So we immediately put it to work modelling the whole of Sub-Saharan Africa! The modelling unit is 1 km2  (more on that later) so this involved modelling more than 20 million individual units (iteratively!). We published this in Environmental Research Letters: [Lighting the World: the first application of an open source, spatial electrification tool (OnSSET) on Sub-Saharan Africa](http://iopscience.iop.org/article/10.1088/1748-9326/aa7b29/meta).
 
-![Onsset Africa][onsset2]
+{% include image.html url="/assets/images/2016/onsset2.jpg" description="Connection technology recommendations for all of Sub-Saharan Africa." %}
 
 The model was also used in the International Energy Agency's [Special Report: Energy Access Outlook](https://webstore.iea.org/weo-2017-special-report-energy-access-outlook)  to show what is need to provide electricity to the millions in Africa currently without access (see the figure above, taken from the report.
 

@@ -13,7 +13,7 @@ A friend needed a map of the US displayed with points at specific locations with
 
 So (mostly for the fun of it) I decided to see if I could help out, using Folium and some simple tables. My first proposal ("just run this Jupyter notebook and embed the output") didn't go over well. So I decided to explore how to make it as simple as possible, and this is what I came up with.
 
-![Using gspread][py1]
+{% include image.html url="/assets/images/2018/py1.png" description="I highly recommend draw.io for this type of stuff." %}
 
 Firstly there are two Google Sheets with a simple format. The [first](https://docs.google.com/spreadsheets/d/1WyZNokrgj5NmbyYrRIOQDa2mZ0_SEdbjBohR2RmKXp8/edit?usp=sharing) contains specific point data with coordinates in decimal degrees, and the [second](https://docs.google.com/spreadsheets/d/15t8dZIab3cNoN3y3WVYVy4a-RITFhfvlPWIKSKAuV0Y/edit?usp=sharing) contains summary state-level data with polygon representations of each state.These are then shared with anyone who might need access to updating the map data.
 
@@ -78,5 +78,3 @@ git push
 This pushes the updated html file to the repo, where my so-called clients can easily [access it](https://github.com/carderne/leaflet-gsheets) to embed in their website. Then all they have to do to update their website is edit the Google Sheets and wait for the new results to appear embedded in their website.
 
 <iframe src="/assets/html/leaflet-gsheets-nosidebar.html" style="width: 100%; height: 600px" name="internal" frameborder="0"></iframe>
-
-[py1]: /assets/images/2018/py1.png
