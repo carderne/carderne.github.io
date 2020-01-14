@@ -1,3 +1,7 @@
+- author: Stephen Fry
+  date: 14 Jan '20
+  rating: 3
+  title: Mythos
 - author: Ursula K. Le Guin
   date: 06 Jan '20
   rating: 4
@@ -439,14 +443,14 @@
   date: 11 Jul '17
   rating: 4
   title: The Sirens of Titan
-- author: Stefan Zweig
-  date: 05 Jul '17
-  rating: 5
-  title: Chess Story
 - author: Jalaluddin Rumi
   date: 05 Jul '17
   rating: 0
   title: 'The Masnavi: Book One'
+- author: Stefan Zweig
+  date: 05 Jul '17
+  rating: 5
+  title: Chess Story
 - author: William Faulkner
   date: 02 Jul '17
   rating: 0
@@ -1149,11 +1153,11 @@
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: The Rime of the Ancient Mariner
+  title: Christabel
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: Christabel
+  title: The Rime of the Ancient Mariner
 - author: William Trevor
   date: 20 May '13
   rating: 3
@@ -1174,14 +1178,14 @@
   date: 13 May '13
   rating: 3
   title: The Virgin and the Gipsy
-- author: Katherine Mansfield
-  date: 11 May '13
-  rating: 3
-  title: 'Something Childish But Very Natural (Great Loves, #13)'
 - author: Jules Verne
   date: 11 May '13
   rating: 3
   title: Twenty Thousand Leagues Under the Sea
+- author: Katherine Mansfield
+  date: 11 May '13
+  rating: 3
+  title: 'Something Childish But Very Natural (Great Loves, #13)'
 - author: "Jos\xE9 Saramago"
   date: 28 Apr '13
   rating: 5
@@ -1275,14 +1279,14 @@
   date: 21 Oct '12
   rating: 5
   title: The Iliad of Homer
-- author: Giovanni Boccaccio
-  date: 12 Sep '12
-  rating: 3
-  title: 'The Eaten Heart: Unlikely Tales of Love (Great Loves, #3)'
 - author: "Carlos Ruiz Zaf\xF3n"
   date: 12 Sep '12
   rating: 4
   title: 'The Prisoner of Heaven (The Cemetery of Forgotten Books, #3)'
+- author: Giovanni Boccaccio
+  date: 12 Sep '12
+  rating: 3
+  title: 'The Eaten Heart: Unlikely Tales of Love (Great Loves, #3)'
 - author: "H\xE9lo\xEFse d'Argenteuil"
   date: 10 Sep '12
   rating: 3
