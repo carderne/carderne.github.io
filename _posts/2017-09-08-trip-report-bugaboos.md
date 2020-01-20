@@ -1,13 +1,11 @@
 ---
 layout: single
 title: "Trip Report: The Bugaboos"
-date: "2020-01-08"
+date: "2017-09-08"
 excerpt: "A month-ish with great friends in some of the most beautiful mountains in the world, with one goal: Bugaboo Spire."
 tags:
 - outside
 ---
-
-*Note: this trip took place in August 2017 but I'm only writing about it now in 2020!*
 
 It started, like so many things, with a picture from the internet. [Bugaboo Spire](https://duckduckgo.com/?q=bugaboo+spire&t=canonical&iax=images&ia=images), in the Canadian Rocky Mountains. I started talking to Valter, and we started planning a trip. One plan grew to three, and soon I found myself in Seattle-Tacoma Airport, armed with a folder full of route descriptions, and looking for the bus to Bellingham.
 
