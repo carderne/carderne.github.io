@@ -1,3 +1,7 @@
+- author: Ray Bradbury
+  date: 31 Jan '20
+  rating: 3
+  title: The Illustrated Man
 - author: Robert Macfarlane
   date: 24 Jan '20
   rating: 4
@@ -447,14 +451,14 @@
   date: 11 Jul '17
   rating: 4
   title: The Sirens of Titan
-- author: Stefan Zweig
-  date: 05 Jul '17
-  rating: 5
-  title: Chess Story
 - author: Jalaluddin Rumi
   date: 05 Jul '17
   rating: 0
   title: 'The Masnavi: Book One'
+- author: Stefan Zweig
+  date: 05 Jul '17
+  rating: 5
+  title: Chess Story
 - author: William Faulkner
   date: 02 Jul '17
   rating: 0
@@ -1157,19 +1161,19 @@
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: Christabel
+  title: The Rime of the Ancient Mariner
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: The Rime of the Ancient Mariner
-- author: William Trevor
-  date: 20 May '13
-  rating: 3
-  title: 'Bodily Secrets (Great Loves, #19)'
+  title: Christabel
 - author: John Updike
   date: 20 May '13
   rating: 3
   title: 'The Women Who Got Away (Great Loves, #20)'
+- author: William Trevor
+  date: 20 May '13
+  rating: 3
+  title: 'Bodily Secrets (Great Loves, #19)'
 - author: "Ana\xEFs Nin"
   date: 19 May '13
   rating: 2
