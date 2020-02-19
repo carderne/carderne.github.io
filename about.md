@@ -11,7 +11,7 @@ I'm the guy in the picture. I set up this blog so that I can't be accused of non
     <img src="/assets/images/face.jpg" alt="profile picture" width="200">
 </p>
 
-My work time is spent exploring data and the geospatial world and thinking of interesting ways to share what I find. Since 2017 I've been working at the World Bank Group, on the intersection of data science and energy access. It's a fun mix of of hard data stuff, and harder stakeholder stuff. Since July 2019 I've started consulting more generally.
+My work time is spent exploring data and the geospatial world and thinking of interesting ways to share what I find. Since 2017 I've been working at the World Bank Group, on the intersection of data science and energy access. It's a fun mix of hard data stuff, and harder stakeholder stuff. Since July 2019 I've started consulting more generally.
 
 In pushing the use of open data in development, I've worked extensively with [HOT](https://www.hotosm.org/) on cool OpenStreetMap work, including a project to [map millions of buildings in Tanzania](https://www.hotosm.org/projects/mini-grids/). Recently I've worked on broader topics related to finance and technology, and have been lucky enough to work with [iRise Hub](http://irisehub.so/) in Mogadishu. I also did a fun bit of work called [gridfinder](https://github.com/carderne/gridfinder) based on some stuff developed by Brandon Rohrer, now of iRobot.
 
