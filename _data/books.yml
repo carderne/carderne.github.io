@@ -1,3 +1,7 @@
+- author: Richard Ayoade
+  date: 27 Feb '20
+  rating: 5
+  title: Ayoade on Top
 - author: Ray Bradbury
   date: 31 Jan '20
   rating: 3
@@ -322,14 +326,14 @@
   date: 13 Mar '18
   rating: 5
   title: The Bad Girl
-- author: Warren Ingram
-  date: 09 Mar '18
-  rating: 1
-  title: Become Your Own Financial Advisor
 - author: Ahmed Saadawi
   date: 09 Mar '18
   rating: 4
   title: Frankenstein in Baghdad
+- author: Warren Ingram
+  date: 09 Mar '18
+  rating: 1
+  title: Become Your Own Financial Advisor
 - author: Cal Newport
   date: 06 Mar '18
   rating: 3
