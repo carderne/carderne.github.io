@@ -45,6 +45,7 @@ html {
     box-sizing: border-box;
     background-color: $background-color;
     font-size: 16px;
+    overflow-y: overlay;
 
     @include md {
         font-size: 18px;
@@ -210,6 +211,24 @@ figcaption {
 }
 
 // Main page structure
+.big-header {
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    line-height: 190%;
+}
+
+.fancy-shadow {
+    text-shadow: 3px 3px 0 #47D1D4, -3px -3px 0 #F98FAF;
+}
+
+.big-taglines {
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    line-height: 90%;
+}
+
 .main {
     max-width: 100%;
     margin-left: auto;
