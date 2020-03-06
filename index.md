@@ -1,5 +1,6 @@
 ---
-layout: front
+layout: default
+heading: '&nbsp;'
 ---
 
 <h1 class="big-header fancy-shadow">CHRIS ARDERNE</h1>
