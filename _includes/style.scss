@@ -118,6 +118,20 @@ img {
     border: 0;
 }
 
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.narrow-img {
+    width: 100%;
+
+    @include lg {
+        width: 50%;
+    }
+}
+
 u,
 ins {
     text-decoration: none;
@@ -189,6 +203,7 @@ figure {
         width: 125%;
     }
 
+
     img,
     iframe {
         margin-bottom: 1em;
@@ -196,6 +211,7 @@ figure {
 
     img {
         width: 100%;
+
         @include xl {
             width: 80%;
         }
@@ -210,6 +226,7 @@ figcaption {
     color: $muted-text-color;
     font-style: italic;
     margin-top: -15px;
+
     @include xl {
         width: 20%;
         padding-left: $hor-space;
@@ -255,6 +272,7 @@ figcaption {
         margin-top: 2em;
         margin-left: calc(0.2 * #{$sidebar-width} - 60px);
     }
+
 
     @include xl {
         margin-left: calc(50% - #{$body-width}/2 - #{$sidebar-width});
@@ -551,6 +569,7 @@ header, .header {
         padding-right: $hor-space;
     }
 
+
     ul {
         list-style: none;
         width: 100%;
@@ -565,7 +584,7 @@ header, .header {
 
         @include lg {
             display: block;
-            padding: 0
+            padding: 0;
         }
     }
 
@@ -599,20 +618,20 @@ $base0f: #ff5370;
 
 div.highlighter-rouge,
 figure.highlight {
-  position: relative;
-  margin-bottom: 1em;
-  background: $base00;
-  color: $base05;
-  font-family: $monospace;
-  font-size: $type-size-6;
-  line-height: 1.8;
-  border-radius: $border-radius;
+    position: relative;
+    margin-bottom: 1em;
+    background: $base00;
+    color: $base05;
+    font-family: $monospace;
+    font-size: $type-size-6;
+    line-height: 1.8;
+    border-radius: $border-radius;
 
-  > pre,
-  pre.highlight {
-    margin: 0;
-    padding: 1em;
-  }
+    > pre,
+    pre.highlight {
+        margin: 0;
+        padding: 1em;
+    }
 }
 
 code.highlighter-rouge {
@@ -624,46 +643,91 @@ code.highlighter-rouge {
 }
 
 .highlight {
-  table {
-    margin-bottom: 0;
-    font-size: 1em;
-    border: 0;
-    td {
-      padding: 0;
-      width: calc(100% - 1em);
-      border: 0;
-      &.code,
-      &.rouge-code {
-        padding-left: 1em;
-      }
+    table {
+        margin-bottom: 0;
+        font-size: 1em;
+        border: 0;
+
+        td {
+            padding: 0;
+            width: calc(100% - 1em);
+            border: 0;
+
+            &.code,
+            &.rouge-code {
+                padding-left: 1em;
+            }
+        }
     }
-  }
-  pre {
-    margin: 0;
-  }
-  pre { width: 100%; }
-  .hll { background-color: $base06; }
-  .c, .cm, .cp, .c1, .cs, .sd { color: $base04; }
-  .err, .gd, .no, .ne, .nv, .vc, .vg, .vi { color: $base08; }
-  .k, .kc, .kd, .kp, .kr { color: $base0e; }
-  .l, .m, .mf, .mh, .mi, .mo, .se, .si, .il { color: $base09; }
-  .n, .p, .nb, .ni, .nl, .py, .w, .sc, .bp { color: $base05; }
-  .o, .kn, .nd, .nt, .ow { color: $base0c; }
-  .gi, .ld, .s, .sb, .s2, .sh, .sx, .sr, .s1, .ss { color: $base0b; }
-  .kt, .nc, .nn { color: $base0a; }
-  .na, .nf, .nx { color: $base0d; }
-  .gs { font-weight: bold; }
-  .ge { font-style: italic; }
-  .gh {
-    color: $base05;
-    font-weight: bold;
-  }
-  .gp {
-    color: $base04;
-    font-weight: bold;
-  }
-  .gu {
-    color: $base0c;
-    font-weight: bold;
-  }
+
+    pre {
+        margin: 0;
+    }
+
+    pre {
+        width: 100%;
+    }
+
+    .hll {
+        background-color: $base06;
+    }
+
+    .c, .cm, .cp, .c1, .cs, .sd {
+        color: $base04;
+    }
+
+    .err, .gd, .no, .ne, .nv, .vc, .vg, .vi {
+        color: $base08;
+    }
+
+    .k, .kc, .kd, .kp, .kr {
+        color: $base0e;
+    }
+
+    .l, .m, .mf, .mh, .mi, .mo, .se, .si, .il {
+        color: $base09;
+    }
+
+    .n, .p, .nb, .ni, .nl, .py, .w, .sc, .bp {
+        color: $base05;
+    }
+
+    .o, .kn, .nd, .nt, .ow {
+        color: $base0c;
+    }
+
+    .gi, .ld, .s, .sb, .s2, .sh, .sx, .sr, .s1, .ss {
+        color: $base0b;
+    }
+
+    .kt, .nc, .nn {
+        color: $base0a;
+    }
+
+    .na, .nf, .nx {
+        color: $base0d;
+    }
+
+    .gs {
+        font-weight: bold;
+    }
+
+    .ge {
+        font-style: italic;
+    }
+
+    .gh {
+        color: $base05;
+        font-weight: bold;
+    }
+
+    .gp {
+        color: $base04;
+        font-weight: bold;
+    }
+
+    .gu {
+        color: $base0c;
+        font-weight: bold;
+    }
 }
