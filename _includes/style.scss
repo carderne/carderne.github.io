@@ -16,21 +16,25 @@ $link-color: #458CD5;
 $link-color-hover: mix(black, $link-color, 25%);
 $off-white: #F6F6F6;
 $hor-space: 1.5em;
+
 @mixin sm {
     @media (min-width: #{600px}) {
         @content;
     }
 }
+
 @mixin md {
     @media (min-width: #{768px}) {
         @content;
     }
 }
+
 @mixin lg {
     @media (min-width: #{1024px}) {
         @content;
     }
 }
+
 @mixin xl {
     @media (min-width: #{1500px}) {
         @content;
@@ -52,9 +56,11 @@ html {
         font-size: 18px;
     }
 
+
     @include lg {
         font-size: 20px;
     }
+
 
     @include xl {
         font-size: 22px;
@@ -221,6 +227,10 @@ figcaption {
 
 .fancy-shadow {
     text-shadow: 3px 3px 0 #47D1D4, -3px -3px 0 #F98FAF;
+}
+
+#fire {
+    text-shadow: 0 0 3px #fefcc9, 0px -2px 4px #feec85, -3px -3px 6px #ffae34, 3px -6px 7px #ec760c, -3px -8px 8px #cd4606, 0 -10px 9px #973716, 2px -12px 11px #451b0e;
 }
 
 .big-taglines {
