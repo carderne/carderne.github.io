@@ -1,3 +1,7 @@
+- author: Gavin Francis
+  date: 17 Mar '20
+  rating: 4
+  title: Empire Antarctica
 - author: Richard Ayoade
   date: 27 Feb '20
   rating: 5
@@ -326,14 +330,14 @@
   date: 13 Mar '18
   rating: 5
   title: The Bad Girl
-- author: Ahmed Saadawi
-  date: 09 Mar '18
-  rating: 4
-  title: Frankenstein in Baghdad
 - author: Warren Ingram
   date: 09 Mar '18
   rating: 1
   title: Become Your Own Financial Advisor
+- author: Ahmed Saadawi
+  date: 09 Mar '18
+  rating: 4
+  title: Frankenstein in Baghdad
 - author: Cal Newport
   date: 06 Mar '18
   rating: 3
@@ -455,14 +459,14 @@
   date: 11 Jul '17
   rating: 4
   title: The Sirens of Titan
-- author: Jalaluddin Rumi
-  date: 05 Jul '17
-  rating: 0
-  title: 'The Masnavi: Book One'
 - author: Stefan Zweig
   date: 05 Jul '17
   rating: 5
   title: Chess Story
+- author: Jalaluddin Rumi
+  date: 05 Jul '17
+  rating: 0
+  title: 'The Masnavi: Book One'
 - author: William Faulkner
   date: 02 Jul '17
   rating: 0
@@ -1165,19 +1169,19 @@
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: The Rime of the Ancient Mariner
+  title: Christabel
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: Christabel
-- author: John Updike
-  date: 20 May '13
-  rating: 3
-  title: 'The Women Who Got Away (Great Loves, #20)'
+  title: The Rime of the Ancient Mariner
 - author: William Trevor
   date: 20 May '13
   rating: 3
   title: 'Bodily Secrets (Great Loves, #19)'
+- author: John Updike
+  date: 20 May '13
+  rating: 3
+  title: 'The Women Who Got Away (Great Loves, #20)'
 - author: "Ana\xEFs Nin"
   date: 19 May '13
   rating: 2
