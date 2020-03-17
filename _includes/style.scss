@@ -71,6 +71,7 @@ body {
     color: $text-color;
     font-family: $sans-serif;
     line-height: 1.5;
+    -webkit-text-size-adjust: 100% // Prevent font scaling in iOS landscape
 }
 
 h1, h2, h3 {
