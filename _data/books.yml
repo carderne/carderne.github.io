@@ -1,3 +1,7 @@
+- author: Betty Smith
+  date: 31 Mar '20
+  rating: 5
+  title: A Tree Grows in Brooklyn
 - author: Gavin Francis
   date: 17 Mar '20
   rating: 4
@@ -330,14 +334,14 @@
   date: 13 Mar '18
   rating: 5
   title: The Bad Girl
-- author: Warren Ingram
-  date: 09 Mar '18
-  rating: 1
-  title: Become Your Own Financial Advisor
 - author: Ahmed Saadawi
   date: 09 Mar '18
   rating: 4
   title: Frankenstein in Baghdad
+- author: Warren Ingram
+  date: 09 Mar '18
+  rating: 1
+  title: Become Your Own Financial Advisor
 - author: Cal Newport
   date: 06 Mar '18
   rating: 3
@@ -439,14 +443,14 @@
   date: 15 Aug '17
   rating: 5
   title: The Hungry Tide
-- author: Isaac Asimov
-  date: 03 Aug '17
-  rating: 3
-  title: The Gods Themselves
 - author: Mark Helprin
   date: 03 Aug '17
   rating: 4
   title: Winter's Tale
+- author: Isaac Asimov
+  date: 03 Aug '17
+  rating: 3
+  title: The Gods Themselves
 - author: Isaac Asimov
   date: 22 Jul '17
   rating: 3
@@ -459,14 +463,14 @@
   date: 11 Jul '17
   rating: 4
   title: The Sirens of Titan
-- author: Stefan Zweig
-  date: 05 Jul '17
-  rating: 5
-  title: Chess Story
 - author: Jalaluddin Rumi
   date: 05 Jul '17
   rating: 0
   title: 'The Masnavi: Book One'
+- author: Stefan Zweig
+  date: 05 Jul '17
+  rating: 5
+  title: Chess Story
 - author: William Faulkner
   date: 02 Jul '17
   rating: 0
