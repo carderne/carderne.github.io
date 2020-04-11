@@ -1,3 +1,11 @@
+- author: David Gange
+  date: 11 Apr '20
+  rating: 5
+  title: The Frayed Atlantic Edge
+- author: Unknown
+  date: 03 Apr '20
+  rating: 4
+  title: Sir Gawain and the Green Knight
 - author: Betty Smith
   date: 31 Mar '20
   rating: 5
@@ -462,14 +470,14 @@
   date: 11 Jul '17
   rating: 4
   title: The Sirens of Titan
-- author: Jalaluddin Rumi
-  date: 05 Jul '17
-  rating: 5
-  title: The Masnavi
 - author: Stefan Zweig
   date: 05 Jul '17
   rating: 5
   title: Chess Story
+- author: Jalaluddin Rumi
+  date: 05 Jul '17
+  rating: 5
+  title: The Masnavi
 - author: William Faulkner
   date: 02 Jul '17
   rating: 0
