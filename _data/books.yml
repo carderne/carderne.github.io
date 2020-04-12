@@ -1,3 +1,7 @@
+- author: "Herg\xE9"
+  date: 12 Apr '20
+  rating: 3
+  title: 22 volumes of Tintin
 - author: David Gange
   date: 11 Apr '20
   rating: 5
@@ -18,6 +22,10 @@
   date: 27 Feb '20
   rating: 5
   title: Ayoade on Top
+- author: Goscinny and Uderzo
+  date: 26 Feb '20
+  rating: 5
+  title: 29 volumes of Asterix
 - author: Ray Bradbury
   date: 31 Jan '20
   rating: 3
@@ -342,14 +350,14 @@
   date: 13 Mar '18
   rating: 5
   title: The Bad Girl
-- author: Ahmed Saadawi
-  date: 09 Mar '18
-  rating: 4
-  title: Frankenstein in Baghdad
 - author: Warren Ingram
   date: 09 Mar '18
   rating: 1
   title: Become Your Own Financial Advisor
+- author: Ahmed Saadawi
+  date: 09 Mar '18
+  rating: 4
+  title: Frankenstein in Baghdad
 - author: Cal Newport
   date: 06 Mar '18
   rating: 3
@@ -450,14 +458,14 @@
   date: 15 Aug '17
   rating: 5
   title: The Hungry Tide
-- author: Mark Helprin
-  date: 03 Aug '17
-  rating: 4
-  title: Winter's Tale
 - author: Isaac Asimov
   date: 03 Aug '17
   rating: 3
   title: The Gods Themselves
+- author: Mark Helprin
+  date: 03 Aug '17
+  rating: 4
+  title: Winter's Tale
 - author: Isaac Asimov
   date: 22 Jul '17
   rating: 3
@@ -470,14 +478,14 @@
   date: 11 Jul '17
   rating: 4
   title: The Sirens of Titan
-- author: Stefan Zweig
-  date: 05 Jul '17
-  rating: 5
-  title: Chess Story
 - author: Jalaluddin Rumi
   date: 05 Jul '17
   rating: 5
   title: The Masnavi
+- author: Stefan Zweig
+  date: 05 Jul '17
+  rating: 5
+  title: Chess Story
 - author: William Faulkner
   date: 02 Jul '17
   rating: 0
@@ -1173,11 +1181,11 @@
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: Christabel
+  title: The Rime of the Ancient Mariner
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: The Rime of the Ancient Mariner
+  title: Christabel
 - author: William Trevor
   date: 20 May '13
   rating: 3
@@ -1230,14 +1238,14 @@
   date: 22 Mar '13
   rating: 4
   title: The Wonderful Story of Henry Sugar and Six More
-- author: Stendhal
-  date: 13 Feb '13
-  rating: 2
-  title: Cures for Love
 - author: Giacomo Casanova
   date: 13 Feb '13
   rating: 4
   title: Of Mistresses, Tigresses and Other Conquests
+- author: Stendhal
+  date: 13 Feb '13
+  rating: 2
+  title: Cures for Love
 - author: Salman Rushdie
   date: 14 Jan '13
   rating: 5
@@ -1298,14 +1306,14 @@
   date: 21 Oct '12
   rating: 5
   title: The Iliad of Homer
-- author: "Carlos Ruiz Zaf\xF3n"
-  date: 12 Sep '12
-  rating: 4
-  title: The Prisoner of Heaven
 - author: Giovanni Boccaccio
   date: 12 Sep '12
   rating: 3
   title: The Eaten Heart
+- author: "Carlos Ruiz Zaf\xF3n"
+  date: 12 Sep '12
+  rating: 4
+  title: The Prisoner of Heaven
 - author: "H\xE9lo\xEFse d'Argenteuil"
   date: 10 Sep '12
   rating: 3
