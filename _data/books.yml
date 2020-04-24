@@ -1,3 +1,7 @@
+- author: Sanmao
+  date: 23 Apr '20
+  rating: 4
+  title: Stories of the Sahara
 - author: "Herg\xE9"
   date: 12 Apr '20
   rating: 3
@@ -458,14 +462,14 @@
   date: 15 Aug '17
   rating: 5
   title: The Hungry Tide
-- author: Isaac Asimov
-  date: 03 Aug '17
-  rating: 3
-  title: The Gods Themselves
 - author: Mark Helprin
   date: 03 Aug '17
   rating: 4
   title: Winter's Tale
+- author: Isaac Asimov
+  date: 03 Aug '17
+  rating: 3
+  title: The Gods Themselves
 - author: Isaac Asimov
   date: 22 Jul '17
   rating: 3
@@ -632,12 +636,12 @@
   title: Paradiso
 - author: Rudyard Kipling
   date: 25 Jul '16
-  rating: 0
-  title: In the Rukh
-- author: Rudyard Kipling
-  date: 25 Jul '16
   rating: 4
   title: The Second Jungle Book
+- author: Rudyard Kipling
+  date: 25 Jul '16
+  rating: 0
+  title: In the Rukh
 - author: Rudyard Kipling
   date: 20 Jul '16
   rating: 4
