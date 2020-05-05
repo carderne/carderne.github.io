@@ -1,5 +1,9 @@
-- author: Peter Pomerantsev
+- author: Unknown
   date: 05 May '20
+  rating: 4
+  title: The Epic of Gilgamesh
+- author: Peter Pomerantsev
+  date: 01 May '20
   rating: 4
   title: This is not Propaganda
 - author: Sanmao
@@ -466,14 +470,14 @@
   date: 15 Aug '17
   rating: 5
   title: The Hungry Tide
-- author: Mark Helprin
-  date: 03 Aug '17
-  rating: 4
-  title: Winter's Tale
 - author: Isaac Asimov
   date: 03 Aug '17
   rating: 3
   title: The Gods Themselves
+- author: Mark Helprin
+  date: 03 Aug '17
+  rating: 4
+  title: Winter's Tale
 - author: Isaac Asimov
   date: 22 Jul '17
   rating: 3
@@ -1114,14 +1118,14 @@
   date: 08 Nov '13
   rating: 4
   title: Heart of Darkness
-- author: Kurt Vonnegut
-  date: 06 Nov '13
-  rating: 3
-  title: 2BR02B
 - author: Douglas Adams
   date: 06 Nov '13
   rating: 3
   title: Life, the Universe and Everything
+- author: Kurt Vonnegut
+  date: 06 Nov '13
+  rating: 3
+  title: 2BR02B
 - author: Vladimir Nabokov
   date: 02 Nov '13
   rating: 5
@@ -1166,14 +1170,14 @@
   date: 26 Jun '13
   rating: 4
   title: Cosmos
-- author: Sigmund Freud
-  date: 19 Jun '13
-  rating: 3
-  title: Deviant Love
 - author: Norman Davies
   date: 19 Jun '13
   rating: 5
   title: Europe
+- author: Sigmund Freud
+  date: 19 Jun '13
+  rating: 3
+  title: Deviant Love
 - author: James Joyce
   date: 14 Jun '13
   rating: 4
@@ -1189,19 +1193,19 @@
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: The Rime of the Ancient Mariner
+  title: Christabel
 - author: Samuel Taylor Coleridge
   date: 24 May '13
   rating: 5
-  title: Christabel
-- author: William Trevor
-  date: 20 May '13
-  rating: 3
-  title: Bodily Secrets
+  title: The Rime of the Ancient Mariner
 - author: John Updike
   date: 20 May '13
   rating: 3
   title: The Women Who Got Away
+- author: William Trevor
+  date: 20 May '13
+  rating: 3
+  title: Bodily Secrets
 - author: "Ana\xEFs Nin"
   date: 19 May '13
   rating: 2
@@ -1402,14 +1406,14 @@
   date: 04 Jan '12
   rating: 5
   title: Crime and Punishment
-- author: Shel Silverstein
-  date: 01 Jan '12
-  rating: 3
-  title: The Giving Tree
 - author: James Joyce
   date: 01 Jan '12
   rating: 5
   title: The Cat and the Devil
+- author: Shel Silverstein
+  date: 01 Jan '12
+  rating: 3
+  title: The Giving Tree
 - author: Isaac Asimov
   date: 07 Dec '11
   rating: 4
