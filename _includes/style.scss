@@ -643,6 +643,11 @@ code.highlighter-rouge {
     padding: 0.1em 0.2em;
 }
 
+tr:nth-child(even) {
+    background-color: #bfd7d2;
+}
+
+
 .highlight {
     table {
         margin-bottom: 0;
