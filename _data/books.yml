@@ -1,3 +1,7 @@
+- author: Albert Camus
+  date: 15 May '20
+  rating: 5
+  title: The Plague
 - author: Unknown
   date: 05 May '20
   rating: 4
@@ -470,14 +474,14 @@
   date: 15 Aug '17
   rating: 5
   title: The Hungry Tide
-- author: Isaac Asimov
-  date: 03 Aug '17
-  rating: 3
-  title: The Gods Themselves
 - author: Mark Helprin
   date: 03 Aug '17
   rating: 4
   title: Winter's Tale
+- author: Isaac Asimov
+  date: 03 Aug '17
+  rating: 3
+  title: The Gods Themselves
 - author: Isaac Asimov
   date: 22 Jul '17
   rating: 3
