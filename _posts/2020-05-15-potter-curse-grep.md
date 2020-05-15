@@ -16,9 +16,9 @@ I converted all seven ebooks to plaintext, dropped them in a directory together 
 ```bash
 rg " p[[:lower:]]{3,}ly"
 # match a space
-# followed by a 'p'
-# followed by at least 3 lower case letters
-# followed by 'ly'
+# then 'p'
+# then 3+ letters
+# then 'ly'
 ```
 
 Just within Harry Potter and the Order of the Phoenix (the tome in question), there were 202 matches! This prints out a massive wall of text (as the full context for each match is printed too) but this makes the sleuthing more enjoyable. Nonetheless, in a few moments the culprit is found:
@@ -30,10 +30,12 @@ Let's dig into some more analysis (and chuckles)
 To make this a bit more amenable to analysis (and chuckles), let's drop the context, and count the number of uses of each unique adverb.
 
 ```bash
-rg " p[[:lower:]]{3,}ly" -o | sed 's/^.*: //' | sort | uniq -c
-# same regex
-# -o (for --only-matching) leaves out the context
-# sed to get rid of the line number (could also do with rg's --no-line-number and --no-filename)
+rg " p[[:lower:]]{3,}ly" -o \
+    | sed 's/^.*: //' \
+    | sort \
+    | uniq -c
+# -o leaves out the context
+# sed to get rid of the line number
 # sort alphabetically
 # unique values with counts
 ```
@@ -63,13 +65,18 @@ Which gives us this:
 Perplexedly strikes twice, as does pompously and a horde of others: 61 different -ly words starting with a p! Let's go one step further and look for phrases that match the pattern verb-person-adverb, e.g. "said Snape snappishly":
 
 ```bash
-rg " [[:lower:]]{4,} [[:upper:]][[:alpha:]]+ [[:lower:]]{4,}ly" -o | sed 's/^.*://' | sort | uniq -c
+rg " [[:lower:]]{4,} \
+[[:upper:]][[:alpha:]]+ \
+[[:lower:]]{4,}ly" -o \
+    | sed 's/^.*://' \
+    | sort \
+    | uniq -c
 # match a space
-# followed by a word with at least 4 lower-case letter
-# followed by a space
-# followed by an word starting with an upper-case letter
-# followed by a space
-# followed by our familiar adverb pattern, but this time with any first letter
+# then a word with 4+ letters
+# then a space
+# then an upper-case word
+# then a space
+# then a -ly word
 ```
 
 This has a lot of false positives, such as "whole Weasley family", but also unearth such joys as:
@@ -90,47 +97,48 @@ This has a lot of false positives, such as "whole Weasley family", but also unea
 
 > said Harry <span style="color:#AF4E38">incredulously</span> (four times, also irritably, exasperatedly, dispiritedly, and a host of other ways)
 
-All in all, this pattern repeats itself 2860 times throughout the books!
+All in all, there are 1431 unique version of this throughout the books!
 
 One last thing, let's get a quick adverb count per 10,000 words. The following snippet goes through all files in subdirectories, gets the number of adverbs, then the total word count, then divides them.
 
 ```bash
 for f in **/*.txt; do
-    matches=$(rg " [[:lower:]]{4,}ly" --count-matches --no-filename -g "$f")
-    wordcount=$(cat $f | wc -w)
-    echo $f $(echo "10000*$matches/$wordcount" | bc)
+    m=$(rg " [[:lower:]]{4,}ly" \
+        -c --no-filename -g "$f")
+    w=$(cat $f | wc -w)
+    r=$(echo "10000*$m/$w" | bc)
+    echo $f $r
 done
 ```
 
 And we have the following counts. Note that this is counting any words that match the pattern, so we have false positives (like 'family') and probably some false negatives as well (such as 'fast'). In general this is probably over-predicting on average.
 
 ```python
-Philsophers Stone        107   adverbs per 10,000 words
+Philsophers Stone        107*
 Chamber of Secrets       153
 Prisoner of Azkaban      154
 Goblet of Fire           156
 Order of the Phoenix     179
 Half-Blood Prince        164
 Deathly Hallows          112
+
+* adverbs per 10,000 words
 ```
 
 So she starts off slowly, builds up to an astonishing 179 in book five (the one that started this investigation, unsurprisingly) and then settles down again (in response to critics?).
 
 Let's have a quick look at some other authors. This was much less fun, as although there are loads of -ly words throughout, there are relatively few verb-person-adverb constructs to laugh at.
 
-```python
-                                       adverbs per 10k    vpa* per million
- JK Rowling       Harry Potter series  151                2587
- Garth Nix        Sabriel              138                337
- Leo Tolstoy      Anna Karenina        139                60
- Virginia Woolf   To the Lighthouse    124                43
- John Steinbeck   Grapes of Wrath      90                 38
- JRR Tolkien      Lord of the Rings    69                 235
- Cormac McCarthy  The Road             37                 0
- Mark Twain       Huckleberry Finn     35                 7
-
-*vpa = verb-person-adverb
-```
+| Book | adverbs per 10k | verb-person-adverb per million |
+|------|-----------------|------------------|
+| Harry Potter series | 151 | 2587 |
+| Sabriel (Garth Nix) | 138 | 337 |
+| Anna Karenina (Tolstoy) | 139 | 60 |
+| To the Lighthouse (Woolf) | 124 | 43 |
+| Grapes of Wrath (Steinbeck) | 90 | 38 |
+| The Lord of the Rings (Tolkien) | 69 | 235 |
+| The Road (McCarthy) | 37 | 0 |
+| Huckleberry Finn | 35 | 7 |
 
 Unsurprisingly, *The Road* doesn't contain a single "said Snape snappishly", and *Huckleberry Finn* gets by with very few. *The Lord of the Rings* has plenty, and "said Strider suddenly" manages to sneak in twice. Tolstoy is quite generous with adverbs, and "perplexedly" even appeared in the Pevear and Volokhonsky translation. Unsurprisingly, the nearest competitor to Potter's dominance is another YA series: *Sabriel* by Garth Nix, one of my absolute favourite books then and now. But even in this case no expression is repeated more than twice, and it's a drab (but telling) "replied Sabriel distantly".
 
@@ -146,7 +154,11 @@ p = re.compile(r" \w*ly")
 data = []
 for fi in Path().glob("**/*.txt"):
     with open(fi) as f:
-        data.extend(l.strip() for l in f.readlines())
+        data.extend(
+            l.strip() 
+            for l 
+            in f.readlines()
+        )
 
 counts = defaultdict(int)
 for l in data:

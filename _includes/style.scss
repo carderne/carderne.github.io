@@ -71,7 +71,7 @@ body {
     color: $text-color;
     font-family: $sans-serif;
     line-height: 1.5;
-    -webkit-text-size-adjust: 100% // Prevent font scaling in iOS landscape
+    -webkit-text-size-adjust: 100%;
 }
 
 h1, h2, h3 {
@@ -643,29 +643,33 @@ code.highlighter-rouge {
     padding: 0.1em 0.2em;
 }
 
-tr:nth-child(even) {
-    background-color: #bfd7d2;
+table {
+    border-spacing: 0;
+    display: block;
+    width: 100%;
+    overflow: auto;
 }
 
+table th {
+    font-weight: 600;
+}
+
+table td, table th {
+    padding: 6px 13px;
+    margin: 0;
+    border: 1px solid #dfe2e5;
+}
+
+table tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
 
 .highlight {
-    table {
-        margin-bottom: 0;
-        font-size: 1em;
-        border: 0;
-
-        td {
-            padding: 0;
-            width: calc(100% - 1em);
-            border: 0;
-
-            &.code,
-            &.rouge-code {
-                padding-left: 1em;
-            }
-        }
-    }
-
     pre {
         margin: 0;
     }
