@@ -169,10 +169,3 @@ There are 12 million people in the 2,686 new villages to connect, and hopefully 
 Finally, what about the people that were left out when we created the clusters? That process ignored 4 million people (about 9%) from the least densely populated parts of Uganda, who are potentially the most in need of public support. It's difficult to model how best to include this group if they are very rural, dispersed populations, it's probably to safe to say that the quickest and cheapest would be to for them to use solar-home systems, such as solar lanterns and individual roof-mounted solar panels.
 
 You can view a static version of the entire Python notebook [here](http://nbviewer.jupyter.org/github/carderne/electrification-planner/blob/master/electrify.ipynb), or visit the [GitHub repo](https://github.com/carderne/electrification-planner) to see the entire package.
-
-[uni1]: /assets/images/2018/uni1.png
-[uni2]: /assets/images/2018/uni2.png
-[uni3]: /assets/images/2018/uni3.png
-[uni4]: /assets/images/2018/uni4.png
-[uni5]: /assets/images/2018/uni5.png
-[uni6]: /assets/images/2018/uni6.png

@@ -57,6 +57,3 @@ It was an amazing trip, and I learnt so much as a mountaineer and individual. My
 {% include image.html url="/assets/images/2015/k6.jpg" description="Despite my grin, possibly the scariest part of the whole climb!" %}
 
 All Kazbek photos by FJ Pascual.
-
-Partially posted here: 
-[https://lossupertramps.wordpress.com/2016/07/05/kazbek-with-the-uiaa/](https://lossupertramps.wordpress.com/2016/07/05/kazbek-with-the-uiaa/)

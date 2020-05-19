@@ -40,5 +40,3 @@ We pushed on to God’s Window, but it wasn’t very impressive and it’s  an 
 The next day we’d set a rendezvous time with the park rangers (back  at our original starting point, so we set of early to wind our way back  out of the valley. Stopping only to summit [Dernberg](https://en.wikipedia.org/wiki/Dernberg)! Matt opted out of  the slightly hairy scramble to the top, so Zoom and I enjoyed our  panoramic view before rushing down to make the rendezvous on time.
 
 It was a really fun brotherly trip, made more awesome by the sheer  remoteness and aloneness it offered. ‘n Veldie was nooit beter gewes  nie. By the time the land cruiser picked us up again, we were completely  out of food, water, rusks and whiskey, and very much looking forward to  the relative civilisation offered by Sendelingsdrif border post.
-
-Originally published here: [https://lossupertramps.wordpress.com/2016/07/20/rudderless-in-the-richtersveld/](https://lossupertramps.wordpress.com/2016/07/20/rudderless-in-the-richtersveld/)
