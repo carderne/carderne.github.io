@@ -1,3 +1,7 @@
+- author: Mary Shelley
+  date: 23 May '20
+  rating: 5
+  title: Frankenstein
 - author: Albert Camus
   date: 15 May '20
   rating: 5
@@ -474,14 +478,14 @@
   date: 15 Aug '17
   rating: 5
   title: The Hungry Tide
-- author: Mark Helprin
-  date: 03 Aug '17
-  rating: 4
-  title: Winter's Tale
 - author: Isaac Asimov
   date: 03 Aug '17
   rating: 3
   title: The Gods Themselves
+- author: Mark Helprin
+  date: 03 Aug '17
+  rating: 4
+  title: Winter's Tale
 - author: Isaac Asimov
   date: 22 Jul '17
   rating: 3
@@ -648,12 +652,12 @@
   title: Paradiso
 - author: Rudyard Kipling
   date: 25 Jul '16
-  rating: 4
-  title: The Second Jungle Book
-- author: Rudyard Kipling
-  date: 25 Jul '16
   rating: 0
   title: In the Rukh
+- author: Rudyard Kipling
+  date: 25 Jul '16
+  rating: 4
+  title: The Second Jungle Book
 - author: Rudyard Kipling
   date: 20 Jul '16
   rating: 4
@@ -1006,14 +1010,14 @@
   date: 07 May '14
   rating: 5
   title: War and Peace
-- author: Benjamin Hoff
-  date: 26 Apr '14
-  rating: 1
-  title: The Tao of Pooh
 - author: Charles C. Mann
   date: 26 Apr '14
   rating: 5
   title: '1493'
+- author: Benjamin Hoff
+  date: 26 Apr '14
+  rating: 1
+  title: The Tao of Pooh
 - author: Jonathan Swift
   date: 24 Apr '14
   rating: 3
