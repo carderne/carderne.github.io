@@ -135,39 +135,36 @@ Let's have a quick look at some other authors. This was much less fun, as althou
 | Sabriel (Garth Nix) | 138 | 337 |
 | Anna Karenina (Tolstoy) | 139 | 60 |
 | To the Lighthouse (Woolf) | 124 | 43 |
+| Frankenstein (Shelley) | 118 | 12 |
 | Grapes of Wrath (Steinbeck) | 90 | 38 |
 | The Lord of the Rings (Tolkien) | 69 | 235 |
 | The Road (McCarthy) | 37 | 0 |
-| Huckleberry Finn | 35 | 7 |
+| Huckleberry Finn (Twain) | 35 | 7 |
 
 Unsurprisingly, *The Road* doesn't contain a single "said Snape snappishly", and *Huckleberry Finn* gets by with very few. *The Lord of the Rings* has plenty, and "said Strider suddenly" manages to sneak in twice. Tolstoy is quite generous with adverbs, and "perplexedly" even appeared in the Pevear and Volokhonsky translation. Unsurprisingly, the nearest competitor to Potter's dominance is another YA series: *Sabriel* by Garth Nix, one of my absolute favourite books then and now. But even in this case no expression is repeated more than twice, and it's a drab (but telling) "replied Sabriel distantly".
 
 At this point I'd normally start building some charts out of this and seeing how we can analyse this in more interesting ways. For example, which character uses which adverb most often, some more interesting comparisons between authors... But instead, to show the value of a bit of bash knowledge for this kind of analysis, I'm going to show the amount of Python code necessary just to count the number of times each adverb is used within some files (what we did further up with one line in bash):
 
 ```python
+#!/usr/bin/env python
+
 import re
 from pathlib import Path
 from collections import defaultdict
 
 p = re.compile(r" \w*ly")
 
-data = []
+counts = defaultdict(int)
 for fi in Path().glob("**/*.txt"):
     with open(fi) as f:
-        data.extend(
-            l.strip() 
-            for l 
-            in f.readlines()
-        )
-
-counts = defaultdict(int)
-for l in data:
-    m = p.search(l)
-    if m:
-        counts[m.group()] += 1
+        for l in f.readlines():
+            m = p.search(l)
+            if m:
+                counts[m.group()] += 1
 
 for k in sorted(counts):
     print(f"{k:<20}{counts[k]}")
 ```
+Note: I was going for minimum line count here, but would normally use intermediate data arrays to have more flexibility for adding/modifying subsequent analysis.
 
-And to do the whole list of books above, the Python script takes 1 second, to bash's 0.3 seconds. The big advantages of the Python approach, are that (a) I'll understand how it works in a year's time, and (b) if I wanted to now do something more interesting with that data (clustering, networks, NLP...) I would be able to without changing tools.
+And to do the whole list of books above, the Python script takes 0.6 seconds, to ripgrep's 0.2 seconds. The big advantages of the Python approach, are that (a) I'll understand how it works in a year's time, and (b) if I wanted to now do something more interesting with that data (clustering, networks, NLP...) I would be able to without changing tools.
