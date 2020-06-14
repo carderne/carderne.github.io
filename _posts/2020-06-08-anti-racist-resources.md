@@ -11,7 +11,7 @@ This was put together by [Victoria Alexandar](https://twitter.com/victoriaalxndr
 
 The only modification I made was to drop some of the explicitly US-focused stuff (charities, organizations). It's all in the document at the link above. The rest is still relatively US-centric; if anyone can recommend good resources for South Africa and beyond then let me know.
 
-# Structural Racis vs Individual Racism
+# Structural Racism vs Individual Racism
 Racism describes a system of power and oppression/advantage and disadvantage based on race. Structural racism is a system, or series of systems, in which institutional practices, laws, policies, social- cultural standards, and socio-political decisions establish and reinforce norms that perpetuate racial group inequities. Within the context of the United State of America, and other nations, structural racism takes the form of white supremacy; the preferential treatment, privilege, power, access, networks, and access to opportunities available to white people, which often designate communities of color to chronic adverse outcomes.
 
 Individual racism refers to a person’s racist assumptions, beliefs, or behaviors. Individual racism stems from conscious and unconscious bias and is reinforced by structural racism. Please visit the list of books, videos, movies, and TV shows within this guide to learn more about how racism functions and affects all of our day-to-day lives.
@@ -31,7 +31,7 @@ Though we can learn and internalize these messages and biases very early in our 
 Originally published by [WhereChangeStarted.com](https://www.wherechangestarted.com/).
 
 ### Awareness
-This is your initial awakening to the racial injustices around you. You are not only finally able to see that they exist, but that you play a crucial role in stoping the cycle by becoming anti-racist.
+This is your initial awakening to the racial injustices around you. You are not only finally able to see that they exist, but that you play a crucial role in stopping the cycle by becoming anti-racist.
 
 Being aware of racial injustices or understanding that you have privilege won’t make you antiracist, however. You have to keep going through the remaining stages.
 
@@ -105,7 +105,7 @@ Common questions include things like “what do I say when someone is racist but
 - White Fragility: Why Its So Hard for White People to Talk About Race. Robin DiAngelo.
 - So You Want To Talk About Race. Ijeoma Oluo.
 
-### Anti-Racist Imtermediate Kit
+### Anti-Racist Intermediate Kit
 - The Burning House: Jim Crow and the Making of Modern America. Anders Walker.
 - The New Jim Crow: Mass Incarceration in the Age of Colorblindness.. Michelle Alexander.
 - The Condemnation of Blackness: Race, Crime, and the Making of Modern Urban America. Khalil Gilbran Muhammad.
