@@ -10,7 +10,7 @@ title: Photos
   {%- assign id = id[0] -%}
   <div class="thumb">
     <label for={{ id }}>
-      <img class="thumb-image" src={{ photo.src }} alt="{{ photo.caption }}">
+      <img loading="lazy" class="thumb-image" src={{ photo.src }} alt="{{ photo.caption }}">
       <div class="caption">
         <span class="photo-date">{{ photo.date }}</span>
         <span class="photo-caption">{{ photo.caption }}</span>
