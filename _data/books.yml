@@ -1,3 +1,7 @@
+- author: David Abulafia
+  date: 24 Jun '20
+  rating: 5
+  title: The Boundless Sea
 - author: Trevor Noah
   date: 22 Jun '20
   rating: 5
@@ -1262,14 +1266,14 @@
   date: 22 Mar '13
   rating: 4
   title: The Wonderful Story of Henry Sugar and Six More
-- author: Giacomo Casanova
-  date: 13 Feb '13
-  rating: 4
-  title: Of Mistresses, Tigresses and Other Conquests
 - author: Stendhal
   date: 13 Feb '13
   rating: 2
   title: Cures for Love
+- author: Giacomo Casanova
+  date: 13 Feb '13
+  rating: 4
+  title: Of Mistresses, Tigresses and Other Conquests
 - author: Salman Rushdie
   date: 14 Jan '13
   rating: 5
@@ -1418,14 +1422,14 @@
   date: 04 Jan '12
   rating: 5
   title: Crime and Punishment
-- author: James Joyce
-  date: 01 Jan '12
-  rating: 5
-  title: The Cat and the Devil
 - author: Shel Silverstein
   date: 01 Jan '12
   rating: 3
   title: The Giving Tree
+- author: James Joyce
+  date: 01 Jan '12
+  rating: 5
+  title: The Cat and the Devil
 - author: Isaac Asimov
   date: 07 Dec '11
   rating: 4
