@@ -144,7 +144,7 @@ Common questions include things like “what do I say when someone is racist but
 - Giovanni’s Room. James Baldwin.
 - Zami: A New Spelling of My Name, A Biomythography. Audre Lorde.
 - Real Life. Brandon Taylor.
-- Unapologetic: A Black, Queen, and Feminist Mandae for Radical Movements. Charlene A. Carruthers.
+- Unapologetic: A Black, Queen, and Feminist Mandate for Radical Movements. Charlene A. Carruthers.
 - No Tea, No Shade. New Writings in Black Queer Studies. E. Patrick Johnson.
 - Since I Laid my Burden Down. Brontez Purnell.
 - Other Side of Paradise. Staceyann Chin.
@@ -166,7 +166,6 @@ Common questions include things like “what do I say when someone is racist but
 - I Know Why The Caged Birds Sing. Maya Angelou.
 - Being White, Being Good: White Complicity, White Moral Responsibility, and Social Justice Pedagogy. Barbara Applebaum.
 - Racism Without Racists: Color-Blind Racism and the Persistence of Racial Inequality in the United States. Eduardo Bonilla-Silva.
-- Between the World and Me. Ta-Nehisi Coates.
 - The Souls of Black Folk. W.E.B. Du Bois.
 - An Indigenous Peoples' History of the United States. Roxanne Dunbar-Ortiz.
 - For White Folks Who Teach In The Hood… And the Rest of Y’all Too: Reality Pedagogy and Urban Education. Christopher Emdin.
@@ -188,7 +187,6 @@ Common questions include things like “what do I say when someone is racist but
 - The Burning House: Jim Crow and the Making of Modern America. Anders Walker.
 - Medical Apartheid: The Dark History of Medical Experimentation on Black Americans from Colonial Times to the Present. Harriet A. Washington.
 - The Warmth of Other Suns. Isabel Wilkerson.
-- Native Son. Richard Wright.
 
 # Videos
 - [The Urgency of Intersectionality](https://www.youtube.com/watch?v=akOe5-UsQ2o), Kimberle Crenshaw
