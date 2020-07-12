@@ -142,4 +142,4 @@ As for the points further up, this includes the code to add a popup, but nothing
 
 And we're done! The result (with styling) is shown below, or click [here](https://rdrn.me/leaflet-gsheets) to see it full screen. Every time a user loads this map in their browser, it will automatically hop over to the specified Google Sheets and pull the latest data to display it.
 
-<iframe src="/assets/html/leaflet-gsheets-nosidebar.html" style="width: 100%; height: 600px" name="internal" frameborder="0"></iframe>
+<iframe src="https://rdrn.me/leaflet-gsheets/" style="width: 100%; height: 600px" name="internal" frameborder="0"></iframe>
