@@ -20,7 +20,7 @@ title: Photos
     <div class="modal">
       <label for={{ id }}>
         <div class="modal-content">
-          <img class="modal-photo" src={{ photo.src }} alt="{{ photo.caption }}">
+          <img loading="lazy" class="modal-photo" src={{ photo.src }} alt="{{ photo.caption }}">
           <div>
             <span class="photo-date">{{ photo.date }}</span>
             <span class="photo-caption">{{ photo.caption }}</span>
