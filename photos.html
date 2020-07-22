@@ -8,7 +8,7 @@ title: Photos
   {%- assign a = photo.src | split: '/20' -%}
   {%- assign id = a[1] | split: '.' -%}
   {%- assign id = id[0] -%}
-  <div class="thumb">
+  <div class="thumb" id=img-{{ id }}>
     <label for={{ id }}>
       <img loading="lazy" class="thumb-image" src={{ photo.src }} alt="{{ photo.caption }}">
       <div class="caption">
