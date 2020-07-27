@@ -1,4 +1,8 @@
 - author: Terry Pratchett
+  date: 27 Jul '20
+  rating: 4
+  title: 'Guards! Guards! '
+- author: Terry Pratchett
   date: 24 Jul '20
   rating: 4
   title: The Light Fantastic
@@ -1030,14 +1034,14 @@
   date: 07 May '14
   rating: 5
   title: War and Peace
-- author: Charles C. Mann
-  date: 26 Apr '14
-  rating: 5
-  title: '1493'
 - author: Benjamin Hoff
   date: 26 Apr '14
   rating: 1
   title: The Tao of Pooh
+- author: Charles C. Mann
+  date: 26 Apr '14
+  rating: 5
+  title: '1493'
 - author: Jonathan Swift
   date: 24 Apr '14
   rating: 3
@@ -1134,26 +1138,26 @@
   date: 15 Nov '13
   rating: 3
   title: The War of the Worlds
-- author: Kahlil Gibran
-  date: 10 Nov '13
-  rating: 3
-  title: The Prophet
 - author: J.R.R. Tolkien
   date: 10 Nov '13
   rating: 5
   title: "The Children of H\xFArin"
+- author: Kahlil Gibran
+  date: 10 Nov '13
+  rating: 3
+  title: The Prophet
 - author: Joseph Conrad
   date: 08 Nov '13
   rating: 4
   title: Heart of Darkness
-- author: Douglas Adams
-  date: 06 Nov '13
-  rating: 3
-  title: Life, the Universe and Everything
 - author: Kurt Vonnegut
   date: 06 Nov '13
   rating: 3
   title: 2BR02B
+- author: Douglas Adams
+  date: 06 Nov '13
+  rating: 3
+  title: Life, the Universe and Everything
 - author: Vladimir Nabokov
   date: 02 Nov '13
   rating: 5
@@ -1198,14 +1202,14 @@
   date: 26 Jun '13
   rating: 4
   title: Cosmos
-- author: Norman Davies
-  date: 19 Jun '13
-  rating: 5
-  title: Europe
 - author: Sigmund Freud
   date: 19 Jun '13
   rating: 3
   title: Deviant Love
+- author: Norman Davies
+  date: 19 Jun '13
+  rating: 5
+  title: Europe
 - author: James Joyce
   date: 14 Jun '13
   rating: 4
@@ -1434,14 +1438,14 @@
   date: 04 Jan '12
   rating: 5
   title: Crime and Punishment
-- author: Shel Silverstein
-  date: 01 Jan '12
-  rating: 3
-  title: The Giving Tree
 - author: James Joyce
   date: 01 Jan '12
   rating: 5
   title: The Cat and the Devil
+- author: Shel Silverstein
+  date: 01 Jan '12
+  rating: 3
+  title: The Giving Tree
 - author: Isaac Asimov
   date: 07 Dec '11
   rating: 4
