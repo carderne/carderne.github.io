@@ -1,10 +1,18 @@
 - author: Terry Pratchett
+  date: 11 Aug '20
+  rating: 5
+  title: Men at Arms
+- author: Toni Morrison
+  date: 10 Aug '20
+  rating: 4
+  title: Beloved
+- author: Terry Pratchett
   date: 27 Jul '20
   rating: 4
   title: 'Guards! Guards! '
 - author: Terry Pratchett
   date: 24 Jul '20
-  rating: 4
+  rating: 3
   title: The Light Fantastic
 - author: David Foster Wallace
   date: 15 Jul '20
@@ -394,14 +402,14 @@
   date: 13 Mar '18
   rating: 5
   title: The Bad Girl
-- author: Warren Ingram
-  date: 09 Mar '18
-  rating: 1
-  title: Become Your Own Financial Advisor
 - author: Ahmed Saadawi
   date: 09 Mar '18
   rating: 4
   title: Frankenstein in Baghdad
+- author: Warren Ingram
+  date: 09 Mar '18
+  rating: 1
+  title: Become Your Own Financial Advisor
 - author: Cal Newport
   date: 06 Mar '18
   rating: 3
@@ -522,14 +530,14 @@
   date: 11 Jul '17
   rating: 4
   title: The Sirens of Titan
-- author: Jalaluddin Rumi
-  date: 05 Jul '17
-  rating: 5
-  title: The Masnavi
 - author: Stefan Zweig
   date: 05 Jul '17
   rating: 5
   title: Chess Story
+- author: Jalaluddin Rumi
+  date: 05 Jul '17
+  rating: 5
+  title: The Masnavi
 - author: William Faulkner
   date: 02 Jul '17
   rating: 0
