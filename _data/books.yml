@@ -1,3 +1,15 @@
+- author: Brit Bennett
+  date: 03 Sep '20
+  rating: 3
+  title: The Vanishing Half
+- author: Terry Pratchett
+  date: 01 Sep '20
+  rating: 4
+  title: The Fifth Elephant
+- author: Terry Prachett
+  date: 25 Aug '20
+  rating: 4
+  title: Jingo
 - author: Terry Pratchett
   date: 17 Aug '20
   rating: 5
@@ -406,14 +418,14 @@
   date: 13 Mar '18
   rating: 5
   title: The Bad Girl
-- author: Ahmed Saadawi
-  date: 09 Mar '18
-  rating: 4
-  title: Frankenstein in Baghdad
 - author: Warren Ingram
   date: 09 Mar '18
   rating: 1
   title: Become Your Own Financial Advisor
+- author: Ahmed Saadawi
+  date: 09 Mar '18
+  rating: 4
+  title: Frankenstein in Baghdad
 - author: Cal Newport
   date: 06 Mar '18
   rating: 3
@@ -534,14 +546,14 @@
   date: 11 Jul '17
   rating: 4
   title: The Sirens of Titan
-- author: Stefan Zweig
-  date: 05 Jul '17
-  rating: 5
-  title: Chess Story
 - author: Jalaluddin Rumi
   date: 05 Jul '17
   rating: 5
   title: The Masnavi
+- author: Stefan Zweig
+  date: 05 Jul '17
+  rating: 5
+  title: Chess Story
 - author: William Faulkner
   date: 02 Jul '17
   rating: 0
@@ -1214,14 +1226,14 @@
   date: 26 Jun '13
   rating: 4
   title: Cosmos
-- author: Sigmund Freud
-  date: 19 Jun '13
-  rating: 3
-  title: Deviant Love
 - author: Norman Davies
   date: 19 Jun '13
   rating: 5
   title: Europe
+- author: Sigmund Freud
+  date: 19 Jun '13
+  rating: 3
+  title: Deviant Love
 - author: James Joyce
   date: 14 Jun '13
   rating: 4
@@ -1450,14 +1462,14 @@
   date: 04 Jan '12
   rating: 5
   title: Crime and Punishment
-- author: James Joyce
-  date: 01 Jan '12
-  rating: 5
-  title: The Cat and the Devil
 - author: Shel Silverstein
   date: 01 Jan '12
   rating: 3
   title: The Giving Tree
+- author: James Joyce
+  date: 01 Jan '12
+  rating: 5
+  title: The Cat and the Devil
 - author: Isaac Asimov
   date: 07 Dec '11
   rating: 4
