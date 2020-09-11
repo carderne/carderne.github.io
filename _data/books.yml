@@ -1,3 +1,7 @@
+- author: Terry Pratchett
+  date: 11 Sep '20
+  rating: 4
+  title: Night Watch
 - author: Bernardine Evaristo
   date: 07 Sep '20
   rating: 4
@@ -1166,14 +1170,14 @@
   date: 15 Nov '13
   rating: 3
   title: The War of the Worlds
-- author: J.R.R. Tolkien
-  date: 10 Nov '13
-  rating: 5
-  title: "The Children of H\xFArin"
 - author: Kahlil Gibran
   date: 10 Nov '13
   rating: 3
   title: The Prophet
+- author: J.R.R. Tolkien
+  date: 10 Nov '13
+  rating: 5
+  title: "The Children of H\xFArin"
 - author: Joseph Conrad
   date: 08 Nov '13
   rating: 4
@@ -1466,14 +1470,14 @@
   date: 04 Jan '12
   rating: 5
   title: Crime and Punishment
-- author: Shel Silverstein
-  date: 01 Jan '12
-  rating: 3
-  title: The Giving Tree
 - author: James Joyce
   date: 01 Jan '12
   rating: 5
   title: The Cat and the Devil
+- author: Shel Silverstein
+  date: 01 Jan '12
+  rating: 3
+  title: The Giving Tree
 - author: Isaac Asimov
   date: 07 Dec '11
   rating: 4
