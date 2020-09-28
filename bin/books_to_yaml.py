@@ -7,7 +7,7 @@ consumption by Jekyll for my blog.
 
 from pathlib import Path
 import datetime
-from argparse import ArgumentParser
+import sys
 
 from yaml import dump
 import pandas as pd
@@ -39,11 +39,6 @@ def excel2yml(books_in, yaml_out):
 
 
 if __name__ == "__main__":
-    parser = ArgumentParser()
-    parser.add_argument("infile")
-    args = parser.parse_args()
-
-    infile = args.infile
+    infile = sys.argv[1]
     outfile = Path(__file__).parents[1] / "_data" / "books.yml"
-
     excel2yml(infile, outfile)
