@@ -1,4 +1,21 @@
-<figure class="image">
-    <img load="lazy" src="{{ include.url }}" alt="{{ include.description }}" class="center-img {{ include.class | default: '' }}">
-    <figcaption>{{ include.description }}</figcaption>
-</figure>
+{% assign id = include.url | split: "/" | last %}
+<div>
+    <label for="{{ id }}">
+        <figure class="image">
+            <img load="lazy" src="{{ include.url }}" alt="{{ include.description }}" class="center-img {{ include.class | default: '' }}">
+            <figcaption>{{ include.description }}</figcaption>
+        </figure>
+    </label>
+    <input class="modal-state" id="{{ id }}" type="checkbox">
+    <div class="modal">
+        <label for="{{ id }}">
+            <div class="modal-content">
+                <img loading="lazy" class="modal-photo" src="{{ include.url }}" alt="{{ include.description }}">
+                <div>
+                    <span class="photo-caption">{{ include.description }}</span>
+                </div>
+            </div>
+        </label>
+    </div>
+</div>
+
