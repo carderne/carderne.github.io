@@ -61,6 +61,91 @@ body {
     font-family: $sans-serif;
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
+
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0.4rem;
+
+    @include lg {
+        display: flex;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 2rem;
+        margin-left: calc(50vw - #{$body-width}/2 - #{$sidebar-width} + 1rem);
+    }
+}
+
+main {
+    width: 100%;
+    clear: both;
+
+    @include lg {
+        flex-grow: 1;
+        max-width: $body-width;
+    }
+}
+
+nav:after {
+    position: absolute;
+    left: 0;
+    content: " ";
+    display: block;
+    border-bottom: 1px solid $border-color;
+    width: 100%;
+
+    @include lg {
+        border-bottom: none;
+    }
+}
+
+nav {
+    padding-bottom: 1em;
+    display: block;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    @include lg {
+        text-align: right;
+        padding-left: 0;
+        padding-right: $hor-space;
+        flex-basis: #{$sidebar-width};
+    }
+
+    ul {
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 8px;
+            display: inline;
+            margin: 0;
+
+            @include lg {
+                display: block;
+                padding: 0;
+            }
+        }
+
+        li * {
+            color: $text-color;
+            font-size: $type-size-4;
+        }
+    }
+
+
+    h1, h2 {
+        margin-top: 0;
+    }
+
+    a, a:hover, a:visited {
+        color: unset;
+    }
 }
 
 h1, h2, h3 {
@@ -243,7 +328,7 @@ figcaption {
         object-fit: cover;
         max-width: unset;
         width: 102vw;
-        margin-left: calc(-50vw + #{$body-width} / 2 - 50px);
+        margin-left: calc(-50vw + #{$body-width} / 2 - 3rem);
     }
 }
 
@@ -251,7 +336,6 @@ figcaption {
     width: 100%;
 }
 
-// Main page structure
 .big-header {
     text-align: center;
     margin: 0;
@@ -274,34 +358,6 @@ figcaption {
     line-height: 90%;
 }
 
-.main {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-    padding-bottom: 0.4rem;
-
-    @include lg {
-        display: flex;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-top: 2rem;
-        margin-left: calc(50vw - #{$body-width}/2 - #{$sidebar-width});
-    }
-}
-
-.body {
-    width: 100%;
-    clear: both;
-
-    @include lg {
-        flex-grow: 1;
-        max-width: $body-width;
-    }
-}
-
-// Archive list items
 .archive-item {
     position: relative;
 }
@@ -337,7 +393,6 @@ figcaption {
     }
 }
 
-// Single post
 .page-title {
     font-size: $type-size-3;
     float: left;
@@ -402,7 +457,6 @@ header, .header {
     }
 }
 
-// Books
 .books > div {
     grid-template-columns: 1fr .75fr 70px;
     display: grid;
@@ -438,11 +492,9 @@ header, .header {
     width: 13px;
     height: 13px;
     display: inline-block;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAA1klEQVQokZ3SMUpDQRDG8d8+QgghSCqxCCleKanEUjyBZ/AURryIJ8gJtEmniI1gLQiChY2lIIgakbFZw/J4Ac0uC8Pu95+Z/XZTCP8dVdtmkoZJ6v4ZyuJT7K0sFY2JA3zirHlWaFTYQI19XCHwjkNsYwudEtrFHHd4xleGAi94wC1OUP1CPRznlqJlfeMa9bJSJns4wlsLdIlxeacqm/GBC7y2eHUT4mmV5TUGOX4sEkyaWTpFvIl7zHCOEaYYJqkbYrFUFjbWGDXeo48dhd0hpHX+3g+KsWiwq4//gAAAAABJRU5ErkJggg==);
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAA1klEQVQokZ3SMUpDQRDG8d8+QgghSCqxCCleKanEUjyBZ/AURryIJ8gJtEmniI1gLQiChY2lIIgakbFZw/J4Ac0uC8Pu95+Z/XZTCP8dVdtmkoZJ6v4ZyuJT7K0sFY2JA3zirHlWaFTYQI19XCHwjkNsYwudEtrFHHd4xleGAi94wC1OUP1CPRznlqJlfeMa9bJSJns4wlsLdIlxeacqm/GBC7y2eHUT4mmV5TUGOX4sEkyaWTpFvIl7zHCOEaYYJqkbYrFUFjbWGDXeo48dhd0hpHX+3g+KsWiwq4//gAAAAABJRU5ErkJggg==");
 }
 
-
-// Photos
 .photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -556,62 +608,6 @@ label figure {
 .modal-state:checked + .modal {
     opacity: 1;
     visibility: visible;
-}
-
-// Sidebar
-.sidebar:after {
-    position: absolute;
-    left: 0;
-    content: " ";
-    display: block;
-    border-bottom: 1px solid $border-color;
-    width: 100%;
-
-    @include lg {
-        border-bottom: none;
-    }
-}
-
-.sidebar {
-    padding-bottom: 1em;
-    display: block;
-    text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
-
-    @include lg {
-        text-align: right;
-        padding-left: 0;
-        padding-right: $hor-space;
-        flex-basis: #{$sidebar-width};
-    }
-
-    ul {
-        list-style: none;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    li {
-        padding: 8px;
-        display: inline;
-        margin: 0;
-
-        @include lg {
-            display: block;
-            padding: 0;
-        }
-    }
-
-    li * {
-        color: $text-color;
-        font-size: $type-size-4;
-    }
-
-    h1, h2 {
-        margin-top: 0;
-    }
 }
 
 // Syntax
