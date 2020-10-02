@@ -17,7 +17,7 @@ So (mostly for the fun of it) I decided to see if I could help out, using Folium
 
 Firstly there are two Google Sheets with a simple format. The [first](https://docs.google.com/spreadsheets/d/1WyZNokrgj5NmbyYrRIOQDa2mZ0_SEdbjBohR2RmKXp8/edit?usp=sharing) contains specific point data with coordinates in decimal degrees, and the [second](https://docs.google.com/spreadsheets/d/15t8dZIab3cNoN3y3WVYVy4a-RITFhfvlPWIKSKAuV0Y/edit?usp=sharing) contains summary state-level data with polygon representations of each state.These are then shared with anyone who might need access to updating the map data.
 
-Then the Python package [gspread](https://github.com/burnash/gspread) makes it extremely easy to pull this data using OAuth2. It has great instructions on how to set up a Google API key and access specific sheets. It's only a few lines of code to pull the data and convert into a [panda](https://pandas.pydata.org/) DataFrame.
+Then the Python package [gspread](https://github.com/burnash/gspread) makes it extremely easy to pull this data using OAuth2. It has great instructions on how to set up a Google API key and access specific sheets. It's only a few lines of code to pull the data and convert into a [pandas](https://pandas.pydata.org/) DataFrame.
 
 ```
 import pandas as pd
@@ -46,7 +46,7 @@ geo = [Point(xy) for xy in zip(laws['Y'], laws['X'])]
 gdf = gpd.GeoDataFrame(df, crs={'init':'epsg:4326'}, geometry=geo)
 ```
 
-With a similar process for the other Sheet, it is a simple process to create a basic map based on this GeoDataFrame. Please have a look at my [repo here](https://github.com/carderne/web-mapping/tree/master/folium-gspread) for the complete code and output.
+With a similar process for the other Sheet, it is a simple process to create a basic map based on this GeoDataFrame.
 
 ```
 import folium
@@ -57,7 +57,7 @@ c.add_to(m)
 m.save('map.html')
 ```
 
-The final step is to make this all happen in a predictable way that doesn't force anyone to get their hands covered in code, who doesn't particularly want to. So we set this code up on a Google Compute instance and have it output theresults as an embeddable html file. To avoid dealing with servers and firewalls,I cloned into a new [GitHub repo](https://github.com/carderne/web-mapping/tree/master/folium-gspread) and set up a cron-job to run the following script every hour.
+The final step is to make this all happen in a predictable way that doesn't force anyone to get their hands covered in code, who doesn't particularly want to. So we set this code up on a Google Compute instance and have it output theresults as an embeddable html file. To avoid dealing with servers and firewalls, I cloned into a new [GitHub repo](https://github.com/carderne/web-mapping/tree/master/folium-gspread) and set up a cron-job to run the following script every hour.
 
 cron entry:
 
@@ -77,4 +77,4 @@ git push
 
 This pushes the updated html file to the repo, where my so-called clients can easily [access it](https://github.com/carderne/leaflet-gsheets) to embed in their website. Then all they have to do to update their website is edit the Google Sheets and wait for the new results to appear embedded in their website.
 
-<iframe src="/assets/html/leaflet-gsheets-nosidebar.html" style="width: 100%; height: 600px" name="internal" frameborder="0"></iframe>
+<iframe src="https://rdrn.me/leaflet-gsheets/" style="width: 100%; height: 600px" name="internal" frameborder="0"></iframe>
