@@ -592,13 +592,13 @@ label figure {
 }
 
 .modal-photo {
-    width: 70%;
+    width: 100%;
     max-height: 80%;
     position: absolute;
     left: 50%;
     top: 10%;
-    margin-left: -35%;
-    object-fit: cover;
+    margin-left: -50%;
+    object-fit: scale-down;
 }
 
 .modal-state {
