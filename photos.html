@@ -9,16 +9,16 @@ title: Photos
     {%- assign id = a[1] | split: '.' -%}
     {%- assign id = id[0] -%}
     <div class="thumb" id="img-{{ id }}">
-        <label for="{{ id }}">
+        <label for="{{ forloop.index }}">
             <img loading="lazy" class="thumb-image" src="{{ photo.src }}" alt="{{ photo.caption }}">
             <div class="caption">
                 <span class="photo-date">{{ photo.date }}</span>
                 <span class="photo-caption">{{ photo.caption }}</span>
             </div>
         </label>
-        <input class="modal-state" id="{{ id }}" type="checkbox">
+        <input class="modal-state" id="{{ forloop.index }}" type="checkbox">
         <div class="modal">
-            <label for="{{ id }}">
+            <label for="{{ forloop.index }}">
                 <div class="modal-content">
                     <img loading="lazy" class="modal-photo" src="{{ photo.src }}" alt="{{ photo.caption }}">
                     <div>
@@ -31,3 +31,5 @@ title: Photos
     </div>
     {%- endfor -%}
 </div>
+
+<script>try{document.getElementById(new URL(window.location.href).searchParams.get("i")).checked=true;}catch(e){}</script>
