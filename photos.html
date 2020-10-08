@@ -18,6 +18,8 @@ title: Photos
         </label>
         <input class="modal-state" id="{{ forloop.index }}" type="checkbox">
         <div class="modal">
+            <div id="left-{{- forloop.index -}} " style="left:20px" class="modal-arrow">ᐸ</div>
+            <div id="right-{{- forloop.index -}}" style="right:20px" class="modal-arrow">ᐳ</div>
             <label for="{{ forloop.index }}">
                 <div class="modal-content">
                     <img loading="lazy" class="modal-photo" src="{{ photo.src }}" alt="{{ photo.caption }}">
@@ -32,4 +34,13 @@ title: Photos
     {%- endfor -%}
 </div>
 
-<script>try{document.getElementById(new URL(window.location.href).searchParams.get("i")).checked=true;}catch(e){}</script>
+<script>
+<!--This script simply enables direct-linking to photos and the back/advance slideshow arrows.-->
+const get=document.getElementById.bind(document);
+const queryAll=document.querySelectorAll.bind(document);
+try{get(new URL(window.location.href).searchParams.get("i")).checked=true;}catch(e){}
+queryAll(".modal-arrow").forEach((el)=>{el.onclick=(e)=>{
+    [dir,idx]=e.target.id.split("-");
+    try{get((+idx+(dir=="right"?1:-1)).toString()).checked=true; get(idx).checked=false;}catch(e){}
+};});
+</script>

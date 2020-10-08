@@ -582,13 +582,28 @@ label figure {
     left: 0;
     text-align: left;
     background: rgba(0, 0, 0, 0.8);
-    transition: opacity .25s ease;
-    z-index: 99;
+    z-index: 98;
 }
 
 .modal-content {
     width: 100%;
     height: 100%;
+}
+
+.modal-arrow {
+    position: absolute;
+    font-size: 40px;
+    top: 0;
+    z-index: 99;
+    @include md {
+        font-size: 50px;
+        top: calc(50vh - 25px);
+    }
+}
+
+
+.modal-arrow:hover {
+    cursor: pointer;
 }
 
 .modal-photo {
