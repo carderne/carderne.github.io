@@ -7,7 +7,6 @@ layout: default
 <div class="header">
     <span class="archive-item-title vert-center"><a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a></span>
     <span class="archive-item-date vert-center"> <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%e %b %Y" }}</time></span>
-    <div style="clear: both;"></div>
 </div>
 <p class="archive-item-excerpt">{{ post.excerpt | markdownify |  truncate: 250  | remove: "<p>" | remove: "</p>" }}</p>
 {%- endunless -%}
