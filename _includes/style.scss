@@ -605,6 +605,23 @@ $base0d: #82aaff;
 $base0e: #c792ea;
 $base0f: #ff5370;
 
+.aside {
+    color: #7a8288;
+    font-style: italic;
+    @include lg {
+        grid-column: 3 / 4;
+        width: 50%;
+        padding-left: 1.5em;
+        display: table;
+        margin-top: -10px;
+
+        > div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
 div.highlighter-rouge,
 figure.highlight {
     position: relative;
