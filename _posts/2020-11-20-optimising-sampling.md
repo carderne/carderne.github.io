@@ -254,7 +254,7 @@ All in all a 5,000x speed-up from dropping rasterstats, and another 50x speed-up
 
 *Quick note: I'm not trying to knock rasterstats, Pandas, GeoPandas, rasterio or anything. These are all great libraries that I use every day. But there's a time and place for everything.*
 
-{% include image.html url="/assets/images/2020/opt1-chart.png" description="No space for the rasterstats lines." %}
+{% include image.html url="/assets/images/2020/opt1-chart.png" description="Note that both axes are logarithmic. Each jump is 10x." %}
 
 And will get even better with more data!
 

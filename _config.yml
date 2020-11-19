@@ -1,7 +1,9 @@
 # Site Settings
-title                    : "Chris Arderne"
-description              : "A blog for adventurous trip reports, explorations of data and code, and sometimes even things from my day job. Use the links above to learn more, see my work and get in touch."
-url                      : "https://rdrn.me"
+title: "Chris Arderne"
+description: "A blog for adventurous trip reports, explorations of data and code, and sometimes even things from my day job. Use the links above to learn more, see my work and get in touch."
+url: "https://rdrn.me"
+
+future: false
 
 # Reading Files
 exclude:
