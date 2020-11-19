@@ -652,12 +652,14 @@ code.highlighter-rouge {
 table {
     border-spacing: 0;
     display: block;
-    width: 100%;
+    //width: 100%;
+    margin: 0 auto;
     overflow: auto;
 }
 
 table th {
     font-weight: 600;
+    text-align: left;
 }
 
 table td, table th {

@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Optimising II: blazing SQL"
-date: "2020-11-16"
+title: "Optimising Part II: blazing SQL"
+date: "2020-11-21"
 excerpt: "Turns out a billion insert statements isn't the best way."
 ---
 
@@ -171,7 +171,7 @@ def copy_bin(df, table):
 ```
 <div class="aside"><div>Another huge improvement to 2.9 seconds!</div></div>
 
-## And one last upsert check
+## And one more upsert check
 Let's just check what impact upserting has.
 ```python
 def copy_bin_upsert(df, table):
@@ -181,6 +181,31 @@ def copy_bin_upsert(df, table):
 ```
 <div class="aside"><div>Horrible - a 128% slowdown to 6.6 seconds.</div></div>
 
+## Skip the DataFrame
+I explored NumPy Structured Arrays in my [sibling post](/optimising-sampling/), and it proved the fastest method. And we here we have DataFrame's being exported to Structured Arrays (`.to_records()`). Why waste time doing `recarray` => `DF` => `recarray`? Here's a last little snippet to see what changes when we assume the data is already in `recarray` format.
+
+```python
+def copy_bin_rec(data, table):
+    byt = prepare_binary(data)
+    cur.copy_expert(f"COPY {table} FROM STDIN WITH BINARY", byt)
+```
+<div class="aside"><div>Aaand... the same as before</div></div>
+
 ## Wrapping it up
 
 {% include image.html url="/assets/images/2020/opt2-chart.png" description="Amazing" %}
+
+## What have I missed?
+I'm pretty out of my depth when it comes to tuning databases, especially cloud ones, where there's the additional network layer on both sides to deal with. I expect there's some purpose-built solutions that would provide an order of magnitude improvement (BigQuery and co?). I ran the final code (without upsert) in production on a machine with 96GB of memory and 24 vCPUs, and it took xxx hours for the full dataset of 41 year x 365 days x 1 million points x 6 columns. The database (Postgres on Google Cloud SQL) was running on a machine with 4 vCPUs and 14GB of memory, in the same Google Cloud region (but not sure about zones).
+
+CPU utilization never went above 40%; memory usage never above 5GB. "Read/write operations" (what are these?) hovered around 300/second, while transactions (same question) was at 3/second. Ingress never went much above 10MB/s (80Mbit/s), so it seems clear the network wasn't an issue. If anyone can dissect these numbers or has any hints, please get in touch!
+
+Some possible ideas:
+1. Should I commit ore frequently? Currently there's just one commit right at the end. (The database won't be used while this is happening, so I assumed it doesn't really matter.)
+2. There must be an asynchronous way of doing these `psycopg2` operations? The Python processing takes a few seconds, but then it spends several minutes waiting for data to get across the network to the database. But if the bottleneck is somewhere else this would just further saturate whatever that bottleneck is.
+
+Ran in parallel (41 instances), still no good. Ingress only up to 16 MB/s. Operations up to 2000/second.
+
+Now trying with UNLOGGED, no more NOT NULL and no UNIQUE. Got it up to 65 MB/s and ~7 minutes per year (vs ~38 before). Still CPU  38%. Memory < 5.5GB.
+
+{% include image.html url="/assets/images/2020/opt2-db-chart.png" description="Storage usage on the database. The steeper the line the faster stuff is going in. You can see how my successive attempts got steeper!" %}
