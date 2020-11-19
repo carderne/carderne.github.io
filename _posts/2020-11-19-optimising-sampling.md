@@ -1,11 +1,11 @@
 ---
 layout: single
 title: "Optimising Part I: Sampling rasters"
-date: "2020-11-20"
+date: "2020-11-19"
 excerpt: "If you ain't first yer last!"
 ---
 
-*This is Part I, which looks at different methods of sampling array data at points. [Part II is here](/optimising-sql/) and focuses on the next step: getting it all into a database.*
+*This is Part I, which looks at different methods of sampling array data at points. [Part II is here](/optimising-sql/) and focuses on the next step: SQLing it all into a database.*
 
 This week I needed to do some geospatial processing, and it needed to go fast. One million locations, with 15,000 days of data each, all for three different climate variables. The raw data is several TB of raster images in the cloud somewhere, and we want our sampled data to end up in a well-organised database somewhere.
 
@@ -21,11 +21,11 @@ In the end we'll have 15 billion rows, with three variable columns, and some ext
 
 Then, when we want to know the values for a group of locations, instead of doing all the sampling and figuring out, we just pull it from the database!
 
-Let's have a look at how to get this data out, or you can skip ahead to [Part II](/optimising-sql/) if you're more interested in SQL and Postgres.
+While working on this problem, I decided to have some fun benchmarking it to keep track of my progress. I got pretty far down the rabbit-hole in the process, and managed a good few orders-of-magnitude improvement!
 
-<!--{% include fn.html n=1 %}-->
+If you prefer, head over to the [benchmark suite on GitHub](https://github.com/carderne/benchmarking-sampling/blob/main/benchmark_sample.ipynb). You should be able to clone the repo and run the entire suite in a few minutes.
 
-# Raster sampling (zonal statistics)
+# Some background on raster sampling (zonal statistics)
 This is a common GIS problem: we have a bunch of locations (generally points or polygons) and raw raster data ([what's a raster](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/raster_data.html)), and we want to know the values (mean, max, etc) at each location. If the location are polygons, this involves a bit of figuring out. For this exercise we're just using points with latitude/longitude for each location.
 
 A normal two-dimensional raster is basically a big grid of values, with an x- and a y-coordinate for each cell in the grid. In the example below, it's a 4x4 grid with a single integer in each location. In Python this would generally be stored in a [Numpy](https://numpy.org/) array. In this case, I've used a red colour gradient to colour cells by increasing value. To get an RGB picture, you instead need *three* values for each pixel.
@@ -35,11 +35,6 @@ A normal two-dimensional raster is basically a big grid of values, with an x- an
 So all raster data is just much bigger versions of this. If I want a particular value, I just use the row- and columns indices, e.g. `arr[2, 1] => 9`. (Remember that in most coding, numbering starts at `0`.) You can also pull out larger chunks of data, e.g. `arr[2, :] => [3, 9, 3, 2]` pulls out the whole row!
 
 Instead of a flat, two-dimensional raster, we have a four-dimensional "hypercube" of data: dates along the first axis, then the three variables, and then the x- and y-coordinates that we're already familiar with. Now if we want a certain value, we instead pass *four* indices. So if we for example wanted the first date, all three variablse, and again the bottom-leftish value, we might do `arr[0, :, 2, 1] => ...`.
-
-# Benchmarking
-While working on this problem, I decided to have some fun benchmarking it to keep track of my progress. I obviously couldn't do this with the full 15 billion rows, so I worked with a subset, and tried with different amounts of data, ranging from a single point up to a million (only for the fastest methods!). If you prefer, head over to the [benchmark suite on GitHub](https://github.com/carderne/benchmarking-sampling/blob/main/benchmark_sample.ipynb). You should be able to clone the repo and run the entire suite in a few minutes.
-
-<div class="aside"><div>The results for each approach are shown in the text on the side!</div></div>
 
 # Round 1: Rasterstats
 The obvious tool for zonal statistics is [rasterstats](https://pythonhosted.org/rasterstats/index.html), so that's where I started. It has a clear downside: it only operates on one 2D raster at a time, so we have to manually loop through each data and each variable in our 4D cube.
@@ -256,7 +251,4 @@ All in all a 5,000x speed-up from dropping rasterstats, and another 50x speed-up
 
 {% include image.html url="/assets/images/2020/opt1-chart.png" description="Note that both axes are logarithmic. Each jump is 10x." %}
 
-And will get even better with more data!
-
-
-<!--{% include fnn.html n=1 note="" %}-->
+I pushed the two fastest methods up to 1 million points, and the `recarray` approach continued to stay slightly ahead. When I put this into production with the final methods, it was able to read a year's worth of data for a million points points, with six variables and a huge 4D cube of data, in less than 3 seconds.
