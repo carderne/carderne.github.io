@@ -637,7 +637,7 @@ figure.highlight {
     pre.highlight {
         margin: 0;
         padding: 1em;
-        overflow-x: scroll;
+        overflow-x: auto;
     }
 }
 
@@ -652,7 +652,7 @@ code.highlighter-rouge {
 table {
     border-spacing: 0;
     display: block;
-    //width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     overflow: auto;
 }

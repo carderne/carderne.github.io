@@ -11,13 +11,13 @@ This week I needed to do some geospatial processing, and it needed to go fast. O
 
 In the end we'll have 15 billion rows, with three variable columns, and some extra columns with the date, location etc. Almost 100 billion individual values to be written. Something like this:
 
-| Date       | Location | VarA | VarB | VarC |
-| ---------  | -------- | ----- | ----- | ----- |
-| 2010-11-14 | 1        | 0.456 | 1.234 | 3.823 |
-| 2010-11-15 | 1        | 0.500 | 1.432 | 4.012 |
-| ...        | ...      | ...   | ...   | ...   |
-| 2010-11-14 | 2        | 0.988 | 1.675 | 2.112 |
-| ...        | ...      | ...   | ...   | ...   |
+| Date       | Point | VarA | VarB | VarC |
+| ---------  | ----- | ---- | ---- | ---- |
+| 2010-11-14 | 1     | 0.45 | 1.23 | 3.82 |
+| 2010-11-15 | 1     | 0.50 | 1.43 | 4.01 |
+| ...        | ...   | ...  | ...  | ...  |
+| 2010-11-14 | 2     | 0.98 | 1.67 | 2.11 |
+| ...        | ...   | ...  | ...  | ...  |
 
 Then, when we want to know the values for a group of locations, instead of doing all the sampling and figuring out, we just pull it from the database!
 
@@ -249,6 +249,6 @@ All in all a 5,000x speed-up from dropping rasterstats, and another 50x speed-up
 
 *Quick note: I'm not trying to knock rasterstats, Pandas, GeoPandas, rasterio or anything. These are all great libraries that I use every day. But there's a time and place for everything.*
 
-{% include image.html url="/assets/images/2020/opt1-chart.png" description="Note that both axes are logarithmic. Each jump is 10x." %}
+{% include image.html url="/assets/images/2020/opt1-chart.png" description="Note that both axes are logarithmic, so each jump is 10x. I excluded some lines to make it a bit easier to read." %}
 
 I pushed the two fastest methods up to 1 million points, and the `recarray` approach continued to stay slightly ahead. When I put this into production with the final methods, it was able to read a year's worth of data for a million points points, with six variables and a huge 4D cube of data, in less than 3 seconds.
