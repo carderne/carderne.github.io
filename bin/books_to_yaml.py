@@ -20,8 +20,15 @@ def excel2yml(books_in, yaml_out):
     yaml_out = Path(yaml_out).expanduser()
 
     df = pd.read_excel(books_in)
-    df = df[["Title", "Author", "Rating", "Read"]]
-    df.columns = ["title", "author", "rating", "date"]  # rename columns
+    df = df[["Title", "Author", "Rating", "Read", "Pages", "Published"]]
+    df.columns = [
+        "title",
+        "author",
+        "rating",
+        "date",
+        "pages",
+        "year",
+    ]  # rename columns
     df = df.dropna(subset=["rating"])  # drop unfinished books
     df = df.sort_values(by="date", ascending=False)  # sort to most recent first
 
@@ -29,6 +36,8 @@ def excel2yml(books_in, yaml_out):
     df = df.loc[df["date"] >= cutoff]
     df["date"] = df["date"].dt.strftime("%d %b '%y")
     df["rating"] = df["rating"].astype(int)
+    df["pages"] = df["pages"].astype(int)
+    df["year"] = df["year"].astype(int)
 
     books = []
     for index, row in df.iterrows():
