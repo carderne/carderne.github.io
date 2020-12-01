@@ -196,3 +196,19 @@ I'm pretty out of my depth when it comes to fine-tuning databases. For a databas
 I ran the final code (without `UPSERT`) in production on a machine with 96GB of memory and 24 vCPUs, and it took 45 minutes for the full dataset of 41 year x 365 days x 1 million points x 6 columns. The database (Postgres on Google Cloud SQL) was running on a machine with 4 vCPUs and 14GB of memory, in the same Google Cloud region (but not sure about zones).
 
 I first had a database with `NOT NULL` restrictions on each column and a `UNIQUE (date, loc)` requirement, but that ruined performance (about five times faster without them!). I also made the table `UNLOGGED` to eke out every bit of speed. I tried running a bunch of beefy machines in parallel, all pointing at the same database, but the bottleneck on the database side meant this didn't help at all.
+
+# Postscript
+After adding an `INDEX` to the Postgres table (which took about an hour and another ~300GB of storage), I could query for results at about 18 seconds per location (about 15k rows each) on a small 2 vCPU/3GB machine. Not very fast, but plenty for our purposes. Buuut Google SQL SSD storage is very expensive (because you're basically paying for a fully-provisioned collocated SSD). So I decided it was time to investigate a switch to BigQuery (where storage is nearly 10x cheaper because it just sits on top of Google Storage).
+
+And what fun! I was happy to find that I could pipe my Postgres table directly to a Google Storage `.csv` on a tiny machine with a small hard drive:
+```
+psql \
+    "host=... user=... dbname=... sslmode=... sslrootcert=... sslcert=... sslkey=..." \
+    -c "\copy table TO STDOUT CSV DELIMITER ','" |
+    gsutil cp - gs://bucket/file.csv
+```
+(And handy to be able to stream small chunks of the 1TB+ csv file: `gsutil cat -r 0-500 gs://...`).
+
+Importing that csv into BigQuery took a few seconds, and I set it to partition every 2000 values on the location column (i.e. 30M rows per partition for 500 partitions) and then to cluster by location and date. This took the cost-per-query down from ~$5 to around 0.1 cents. My first time in DB-as-a-service land, very cool to have all the nice user interface features built right in.
+
+The queries seem just as fast at the lower end, and seem to scale much better (where Postgres was basically linear). For some reason slower coming across the network, but it can return the results directly as a Pandas `DataFrame`, which is great.
