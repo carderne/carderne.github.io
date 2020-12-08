@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Putting the world's rivers into a graph"
+title: "Oh, the places your pee will go"
 date: "2020-12-08"
-excerpt: "Neo4j is an impressive bit of technology."
+excerpt: "Graphing the world's water basins with Neo4j"
 ---
 
 The great compilation of river and watershed data from [HydroSHEDS](https://hydrosheds.org/) plus the power of [Neo4j](https://neo4j.com/) make it pretty easy to do some fun things with water.
