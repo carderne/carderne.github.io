@@ -1,3 +1,9 @@
+- author: Norman Davies
+  date: 10 Dec '20
+  pages: 1296
+  rating: 5
+  title: 'The Isles: A History'
+  year: 1999
 - author: Terry Prachett
   date: 19 Oct '20
   pages: 439
@@ -826,18 +832,18 @@
   rating: 5
   title: The Hungry Tide
   year: 2004
-- author: Mark Helprin
-  date: 03 Aug '17
-  pages: 768
-  rating: 4
-  title: Winter's Tale
-  year: 1983
 - author: Isaac Asimov
   date: 03 Aug '17
   pages: 288
   rating: 3
   title: The Gods Themselves
   year: 1972
+- author: Mark Helprin
+  date: 03 Aug '17
+  pages: 768
+  rating: 4
+  title: Winter's Tale
+  year: 1983
 - author: Isaac Asimov
   date: 22 Jul '17
   pages: 339
@@ -1870,18 +1876,18 @@
   rating: 4
   title: Cosmos
   year: 1980
-- author: Norman Davies
-  date: 19 Jun '13
-  pages: 1392
-  rating: 5
-  title: Europe
-  year: 1996
 - author: Sigmund Freud
   date: 19 Jun '13
   pages: 102
   rating: 3
   title: Deviant Love
   year: 2006
+- author: Norman Davies
+  date: 19 Jun '13
+  pages: 1392
+  rating: 5
+  title: Europe
+  year: 1996
 - author: James Joyce
   date: 14 Jun '13
   pages: 329
@@ -1942,18 +1948,18 @@
   rating: 3
   title: The Virgin and the Gipsy
   year: 1930
-- author: Jules Verne
-  date: 11 May '13
-  pages: 394
-  rating: 3
-  title: Twenty Thousand Leagues Under the Sea
-  year: 1869
 - author: Katherine Mansfield
   date: 11 May '13
   pages: 110
   rating: 3
   title: Something Childish But Very Natural
   year: 1924
+- author: Jules Verne
+  date: 11 May '13
+  pages: 394
+  rating: 3
+  title: Twenty Thousand Leagues Under the Sea
+  year: 1869
 - author: "Jos\xE9 Saramago"
   date: 28 Apr '13
   pages: 238
@@ -2224,18 +2230,18 @@
   rating: 5
   title: Crime and Punishment
   year: 1866
-- author: James Joyce
-  date: 01 Jan '12
-  pages: 32
-  rating: 5
-  title: The Cat and the Devil
-  year: 1936
 - author: Shel Silverstein
   date: 01 Jan '12
   pages: 64
   rating: 3
   title: The Giving Tree
   year: 1964
+- author: James Joyce
+  date: 01 Jan '12
+  pages: 32
+  rating: 5
+  title: The Cat and the Devil
+  year: 1936
 - author: Isaac Asimov
   date: 07 Dec '11
   pages: 225

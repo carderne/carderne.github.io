@@ -7,7 +7,8 @@ excerpt: "Graphing the world's water basins with Neo4j"
 
 The great compilation of river and watershed data from [HydroSHEDS](https://hydrosheds.org/) plus the power of [Neo4j](https://neo4j.com/) make it pretty easy to do some fun things with water.
 
-The fun thing, in this case: [https://water.rdrn.me/](https://water.rdrn.me/). A 'tool' to find all the upstream area and downstream flow for any point on earth, with the click of a buton.
+
+The fun thing, in this case: ['Watershed Explorer'](https://water.rdrn.me/). A 'tool' to find all the upstream area and downstream flow for any point on earth, with the click of a buton. The code and more details [are here on GitHub](https://github.com/carderne/water).
 
 A watershed or [drainage basin](https://en.wikipedia.org/wiki/Drainage_basin) is "any area of land where precipitation collects and drains off into a common outlet, such as into a river, bay, or other body of water." Calculating this normally involves the following steps using a high-resolution [digital elevation map](https://en.wikipedia.org/wiki/Digital_elevation_model) (a map of land height at each point), then calculating the flow direction (North, South, etc) at each point, and then following these directions to calculate the region that contributes to a single outlet.
 
@@ -52,3 +53,5 @@ To turn this into the fun web app, I wrapped the query into a Flask app, and am 
 To make it clicky and pretty, I loaded the million basin geometries into Mapbox and wrote some Javascript to filter the geometries based on the IDs that come back from the API. All the latitude-longitude and geometry stuff happens on the frontend to take the load off the little server I'm renting, but it would be trivial to add an API endpoint that accepts coordinates and returns a geometry.
 
 {% include image.html url="/assets/images/2020/basin-geom.png" description="And we get this map for same point in the Breede River as the graph above. Red is the upstream drainage basin, and blue is downstream." %}
+
+[Give it a try!](https://water.rdrn.me/)
