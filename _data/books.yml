@@ -1,3 +1,9 @@
+- author: N.K. Jemisin
+  date: 20 Dec '20
+  pages: 492
+  rating: 4
+  title: The Shadowed Sun
+  year: 2012
 - author: Ted Chiang
   date: 18 Dec '20
   pages: 352
@@ -1966,18 +1972,18 @@
   rating: 3
   title: The Virgin and the Gipsy
   year: 1930
-- author: Katherine Mansfield
-  date: 11 May '13
-  pages: 110
-  rating: 3
-  title: Something Childish But Very Natural
-  year: 1924
 - author: Jules Verne
   date: 11 May '13
   pages: 394
   rating: 3
   title: Twenty Thousand Leagues Under the Sea
   year: 1869
+- author: Katherine Mansfield
+  date: 11 May '13
+  pages: 110
+  rating: 3
+  title: Something Childish But Very Natural
+  year: 1924
 - author: "Jos\xE9 Saramago"
   date: 28 Apr '13
   pages: 238
@@ -2248,18 +2254,18 @@
   rating: 5
   title: Crime and Punishment
   year: 1866
-- author: Shel Silverstein
-  date: 01 Jan '12
-  pages: 64
-  rating: 3
-  title: The Giving Tree
-  year: 1964
 - author: James Joyce
   date: 01 Jan '12
   pages: 32
   rating: 5
   title: The Cat and the Devil
   year: 1936
+- author: Shel Silverstein
+  date: 01 Jan '12
+  pages: 64
+  rating: 3
+  title: The Giving Tree
+  year: 1964
 - author: Isaac Asimov
   date: 07 Dec '11
   pages: 225
@@ -2596,18 +2602,18 @@
   rating: 4
   title: The Angel's Game
   year: 2008
-- author: Alex Vilenkin
-  date: 20 Sep '10
-  pages: 248
-  rating: 4
-  title: Many Worlds in One
-  year: 2006
 - author: Richard Dawkins
   date: 20 Sep '10
   pages: 688
   rating: 5
   title: The Ancestor's Tale
   year: 2004
+- author: Alex Vilenkin
+  date: 20 Sep '10
+  pages: 248
+  rating: 4
+  title: Many Worlds in One
+  year: 2006
 - author: J.D. Salinger
   date: 12 Sep '10
   pages: 277
