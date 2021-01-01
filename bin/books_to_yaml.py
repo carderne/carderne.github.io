@@ -32,8 +32,8 @@ def excel2yml(books_in, yaml_out):
     df = df.dropna(subset=["rating"])  # drop unfinished books
     df = df.sort_values(by="date", ascending=False)  # sort to most recent first
 
-    cutoff = datetime.datetime(2010, 1, 1)
-    df = df.loc[df["date"] >= cutoff]
+    # cutoff = datetime.datetime(2010, 1, 1)
+    # df = df.loc[df["date"] >= cutoff]
     df["date"] = df["date"].dt.strftime("%d %b '%y")
     df["rating"] = df["rating"].astype(int)
     df["pages"] = df["pages"].astype(int)

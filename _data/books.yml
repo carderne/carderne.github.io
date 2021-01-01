@@ -2710,3 +2710,333 @@
   rating: 5
   title: Collapse
   year: 2004
+- author: Anthony Burgess
+  date: 20 Dec '09
+  pages: 212
+  rating: 5
+  title: A Clockwork Orange
+  year: 1962
+- author: James May
+  date: 15 Oct '09
+  pages: 336
+  rating: 2
+  title: James May's Magnificent Machines
+  year: 2008
+- author: Jonathan Safran Foer
+  date: 12 Oct '09
+  pages: 326
+  rating: 3
+  title: Extremely Loud and Incredibly Close
+  year: 2005
+- author: Jeremy Clarkson
+  date: 09 Sep '09
+  pages: 340
+  rating: 3
+  title: And Another Thing
+  year: 2006
+- author: Hugh Thomas
+  date: 01 Sep '09
+  pages: 1120
+  rating: 4
+  title: The Spanish Civil War
+  year: 1961
+- author: Vikas Swarup
+  date: 02 Aug '09
+  pages: 318
+  rating: 4
+  title: Q & A
+  year: 2005
+- author: George Orwell
+  date: 10 Jul '09
+  pages: 376
+  rating: 4
+  title: Burmese Days
+  year: 1934
+- author: Anthony Kiedis
+  date: 06 Jul '09
+  pages: 465
+  rating: 4
+  title: Scar Tissue
+  year: 2004
+- author: Tom Feiling
+  date: 30 Jun '09
+  pages: 320
+  rating: 4
+  title: The Candy Machine
+  year: 2009
+- author: Jeremy Clarkson
+  date: 20 May '09
+  pages: 554
+  rating: 4
+  title: Born to be Riled
+  year: 1999
+- author: Charley Boorman
+  date: 10 Apr '09
+  pages: 320
+  rating: 4
+  title: Race to Dakar
+  year: 2006
+- author: William Shakespeare
+  date: 02 Apr '09
+  pages: 314
+  rating: 5
+  title: Othello
+  year: 1603
+- author: George Orwell
+  date: 20 Mar '09
+  pages: 122
+  rating: 5
+  title: Animal Farm
+  year: 1945
+- author: George Orwell
+  date: 12 Mar '09
+  pages: 328
+  rating: 5
+  title: Nineteen Eighty-Four
+  year: 1949
+- author: Jeremy Isaacs
+  date: 13 Feb '09
+  pages: 438
+  rating: 5
+  title: Cold War
+  year: 1998
+- author: John van de Ruit
+  date: 18 Oct '08
+  pages: 352
+  rating: 2
+  title: 'Spud: The Madness Continues'
+  year: 2008
+- author: Gamel Woolsey
+  date: 01 Oct '08
+  pages: 224
+  rating: 3
+  title: Death's Other Kingdom
+  year: 1939
+- author: Sue Townsend
+  date: 14 Sep '08
+  pages: 400
+  rating: 3
+  title: 'Adrian Mole: The Cappuccino Years'
+  year: 1999
+- author: C.J. Sansom
+  date: 13 Aug '08
+  pages: 549
+  rating: 3
+  title: Winter in Madrid
+  year: 2006
+- author: John van de Ruit
+  date: 24 Jun '08
+  pages: 352
+  rating: 3
+  title: Spud
+  year: 2005
+- author: Milan Kundera
+  date: 14 Jun '08
+  pages: 320
+  rating: 3
+  title: The Unbearable Lightness of Being
+  year: 1984
+- author: J.R.R. Tolkien
+  date: 04 Apr '08
+  pages: 386
+  rating: 4
+  title: The Silmarillion
+  year: 1977
+- author: William Shakespeare
+  date: 15 Mar '08
+  pages: 283
+  rating: 4
+  title: Romeo and Juliet
+  year: 1597
+- author: Henry Hitchings
+  date: 15 Feb '08
+  pages: 448
+  rating: 4
+  title: The Secret Life of Words
+  year: 2008
+- author: George Orwell
+  date: 01 Feb '08
+  pages: 232
+  rating: 5
+  title: Homage to Catalonia
+  year: 1938
+- author: Ernest Hemingway
+  date: 21 Oct '07
+  pages: 471
+  rating: 5
+  title: For Whom the Bell Tolls
+  year: 1940
+- author: Mark Haddon
+  date: 01 Oct '07
+  pages: 354
+  rating: 2
+  title: A Spot of Bother
+  year: 2006
+- author: William Shakespeare
+  date: 20 Sep '07
+  pages: 99
+  rating: 3
+  title: A Midsummer Night's Dream
+  year: 1595
+- author: J.K. Rowling
+  date: 20 May '07
+  pages: 759
+  rating: 3
+  title: Harry Potter and the Deathly Hallows
+  year: 2007
+- author: William Golding
+  date: 13 Mar '07
+  pages: 182
+  rating: 3
+  title: Lord of the Flies
+  year: 1954
+- author: Paulo Coelho
+  date: 20 Feb '07
+  pages: 197
+  rating: 4
+  title: The Alchemist
+  year: 1988
+- author: Bill Bryson
+  date: 05 Jan '07
+  pages: 560
+  rating: 5
+  title: A Short History of Nearly Everything
+  year: 2003
+- author: Dan Brown
+  date: 30 Sep '06
+  pages: 481
+  rating: 1
+  title: The Da Vinci Code
+  year: 2003
+- author: Dan Brown
+  date: 25 Sep '06
+  pages: 713
+  rating: 1
+  title: Angels & Demons
+  year: 2000
+- author: Dan Brown
+  date: 20 Sep '06
+  pages: 510
+  rating: 1
+  title: Digital Fortress
+  year: 1998
+- author: James Frey
+  date: 16 Aug '06
+  pages: 432
+  rating: 3
+  title: A Million Little Pieces
+  year: 2003
+- author: Bryce Courtenay
+  date: 03 May '06
+  pages: 544
+  rating: 3
+  title: The Power of One
+  year: 1989
+- author: Khaled Hosseini
+  date: 20 Apr '06
+  pages: 391
+  rating: 4
+  title: The Kite Runner
+  year: 2003
+- author: Mark Haddon
+  date: 14 Apr '06
+  pages: 226
+  rating: 4
+  title: The Curious Incident of the Dog in the Night-Time
+  year: 2003
+- author: "Carlos Ruiz Zaf\xF3n"
+  date: 02 Feb '06
+  pages: 487
+  rating: 5
+  title: The Shadow of the Wind
+  year: 2001
+- author: J.K. Rowling
+  date: 20 Dec '05
+  pages: 652
+  rating: 2
+  title: Harry Potter and the Half-Blood Prince
+  year: 2005
+- author: Garth Nix
+  date: 09 Dec '05
+  pages: 358
+  rating: 4
+  title: Abhorsen
+  year: 2003
+- author: Garth Nix
+  date: 05 Jul '05
+  pages: 464
+  rating: 4
+  title: Lirael
+  year: 2001
+- author: Richard Bach
+  date: 20 Mar '05
+  pages: 112
+  rating: 4
+  title: Jonathan Livingston Seagull
+  year: 1970
+- author: Garth Nix
+  date: 02 Feb '05
+  pages: 491
+  rating: 5
+  title: Sabriel
+  year: 1995
+- author: Lance Armstrong
+  date: 11 Nov '04
+  pages: 294
+  rating: 3
+  title: It's Not About the Bike
+  year: 1999
+- author: Sue Townsend
+  date: 22 Oct '04
+  pages: 304
+  rating: 4
+  title: The Growing Pains of Adrian Mole
+  year: 1984
+- author: Sue Townsend
+  date: 09 Oct '04
+  pages: 272
+  rating: 4
+  title: 'The Secret Diary of Adrian Mole, Aged 13 3/4 '
+  year: 1982
+- author: J.K. Rowling
+  date: 08 Sep '03
+  pages: 870
+  rating: 2
+  title: Harry Potter and the Order of the Phoenix
+  year: 2003
+- author: J.R.R. Tolkien
+  date: 13 Mar '01
+  pages: 1216
+  rating: 5
+  title: The Lord of the Rings
+  year: 1955
+- author: J.K. Rowling
+  date: 15 Feb '01
+  pages: 435
+  rating: 3
+  title: Harry Potter and the Prisoner of Azkaban
+  year: 1999
+- author: J.K. Rowling
+  date: 31 May '00
+  pages: 734
+  rating: 3
+  title: Harry Potter and the Goblet of Fire
+  year: 2000
+- author: J.R.R. Tolkien
+  date: 17 Apr '00
+  pages: 366
+  rating: 5
+  title: The Hobbit
+  year: 1937
+- author: J.K. Rowling
+  date: 30 Jun '99
+  pages: 341
+  rating: 2
+  title: 'Harry Potter and the Chamber of Secrets '
+  year: 1998
+- author: J.K. Rowling
+  date: 26 Mar '99
+  pages: 320
+  rating: 3
+  title: Harry Potter and the Sorcerer's Stone
+  year: 1997
