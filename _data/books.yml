@@ -1,3 +1,15 @@
+- author: George Orwell
+  date: 24 Jan '21
+  pages: 213
+  rating: 4
+  title: Down and Out in Paris and London
+  year: 1933
+- author: Dante Alighieri
+  date: 21 Jan '21
+  pages: 320
+  rating: 5
+  title: The Inferno
+  year: 1320
 - author: Virginia Postrel
   date: 17 Jan '21
   pages: 320
@@ -904,18 +916,18 @@
   rating: 4
   title: The Sirens of Titan
   year: 1959
-- author: Jalaluddin Rumi
-  date: 05 Jul '17
-  pages: 271
-  rating: 5
-  title: The Masnavi
-  year: 1270
 - author: Stefan Zweig
   date: 05 Jul '17
   pages: 104
   rating: 5
   title: Chess Story
   year: 1941
+- author: Jalaluddin Rumi
+  date: 05 Jul '17
+  pages: 271
+  rating: 5
+  title: The Masnavi
+  year: 1270
 - author: William Faulkner
   date: 02 Jul '17
   pages: 320
