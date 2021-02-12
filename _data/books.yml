@@ -1,3 +1,9 @@
+- author: "Honor\xE9 de Balzac"
+  date: 12 Feb '21
+  pages: 526
+  rating: 4
+  title: Cousin Betty
+  year: 1846
 - author: George Orwell
   date: 02 Feb '21
   pages: 278
@@ -736,17 +742,17 @@
   rating: 5
   title: The Bad Girl
   year: 2006
-- author: Ahmed Saadawi
-  date: 09 Mar '18
-  pages: 288
-  rating: 4
-  title: Frankenstein in Baghdad
-  year: 2013
 - author: Warren Ingram
   date: 09 Mar '18
   pages: 181
   rating: 1
   title: Become Your Own Financial Advisor
+  year: 2013
+- author: Ahmed Saadawi
+  date: 09 Mar '18
+  pages: 288
+  rating: 4
+  title: Frankenstein in Baghdad
   year: 2013
 - author: Cal Newport
   date: 06 Mar '18
@@ -928,18 +934,18 @@
   rating: 4
   title: The Sirens of Titan
   year: 1959
-- author: Jalaluddin Rumi
-  date: 05 Jul '17
-  pages: 271
-  rating: 5
-  title: The Masnavi
-  year: 1270
 - author: Stefan Zweig
   date: 05 Jul '17
   pages: 104
   rating: 5
   title: Chess Story
   year: 1941
+- author: Jalaluddin Rumi
+  date: 05 Jul '17
+  pages: 271
+  rating: 5
+  title: The Masnavi
+  year: 1270
 - author: William Faulkner
   date: 02 Jul '17
   pages: 320
@@ -1690,18 +1696,18 @@
   rating: 5
   title: War and Peace
   year: 1868
-- author: Benjamin Hoff
-  date: 26 Apr '14
-  pages: 176
-  rating: 1
-  title: The Tao of Pooh
-  year: 1982
 - author: Charles C. Mann
   date: 26 Apr '14
   pages: 557
   rating: 5
   title: '1493'
   year: 2011
+- author: Benjamin Hoff
+  date: 26 Apr '14
+  pages: 176
+  rating: 1
+  title: The Tao of Pooh
+  year: 1982
 - author: Jonathan Swift
   date: 24 Apr '14
   pages: 306
