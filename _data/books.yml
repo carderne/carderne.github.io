@@ -1,3 +1,21 @@
+- author: William Goldman
+  date: 29 Apr '21
+  pages: 456
+  rating: 5
+  title: The Princess Bride
+  year: 1973
+- author: Various
+  date: 27 Apr '21
+  pages: 1000
+  rating: 5
+  title: The Hebrew Bible (Gen thru Psalms)
+  year: -600
+- author: Frederick Douglass
+  date: 27 Mar '21
+  pages: 158
+  rating: 5
+  title: Narrative of the Life of Frederick Douglass
+  year: 1845
 - author: Agatha Christie
   date: 18 Mar '21
   pages: 288
@@ -2009,7 +2027,7 @@
   title: The Rime of the Ancient Mariner
   year: 1798
 - author: Samuel Taylor Coleridge
-  date: 24 May '13
+  date: 23 May '13
   pages: 5
   rating: 5
   title: Christabel
