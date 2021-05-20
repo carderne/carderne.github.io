@@ -25,6 +25,8 @@ The claim is extreme: "Oatly has about the same blood sugar impact as Coke". But
 
 I [commented](http://disq.us/p/2b2fcxe) on Jeff's article, but didn't hear back. But I _did_ get 4 upvotes! ...possibly just me re-congratulating myself every couple of months, but I don't think so. (My link is now broken, but you can find another [GL source here](https://extension.oregonstate.edu/sites/default/files/documents/1/glycemicindex.pdf).)
 
+**EDIT:** He [replied](http://disq.us/p/2h3unmq)! But he's still wrong unfortunately.
+
 {% include image.html url="/assets/images/2021/seo-oatly.png" description="My tone might not have helped..." %}
 
 ## It's not just Oatly
@@ -35,14 +37,14 @@ A similar example of very subtley useless information: Outside Online's Wes Sile
 ## This is the point
 Savvy marketers, hand-wavers of truth and, more importantly, SEO, are making large parts of the internet (certainly the front page of Google) much less useful.
 
-Searching for anything, trying to figure out anything, has become so much harder, because every search leads you to blogspam SEO'd bullshit trying to sell stuff in one way or another. Want to know which power banks will still be working in a few years{% include fn.html n=1 %}? Sorry, have pages and pages of presumably bot-generated affiliate links. Want to know if Oatly is healthy? Sorry, here's something I wrote to drive traffic somewhere. Want to learn about SEO? Sorry, you landed up on a shit blog talking about Oatly. (This last one is unlikely.)
+Searching for anything, trying to figure out anything, has become so much harder, because every search leads you to blogspam SEO'd bullshit trying to sell stuff in one way or another. Want to know which power banks will still be working in a few years?{%- include fn.html n=1 -%} Sorry, have pages and pages of presumably bot-generated affiliate links. Want to know if Oatly is healthy? Sorry, here's something I wrote to drive traffic somewhere. Want to learn about SEO? Sorry, you landed up on a shit blog talking about Oatly. (This last one is unlikely.)
 
 And tread carefully the moment you're outside your field of expertise lest [Gell-Mann amnesia](https://en.wikipedia.org/wiki/Michael_Crichton#GellMannAmnesiaEffect) strike: I have a passing interest in nutrition and a career in climate change, so the bullshit above jumped out. But how much other click-baited, SEO'd and half-true bullshit do I gobble up on a daily basis?
 
 ## Solutions, maybe
 Google used to have a mode to search "discussions" only, but killed it around 2014. I haven't a way to recreate this (even with DuckDuckGo), but motiveless forumites maintain a much higher signal-to-noise ratio than the rest of the internet. Even upvotes haven't ruined this: I often add `site:reddit.com` to only get Reddit discussions. I miss out on all the niche climbing and cycling and power bank communities that exist out there, but at least I don't get "Best power banks for ~~2017~~ ~~2018~~ ~~2019~~ ~~2020~~ 2021" times 100.
 
-[Million Short](https://millionshort.com/) is interesting. It lets you remove the top 100, 1000 ... 1 million sites from your search results. In theory getting you closer to the web of yore. To be honest I don't think a million is enough. I'd almost say exclude anything with affiliate links and Open Graph `<meta>` tags in the HTML, and have a web of only poorly designed, never-updated blogs and abandoned phpBB forums... But that would exclude me and my `<meta>` tags, at to be honest I'd probably try an affiliate link if I had any shopping recommendations worth making.
+[Million Short](https://millionshort.com/) is interesting. It lets you remove the top 100, 1000 ... 1 million sites from your search results. In theory getting you closer to the web of yore. To be honest I don't think a million is enough. I'd almost say exclude anything with affiliate links and Open Graph `<meta>` tags in the HTML, and have a web of only poorly designed, never-updated blogs and abandoned phpBB forums... But that would exclude me and my `<meta>` tags, and I'd probably try an affiliate link if I had any shopping recommendations worth making.
 
 For now, I just get better and craftier at DDG'ing and Googling (but I think many don't) and keep a growing list of blogs and RSS feeds to pay attention to.
 
