@@ -1,3 +1,15 @@
+- author: Joe Studwell
+  date: 16 Jun '21
+  pages: 320
+  rating: 5
+  title: How Asia Works
+  year: 2013
+- author: Jane Austen
+  date: 20 May '21
+  pages: 488
+  rating: 5
+  title: Mansfield Park
+  year: 1814
 - author: Philip Pullman
   date: 17 May '21
   pages: 449
@@ -1913,7 +1925,7 @@
   title: The War of the Worlds
   year: 1897
 - author: Kahlil Gibran
-  date: 10 Nov '13
+  date: 11 Nov '13
   pages: 127
   rating: 3
   title: The Prophet
