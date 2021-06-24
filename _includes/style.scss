@@ -234,6 +234,10 @@ hr {
     border-top: 1px solid $border-color;
 }
 
+ul, ol {
+    margin-top: -0.5em;
+}
+
 ul li,
 ol li {
     margin-bottom: 0.5em;
