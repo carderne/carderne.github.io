@@ -415,7 +415,7 @@ header, .header {
 
 .books > div {
     position: relative;
-    grid-template-columns: 1fr .75fr 70px;
+    grid-template-columns: 1fr;
     display: grid;
     grid-column-gap: 5px;
     padding-top: 5px;
@@ -423,6 +423,10 @@ header, .header {
     @include md {
         grid-template-columns: 1fr .75fr min-content 70px;
     }
+}
+
+.book-shade-ex {
+    background-image: linear-gradient(to bottom right, rgba(249, 143, 175, 0.2), rgba(249, 143, 175, 0.07));
 }
 
 .book-shade {
@@ -443,8 +447,6 @@ header, .header {
 }
 
 .books > div div:nth-child(3) {
-    display: none;
-
     @include md {
         display: block;
         padding-right: .25em;

@@ -4,7 +4,7 @@ title: Books
 ---
 
 <div class="books">
-    <header style="margin-bottom:20px;">The <span style="background:rgba(249,143,175,0.3)">pink bars</span> are book length... <small class="meta">(RR) = Reread (AB) = Audiobook</small></header>
+    <header style="margin-bottom:20px;">The <span class="book-shade-ex">pink bars</span> are book length... <small class="meta">(RR) = Reread (AB) = Audiobook</small></header>
     {%- for book in site.data.books -%}
     <div itemprop=mainEntity itemscope itemtype=http://schema.org/Book>
         <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
