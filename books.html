@@ -4,15 +4,19 @@ title: Books
 ---
 
 <div class="books">
-    <header style="margin-bottom:20px;">The <span style="background:rgba(249,143,175,0.3)">pink bars</span> are book length...</header>
+    <header style="margin-bottom:20px;">The <span style="background:rgba(249,143,175,0.3)">pink bars</span> are book length... <small class="meta">(RR) = Reread (AB) = Audiobook</small></header>
     {%- for book in site.data.books -%}
     <div itemprop=mainEntity itemscope itemtype=http://schema.org/Book>
-        <span class="book-shade" style="--data-size:{{ book.pages }}"></span>
-        <div itemprop=name>{{ book.title }}</div>
-        <div itemprop=author>{{ book.author }}</div>
-        <div itemprop=dateCreated>{{ book.date }}</div>
+        <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
         <div>
-            <div itemprop=reviewRating class=star style=width:{{ book.rating | times: 13 }}px></div>
+            <span itemprop=name>{{ book.Title }}</span>
+            <span class="meta">{% if book.Reread != "n" %}(RR){% endif %}</span>
+            <span class="meta">{% if book.Audiobook != "n" %}(AB){% endif %}</span>
+        </div>
+        <div itemprop=author>{{ book.Author }}</div>
+        <div itemprop=dateCreated>{{ book.Read }}</div>
+        <div>
+            <div itemprop=reviewRating class=star style=width:{{ book.Rating | times: 13 }}px></div>
         </div>
     </div>
     {%- endfor -%}

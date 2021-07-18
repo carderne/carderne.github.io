@@ -425,9 +425,6 @@ header, .header {
     }
 }
 
-.books-info {
-}
-
 .book-shade {
     left: -10px;
     position: absolute;
@@ -457,6 +454,10 @@ header, .header {
         font-variant-numeric: tabular-nums;
         letter-spacing: -.012em;
     }
+}
+
+.books .meta {
+    font-size: 50%;
 }
 
 .star {

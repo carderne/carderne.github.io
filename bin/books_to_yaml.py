@@ -6,7 +6,6 @@ consumption by Jekyll for my blog.
 """
 
 from pathlib import Path
-import datetime
 import sys
 
 from yaml import dump
@@ -20,24 +19,24 @@ def excel2yml(books_in, yaml_out):
     yaml_out = Path(yaml_out).expanduser()
 
     df = pd.read_excel(books_in)
-    df = df[["Title", "Author", "Rating", "Read", "Pages", "Published"]]
-    df.columns = [
-        "title",
-        "author",
-        "rating",
-        "date",
-        "pages",
-        "year",
-    ]  # rename columns
-    df = df.dropna(subset=["rating"])  # drop unfinished books
-    df = df.sort_values(by="date", ascending=False)  # sort to most recent first
+    cols = [
+        "Title",
+        "Author",
+        "Rating",
+        "Read",
+        "Pages",
+        "Published",
+        "Reread",
+        "Audiobook",
+    ]
+    df = df[cols]
 
-    # cutoff = datetime.datetime(2010, 1, 1)
-    # df = df.loc[df["date"] >= cutoff]
-    df["date"] = df["date"].dt.strftime("%d %b '%y")
-    df["rating"] = df["rating"].astype(int)
-    df["pages"] = df["pages"].astype(int)
-    df["year"] = df["year"].astype(int)
+    df = df.dropna(subset=["Rating"])  # drop unfinished books
+    df = df.sort_values(by="Read", ascending=False)  # sort to most recent first
+
+    df = df.assign(Read=df.Read.dt.strftime("%d %b '%y"))
+    df = df.fillna({"Reread": "n", "Audiobook": "n"})
+    df = df.astype({"Rating": int, "Pages": int, "Published": int})
 
     books = []
     for index, row in df.iterrows():

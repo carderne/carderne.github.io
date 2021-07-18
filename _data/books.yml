@@ -1,3174 +1,4240 @@
-- author: Dante Alighieri
-  date: 18 Jul '21
-  pages: 352
-  rating: 4
-  title: Purgatorio
-  year: 1320
-- author: William Shakespeare
-  date: 11 Jul '21
-  pages: 218
-  rating: 4
-  title: The Tempest
-  year: 1611
-- author: Jerome K. Jerome
-  date: 01 Jul '21
-  pages: 185
-  rating: 5
-  title: Three Men in a Boat
-  year: 1889
-- author: Joe Studwell
-  date: 16 Jun '21
-  pages: 320
-  rating: 5
-  title: How Asia Works
-  year: 2013
-- author: Jane Austen
-  date: 20 May '21
-  pages: 488
-  rating: 5
-  title: Mansfield Park
-  year: 1814
-- author: Philip Pullman
-  date: 17 May '21
-  pages: 449
-  rating: 2
-  title: La Belle Sauvage
-  year: 2017
-- author: "Honor\xE9 de Balzac"
-  date: 11 May '21
-  pages: 66
-  rating: 4
-  title: Vendetta
-  year: 1830
-- author: Jorge Luis Borges
-  date: 07 May '21
-  pages: 176
-  rating: 3
-  title: Borges at Eighty
-  year: 1982
-- author: William Goldman
-  date: 29 Apr '21
-  pages: 456
-  rating: 5
-  title: The Princess Bride
-  year: 1973
-- author: Various
-  date: 27 Apr '21
-  pages: 1000
-  rating: 5
-  title: The Hebrew Bible (Gen thru Psalms)
-  year: -600
-- author: Frederick Douglass
-  date: 27 Mar '21
-  pages: 158
-  rating: 5
-  title: Narrative of the Life of Frederick Douglass
-  year: 1845
-- author: Agatha Christie
-  date: 18 Mar '21
-  pages: 288
-  rating: 4
-  title: The Murder of Roger Ackroyd
-  year: 1926
-- author: Zach St. George
-  date: 13 Mar '21
-  pages: 244
-  rating: 3
-  title: The Journeys of Trees
-  year: 2020
-- author: Ada Palmer
-  date: 08 Mar '21
-  pages: 432
-  rating: 2
-  title: Too Like the Lightning
-  year: 2016
-- author: Scott Alexander
-  date: 22 Feb '21
-  pages: 658
-  rating: 5
-  title: Unsong
-  year: 2017
-- author: "Honor\xE9 de Balzac"
-  date: 12 Feb '21
-  pages: 526
-  rating: 4
-  title: Cousin Betty
-  year: 1846
-- author: George Orwell
-  date: 02 Feb '21
-  pages: 278
-  rating: 3
-  title: Coming up for Air
-  year: 1939
-- author: Ursula K. Le Guin
-  date: 27 Jan '21
-  pages: 160
-  rating: 4
-  title: City of Illusions
-  year: 1967
-- author: George Orwell
-  date: 24 Jan '21
-  pages: 213
-  rating: 4
-  title: Down and Out in Paris and London
-  year: 1933
-- author: Dante Alighieri
-  date: 21 Jan '21
-  pages: 320
-  rating: 5
-  title: Inferno
-  year: 1320
-- author: Virginia Postrel
-  date: 17 Jan '21
-  pages: 320
-  rating: 4
-  title: The Fabric of Civilization
-  year: 2020
-- author: Dianne Setterfield
-  date: 03 Jan '21
-  pages: 464
-  rating: 4
-  title: Once Upon a River
-  year: 2018
-- author: Terry Prachett
-  date: 24 Dec '20
-  pages: 378
-  rating: 4
-  title: Snuff
-  year: 2011
-- author: N.K. Jemisin
-  date: 20 Dec '20
-  pages: 492
-  rating: 4
-  title: The Shadowed Sun
-  year: 2012
-- author: Ted Chiang
-  date: 18 Dec '20
-  pages: 352
-  rating: 5
-  title: Exhalation
-  year: 2019
-- author: Jonathan Swift
-  date: 15 Dec '20
-  pages: 48
-  rating: 3
-  title: A Modest Proposal
-  year: 1729
-- author: N.K. Jemisin
-  date: 14 Dec '20
-  pages: 418
-  rating: 3
-  title: The Killing Moon
-  year: 2012
-- author: Norman Davies
-  date: 10 Dec '20
-  pages: 1296
-  rating: 5
-  title: 'The Isles: A History'
-  year: 1999
-- author: Terry Prachett
-  date: 19 Oct '20
-  pages: 439
-  rating: 3
-  title: Thud!
-  year: 2005
-- author: "Au\xF0ur Ava \xD3lafsd\xF3ttir"
-  date: 08 Oct '20
-  pages: 260
-  rating: 3
-  title: The Greenhouse
-  year: 2007
-- author: W.E.B. Du Bois
-  date: 28 Sep '20
-  pages: 288
-  rating: 5
-  title: The Souls of Black Folk
-  year: 1903
-- author: Jane Austen
-  date: 17 Sep '20
-  pages: 251
-  rating: 5
-  title: Northanger Abbey
-  year: 1817
-- author: Terry Pratchett
-  date: 11 Sep '20
-  pages: 480
-  rating: 4
-  title: Night Watch
-  year: 2002
-- author: Bernardine Evaristo
-  date: 07 Sep '20
-  pages: 453
-  rating: 4
-  title: Girl, Woman, Other
-  year: 2019
-- author: Brit Bennett
-  date: 03 Sep '20
-  pages: 343
-  rating: 3
-  title: The Vanishing Half
-  year: 2020
-- author: Terry Pratchett
-  date: 01 Sep '20
-  pages: 464
-  rating: 4
-  title: The Fifth Elephant
-  year: 1999
-- author: Terry Prachett
-  date: 25 Aug '20
-  pages: 461
-  rating: 4
-  title: Jingo
-  year: 1997
-- author: Terry Pratchett
-  date: 17 Aug '20
-  pages: 411
-  rating: 5
-  title: Feet of Clay
-  year: 1996
-- author: Terry Pratchett
-  date: 11 Aug '20
-  pages: 377
-  rating: 4
-  title: Men at Arms
-  year: 1993
-- author: Toni Morrison
-  date: 10 Aug '20
-  pages: 324
-  rating: 4
-  title: Beloved
-  year: 1987
-- author: Terry Pratchett
-  date: 27 Jul '20
-  pages: 376
-  rating: 4
-  title: 'Guards! Guards! '
-  year: 1989
-- author: Terry Pratchett
-  date: 24 Jul '20
-  pages: 277
-  rating: 3
-  title: The Light Fantastic
-  year: 1986
-- author: David Foster Wallace
-  date: 15 Jul '20
-  pages: 467
-  rating: 5
-  title: The Broom of the System
-  year: 1987
-- author: "Charlotte Bront\xEB"
-  date: 04 Jul '20
-  pages: 532
-  rating: 5
-  title: Jane Eyre
-  year: 1847
-- author: David Abulafia
-  date: 24 Jun '20
-  pages: 1088
-  rating: 5
-  title: The Boundless Sea
-  year: 2019
-- author: Trevor Noah
-  date: 22 Jun '20
-  pages: 288
-  rating: 5
-  title: Born a Crime
-  year: 2016
-- author: Mary Shelley
-  date: 23 May '20
-  pages: 335
-  rating: 5
-  title: Frankenstein
-  year: 1818
-- author: Albert Camus
-  date: 15 May '20
-  pages: 308
-  rating: 5
-  title: The Plague
-  year: 1947
-- author: Unknown
-  date: 05 May '20
-  pages: 146
-  rating: 4
-  title: The Epic of Gilgamesh
-  year: 2014
-- author: Peter Pomerantsev
-  date: 01 May '20
-  pages: 236
-  rating: 4
-  title: This is not Propaganda
-  year: 2019
-- author: Sanmao
-  date: 23 Apr '20
-  pages: 416
-  rating: 4
-  title: Stories of the Sahara
-  year: 1976
-- author: "Herg\xE9"
-  date: 12 Apr '20
-  pages: 1364
-  rating: 3
-  title: 22 volumes of Tintin
-  year: 1930
-- author: David Gange
-  date: 11 Apr '20
-  pages: 388
-  rating: 5
-  title: The Frayed Atlantic Edge
-  year: 2019
-- author: Unknown
-  date: 03 Apr '20
-  pages: 128
-  rating: 4
-  title: Sir Gawain and the Green Knight
-  year: 1350
-- author: Betty Smith
-  date: 31 Mar '20
-  pages: 496
-  rating: 5
-  title: A Tree Grows in Brooklyn
-  year: 1943
-- author: Gavin Francis
-  date: 17 Mar '20
-  pages: 304
-  rating: 4
-  title: Empire Antarctica
-  year: 2012
-- author: Richard Ayoade
-  date: 27 Feb '20
-  pages: 256
-  rating: 5
-  title: Ayoade on Top
-  year: 2019
-- author: Goscinny and Uderzo
-  date: 26 Feb '20
-  pages: 1392
-  rating: 5
-  title: 29 volumes of Asterix
-  year: 1961
-- author: Ray Bradbury
-  date: 31 Jan '20
-  pages: 186
-  rating: 3
-  title: The Illustrated Man
-  year: 1951
-- author: Robert Macfarlane
-  date: 24 Jan '20
-  pages: 496
-  rating: 4
-  title: Underland
-  year: 2019
-- author: Stephen Fry
-  date: 14 Jan '20
-  pages: 416
-  rating: 3
-  title: Mythos
-  year: 2017
-- author: Ursula K. Le Guin
-  date: 06 Jan '20
-  pages: 387
-  rating: 4
-  title: The Dispossessed
-  year: 1974
-- author: Salman Rushdie
-  date: 02 Jan '20
-  pages: 393
-  rating: 5
-  title: Quichotte
-  year: 2019
-- author: David Foster Wallace
-  date: 22 Dec '19
-  pages: 353
-  rating: 4
-  title: "A Supposedly Fun Thing I\u2019ll Never Do Again"
-  year: 1996
-- author: Michael Pollan
-  date: 08 Dec '19
-  pages: 480
-  rating: 4
-  title: How to Change Your Mind
-  year: 2019
-- author: "Honor\xE9 de Balzac"
-  date: 26 Nov '19
-  pages: 704
-  rating: 4
-  title: Lost Illusions
-  year: 1837
-- author: Madeline Miller
-  date: 30 Oct '19
-  pages: 393
-  rating: 4
-  title: Circe
-  year: 2018
-- author: Ursula K. Le Guin
-  date: 24 Oct '19
-  pages: 160
-  rating: 4
-  title: The Word for World is Forest
-  year: 1972
-- author: Ursula K. Le Guin
-  date: 21 Oct '19
-  pages: 304
-  rating: 5
-  title: The Left Hand of Darkness
-  year: 1969
-- author: Herman Melville
-  date: 16 Oct '19
-  pages: 80
-  rating: 5
-  title: Bartleby, the Scrivener
-  year: 1853
-- author: Andrew Blum
-  date: 14 Oct '19
-  pages: 224
-  rating: 2
-  title: The Weather Machine
-  year: 2019
-- author: Herman Melville
-  date: 09 Oct '19
-  pages: 654
-  rating: 5
-  title: Moby-Dick
-  year: 1851
-- author: Richard Powers
-  date: 05 Oct '19
-  pages: 502
-  rating: 5
-  title: The Overstory
-  year: 2018
-- author: Delia Owens
-  date: 01 Oct '19
-  pages: 384
-  rating: 3
-  title: Where the Crawdads Sing
-  year: 2018
-- author: Deneys Reitz
-  date: 17 Aug '19
-  pages: 370
-  rating: 4
-  title: Commando
-  year: 1930
-- author: Jenny Odell
-  date: 11 Aug '19
-  pages: 240
-  rating: 4
-  title: How To Do Nothing
-  year: 2019
-- author: Robert Greene
-  date: 20 Jul '19
-  pages: 642
-  rating: 1
-  title: The Laws of Human Nature
-  year: 2018
-- author: Alfred Lansing
-  date: 10 Jul '19
-  pages: 282
-  rating: 5
-  title: "Endurance: Shackleton\u2019s Incredible Voyage"
-  year: 1959
-- author: Sally Rooney
-  date: 05 Jul '19
-  pages: 304
-  rating: 5
-  title: Conversations with Friends
-  year: 2017
-- author: Liu Cixin
-  date: 30 Jun '19
-  pages: 400
-  rating: 3
-  title: The Three-Body Problem
-  year: 2014
-- author: Walt Whitman
-  date: 16 Jun '19
-  pages: 256
-  rating: 5
-  title: Leaves of Grass
-  year: 1855
-- author: Umberto Eco
-  date: 04 Jun '19
-  pages: 536
-  rating: 5
-  title: The Name of the Rose
-  year: 1980
-- author: Philip K. Dick
-  date: 26 May '19
-  pages: 259
-  rating: 4
-  title: The Man in the High Castle
-  year: 1962
-- author: Terry Pratchett & Neil Gaiman
-  date: 22 May '19
-  pages: 412
-  rating: 5
-  title: Good Omens
-  year: 1990
-- author: Edgar Allan Poe
-  date: 13 May '19
-  pages: 196
-  rating: 4
-  title: Eight Tales of Terror
-  year: 1961
-- author: Gerald Durrell
-  date: 29 Apr '19
-  pages: 273
-  rating: 4
-  title: My Family and Other Animals
-  year: 1956
-- author: Yan Lianke
-  date: 11 Apr '19
-  pages: 352
-  rating: 4
-  title: The Day the Sun Died
-  year: 2015
-- author: Husain Haddawy
-  date: 01 Apr '19
-  pages: 518
-  rating: 5
-  title: The Arabian Nights
-  year: 800
-- author: Laurence Housman
-  date: 15 Mar '19
-  pages: 272
-  rating: 4
-  title: Sindbad the Sailor and Other Stories from The Arabian Nights
-  year: 800
-- author: Peter Snow
-  date: 14 Feb '19
-  pages: 440
-  rating: 3
-  title: History of the World Map by Map
-  year: 2018
-- author: Robert A. Heinlein
-  date: 24 Jan '19
-  pages: 288
-  rating: 4
-  title: The Moon is a Harsh Mistress
-  year: 1966
-- author: Walter M. Miller
-  date: 04 Jan '19
-  pages: 335
-  rating: 3
-  title: 'A Canticle for Leibowitz '
-  year: 1959
-- author: Margaret Atwood
-  date: 29 Dec '18
-  pages: 311
-  rating: 3
-  title: "The Handmaid\u2019s Tale"
-  year: 1985
-- author: Arthur Conan Doyle
-  date: 26 Dec '18
-  pages: 256
-  rating: 3
-  title: His Last Bow
-  year: 1917
-- author: Arthur Conan Doyle
-  date: 25 Dec '18
-  pages: 195
-  rating: 3
-  title: The Valley of Fear
-  year: 1915
-- author: Samuel Beckett
-  date: 24 Dec '18
-  pages: 109
-  rating: 3
-  title: Waiting for Godot
-  year: 1952
-- author: Elif Shafak
-  date: 08 Dec '18
-  pages: 432
-  rating: 2
-  title: 'The Architect''s Apprentice '
-  year: 2013
-- author: Arthur Conan Doyle
-  date: 15 Nov '18
-  pages: 403
-  rating: 4
-  title: The Return of Sherlock Holmes
-  year: 1905
-- author: Arthur Conan Doyle
-  date: 07 Nov '18
-  pages: 256
-  rating: 4
-  title: The Hound of the Baskervilles
-  year: 1902
-- author: George Alec Effinger
-  date: 01 Nov '18
-  pages: 284
-  rating: 3
-  title: When Gravity Fails
-  year: 1986
-- author: "Carlos Ruiz Zaf\xF3n"
-  date: 25 Oct '18
-  pages: 816
-  rating: 1
-  title: The Labyrinth of the Spirits
-  year: 2016
-- author: Arthur Conan Doyle
-  date: 21 Oct '18
-  pages: 129
-  rating: 3
-  title: The Sign of the Four
-  year: 1890
-- author: Rebecca Skloot
-  date: 16 Oct '18
-  pages: 370
-  rating: 3
-  title: The Immortal Life of Henrietta Lacks
-  year: 2010
-- author: Isaac Asimov
-  date: 08 Oct '18
-  pages: 224
-  rating: 4
-  title: Nine Tomorrows
-  year: 1959
-- author: "Merc\xE8 Rodoreda"
-  date: 06 Oct '18
-  pages: 201
-  rating: 4
-  title: The Time of the Doves
-  year: 1962
-- author: Zora Neale Hurston
-  date: 22 Sep '18
-  pages: 219
-  rating: 5
-  title: Their Eyes Were Watching God
-  year: 1937
-- author: Isaac Asimov
-  date: 13 Sep '18
-  pages: 386
-  rating: 4
-  title: Nemesis
-  year: 1989
-- author: Jesmyn Ward
-  date: 09 Sep '18
-  pages: 285
-  rating: 5
-  title: Sing, Unburied, Sing
-  year: 2017
-- author: James Baldwin
-  date: 01 Sep '18
-  pages: 159
-  rating: 5
-  title: "Giovanni\u2019s Room"
-  year: 1956
-- author: George Orwell
-  date: 28 Aug '18
-  pages: 55
-  rating: 3
-  title: In Defence of English Cooking
-  year: 2005
-- author: Terry Pratchett
-  date: 07 Aug '18
-  pages: 374
-  rating: 3
-  title: Witches Abroad
-  year: 1991
-- author: Daniel Keyes
-  date: 05 Aug '18
-  pages: 216
-  rating: 5
-  title: Flowers for Algernon
-  year: 1966
-- author: Terry Pratchett
-  date: 03 Aug '18
-  pages: 265
-  rating: 4
-  title: Wyrd Sisters
-  year: 1988
-- author: Virginia Woolf
-  date: 30 Jul '18
-  pages: 228
-  rating: 5
-  title: Orlando
-  year: 1928
-- author: Terry Pratchett
-  date: 29 Jul '18
-  pages: 228
-  rating: 4
-  title: Equal Rites
-  year: 1987
-- author: Arthur Conan Doyle
-  date: 28 Jul '18
-  pages: 123
-  rating: 4
-  title: A Study in Scarlet
-  year: 1887
-- author: Agatha Christie
-  date: 27 Jul '18
-  pages: 274
-  rating: 3
-  title: Murder on the Orient Express
-  year: 1934
-- author: N.K. Jemisin
-  date: 24 Jul '18
-  pages: 416
-  rating: 5
-  title: The Stone Sky
-  year: 2017
-- author: N.K. Jemisin
-  date: 20 Jul '18
-  pages: 410
-  rating: 4
-  title: The Obelisk Gate
-  year: 2016
-- author: N.K. Jemisin
-  date: 14 Jul '18
-  pages: 468
-  rating: 5
-  title: The Fifth Season
-  year: 2015
-- author: Arthur Conan Doyle
-  date: 05 Jul '18
-  pages: 378
-  rating: 4
-  title: The Memoirs of Sherlock Holmes
-  year: 1894
-- author: William S. Burroughs
-  date: 30 Jun '18
-  pages: 208
-  rating: 3
-  title: Junky
-  year: 1953
-- author: Judea Pearl
-  date: 25 Jun '18
-  pages: 432
-  rating: 3
-  title: The Book of Why
-  year: 2018
-- author: Edward Abbey
-  date: 11 Jun '18
-  pages: 337
-  rating: 4
-  title: Desert Solitaire
-  year: 1968
-- author: Sylvia Plath
-  date: 01 Jun '18
-  pages: 244
-  rating: 5
-  title: The Bell Jar
-  year: 1963
-- author: Terry Pratchett
-  date: 28 May '18
-  pages: 424
-  rating: 3
-  title: Soul Music
-  year: 1994
-- author: Terry Pratchett
-  date: 25 May '18
-  pages: 352
-  rating: 3
-  title: Reaper Man
-  year: 1991
-- author: Arthur Conan Doyle
-  date: 19 May '18
-  pages: 307
-  rating: 5
-  title: The Adventures of Sherlock Holmes
-  year: 1892
-- author: Garth Nix
-  date: 12 May '18
-  pages: 344
-  rating: 3
-  title: Goldenhand
-  year: 2016
-- author: Iam Fleming
-  date: 08 May '18
-  pages: 213
-  rating: 2
-  title: Casino Royale
-  year: 1953
-- author: Petre Ho Davies
-  date: 28 Apr '18
-  pages: 288
-  rating: 3
-  title: The Fortunes
-  year: 2016
-- author: Roger C. Taylor
-  date: 08 Apr '18
-  pages: 117
-  rating: 3
-  title: The Elements of Seamanship
-  year: 2009
-- author: Mario Vargas Llosa
-  date: 07 Apr '18
-  pages: 322
-  rating: 5
-  title: Death in the Andes
-  year: 1993
-- author: Oscar Wilde
-  date: 02 Apr '18
-  pages: 480
-  rating: 4
-  title: The Plays of Oscar Wilde
-  year: 1908
-- author: Jane Austen
-  date: 31 Mar '18
-  pages: 409
-  rating: 3
-  title: Sense and Sensibility
-  year: 1811
-- author: Josh Malerman
-  date: 28 Mar '18
-  pages: 262
-  rating: 4
-  title: Bird Box
-  year: 2014
-- author: Jacques Pauw
-  date: 24 Mar '18
-  pages: 423
-  rating: 4
-  title: "The President\u2019s Keepers"
-  year: 2017
-- author: Simon Van Booy
-  date: 16 Mar '18
-  pages: 212
-  rating: 2
-  title: The Illusion of Separateness
-  year: 2013
-- author: Mario Vargas Llosa
-  date: 13 Mar '18
-  pages: 276
-  rating: 5
-  title: The Bad Girl
-  year: 2006
-- author: Warren Ingram
-  date: 10 Mar '18
-  pages: 181
-  rating: 1
-  title: Become Your Own Financial Advisor
-  year: 2013
-- author: Ahmed Saadawi
-  date: 09 Mar '18
-  pages: 288
-  rating: 4
-  title: Frankenstein in Baghdad
-  year: 2013
-- author: Cal Newport
-  date: 06 Mar '18
-  pages: 296
-  rating: 3
-  title: Deep Work
-  year: 2016
-- author: Chimamanda Ngozi Adichie
-  date: 25 Feb '18
-  pages: 433
-  rating: 4
-  title: Half of a Yellow Sun
-  year: 2006
-- author: Claire Keegan
-  date: 31 Jan '18
-  pages: 89
-  rating: 5
-  title: Foster
-  year: 2010
-- author: Paul Beatty
-  date: 30 Jan '18
-  pages: 304
-  rating: 5
-  title: The Sellout
-  year: 2015
-- author: "Honor\xE9 de Balzac"
-  date: 23 Jan '18
-  pages: 320
-  rating: 4
-  title: Rise and Fall of Cesar Birotteau
-  year: 1837
-- author: Benjamin Graham
-  date: 19 Jan '18
-  pages: 623
-  rating: 4
-  title: The Intelligent Investor
-  year: 2006
-- author: Laurence Gonzales
-  date: 17 Jan '18
-  pages: 336
-  rating: 1
-  title: Deep Survival
-  year: 1998
-- author: Joshua Slocum
-  date: 14 Jan '18
-  pages: 273
-  rating: 5
-  title: Sailing Alone Around the World
-  year: 1900
-- author: Jeff VanderMeer
-  date: 02 Jan '18
-  pages: 195
-  rating: 3
-  title: Annihilation
-  year: 2014
-- author: Thomas Piketty
-  date: 31 Dec '17
-  pages: 685
-  rating: 5
-  title: Capital in the Twenty-First Century
-  year: 2014
-- author: Mervyn King
-  date: 16 Dec '17
-  pages: 448
-  rating: 4
-  title: The End of Alchemy
-  year: 2016
-- author: Terry Pratchett
-  date: 12 Dec '17
-  pages: 384
-  rating: 3
-  title: Raising Steam
-  year: 2013
-- author: Terry Pratchett
-  date: 03 Dec '17
-  pages: 394
-  rating: 3
-  title: Making Money
-  year: 2007
-- author: Neil Gaiman
-  date: 27 Nov '17
-  pages: 635
-  rating: 3
-  title: American Gods
-  year: 2001
-- author: Terry Pratchett
-  date: 18 Nov '17
-  pages: 394
-  rating: 4
-  title: Going Postal
-  year: 2005
-- author: Patricia Highsmith
-  date: 24 Oct '17
-  pages: 281
-  rating: 2
-  title: Strangers on a Train
-  year: 1950
-- author: Laura Esquivel
-  date: 06 Oct '17
-  pages: 246
-  rating: 4
-  title: Like Water for Chocolate
-  year: 1992
-- author: John Steinbeck
-  date: 30 Sep '17
-  pages: 336
-  rating: 4
-  title: The Winter of Our Discontent
-  year: 1961
-- author: Jorge Luis Borges
-  date: 13 Sep '17
-  pages: 137
-  rating: 4
-  title: A Universal History of Infamy
-  year: 1935
-- author: Max Du Preez
-  date: 11 Sep '17
-  pages: 288
-  rating: 3
-  title: Of Warriors, Lovers and Prophets
-  year: 2004
-- author: Peter Moskowitz
-  date: 10 Sep '17
-  pages: 272
-  rating: 3
-  title: How to Kill a City
-  year: 2017
-- author: Noam Chomsky
-  date: 05 Sep '17
-  pages: 416
-  rating: 5
-  title: Understanding Power
-  year: 2002
-- author: Joseph E. Stiglitz
-  date: 28 Aug '17
-  pages: 304
-  rating: 3
-  title: Globalization and Its Discontents
-  year: 2002
-- author: William Easterly
-  date: 20 Aug '17
-  pages: 416
-  rating: 4
-  title: The Tyranny of Experts
-  year: 2014
-- author: Amitav Ghosh
-  date: 15 Aug '17
-  pages: 333
-  rating: 5
-  title: The Hungry Tide
-  year: 2004
-- author: Isaac Asimov
-  date: 04 Aug '17
-  pages: 288
-  rating: 3
-  title: The Gods Themselves
-  year: 1972
-- author: Mark Helprin
-  date: 03 Aug '17
-  pages: 768
-  rating: 4
-  title: Winter's Tale
-  year: 1983
-- author: Isaac Asimov
-  date: 22 Jul '17
-  pages: 339
-  rating: 3
-  title: Nightfall
-  year: 1970
-- author: Peter Thiel
-  date: 21 Jul '17
-  pages: 195
-  rating: 3
-  title: Zero to One
-  year: 2014
-- author: Kurt Vonnegut
-  date: 11 Jul '17
-  pages: 224
-  rating: 4
-  title: The Sirens of Titan
-  year: 1959
-- author: Jalaluddin Rumi
-  date: 07 Jul '17
-  pages: 271
-  rating: 5
-  title: The Masnavi
-  year: 1270
-- author: Stefan Zweig
-  date: 05 Jul '17
-  pages: 104
-  rating: 5
-  title: Chess Story
-  year: 1941
-- author: William Faulkner
-  date: 02 Jul '17
-  pages: 320
-  rating: 0
-  title: Absalom, Absalom!
-  year: 1936
-- author: Thomas Pynchon
-  date: 10 Jun '17
-  pages: 152
-  rating: 5
-  title: The Crying of Lot 49
-  year: 1966
-- author: John Donoghue
-  date: 02 Jun '17
-  pages: 400
-  rating: 1
-  title: The Death's Head Chess Club
-  year: 2015
-- author: Robert Macfarlane
-  date: 30 May '17
-  pages: 320
-  rating: 3
-  title: Mountains of the Mind
-  year: 2003
-- author: Francis Chichester
-  date: 25 May '17
-  pages: 224
-  rating: 3
-  title: The Lonely Sea and the Sky
-  year: 1964
-- author: "Me\u0161a Selimovi\u0107"
-  date: 15 May '17
-  pages: 473
-  rating: 5
-  title: Death and the Dervish
-  year: 1966
-- author: Mark Z. Danielewski
-  date: 17 Apr '17
-  pages: 705
-  rating: 1
-  title: House of Leaves
-  year: 2000
-- author: John McPhee
-  date: 06 Apr '17
-  pages: 288
-  rating: 5
-  title: The Control of Nature
-  year: 1989
-- author: Andrew Lang
-  date: 22 Mar '17
-  pages: 518
-  rating: 5
-  title: The Arabian Nights
-  year: 2013
-- author: Nick Lane
-  date: 15 Mar '17
-  pages: 368
-  rating: 5
-  title: The Vital Question
-  year: 2015
-- author: Yuri Herrera
-  date: 12 Mar '17
-  pages: 112
-  rating: 3
-  title: The Transmigration of Bodies
-  year: 2013
-- author: Amitava Kumar
-  date: 11 Mar '17
-  pages: 344
-  rating: 2
-  title: World Bank Literature
-  year: 2002
-- author: James  West Davidson
-  date: 20 Feb '17
-  pages: 344
-  rating: 2
-  title: A Little History of the United States
-  year: 2015
-- author: Han Kang
-  date: 12 Feb '17
-  pages: 218
-  rating: 4
-  title: Human Acts
-  year: 2014
-- author: "Jos\xE9 Saramago"
-  date: 06 Feb '17
-  pages: 324
-  rating: 3
-  title: The Double
-  year: 2002
-- author: Jagdish N. Bhagwati
-  date: 15 Jan '17
-  pages: 351
-  rating: 3
-  title: Foreign Aid
-  year: 1970
-- author: "Felisberto Hern\xE1ndez"
-  date: 07 Jan '17
-  pages: 260
-  rating: 3
-  title: Piano Stories
-  year: 1993
-- author: "Roberto Bola\xF1o"
-  date: 29 Dec '16
-  pages: 577
-  rating: 5
-  title: The Savage Detectives
-  year: 1998
-- author: Joe Simpson
-  date: 17 Dec '16
-  pages: 218
-  rating: 3
-  title: Touching the Void
-  year: 1988
-- author: Craig Thompson
-  date: 09 Dec '16
-  pages: 672
-  rating: 3
-  title: Habibi
-  year: 2011
-- author: Riad Sattouf
-  date: 07 Dec '16
-  pages: 156
-  rating: 4
-  title: The Arab of the Future
-  year: 2014
-- author: Alex Honnold
-  date: 27 Nov '16
-  pages: 256
-  rating: 3
-  title: Alone on the Wall
-  year: 2015
-- author: Fyodor Dostoyevsky
-  date: 23 Nov '16
-  pages: 144
-  rating: 4
-  title: The Double
-  year: 1846
-- author: Jack London
-  date: 14 Nov '16
-  pages: 172
-  rating: 4
-  title: The Call of the Wild
-  year: 1903
-- author: Arundhati Roy
-  date: 13 Nov '16
-  pages: 340
-  rating: 5
-  title: The God of Small Things
-  year: 1997
-- author: Timur Vermes
-  date: 30 Oct '16
-  pages: 352
-  rating: 3
-  title: Look Who's Back
-  year: 2012
-- author: Salman Rushdie
-  date: 13 Oct '16
-  pages: 304
-  rating: 4
-  title: Two Years Eight Months and Twenty-Eight Nights
-  year: 2015
-- author: Isaac Asimov
-  date: 29 Sep '16
-  pages: 308
-  rating: 4
-  title: Pebble in the Sky
-  year: 1950
-- author: Isaac Asimov
-  date: 25 Sep '16
-  pages: 304
-  rating: 2
-  title: The Stars, Like Dust
-  year: 1951
-- author: Isaac Asimov
-  date: 24 Sep '16
-  pages: 304
-  rating: 3
-  title: The Currents of Space
-  year: 1952
-- author: Rusty Young
-  date: 16 Sep '16
-  pages: 400
-  rating: 4
-  title: Marching Powder
-  year: 2003
-- author: F. Scott Fitzgerald
-  date: 09 Sep '16
-  pages: 288
-  rating: 3
-  title: This Side of Paradise
-  year: 1920
-- author: Terry Pratchett
-  date: 29 Aug '16
-  pages: 368
-  rating: 3
-  title: Interesting Times
-  year: 1994
-- author: Kurt Vonnegut
-  date: 20 Aug '16
-  pages: 341
-  rating: 4
-  title: Player Piano
-  year: 1952
-- author: Sanjeev Sanyal
-  date: 14 Aug '16
-  pages: 352
-  rating: 3
-  title: Land of the Seven Rivers
-  year: 2012
-- author: Dante Alighieri
-  date: 06 Aug '16
-  pages: 400
-  rating: 4
-  title: Paradiso
-  year: 1320
-- author: Rudyard Kipling
-  date: 25 Jul '16
-  pages: 142
-  rating: 4
-  title: The Second Jungle Book
-  year: 1895
-- author: Rudyard Kipling
-  date: 20 Jul '16
-  pages: 277
-  rating: 4
-  title: The Jungle Book
-  year: 1894
-- author: Mario Vargas Llosa
-  date: 11 Jul '16
-  pages: 379
-  rating: 5
-  title: The Time of the Hero
-  year: 1962
-- author: Ari Shavit
-  date: 23 Jun '16
-  pages: 464
-  rating: 3
-  title: My Promised Land
-  year: 2013
-- author: Isaac Asimov
-  date: 19 May '16
-  pages: 512
-  rating: 4
-  title: Robots and Empire
-  year: 1985
-- author: Isaac Asimov
-  date: 15 May '16
-  pages: 435
-  rating: 3
-  title: The Robots of Dawn
-  year: 1983
-- author: Isaac Asimov
-  date: 03 May '16
-  pages: 206
-  rating: 4
-  title: The Caves of Steel
-  year: 1954
-- author: Isaac Asimov
-  date: 02 May '16
-  pages: 208
-  rating: 4
-  title: The Naked Sun
-  year: 1957
-- author: Greg Marinovich
-  date: 01 May '16
-  pages: 254
-  rating: 4
-  title: The Bang-Bang Club
-  year: 2000
-- author: Terry Pratchett
-  date: 21 Apr '16
-  pages: 285
-  rating: 4
-  title: The Colour of Magic
-  year: 1983
-- author: Dante Alighieri
-  date: 19 Apr '16
-  pages: 357
-  rating: 3
-  title: Purgatorio
-  year: 1320
-- author: Steve Biko
-  date: 02 Apr '16
-  pages: 264
-  rating: 5
-  title: I Write What I Like
-  year: 1978
-- author: Kingsley Holgate
-  date: 28 Mar '16
-  pages: 248
-  rating: 3
-  title: 'Afrika: Dispatches From The Outside Edge'
-  year: 2009
-- author: Matt Ridley
-  date: 26 Mar '16
-  pages: 448
-  rating: 3
-  title: The Rational Optimist
-  year: 2010
-- author: Leonard Thompson
-  date: 17 Mar '16
-  pages: 416
-  rating: 3
-  title: A History of South Africa
-  year: 1990
-- author: Jon Krakauer
-  date: 11 Feb '16
-  pages: 337
-  rating: 5
-  title: Into Thin Air
-  year: 1997
-- author: "S\xF8ren Kierkegaard"
-  date: 08 Feb '16
-  pages: 208
-  rating: 4
-  title: Two Ages
-  year: 1978
-- author: "S\xF8ren Kierkegaard"
-  date: 04 Feb '16
-  pages: 232
-  rating: 4
-  title: The Seducer's Diary
-  year: 1843
-- author: Ferial Haffajee
-  date: 01 Feb '16
-  pages: 153
-  rating: 3
-  title: What if there were no whites in South Africa?
-  year: 2015
-- author: Salman Rushdie
-  date: 31 Jan '16
-  pages: 576
-  rating: 5
-  title: The Ground Beneath Her Feet
-  year: 1999
-- author: John Kennedy Toole
-  date: 26 Dec '15
-  pages: 416
-  rating: 5
-  title: A Confederacy of Dunces
-  year: 1980
-- author: Kurt Vonnegut
-  date: 13 Dec '15
-  pages: 306
-  rating: 5
-  title: Cat's Cradle
-  year: 1963
-- author: Salman Rushdie
-  date: 08 Dec '15
-  pages: 224
-  rating: 4
-  title: Haroun and the Sea of Stories
-  year: 1990
-- author: Xolela Mangcu
-  date: 15 Nov '15
-  pages: 348
-  rating: 4
-  title: 'Biko: A Biography'
-  year: 2012
-- author: John L. Esposito
-  date: 08 Nov '15
-  pages: 230
-  rating: 4
-  title: Who Speaks For Islam?
-  year: 2007
-- author: Terry Pratchett
-  date: 30 Oct '15
-  pages: 285
-  rating: 3
-  title: Maskerade
-  year: 1995
-- author: Jacques Pauw
-  date: 27 Oct '15
-  pages: 416
-  rating: 3
-  title: Dances with Devils
-  year: 2006
-- author: Reza Aslan
-  date: 18 Oct '15
-  pages: 310
-  rating: 4
-  title: No god but God
-  year: 2005
-- author: "Honor\xE9 de Balzac"
-  date: 04 Oct '15
-  pages: 302
-  rating: 3
-  title: Father Goriot
-  year: 1834
-- author: Michael Frayn
-  date: 19 Sep '15
-  pages: 132
-  rating: 5
-  title: Copenhagen
-  year: 1998
-- author: Daniel Defoe
-  date: 14 Sep '15
-  pages: 320
-  rating: 1
-  title: Robinson Crusoe
-  year: 1719
-- author: Max Du Preez
-  date: 29 Aug '15
-  pages: 286
-  rating: 5
-  title: Pale Native
-  year: 2003
-- author: Haruki Murakami
-  date: 22 Aug '15
-  pages: 296
-  rating: 4
-  title: Norwegian Wood
-  year: 1987
-- author: Virginia Woolf
-  date: 17 Aug '15
-  pages: 209
-  rating: 5
-  title: To the Lighthouse
-  year: 1927
-- author: William Faulkner
-  date: 12 Aug '15
-  pages: 507
-  rating: 3
-  title: Light in August
-  year: 1932
-- author: F. Scott Fitzgerald
-  date: 01 Aug '15
-  pages: 317
-  rating: 5
-  title: Tender Is the Night
-  year: 1933
-- author: Wolfgang Sachs
-  date: 30 Jul '15
-  pages: 320
-  rating: 4
-  title: The Development Dictionary
-  year: 1991
-- author: Ernest Hemingway
-  date: 25 Jul '15
-  pages: 182
-  rating: 4
-  title: A Moveable Feast
-  year: 1964
-- author: Vladimir Nabokov
-  date: 24 Jul '15
-  pages: 223
-  rating: 3
-  title: Invitation to a Beheading
-  year: 1936
-- author: Vladimir Nabokov
-  date: 22 Jul '15
-  pages: 292
-  rating: 3
-  title: Laughter in the Dark
-  year: 1932
-- author: James Joyce
-  date: 21 Jul '15
-  pages: 810
-  rating: 5
-  title: Ulysses
-  year: 1922
-- author: Jorge Luis Borges
-  date: 03 Jul '15
-  pages: 256
-  rating: 5
-  title: Labyrinths
-  year: 1962
-- author: Joseph Heller
-  date: 27 Jun '15
-  pages: 453
-  rating: 5
-  title: Catch-22
-  year: 1961
-- author: John Steinbeck
-  date: 13 Jun '15
-  pages: 96
-  rating: 3
-  title: The Pearl
-  year: 1947
-- author: Alan Paton
-  date: 12 Jun '15
-  pages: 316
-  rating: 5
-  title: Cry, the Beloved Country
-  year: 1948
-- author: William Shakespeare
-  date: 28 May '15
-  pages: 237
-  rating: 5
-  title: The Merchant of Venice
-  year: 1596
-- author: Franz Kafka
-  date: 14 May '15
-  pages: 255
-  rating: 5
-  title: The Trial
-  year: 1925
-- author: Franz Kafka
-  date: 04 May '15
-  pages: 84
-  rating: 4
-  title: A Hunger Artist
-  year: 1924
-- author: J.M. Coetzee
-  date: 27 Apr '15
-  pages: 192
-  rating: 4
-  title: Life and Times of Michael K
-  year: 1983
-- author: Paul Auster
-  date: 14 Apr '15
-  pages: 308
-  rating: 3
-  title: The New York Trilogy
-  year: 1987
-- author: Art Spiegelman
-  date: 03 Apr '15
-  pages: 296
-  rating: 5
-  title: The Complete Maus
-  year: 1986
-- author: Ray Bradbury
-  date: 01 Apr '15
-  pages: 182
-  rating: 4
-  title: The Martian Chronicles
-  year: 1950
-- author: Henry David Thoreau
-  date: 29 Mar '15
-  pages: 60
-  rating: 3
-  title: Walking
-  year: 1862
-- author: Christopher Hitchens
-  date: 28 Mar '15
-  pages: 435
-  rating: 3
-  title: 'Hitch-22: A Memoir'
-  year: 2010
-- author: Simon Fairlie
-  date: 12 Mar '15
-  pages: 322
-  rating: 3
-  title: 'Meat: A Benign Extravagance'
-  year: 2010
-- author: John Reader
-  date: 26 Feb '15
-  pages: 816
-  rating: 5
-  title: 'Africa: A Biography of the Continent'
-  year: 1997
-- author: "Javier Mar\xEDas"
-  date: 29 Jan '15
-  pages: 401
-  rating: 2
-  title: Los enamoramientos
-  year: 2011
-- author: "Jos\xE9 Saramago"
-  date: 12 Jan '15
-  pages: 307
-  rating: 3
-  title: Seeing
-  year: 2004
-- author: Kurt Vonnegut
-  date: 05 Jan '15
-  pages: 324
-  rating: 2
-  title: "Gal\xE1pagos"
-  year: 1985
-- author: Jon Krakauer
-  date: 28 Dec '14
-  pages: 186
-  rating: 5
-  title: Eiger Dreams
-  year: 1990
-- author: Terry Pratchett
-  date: 27 Dec '14
-  pages: 243
-  rating: 3
-  title: Mort
-  year: 1987
-- author: John Steinbeck
-  date: 21 Dec '14
-  pages: 601
-  rating: 5
-  title: East of Eden
-  year: 1952
-- author: Voltaire
-  date: 22 Nov '14
-  pages: 129
-  rating: 4
-  title: Candide
-  year: 1759
-- author: Antjie Krog
-  date: 14 Nov '14
-  pages: 432
-  rating: 5
-  title: Country of My Skull
-  year: 1998
-- author: "Niccol\xF2 Machiavelli"
-  date: 03 Nov '14
-  pages: 140
-  rating: 3
-  title: The Prince
-  year: 1532
-- author: Kirill Yeskov
-  date: 30 Oct '14
-  pages: 251
-  rating: 2
-  title: The Last Ringbearer
-  year: 1999
-- author: Garth Nix
-  date: 27 Oct '14
-  pages: 382
-  rating: 3
-  title: Clariel
-  year: 2014
-- author: James Joyce
-  date: 25 Oct '14
-  pages: 207
-  rating: 5
-  title: Dubliners
-  year: 1914
-- author: Gustave Flaubert
-  date: 20 Oct '14
-  pages: 329
-  rating: 3
-  title: Madame Bovary
-  year: 1856
-- author: J.M. Coetzee
-  date: 04 Oct '14
-  pages: 220
-  rating: 4
-  title: Disgrace
-  year: 1999
-- author: Ernest Hemingway
-  date: 29 Sep '14
-  pages: 256
-  rating: 4
-  title: The Sun Also Rises
-  year: 1926
-- author: J.M. Coetzee
-  date: 16 Sep '14
-  pages: 152
-  rating: 5
-  title: Waiting for the Barbarians
-  year: 1980
-- author: "Jos\xE9 Saramago"
-  date: 10 Sep '14
-  pages: 245
-  rating: 3
-  title: All the Names
-  year: 1997
-- author: Chinua Achebe
-  date: 09 Aug '14
-  pages: 209
-  rating: 4
-  title: Things Fall Apart
-  year: 1958
-- author: Terry Pratchett
-  date: 05 Aug '14
-  pages: 400
-  rating: 5
-  title: Small Gods
-  year: 1992
-- author: Douglas Adams
-  date: 31 Jul '14
-  pages: 240
-  rating: 3
-  title: Mostly Harmless
-  year: 1992
-- author: Mario Vargas Llosa
-  date: 19 Jun '14
-  pages: 568
-  rating: 5
-  title: The War of the End of the World
-  year: 1981
-- author: Cormac McCarthy
-  date: 09 Jun '14
-  pages: 241
-  rating: 2
-  title: The Road
-  year: 2006
-- author: John Steinbeck
-  date: 07 Jun '14
-  pages: 479
-  rating: 5
-  title: The Grapes of Wrath
-  year: 1939
-- author: Kurt Vonnegut
-  date: 02 Jun '14
-  pages: 282
-  rating: 5
-  title: Mother Night
-  year: 1961
-- author: David Mitchell
-  date: 01 Jun '14
-  pages: 509
-  rating: 4
-  title: Cloud Atlas
-  year: 2004
-- author: William Shakespeare
-  date: 29 May '14
-  pages: 112
-  rating: 3
-  title: The Comedy of Errors
-  year: 1594
-- author: Ray Bradbury
-  date: 28 May '14
-  pages: 227
-  rating: 4
-  title: Fahrenheit 451
-  year: 1953
-- author: Oscar Wilde
-  date: 26 May '14
-  pages: 70
-  rating: 3
-  title: Lady Windermere's Fan
-  year: 1893
-- author: Edwin A. Abbott
-  date: 25 May '14
-  pages: 96
-  rating: 4
-  title: Flatland
-  year: 1884
-- author: Brian Greene
-  date: 24 May '14
-  pages: 464
-  rating: 4
-  title: The Elegant Universe
-  year: 1999
-- author: John Steinbeck
-  date: 16 May '14
-  pages: 181
-  rating: 5
-  title: Cannery Row
-  year: 1945
-- author: Albert Camus
-  date: 12 May '14
-  pages: 123
-  rating: 3
-  title: The Stranger
-  year: 1942
-- author: Leo Tolstoy
-  date: 07 May '14
-  pages: 1392
-  rating: 5
-  title: War and Peace
-  year: 1868
-- author: Benjamin Hoff
-  date: 27 Apr '14
-  pages: 176
-  rating: 1
-  title: The Tao of Pooh
-  year: 1982
-- author: Charles C. Mann
-  date: 26 Apr '14
-  pages: 557
-  rating: 5
-  title: '1493'
-  year: 2011
-- author: Jonathan Swift
-  date: 24 Apr '14
-  pages: 306
-  rating: 3
-  title: Gulliver's Travels
-  year: 1726
-- author: "Jos\xE9 Saramago"
-  date: 21 Apr '14
-  pages: 326
-  rating: 4
-  title: Blindness
-  year: 1995
-- author: Isaac Asimov
-  date: 17 Apr '14
-  pages: 528
-  rating: 3
-  title: Foundation and Earth
-  year: 1986
-- author: Isaac Asimov
-  date: 13 Apr '14
-  pages: 450
-  rating: 3
-  title: Foundation's Edge
-  year: 1982
-- author: Isaac Asimov
-  date: 08 Apr '14
-  pages: 464
-  rating: 3
-  title: Forward the Foundation
-  year: 1993
-- author: Isaac Asimov
-  date: 06 Apr '14
-  pages: 464
-  rating: 3
-  title: Prelude to Foundation
-  year: 1988
-- author: Carl Sagan
-  date: 02 Apr '14
-  pages: 457
-  rating: 2
-  title: The Demon-Haunted World
-  year: 1995
-- author: Oscar Wilde
-  date: 20 Mar '14
-  pages: 78
-  rating: 5
-  title: An Ideal Husband
-  year: 1893
-- author: Richard Feynman
-  date: 19 Mar '14
-  pages: 391
-  rating: 4
-  title: Surely You're Joking, Mr. Feynman!
-  year: 1984
-- author: Oscar Wilde
-  date: 11 Mar '14
-  pages: 96
-  rating: 3
-  title: A Woman of No Importance
-  year: 1894
-- author: Haruki Murakami
-  date: 10 Mar '14
-  pages: 480
-  rating: 4
-  title: Kafka on the Shore
-  year: 2002
-- author: Isaac Asimov
-  date: 07 Mar '14
-  pages: 256
-  rating: 4
-  title: Second Foundation
-  year: 1953
-- author: Franz Kafka
-  date: 04 Mar '14
-  pages: 201
-  rating: 3
-  title: The Metamorphosis
-  year: 1915
-- author: Isaac Asimov
-  date: 28 Feb '14
-  pages: 256
-  rating: 4
-  title: Foundation and Empire
-  year: 1952
-- author: Jonathan C. Brown
-  date: 22 Feb '14
-  pages: 336
-  rating: 4
-  title: A Brief History of Argentina
-  year: 2002
-- author: Nelson Mandela
-  date: 18 Feb '14
-  pages: 656
-  rating: 5
-  title: Long Walk to Freedom
-  year: 1994
-- author: Jack Kerouac
-  date: 14 Feb '14
-  pages: 307
-  rating: 5
-  title: On the Road
-  year: 1955
-- author: Fyodor Dostoyevsky
-  date: 12 Feb '14
-  pages: 233
-  rating: 5
-  title: Notes from Underground
-  year: 1864
-- author: Rolf Potts
-  date: 08 Feb '14
-  pages: 224
-  rating: 3
-  title: Vagabonding
-  year: 2002
-- author: Douglas Adams
-  date: 07 Feb '14
-  pages: 167
-  rating: 2
-  title: So Long, and Thanks for All the Fish
-  year: 1984
-- author: Miguel de Cervantes Saavedra
-  date: 25 Dec '13
-  pages: 1023
-  rating: 5
-  title: Don Quixote
-  year: 1605
-- author: Jostein Gaarder
-  date: 30 Nov '13
-  pages: 403
-  rating: 3
-  title: Sophie's World
-  year: 1991
-- author: Isaac Asimov
-  date: 17 Nov '13
-  pages: 244
-  rating: 4
-  title: Foundation
-  year: 1951
-- author: H.G. Wells
-  date: 15 Nov '13
-  pages: 192
-  rating: 3
-  title: The War of the Worlds
-  year: 1897
-- author: Kahlil Gibran
-  date: 11 Nov '13
-  pages: 127
-  rating: 3
-  title: The Prophet
-  year: 1923
-- author: J.R.R. Tolkien
-  date: 10 Nov '13
-  pages: 313
-  rating: 5
-  title: "The Children of H\xFArin"
-  year: 2007
-- author: Joseph Conrad
-  date: 08 Nov '13
-  pages: 188
-  rating: 4
-  title: Heart of Darkness
-  year: 1899
-- author: Kurt Vonnegut
-  date: 07 Nov '13
-  pages: 15
-  rating: 3
-  title: 2BR02B
-  year: 1962
-- author: Douglas Adams
-  date: 06 Nov '13
-  pages: 224
-  rating: 3
-  title: Life, the Universe and Everything
-  year: 1982
-- author: Vladimir Nabokov
-  date: 02 Nov '13
-  pages: 604
-  rating: 5
-  title: Ada, or Ardor
-  year: 1969
-- author: Ivan Turgenev
-  date: 22 Sep '13
-  pages: 64
-  rating: 3
-  title: Three Sketches from a Hunter's Album
-  year: 1852
-- author: Charles C. Mann
-  date: 21 Sep '13
-  pages: 541
-  rating: 4
-  title: '1491'
-  year: 2005
-- author: "Jos\xE9 Saramago"
-  date: 13 Sep '13
-  pages: 341
-  rating: 5
-  title: The Gospel According to Jesus Christ
-  year: 1991
-- author: Dante Alighieri
-  date: 07 Sep '13
-  pages: 320
-  rating: 5
-  title: Inferno
-  year: 1320
-- author: Mario Vargas Llosa
-  date: 01 Sep '13
-  pages: 475
-  rating: 5
-  title: The Feast of the Goat
-  year: 2000
-- author: William Shakespeare
-  date: 28 Aug '13
-  pages: 289
-  rating: 4
-  title: Hamlet
-  year: 1600
-- author: Aldous Huxley
-  date: 26 Aug '13
-  pages: 268
-  rating: 4
-  title: Brave New World
-  year: 1932
-- author: Martin Meredith
-  date: 23 Aug '13
-  pages: 752
-  rating: 5
-  title: The State of Africa
-  year: 2005
-- author: William Faulkner
-  date: 07 Jul '13
-  pages: 326
-  rating: 5
-  title: The Sound and the Fury
-  year: 1929
-- author: Carl Sagan
-  date: 26 Jun '13
-  pages: 384
-  rating: 4
-  title: Cosmos
-  year: 1980
-- author: Sigmund Freud
-  date: 19 Jun '13
-  pages: 102
-  rating: 3
-  title: Deviant Love
-  year: 2006
-- author: Norman Davies
-  date: 19 Jun '13
-  pages: 1392
-  rating: 5
-  title: Europe
-  year: 1996
-- author: James Joyce
-  date: 14 Jun '13
-  pages: 329
-  rating: 4
-  title: A Portrait of the Artist as a Young Man
-  year: 1916
-- author: F. Scott Fitzgerald
-  date: 13 Jun '13
-  pages: 180
-  rating: 5
-  title: The Great Gatsby
-  year: 1925
-- author: Roald Dahl
-  date: 25 May '13
-  pages: 213
-  rating: 4
-  title: Skin and Other Stories
-  year: 1960
-- author: Samuel Taylor Coleridge
-  date: 24 May '13
-  pages: 77
-  rating: 5
-  title: The Rime of the Ancient Mariner
-  year: 1798
-- author: Samuel Taylor Coleridge
-  date: 23 May '13
-  pages: 5
-  rating: 5
-  title: Christabel
-  year: 1816
-- author: John Updike
-  date: 21 May '13
-  pages: 106
-  rating: 3
-  title: The Women Who Got Away
-  year: 2007
-- author: William Trevor
-  date: 20 May '13
-  pages: 144
-  rating: 3
-  title: Bodily Secrets
-  year: 1992
-- author: "Ana\xEFs Nin"
-  date: 19 May '13
-  pages: 105
-  rating: 2
-  title: Eros Unbound
-  year: 2007
-- author: "Fran\xE7oise Sagan"
-  date: 18 May '13
-  pages: 153
-  rating: 4
-  title: Bonjour tristesse
-  year: 1954
-- author: D.H. Lawrence
-  date: 13 May '13
-  pages: 156
-  rating: 3
-  title: The Virgin and the Gipsy
-  year: 1930
-- author: Jules Verne
-  date: 11 May '13
-  pages: 394
-  rating: 3
-  title: Twenty Thousand Leagues Under the Sea
-  year: 1869
-- author: Katherine Mansfield
-  date: 11 May '13
-  pages: 110
-  rating: 3
-  title: Something Childish But Very Natural
-  year: 1924
-- author: "Jos\xE9 Saramago"
-  date: 28 Apr '13
-  pages: 238
-  rating: 5
-  title: Death with Interruptions
-  year: 2005
-- author: Leo Tolstoy
-  date: 07 Apr '13
-  pages: 128
-  rating: 5
-  title: The Kreutzer Sonata
-  year: 1889
-- author: Peter L. Bernstein
-  date: 01 Apr '13
-  pages: 383
-  rating: 2
-  title: Against the Gods
-  year: 1996
-- author: Thomas Hardy
-  date: 30 Mar '13
-  pages: 125
-  rating: 3
-  title: A Mere Interlude
-  year: 1885
-- author: Ivan Turgenev
-  date: 25 Mar '13
-  pages: 124
-  rating: 4
-  title: First Love
-  year: 1856
-- author: Roald Dahl
-  date: 22 Mar '13
-  pages: 240
-  rating: 4
-  title: The Wonderful Story of Henry Sugar and Six More
-  year: 1977
-- author: Stendhal
-  date: 14 Feb '13
-  pages: 120
-  rating: 2
-  title: Cures for Love
-  year: 1822
-- author: Giacomo Casanova
-  date: 13 Feb '13
-  pages: 110
-  rating: 4
-  title: Of Mistresses, Tigresses and Other Conquests
-  year: 1789
-- author: Salman Rushdie
-  date: 14 Jan '13
-  pages: 647
-  rating: 5
-  title: Midnight's Children
-  year: 1981
-- author: V.S. Naipaul
-  date: 11 Jan '13
-  pages: 224
-  rating: 4
-  title: Half a Life
-  year: 2001
-- author: Hunter S. Thompson
-  date: 10 Jan '13
-  pages: 204
-  rating: 4
-  title: Fear and Loathing in Las Vegas
-  year: 1971
-- author: Oscar Wilde
-  date: 09 Jan '13
-  pages: 2
-  rating: 5
-  title: The Importance of Being Earnest
-  year: 1895
-- author: Oscar Wilde
-  date: 04 Jan '13
-  pages: 224
-  rating: 4
-  title: The Happy Prince and Other Stories
-  year: 1888
-- author: Maurice Bucaille
-  date: 03 Jan '13
-  pages: 272
-  rating: 2
-  title: The Bible, the Qur'an, and Science
-  year: 1364
-- author: Simon Reid-Henry
-  date: 31 Dec '12
-  pages: 431
-  rating: 4
-  title: Fidel and Che
-  year: 2009
-- author: Francis S. Collins
-  date: 27 Dec '12
-  pages: 294
-  rating: 2
-  title: The Language of God
-  year: 2006
-- author: Jeffrey Archer
-  date: 24 Dec '12
-  pages: 538
-  rating: 1
-  title: False Impression
-  year: 2005
-- author: Matt Ridley
-  date: 20 Dec '12
-  pages: 265
-  rating: 4
-  title: The Origins of Virtue
-  year: 1997
-- author: John McPhee
-  date: 19 Dec '12
-  pages: 720
-  rating: 5
-  title: Annals of the Former World
-  year: 1998
-- author: Ovid
-  date: 04 Dec '12
-  pages: 723
-  rating: 4
-  title: Metamorphoses
-  year: 8
-- author: Josh McDowell
-  date: 28 Nov '12
-  pages: 128
-  rating: 1
-  title: More Than a Carpenter
-  year: 1977
-- author: Mark Twain
-  date: 26 Nov '12
-  pages: 327
-  rating: 4
-  title: The Adventures of Huckleberry Finn
-  year: 1884
-- author: Homer
-  date: 21 Oct '12
-  pages: 527
-  rating: 5
-  title: The Iliad of Homer
-  year: -750
-- author: Giovanni Boccaccio
-  date: 13 Sep '12
-  pages: 120
-  rating: 3
-  title: The Eaten Heart
-  year: 1353
-- author: "Carlos Ruiz Zaf\xF3n"
-  date: 12 Sep '12
-  pages: 288
-  rating: 4
-  title: The Prisoner of Heaven
-  year: 2011
-- author: "H\xE9lo\xEFse d'Argenteuil"
-  date: 10 Sep '12
-  pages: 112
-  rating: 3
-  title: Forbidden Fruit
-  year: 1974
-- author: Vladimir Nabokov
-  date: 24 Aug '12
-  pages: 114
-  rating: 5
-  title: Mary
-  year: 1926
-- author: Kurt Vonnegut
-  date: 22 Aug '12
-  pages: 303
-  rating: 4
-  title: Breakfast of Champions
-  year: 1973
-- author: Douglas Adams
-  date: 13 Aug '12
-  pages: 250
-  rating: 3
-  title: The Restaurant at the End of the Universe
-  year: 1980
-- author: Fyodor Dostoyevsky
-  date: 09 Aug '12
-  pages: 796
-  rating: 5
-  title: The Brothers Karamazov
-  year: 1880
-- author: Williamson Murray
-  date: 10 Jul '12
-  pages: 656
-  rating: 4
-  title: A War to be Won
-  year: 1990
-- author: Virgil
-  date: 24 Jun '12
-  pages: 442
-  rating: 5
-  title: The Aeneid
-  year: -19
-- author: Milton Crane
-  date: 19 Jun '12
-  pages: 571
-  rating: 3
-  title: 50 Great Short Stories
-  year: 1952
-- author: Anton Chekhov
-  date: 31 May '12
-  pages: 368
-  rating: 4
-  title: The Essential Tales of Chekhov
-  year: 1998
-- author: Jonathan Safran Foer
-  date: 01 May '12
-  pages: 276
-  rating: 2
-  title: Everything Is Illuminated
-  year: 2002
-- author: Vladimir Nabokov
-  date: 23 Apr '12
-  pages: 143
-  rating: 5
-  title: Pnin
-  year: 1953
-- author: James Muirden
-  date: 27 Mar '12
-  pages: 244
-  rating: 5
-  title: The Rhyming Bible
-  year: 2009
-- author: Douglas Adams
-  date: 20 Mar '12
-  pages: 216
-  rating: 5
-  title: The Hitchhiker's Guide to the Galaxy
-  year: 1979
-- author: Spike Milligan
-  date: 16 Mar '12
-  pages: 160
-  rating: 4
-  title: Puckoon
-  year: 1963
-- author: George Orwell
-  date: 04 Mar '12
-  pages: 126
-  rating: 4
-  title: Books v. Cigarettes
-  year: 1946
-- author: Alex Rosenberg
-  date: 24 Jan '12
-  pages: 368
-  rating: 3
-  title: The Atheist's Guide to Reality
-  year: 2011
-- author: Richard Miles
-  date: 20 Jan '12
-  pages: 521
-  rating: 4
-  title: Carthage Must Be Destroyed
-  year: 2008
-- author: Homer
-  date: 15 Jan '12
-  pages: 541
-  rating: 5
-  title: The Odyssey
-  year: -720
-- author: Joel R. Primack
-  date: 09 Jan '12
-  pages: 386
-  rating: 5
-  title: The View From The Centre Of The Universe
-  year: 2006
-- author: Fyodor Dostoyevsky
-  date: 04 Jan '12
-  pages: 614
-  rating: 5
-  title: Crime and Punishment
-  year: 1866
-- author: James Joyce
-  date: 02 Jan '12
-  pages: 32
-  rating: 5
-  title: The Cat and the Devil
-  year: 1936
-- author: Shel Silverstein
-  date: 01 Jan '12
-  pages: 64
-  rating: 3
-  title: The Giving Tree
-  year: 1964
-- author: Isaac Asimov
-  date: 07 Dec '11
-  pages: 225
-  rating: 4
-  title: I, Robot
-  year: 1950
-- author: Kent Greenfield
-  date: 03 Dec '11
-  pages: 256
-  rating: 3
-  title: The Myth of Choice
-  year: 2011
-- author: "Gabriel Garc\xEDa M\xE1rquez"
-  date: 28 Nov '11
-  pages: 457
-  rating: 3
-  title: One Hundred Years of Solitude
-  year: 1967
-- author: Charles Darwin
-  date: 20 Nov '11
-  pages: 703
-  rating: 5
-  title: The Origin of Species
-  year: 1859
-- author: Ian Morris
-  date: 01 Nov '11
-  pages: 768
-  rating: 5
-  title: Why the West Rules-for Now
-  year: 2010
-- author: Lemony Snicket
-  date: 21 Oct '11
-  pages: 214
-  rating: 3
-  title: The Wide Window
-  year: 2000
-- author: Lemony Snicket
-  date: 19 Oct '11
-  pages: 192
-  rating: 3
-  title: The Reptile Room
-  year: 1999
-- author: Charles Bukowski
-  date: 16 Oct '11
-  pages: 291
-  rating: 4
-  title: Women
-  year: 1978
-- author: Ernest Hemingway
-  date: 12 Oct '11
-  pages: 293
-  rating: 5
-  title: A Farewell to Arms
-  year: 1929
-- author: "Ernst J\xFCnger"
-  date: 03 Oct '11
-  pages: 320
-  rating: 4
-  title: Storm of Steel
-  year: 1920
-- author: Ernest Hemingway
-  date: 14 Sep '11
-  pages: 132
-  rating: 3
-  title: The Old Man and the Sea
-  year: 1952
-- author: Naomi Wolf
-  date: 30 Aug '11
-  pages: 368
-  rating: 3
-  title: The Beauty Myth
-  year: 1990
-- author: John Keegan
-  date: 20 Aug '11
-  pages: 475
-  rating: 4
-  title: The First World War
-  year: 1998
-- author: Robert Jordan
-  date: 09 Aug '11
-  pages: 1011
-  rating: 1
-  title: Lord of Chaos
-  year: 1994
-- author: Tina Fey
-  date: 06 Aug '11
-  pages: 283
-  rating: 1
-  title: Bossypants
-  year: 2011
-- author: Stieg Larsson
-  date: 05 Aug '11
-  pages: 563
-  rating: 2
-  title: The Girl Who Kicked the Hornet's Nest
-  year: 2007
-- author: Stieg Larsson
-  date: 04 Aug '11
-  pages: 752
-  rating: 2
-  title: The Girl Who Played with Fire
-  year: 2006
-- author: Markus Zusak
-  date: 01 Aug '11
-  pages: 550
-  rating: 3
-  title: The Book Thief
-  year: 2005
-- author: Hugh Williams
-  date: 20 Jul '11
-  pages: 414
-  rating: 3
-  title: Fifty Things You Need to Know about World History
-  year: 2010
-- author: Sun Tzu
-  date: 14 Jul '11
-  pages: 155
-  rating: 3
-  title: The Art of War
-  year: -500
-- author: Lemony Snicket
-  date: 11 Jul '11
-  pages: 176
-  rating: 3
-  title: The Bad Beginning
-  year: 1999
-- author: Stieg Larsson
-  date: 09 Jul '11
-  pages: 465
-  rating: 3
-  title: The Girl with the Dragon Tattoo
-  year: 2005
-- author: Malcolm Gladwell
-  date: 07 Jul '11
-  pages: 296
-  rating: 3
-  title: Blink
-  year: 2005
-- author: Paulo Coelho
-  date: 04 Jul '11
-  pages: 320
-  rating: 3
-  title: The Witch Of Portobello
-  year: 2006
-- author: Jeffrey Archer
-  date: 01 Jul '11
-  pages: 592
-  rating: 3
-  title: Kane and Abel
-  year: 1979
-- author: J.R.R. Tolkien
-  date: 19 Jun '11
-  pages: 452
-  rating: 4
-  title: "Unfinished Tales of N\xFAmenor and Middle-Earth"
-  year: 1980
-- author: George Orwell
-  date: 16 Jun '11
-  pages: 336
-  rating: 4
-  title: Narrative Essays
-  year: 1984
-- author: Yann Martel
-  date: 10 Jun '11
-  pages: 460
-  rating: 4
-  title: Life of Pi
-  year: 2001
-- author: Jon Krakauer
-  date: 05 Jun '11
-  pages: 207
-  rating: 4
-  title: Into the Wild
-  year: 1996
-- author: Christopher Hitchens
-  date: 23 May '11
-  pages: 307
-  rating: 4
-  title: God is Not Great
-  year: 2007
-- author: Hermann Hesse
-  date: 20 May '11
-  pages: 152
-  rating: 4
-  title: Siddhartha
-  year: 1922
-- author: Joseph Heller
-  date: 12 May '11
-  pages: 576
-  rating: 4
-  title: Something Happened
-  year: 1974
-- author: Joseph Heller
-  date: 03 May '11
-  pages: 462
-  rating: 4
-  title: Closing Time
-  year: 1994
-- author: Stephen Hawking
-  date: 22 Apr '11
-  pages: 212
-  rating: 4
-  title: A Brief History of Time
-  year: 1987
-- author: Stephen Hawking
-  date: 14 Apr '11
-  pages: 199
-  rating: 4
-  title: The Grand Design
-  year: 2010
-- author: Malcolm Gladwell
-  date: 10 Apr '11
-  pages: 301
-  rating: 4
-  title: The Tipping Point
-  year: 2000
-- author: Jared Diamond
-  date: 02 Apr '11
-  pages: 407
-  rating: 4
-  title: The Third Chimpanzee
-  year: 1991
-- author: Richard Dawkins
-  date: 22 Mar '11
-  pages: 470
-  rating: 4
-  title: The Greatest Show on Earth
-  year: 2009
-- author: Jean M. Auel
-  date: 17 Mar '11
-  pages: 512
-  rating: 4
-  title: The Clan of the Cave Bear
-  year: 1980
-- author: Oscar Wilde
-  date: 10 Mar '11
-  pages: 254
-  rating: 5
-  title: The Picture of Dorian Gray
-  year: 1891
-- author: Kurt Vonnegut
-  date: 06 Mar '11
-  pages: 275
-  rating: 5
-  title: Slaughterhouse-Five
-  year: 1969
-- author: Leo Tolstoy
-  date: 24 Feb '11
-  pages: 1235
-  rating: 5
-  title: Anna Karenina
-  year: 1878
-- author: John Steinbeck
-  date: 22 Feb '11
-  pages: 112
-  rating: 5
-  title: Of Mice and Men
-  year: 1937
-- author: Salman Rushdie
-  date: 12 Feb '11
-  pages: 576
-  rating: 5
-  title: The Satanic Verses
-  year: 1988
-- author: Erich Maria Remarque
-  date: 08 Feb '11
-  pages: 296
-  rating: 5
-  title: All Quiet on the Western Front
-  year: 1929
-- author: Boris Pasternak
-  date: 28 Jan '11
-  pages: 592
-  rating: 5
-  title: Doctor Zhivago
-  year: 1957
-- author: Vladimir Nabokov
-  date: 25 Jan '11
-  pages: 208
-  rating: 5
-  title: The Defense
-  year: 1930
-- author: Ernesto Che Guevara
-  date: 20 Jan '11
-  pages: 175
-  rating: 5
-  title: The Motorcycle Diaries
-  year: 1993
-- author: Antony Beevor
-  date: 03 Jan '11
-  pages: 560
-  rating: 5
-  title: The Battle for Spain
-  year: 1982
-- author: Robert Jordan
-  date: 02 Dec '10
-  pages: 912
-  rating: 2
-  title: The Fires of Heaven
-  year: 1993
-- author: Rupert Woodfin
-  date: 12 Nov '10
-  pages: 176
-  rating: 3
-  title: Introducing Marxism
-  year: 2004
-- author: Ziauddin Sardar
-  date: 07 Nov '10
-  pages: 176
-  rating: 3
-  title: Introducing Chaos
-  year: 1998
-- author: Robert Jordan
-  date: 03 Nov '10
-  pages: 1007
-  rating: 3
-  title: The Shadow Rising
-  year: 1992
-- author: Robert Jordan
-  date: 22 Oct '10
-  pages: 624
-  rating: 3
-  title: The Dragon Reborn
-  year: 1991
-- author: David Bodanis
-  date: 11 Oct '10
-  pages: 337
-  rating: 3
-  title: "E=mc\xB2"
-  year: 2000
-- author: "Carlos Ruiz Zaf\xF3n"
-  date: 25 Sep '10
-  pages: 531
-  rating: 4
-  title: The Angel's Game
-  year: 2008
-- author: Alex Vilenkin
-  date: 22 Sep '10
-  pages: 248
-  rating: 4
-  title: Many Worlds in One
-  year: 2006
-- author: Richard Dawkins
-  date: 20 Sep '10
-  pages: 688
-  rating: 5
-  title: The Ancestor's Tale
-  year: 2004
-- author: J.D. Salinger
-  date: 12 Sep '10
-  pages: 277
-  rating: 4
-  title: The Catcher in the Rye
-  year: 1951
-- author: J.P. McEvoy
-  date: 07 Aug '10
-  pages: 176
-  rating: 4
-  title: Introducing Quantum Theory
-  year: 1992
-- author: Harper Lee
-  date: 03 Aug '10
-  pages: 324
-  rating: 4
-  title: To Kill a Mockingbird
-  year: 1960
-- author: Robert Jordan
-  date: 03 Jul '10
-  pages: 705
-  rating: 4
-  title: The Great Hunt
-  year: 1990
-- author: Richard Dawkins
-  date: 20 Jun '10
-  pages: 374
-  rating: 5
-  title: The God Delusion
-  year: 2006
-- author: David Edmonds
-  date: 12 Jun '10
-  pages: 368
-  rating: 4
-  title: Bobby Fischer Goes to War
-  year: 2003
-- author: Robert Jordan
-  date: 01 Jun '10
-  pages: 814
-  rating: 4
-  title: The Eye of the World
-  year: 1990
-- author: Craig Callender
-  date: 04 May '10
-  pages: 176
-  rating: 4
-  title: Introducing Time
-  year: 2010
-- author: Bill Bryson
-  date: 01 May '10
-  pages: 254
-  rating: 4
-  title: Neither Here nor There
-  year: 1991
-- author: Bill Bryson
-  date: 22 Apr '10
-  pages: 288
-  rating: 4
-  title: The Life and Times of the Thunderbolt Kid
-  year: 2006
-- author: Jared Diamond
-  date: 10 Apr '10
-  pages: 480
-  rating: 5
-  title: Guns, Germs and Steel
-  year: 1997
-- author: Bruce Bassett
-  date: 18 Mar '10
-  pages: 176
-  rating: 4
-  title: Introducing Relativity
-  year: 2002
-- author: Vladimir Nabokov
-  date: 14 Mar '10
-  pages: 331
-  rating: 5
-  title: Lolita
-  year: 1955
-- author: Henry David Thoreau
-  date: 03 Mar '10
-  pages: 352
-  rating: 5
-  title: Walden
-  year: 1854
-- author: Jared Diamond
-  date: 12 Feb '10
-  pages: 608
-  rating: 5
-  title: Collapse
-  year: 2004
-- author: Anthony Burgess
-  date: 20 Dec '09
-  pages: 212
-  rating: 5
-  title: A Clockwork Orange
-  year: 1962
-- author: James May
-  date: 15 Oct '09
-  pages: 336
-  rating: 2
-  title: James May's Magnificent Machines
-  year: 2008
-- author: Jonathan Safran Foer
-  date: 12 Oct '09
-  pages: 326
-  rating: 3
-  title: Extremely Loud and Incredibly Close
-  year: 2005
-- author: Jeremy Clarkson
-  date: 09 Sep '09
-  pages: 340
-  rating: 3
-  title: And Another Thing
-  year: 2006
-- author: Hugh Thomas
-  date: 01 Sep '09
-  pages: 1120
-  rating: 4
-  title: The Spanish Civil War
-  year: 1961
-- author: Vikas Swarup
-  date: 02 Aug '09
-  pages: 318
-  rating: 4
-  title: Q & A
-  year: 2005
-- author: George Orwell
-  date: 10 Jul '09
-  pages: 376
-  rating: 4
-  title: Burmese Days
-  year: 1934
-- author: Anthony Kiedis
-  date: 06 Jul '09
-  pages: 465
-  rating: 4
-  title: Scar Tissue
-  year: 2004
-- author: Tom Feiling
-  date: 30 Jun '09
-  pages: 320
-  rating: 4
-  title: The Candy Machine
-  year: 2009
-- author: Jeremy Clarkson
-  date: 20 May '09
-  pages: 554
-  rating: 4
-  title: Born to be Riled
-  year: 1999
-- author: Charley Boorman
-  date: 10 Apr '09
-  pages: 320
-  rating: 4
-  title: Race to Dakar
-  year: 2006
-- author: William Shakespeare
-  date: 02 Apr '09
-  pages: 314
-  rating: 5
-  title: Othello
-  year: 1603
-- author: George Orwell
-  date: 20 Mar '09
-  pages: 122
-  rating: 5
-  title: Animal Farm
-  year: 1945
-- author: George Orwell
-  date: 12 Mar '09
-  pages: 328
-  rating: 5
-  title: Nineteen Eighty-Four
-  year: 1949
-- author: Jeremy Isaacs
-  date: 13 Feb '09
-  pages: 438
-  rating: 5
-  title: Cold War
-  year: 1998
-- author: John van de Ruit
-  date: 18 Oct '08
-  pages: 352
-  rating: 2
-  title: 'Spud: The Madness Continues'
-  year: 2008
-- author: Gamel Woolsey
-  date: 01 Oct '08
-  pages: 224
-  rating: 3
-  title: Death's Other Kingdom
-  year: 1939
-- author: Sue Townsend
-  date: 14 Sep '08
-  pages: 400
-  rating: 3
-  title: 'Adrian Mole: The Cappuccino Years'
-  year: 1999
-- author: C.J. Sansom
-  date: 13 Aug '08
-  pages: 549
-  rating: 3
-  title: Winter in Madrid
-  year: 2006
-- author: John van de Ruit
-  date: 24 Jun '08
-  pages: 352
-  rating: 3
-  title: Spud
-  year: 2005
-- author: Milan Kundera
-  date: 14 Jun '08
-  pages: 320
-  rating: 3
-  title: The Unbearable Lightness of Being
-  year: 1984
-- author: J.R.R. Tolkien
-  date: 04 Apr '08
-  pages: 386
-  rating: 4
-  title: The Silmarillion
-  year: 1977
-- author: William Shakespeare
-  date: 15 Mar '08
-  pages: 283
-  rating: 4
-  title: Romeo and Juliet
-  year: 1597
-- author: Henry Hitchings
-  date: 15 Feb '08
-  pages: 448
-  rating: 4
-  title: The Secret Life of Words
-  year: 2008
-- author: George Orwell
-  date: 01 Feb '08
-  pages: 232
-  rating: 5
-  title: Homage to Catalonia
-  year: 1938
-- author: Ernest Hemingway
-  date: 21 Oct '07
-  pages: 471
-  rating: 5
-  title: For Whom the Bell Tolls
-  year: 1940
-- author: Mark Haddon
-  date: 01 Oct '07
-  pages: 354
-  rating: 2
-  title: A Spot of Bother
-  year: 2006
-- author: William Shakespeare
-  date: 20 Sep '07
-  pages: 99
-  rating: 3
-  title: A Midsummer Night's Dream
-  year: 1595
-- author: J.K. Rowling
-  date: 20 May '07
-  pages: 759
-  rating: 3
-  title: Harry Potter and the Deathly Hallows
-  year: 2007
-- author: William Golding
-  date: 13 Mar '07
-  pages: 182
-  rating: 3
-  title: Lord of the Flies
-  year: 1954
-- author: Paulo Coelho
-  date: 20 Feb '07
-  pages: 197
-  rating: 4
-  title: The Alchemist
-  year: 1988
-- author: Bill Bryson
-  date: 05 Jan '07
-  pages: 560
-  rating: 5
-  title: A Short History of Nearly Everything
-  year: 2003
-- author: Dan Brown
-  date: 30 Sep '06
-  pages: 481
-  rating: 1
-  title: The Da Vinci Code
-  year: 2003
-- author: Dan Brown
-  date: 25 Sep '06
-  pages: 713
-  rating: 1
-  title: Angels & Demons
-  year: 2000
-- author: Dan Brown
-  date: 20 Sep '06
-  pages: 510
-  rating: 1
-  title: Digital Fortress
-  year: 1998
-- author: James Frey
-  date: 16 Aug '06
-  pages: 432
-  rating: 3
-  title: A Million Little Pieces
-  year: 2003
-- author: Bryce Courtenay
-  date: 03 May '06
-  pages: 544
-  rating: 3
-  title: The Power of One
-  year: 1989
-- author: Khaled Hosseini
-  date: 20 Apr '06
-  pages: 391
-  rating: 4
-  title: The Kite Runner
-  year: 2003
-- author: Mark Haddon
-  date: 14 Apr '06
-  pages: 226
-  rating: 4
-  title: The Curious Incident of the Dog in the Night-Time
-  year: 2003
-- author: "Carlos Ruiz Zaf\xF3n"
-  date: 02 Feb '06
-  pages: 487
-  rating: 5
-  title: The Shadow of the Wind
-  year: 2001
-- author: J.K. Rowling
-  date: 20 Dec '05
-  pages: 652
-  rating: 2
-  title: Harry Potter and the Half-Blood Prince
-  year: 2005
-- author: Garth Nix
-  date: 09 Dec '05
-  pages: 358
-  rating: 4
-  title: Abhorsen
-  year: 2003
-- author: Garth Nix
-  date: 05 Jul '05
-  pages: 464
-  rating: 4
-  title: Lirael
-  year: 2001
-- author: Richard Bach
-  date: 20 Mar '05
-  pages: 112
-  rating: 4
-  title: Jonathan Livingston Seagull
-  year: 1970
-- author: Garth Nix
-  date: 02 Feb '05
-  pages: 491
-  rating: 5
-  title: Sabriel
-  year: 1995
-- author: Lance Armstrong
-  date: 11 Nov '04
-  pages: 294
-  rating: 3
-  title: It's Not About the Bike
-  year: 1999
-- author: Sue Townsend
-  date: 22 Oct '04
-  pages: 304
-  rating: 4
-  title: The Growing Pains of Adrian Mole
-  year: 1984
-- author: Sue Townsend
-  date: 09 Oct '04
-  pages: 272
-  rating: 4
-  title: 'The Secret Diary of Adrian Mole, Aged 13 3/4 '
-  year: 1982
-- author: J.K. Rowling
-  date: 08 Sep '03
-  pages: 870
-  rating: 2
-  title: Harry Potter and the Order of the Phoenix
-  year: 2003
-- author: J.R.R. Tolkien
-  date: 13 Mar '01
-  pages: 1216
-  rating: 5
-  title: The Lord of the Rings
-  year: 1955
-- author: J.K. Rowling
-  date: 15 Feb '01
-  pages: 435
-  rating: 3
-  title: Harry Potter and the Prisoner of Azkaban
-  year: 1999
-- author: J.K. Rowling
-  date: 31 May '00
-  pages: 734
-  rating: 3
-  title: Harry Potter and the Goblet of Fire
-  year: 2000
-- author: J.R.R. Tolkien
-  date: 17 Apr '00
-  pages: 366
-  rating: 5
-  title: The Hobbit
-  year: 1937
-- author: J.K. Rowling
-  date: 30 Jun '99
-  pages: 341
-  rating: 2
-  title: 'Harry Potter and the Chamber of Secrets '
-  year: 1998
-- author: J.K. Rowling
-  date: 26 Mar '99
-  pages: 320
-  rating: 3
-  title: Harry Potter and the Sorcerer's Stone
-  year: 1997
+- Audiobook: n
+  Author: Dante Alighieri
+  Pages: 352
+  Published: 1320
+  Rating: 4
+  Read: 18 Jul '21
+  Reread: y
+  Title: Purgatorio
+- Audiobook: y, Ian McKellen
+  Author: William Shakespeare
+  Pages: 218
+  Published: 1611
+  Rating: 4
+  Read: 11 Jul '21
+  Reread: n
+  Title: The Tempest
+- Audiobook: n
+  Author: Jerome K. Jerome
+  Pages: 185
+  Published: 1889
+  Rating: 5
+  Read: 01 Jul '21
+  Reread: n
+  Title: Three Men in a Boat
+- Audiobook: n
+  Author: Joe Studwell
+  Pages: 320
+  Published: 2013
+  Rating: 5
+  Read: 16 Jun '21
+  Reread: n
+  Title: How Asia Works
+- Audiobook: y, Richard Ayoade
+  Author: Richard Ayoade
+  Pages: 256
+  Published: 2019
+  Rating: 5
+  Read: 10 Jun '21
+  Reread: y
+  Title: Ayoade on Top
+- Audiobook: y, Michael Sheen
+  Author: Jane Austen
+  Pages: 488
+  Published: 1814
+  Rating: 5
+  Read: 20 May '21
+  Reread: n
+  Title: Mansfield Park
+- Audiobook: y
+  Author: Philip Pullman
+  Pages: 449
+  Published: 2017
+  Rating: 2
+  Read: 17 May '21
+  Reread: n
+  Title: La Belle Sauvage
+- Audiobook: n
+  Author: "Honor\xE9 de Balzac"
+  Pages: 66
+  Published: 1830
+  Rating: 4
+  Read: 11 May '21
+  Reread: n
+  Title: Vendetta
+- Audiobook: n
+  Author: Jorge Luis Borges
+  Pages: 176
+  Published: 1982
+  Rating: 3
+  Read: 07 May '21
+  Reread: n
+  Title: Borges at Eighty
+- Audiobook: n
+  Author: William Goldman
+  Pages: 456
+  Published: 1973
+  Rating: 5
+  Read: 29 Apr '21
+  Reread: n
+  Title: The Princess Bride
+- Audiobook: n
+  Author: Various
+  Pages: 1000
+  Published: -600
+  Rating: 5
+  Read: 27 Apr '21
+  Reread: n
+  Title: The Hebrew Bible (Gen thru Psalms)
+- Audiobook: n
+  Author: Frederick Douglass
+  Pages: 158
+  Published: 1845
+  Rating: 5
+  Read: 27 Mar '21
+  Reread: n
+  Title: Narrative of the Life of Frederick Douglass
+- Audiobook: n
+  Author: Agatha Christie
+  Pages: 288
+  Published: 1926
+  Rating: 4
+  Read: 18 Mar '21
+  Reread: n
+  Title: The Murder of Roger Ackroyd
+- Audiobook: n
+  Author: Zach St. George
+  Pages: 244
+  Published: 2020
+  Rating: 3
+  Read: 13 Mar '21
+  Reread: n
+  Title: The Journeys of Trees
+- Audiobook: n
+  Author: Ada Palmer
+  Pages: 432
+  Published: 2016
+  Rating: 2
+  Read: 08 Mar '21
+  Reread: n
+  Title: Too Like the Lightning
+- Audiobook: n
+  Author: Scott Alexander
+  Pages: 658
+  Published: 2017
+  Rating: 5
+  Read: 22 Feb '21
+  Reread: n
+  Title: Unsong
+- Audiobook: n
+  Author: "Honor\xE9 de Balzac"
+  Pages: 526
+  Published: 1846
+  Rating: 4
+  Read: 12 Feb '21
+  Reread: n
+  Title: Cousin Betty
+- Audiobook: n
+  Author: George Orwell
+  Pages: 278
+  Published: 1939
+  Rating: 3
+  Read: 02 Feb '21
+  Reread: n
+  Title: Coming up for Air
+- Audiobook: n
+  Author: Ursula K. Le Guin
+  Pages: 160
+  Published: 1967
+  Rating: 4
+  Read: 27 Jan '21
+  Reread: n
+  Title: City of Illusions
+- Audiobook: n
+  Author: George Orwell
+  Pages: 213
+  Published: 1933
+  Rating: 4
+  Read: 24 Jan '21
+  Reread: n
+  Title: Down and Out in Paris and London
+- Audiobook: n
+  Author: Dante Alighieri
+  Pages: 320
+  Published: 1320
+  Rating: 5
+  Read: 21 Jan '21
+  Reread: y
+  Title: Inferno
+- Audiobook: n
+  Author: Virginia Postrel
+  Pages: 320
+  Published: 2020
+  Rating: 4
+  Read: 17 Jan '21
+  Reread: n
+  Title: The Fabric of Civilization
+- Audiobook: n
+  Author: Dianne Setterfield
+  Pages: 464
+  Published: 2018
+  Rating: 4
+  Read: 03 Jan '21
+  Reread: n
+  Title: Once Upon a River
+- Audiobook: n
+  Author: Terry Prachett
+  Pages: 378
+  Published: 2011
+  Rating: 4
+  Read: 24 Dec '20
+  Reread: n
+  Title: Snuff
+- Audiobook: n
+  Author: N.K. Jemisin
+  Pages: 492
+  Published: 2012
+  Rating: 4
+  Read: 20 Dec '20
+  Reread: n
+  Title: The Shadowed Sun
+- Audiobook: n
+  Author: Ted Chiang
+  Pages: 352
+  Published: 2019
+  Rating: 5
+  Read: 18 Dec '20
+  Reread: n
+  Title: Exhalation
+- Audiobook: n
+  Author: Jonathan Swift
+  Pages: 48
+  Published: 1729
+  Rating: 3
+  Read: 15 Dec '20
+  Reread: n
+  Title: A Modest Proposal
+- Audiobook: n
+  Author: N.K. Jemisin
+  Pages: 418
+  Published: 2012
+  Rating: 3
+  Read: 14 Dec '20
+  Reread: n
+  Title: The Killing Moon
+- Audiobook: n
+  Author: Norman Davies
+  Pages: 1296
+  Published: 1999
+  Rating: 5
+  Read: 10 Dec '20
+  Reread: n
+  Title: 'The Isles: A History'
+- Audiobook: n
+  Author: Terry Prachett
+  Pages: 439
+  Published: 2005
+  Rating: 3
+  Read: 19 Oct '20
+  Reread: n
+  Title: Thud!
+- Audiobook: n
+  Author: "Au\xF0ur Ava \xD3lafsd\xF3ttir"
+  Pages: 260
+  Published: 2007
+  Rating: 3
+  Read: 08 Oct '20
+  Reread: n
+  Title: The Greenhouse
+- Audiobook: n
+  Author: W.E.B. Du Bois
+  Pages: 288
+  Published: 1903
+  Rating: 5
+  Read: 28 Sep '20
+  Reread: n
+  Title: The Souls of Black Folk
+- Audiobook: n
+  Author: Jane Austen
+  Pages: 251
+  Published: 1817
+  Rating: 5
+  Read: 17 Sep '20
+  Reread: n
+  Title: Northanger Abbey
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 480
+  Published: 2002
+  Rating: 4
+  Read: 11 Sep '20
+  Reread: n
+  Title: Night Watch
+- Audiobook: n
+  Author: Bernardine Evaristo
+  Pages: 453
+  Published: 2019
+  Rating: 4
+  Read: 07 Sep '20
+  Reread: n
+  Title: Girl, Woman, Other
+- Audiobook: n
+  Author: Brit Bennett
+  Pages: 343
+  Published: 2020
+  Rating: 3
+  Read: 03 Sep '20
+  Reread: n
+  Title: The Vanishing Half
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 464
+  Published: 1999
+  Rating: 4
+  Read: 01 Sep '20
+  Reread: n
+  Title: The Fifth Elephant
+- Audiobook: n
+  Author: Terry Prachett
+  Pages: 461
+  Published: 1997
+  Rating: 4
+  Read: 25 Aug '20
+  Reread: n
+  Title: Jingo
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 411
+  Published: 1996
+  Rating: 5
+  Read: 17 Aug '20
+  Reread: n
+  Title: Feet of Clay
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 377
+  Published: 1993
+  Rating: 4
+  Read: 11 Aug '20
+  Reread: n
+  Title: Men at Arms
+- Audiobook: n
+  Author: Toni Morrison
+  Pages: 324
+  Published: 1987
+  Rating: 4
+  Read: 10 Aug '20
+  Reread: n
+  Title: Beloved
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 376
+  Published: 1989
+  Rating: 4
+  Read: 27 Jul '20
+  Reread: n
+  Title: 'Guards! Guards! '
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 277
+  Published: 1986
+  Rating: 3
+  Read: 24 Jul '20
+  Reread: n
+  Title: The Light Fantastic
+- Audiobook: n
+  Author: David Foster Wallace
+  Pages: 467
+  Published: 1987
+  Rating: 5
+  Read: 15 Jul '20
+  Reread: n
+  Title: The Broom of the System
+- Audiobook: n
+  Author: "Charlotte Bront\xEB"
+  Pages: 532
+  Published: 1847
+  Rating: 5
+  Read: 04 Jul '20
+  Reread: n
+  Title: Jane Eyre
+- Audiobook: n
+  Author: David Abulafia
+  Pages: 1088
+  Published: 2019
+  Rating: 5
+  Read: 24 Jun '20
+  Reread: n
+  Title: The Boundless Sea
+- Audiobook: y, read by Trevor Noah
+  Author: Trevor Noah
+  Pages: 288
+  Published: 2016
+  Rating: 5
+  Read: 22 Jun '20
+  Reread: n
+  Title: Born a Crime
+- Audiobook: n
+  Author: Mary Shelley
+  Pages: 335
+  Published: 1818
+  Rating: 5
+  Read: 23 May '20
+  Reread: n
+  Title: Frankenstein
+- Audiobook: n
+  Author: Albert Camus
+  Pages: 308
+  Published: 1947
+  Rating: 5
+  Read: 15 May '20
+  Reread: n
+  Title: The Plague
+- Audiobook: n
+  Author: Unknown
+  Pages: 146
+  Published: 2014
+  Rating: 4
+  Read: 05 May '20
+  Reread: n
+  Title: The Epic of Gilgamesh
+- Audiobook: n
+  Author: Peter Pomerantsev
+  Pages: 236
+  Published: 2019
+  Rating: 4
+  Read: 01 May '20
+  Reread: n
+  Title: This is not Propaganda
+- Audiobook: n
+  Author: Sanmao
+  Pages: 416
+  Published: 1976
+  Rating: 4
+  Read: 23 Apr '20
+  Reread: n
+  Title: Stories of the Sahara
+- Audiobook: n
+  Author: "Herg\xE9"
+  Pages: 1364
+  Published: 1930
+  Rating: 3
+  Read: 12 Apr '20
+  Reread: n
+  Title: 22 volumes of Tintin
+- Audiobook: n
+  Author: David Gange
+  Pages: 388
+  Published: 2019
+  Rating: 5
+  Read: 11 Apr '20
+  Reread: n
+  Title: The Frayed Atlantic Edge
+- Audiobook: y, read by Sir Ian McKellen
+  Author: Unknown
+  Pages: 128
+  Published: 1350
+  Rating: 4
+  Read: 03 Apr '20
+  Reread: n
+  Title: Sir Gawain and the Green Knight
+- Audiobook: n
+  Author: Betty Smith
+  Pages: 496
+  Published: 1943
+  Rating: 5
+  Read: 31 Mar '20
+  Reread: n
+  Title: A Tree Grows in Brooklyn
+- Audiobook: n
+  Author: Gavin Francis
+  Pages: 304
+  Published: 2012
+  Rating: 4
+  Read: 17 Mar '20
+  Reread: n
+  Title: Empire Antarctica
+- Audiobook: y
+  Author: Richard Ayoade
+  Pages: 256
+  Published: 2019
+  Rating: 5
+  Read: 27 Feb '20
+  Reread: n
+  Title: Ayoade on Top
+- Audiobook: n
+  Author: Goscinny and Uderzo
+  Pages: 1392
+  Published: 1961
+  Rating: 5
+  Read: 26 Feb '20
+  Reread: n
+  Title: 29 volumes of Asterix
+- Audiobook: n
+  Author: Ray Bradbury
+  Pages: 186
+  Published: 1951
+  Rating: 3
+  Read: 31 Jan '20
+  Reread: n
+  Title: The Illustrated Man
+- Audiobook: n
+  Author: Robert Macfarlane
+  Pages: 496
+  Published: 2019
+  Rating: 4
+  Read: 24 Jan '20
+  Reread: n
+  Title: Underland
+- Audiobook: y
+  Author: Stephen Fry
+  Pages: 416
+  Published: 2017
+  Rating: 3
+  Read: 14 Jan '20
+  Reread: n
+  Title: Mythos
+- Audiobook: n
+  Author: Ursula K. Le Guin
+  Pages: 387
+  Published: 1974
+  Rating: 4
+  Read: 06 Jan '20
+  Reread: n
+  Title: The Dispossessed
+- Audiobook: n
+  Author: Salman Rushdie
+  Pages: 393
+  Published: 2019
+  Rating: 5
+  Read: 02 Jan '20
+  Reread: n
+  Title: Quichotte
+- Audiobook: n
+  Author: David Foster Wallace
+  Pages: 353
+  Published: 1996
+  Rating: 4
+  Read: 22 Dec '19
+  Reread: n
+  Title: "A Supposedly Fun Thing I\u2019ll Never Do Again"
+- Audiobook: n
+  Author: Michael Pollan
+  Pages: 480
+  Published: 2019
+  Rating: 4
+  Read: 08 Dec '19
+  Reread: n
+  Title: How to Change Your Mind
+- Audiobook: n
+  Author: "Honor\xE9 de Balzac"
+  Pages: 704
+  Published: 1837
+  Rating: 4
+  Read: 26 Nov '19
+  Reread: n
+  Title: Lost Illusions
+- Audiobook: n
+  Author: Madeline Miller
+  Pages: 393
+  Published: 2018
+  Rating: 4
+  Read: 30 Oct '19
+  Reread: n
+  Title: Circe
+- Audiobook: n
+  Author: Ursula K. Le Guin
+  Pages: 160
+  Published: 1972
+  Rating: 4
+  Read: 24 Oct '19
+  Reread: n
+  Title: The Word for World is Forest
+- Audiobook: n
+  Author: Ursula K. Le Guin
+  Pages: 304
+  Published: 1969
+  Rating: 5
+  Read: 21 Oct '19
+  Reread: n
+  Title: The Left Hand of Darkness
+- Audiobook: n
+  Author: Herman Melville
+  Pages: 80
+  Published: 1853
+  Rating: 5
+  Read: 16 Oct '19
+  Reread: n
+  Title: Bartleby, the Scrivener
+- Audiobook: n
+  Author: Andrew Blum
+  Pages: 224
+  Published: 2019
+  Rating: 2
+  Read: 14 Oct '19
+  Reread: n
+  Title: The Weather Machine
+- Audiobook: n
+  Author: Herman Melville
+  Pages: 654
+  Published: 1851
+  Rating: 5
+  Read: 09 Oct '19
+  Reread: n
+  Title: Moby-Dick
+- Audiobook: n
+  Author: Richard Powers
+  Pages: 502
+  Published: 2018
+  Rating: 5
+  Read: 05 Oct '19
+  Reread: n
+  Title: The Overstory
+- Audiobook: n
+  Author: Delia Owens
+  Pages: 384
+  Published: 2018
+  Rating: 3
+  Read: 01 Oct '19
+  Reread: n
+  Title: Where the Crawdads Sing
+- Audiobook: n
+  Author: Deneys Reitz
+  Pages: 370
+  Published: 1930
+  Rating: 4
+  Read: 17 Aug '19
+  Reread: n
+  Title: Commando
+- Audiobook: n
+  Author: Jenny Odell
+  Pages: 240
+  Published: 2019
+  Rating: 4
+  Read: 11 Aug '19
+  Reread: n
+  Title: How To Do Nothing
+- Audiobook: n
+  Author: Robert Greene
+  Pages: 642
+  Published: 2018
+  Rating: 1
+  Read: 20 Jul '19
+  Reread: n
+  Title: The Laws of Human Nature
+- Audiobook: n
+  Author: Alfred Lansing
+  Pages: 282
+  Published: 1959
+  Rating: 5
+  Read: 10 Jul '19
+  Reread: n
+  Title: "Endurance: Shackleton\u2019s Incredible Voyage"
+- Audiobook: n
+  Author: Sally Rooney
+  Pages: 304
+  Published: 2017
+  Rating: 5
+  Read: 05 Jul '19
+  Reread: n
+  Title: Conversations with Friends
+- Audiobook: n
+  Author: Liu Cixin
+  Pages: 400
+  Published: 2014
+  Rating: 3
+  Read: 30 Jun '19
+  Reread: n
+  Title: The Three-Body Problem
+- Audiobook: n
+  Author: Walt Whitman
+  Pages: 256
+  Published: 1855
+  Rating: 5
+  Read: 16 Jun '19
+  Reread: n
+  Title: Leaves of Grass
+- Audiobook: n
+  Author: Umberto Eco
+  Pages: 536
+  Published: 1980
+  Rating: 5
+  Read: 04 Jun '19
+  Reread: n
+  Title: The Name of the Rose
+- Audiobook: n
+  Author: Philip K. Dick
+  Pages: 259
+  Published: 1962
+  Rating: 4
+  Read: 26 May '19
+  Reread: n
+  Title: The Man in the High Castle
+- Audiobook: n
+  Author: Terry Pratchett & Neil Gaiman
+  Pages: 412
+  Published: 1990
+  Rating: 5
+  Read: 22 May '19
+  Reread: n
+  Title: Good Omens
+- Audiobook: n
+  Author: Edgar Allan Poe
+  Pages: 196
+  Published: 1961
+  Rating: 4
+  Read: 13 May '19
+  Reread: n
+  Title: Eight Tales of Terror
+- Audiobook: n
+  Author: Gerald Durrell
+  Pages: 273
+  Published: 1956
+  Rating: 4
+  Read: 29 Apr '19
+  Reread: n
+  Title: My Family and Other Animals
+- Audiobook: n
+  Author: Yan Lianke
+  Pages: 352
+  Published: 2015
+  Rating: 4
+  Read: 11 Apr '19
+  Reread: n
+  Title: The Day the Sun Died
+- Audiobook: n
+  Author: Husain Haddawy
+  Pages: 518
+  Published: 800
+  Rating: 5
+  Read: 01 Apr '19
+  Reread: n
+  Title: The Arabian Nights
+- Audiobook: n
+  Author: Laurence Housman
+  Pages: 272
+  Published: 800
+  Rating: 4
+  Read: 15 Mar '19
+  Reread: n
+  Title: Sindbad the Sailor and Other Stories from The Arabian Nights
+- Audiobook: n
+  Author: Peter Snow
+  Pages: 440
+  Published: 2018
+  Rating: 3
+  Read: 14 Feb '19
+  Reread: n
+  Title: History of the World Map by Map
+- Audiobook: n
+  Author: Robert A. Heinlein
+  Pages: 288
+  Published: 1966
+  Rating: 4
+  Read: 24 Jan '19
+  Reread: n
+  Title: The Moon is a Harsh Mistress
+- Audiobook: n
+  Author: Walter M. Miller
+  Pages: 335
+  Published: 1959
+  Rating: 3
+  Read: 04 Jan '19
+  Reread: n
+  Title: 'A Canticle for Leibowitz '
+- Audiobook: n
+  Author: Margaret Atwood
+  Pages: 311
+  Published: 1985
+  Rating: 3
+  Read: 29 Dec '18
+  Reread: n
+  Title: "The Handmaid\u2019s Tale"
+- Audiobook: n
+  Author: Arthur Conan Doyle
+  Pages: 256
+  Published: 1917
+  Rating: 3
+  Read: 26 Dec '18
+  Reread: n
+  Title: His Last Bow
+- Audiobook: n
+  Author: Arthur Conan Doyle
+  Pages: 195
+  Published: 1915
+  Rating: 3
+  Read: 25 Dec '18
+  Reread: n
+  Title: The Valley of Fear
+- Audiobook: n
+  Author: Samuel Beckett
+  Pages: 109
+  Published: 1952
+  Rating: 3
+  Read: 24 Dec '18
+  Reread: n
+  Title: Waiting for Godot
+- Audiobook: n
+  Author: Elif Shafak
+  Pages: 432
+  Published: 2013
+  Rating: 2
+  Read: 08 Dec '18
+  Reread: n
+  Title: 'The Architect''s Apprentice '
+- Audiobook: n
+  Author: Arthur Conan Doyle
+  Pages: 403
+  Published: 1905
+  Rating: 4
+  Read: 15 Nov '18
+  Reread: n
+  Title: The Return of Sherlock Holmes
+- Audiobook: n
+  Author: Arthur Conan Doyle
+  Pages: 256
+  Published: 1902
+  Rating: 4
+  Read: 07 Nov '18
+  Reread: n
+  Title: The Hound of the Baskervilles
+- Audiobook: n
+  Author: George Alec Effinger
+  Pages: 284
+  Published: 1986
+  Rating: 3
+  Read: 01 Nov '18
+  Reread: n
+  Title: When Gravity Fails
+- Audiobook: n
+  Author: "Carlos Ruiz Zaf\xF3n"
+  Pages: 816
+  Published: 2016
+  Rating: 1
+  Read: 25 Oct '18
+  Reread: n
+  Title: The Labyrinth of the Spirits
+- Audiobook: n
+  Author: Arthur Conan Doyle
+  Pages: 129
+  Published: 1890
+  Rating: 3
+  Read: 21 Oct '18
+  Reread: n
+  Title: The Sign of the Four
+- Audiobook: n
+  Author: Rebecca Skloot
+  Pages: 370
+  Published: 2010
+  Rating: 3
+  Read: 16 Oct '18
+  Reread: n
+  Title: The Immortal Life of Henrietta Lacks
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 224
+  Published: 1959
+  Rating: 4
+  Read: 08 Oct '18
+  Reread: n
+  Title: Nine Tomorrows
+- Audiobook: n
+  Author: "Merc\xE8 Rodoreda"
+  Pages: 201
+  Published: 1962
+  Rating: 4
+  Read: 06 Oct '18
+  Reread: n
+  Title: The Time of the Doves
+- Audiobook: n
+  Author: Zora Neale Hurston
+  Pages: 219
+  Published: 1937
+  Rating: 5
+  Read: 22 Sep '18
+  Reread: n
+  Title: Their Eyes Were Watching God
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 386
+  Published: 1989
+  Rating: 4
+  Read: 13 Sep '18
+  Reread: n
+  Title: Nemesis
+- Audiobook: n
+  Author: Jesmyn Ward
+  Pages: 285
+  Published: 2017
+  Rating: 5
+  Read: 09 Sep '18
+  Reread: n
+  Title: Sing, Unburied, Sing
+- Audiobook: n
+  Author: James Baldwin
+  Pages: 159
+  Published: 1956
+  Rating: 5
+  Read: 01 Sep '18
+  Reread: n
+  Title: "Giovanni\u2019s Room"
+- Audiobook: n
+  Author: George Orwell
+  Pages: 55
+  Published: 2005
+  Rating: 3
+  Read: 28 Aug '18
+  Reread: n
+  Title: In Defence of English Cooking
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 374
+  Published: 1991
+  Rating: 3
+  Read: 07 Aug '18
+  Reread: n
+  Title: Witches Abroad
+- Audiobook: n
+  Author: Daniel Keyes
+  Pages: 216
+  Published: 1966
+  Rating: 5
+  Read: 05 Aug '18
+  Reread: n
+  Title: Flowers for Algernon
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 265
+  Published: 1988
+  Rating: 4
+  Read: 03 Aug '18
+  Reread: n
+  Title: Wyrd Sisters
+- Audiobook: n
+  Author: Virginia Woolf
+  Pages: 228
+  Published: 1928
+  Rating: 5
+  Read: 30 Jul '18
+  Reread: n
+  Title: Orlando
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 228
+  Published: 1987
+  Rating: 4
+  Read: 29 Jul '18
+  Reread: n
+  Title: Equal Rites
+- Audiobook: n
+  Author: Arthur Conan Doyle
+  Pages: 123
+  Published: 1887
+  Rating: 4
+  Read: 28 Jul '18
+  Reread: n
+  Title: A Study in Scarlet
+- Audiobook: n
+  Author: Agatha Christie
+  Pages: 274
+  Published: 1934
+  Rating: 3
+  Read: 27 Jul '18
+  Reread: n
+  Title: Murder on the Orient Express
+- Audiobook: n
+  Author: N.K. Jemisin
+  Pages: 416
+  Published: 2017
+  Rating: 5
+  Read: 24 Jul '18
+  Reread: n
+  Title: The Stone Sky
+- Audiobook: n
+  Author: N.K. Jemisin
+  Pages: 410
+  Published: 2016
+  Rating: 4
+  Read: 20 Jul '18
+  Reread: n
+  Title: The Obelisk Gate
+- Audiobook: n
+  Author: N.K. Jemisin
+  Pages: 468
+  Published: 2015
+  Rating: 5
+  Read: 14 Jul '18
+  Reread: n
+  Title: The Fifth Season
+- Audiobook: n
+  Author: Arthur Conan Doyle
+  Pages: 378
+  Published: 1894
+  Rating: 4
+  Read: 05 Jul '18
+  Reread: n
+  Title: The Memoirs of Sherlock Holmes
+- Audiobook: n
+  Author: William S. Burroughs
+  Pages: 208
+  Published: 1953
+  Rating: 3
+  Read: 30 Jun '18
+  Reread: n
+  Title: Junky
+- Audiobook: n
+  Author: Judea Pearl
+  Pages: 432
+  Published: 2018
+  Rating: 3
+  Read: 25 Jun '18
+  Reread: n
+  Title: The Book of Why
+- Audiobook: n
+  Author: Edward Abbey
+  Pages: 337
+  Published: 1968
+  Rating: 4
+  Read: 11 Jun '18
+  Reread: n
+  Title: Desert Solitaire
+- Audiobook: n
+  Author: Sylvia Plath
+  Pages: 244
+  Published: 1963
+  Rating: 5
+  Read: 01 Jun '18
+  Reread: n
+  Title: The Bell Jar
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 424
+  Published: 1994
+  Rating: 3
+  Read: 28 May '18
+  Reread: n
+  Title: Soul Music
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 352
+  Published: 1991
+  Rating: 3
+  Read: 25 May '18
+  Reread: n
+  Title: Reaper Man
+- Audiobook: n
+  Author: Arthur Conan Doyle
+  Pages: 307
+  Published: 1892
+  Rating: 5
+  Read: 19 May '18
+  Reread: n
+  Title: The Adventures of Sherlock Holmes
+- Audiobook: n
+  Author: Garth Nix
+  Pages: 344
+  Published: 2016
+  Rating: 3
+  Read: 12 May '18
+  Reread: n
+  Title: Goldenhand
+- Audiobook: n
+  Author: Iam Fleming
+  Pages: 213
+  Published: 1953
+  Rating: 2
+  Read: 08 May '18
+  Reread: n
+  Title: Casino Royale
+- Audiobook: n
+  Author: Petre Ho Davies
+  Pages: 288
+  Published: 2016
+  Rating: 3
+  Read: 28 Apr '18
+  Reread: n
+  Title: The Fortunes
+- Audiobook: n
+  Author: Roger C. Taylor
+  Pages: 117
+  Published: 2009
+  Rating: 3
+  Read: 08 Apr '18
+  Reread: n
+  Title: The Elements of Seamanship
+- Audiobook: n
+  Author: Mario Vargas Llosa
+  Pages: 322
+  Published: 1993
+  Rating: 5
+  Read: 07 Apr '18
+  Reread: n
+  Title: Death in the Andes
+- Audiobook: n
+  Author: Oscar Wilde
+  Pages: 480
+  Published: 1908
+  Rating: 4
+  Read: 02 Apr '18
+  Reread: n
+  Title: The Plays of Oscar Wilde
+- Audiobook: n
+  Author: Jane Austen
+  Pages: 409
+  Published: 1811
+  Rating: 3
+  Read: 31 Mar '18
+  Reread: n
+  Title: Sense and Sensibility
+- Audiobook: n
+  Author: Josh Malerman
+  Pages: 262
+  Published: 2014
+  Rating: 4
+  Read: 28 Mar '18
+  Reread: n
+  Title: Bird Box
+- Audiobook: n
+  Author: Jacques Pauw
+  Pages: 423
+  Published: 2017
+  Rating: 4
+  Read: 24 Mar '18
+  Reread: n
+  Title: "The President\u2019s Keepers"
+- Audiobook: n
+  Author: Simon Van Booy
+  Pages: 212
+  Published: 2013
+  Rating: 2
+  Read: 16 Mar '18
+  Reread: n
+  Title: The Illusion of Separateness
+- Audiobook: n
+  Author: Mario Vargas Llosa
+  Pages: 276
+  Published: 2006
+  Rating: 5
+  Read: 13 Mar '18
+  Reread: n
+  Title: The Bad Girl
+- Audiobook: n
+  Author: Warren Ingram
+  Pages: 181
+  Published: 2013
+  Rating: 1
+  Read: 10 Mar '18
+  Reread: n
+  Title: Become Your Own Financial Advisor
+- Audiobook: n
+  Author: Ahmed Saadawi
+  Pages: 288
+  Published: 2013
+  Rating: 4
+  Read: 09 Mar '18
+  Reread: n
+  Title: Frankenstein in Baghdad
+- Audiobook: n
+  Author: Cal Newport
+  Pages: 296
+  Published: 2016
+  Rating: 3
+  Read: 06 Mar '18
+  Reread: n
+  Title: Deep Work
+- Audiobook: n
+  Author: Chimamanda Ngozi Adichie
+  Pages: 433
+  Published: 2006
+  Rating: 4
+  Read: 25 Feb '18
+  Reread: n
+  Title: Half of a Yellow Sun
+- Audiobook: n
+  Author: Claire Keegan
+  Pages: 89
+  Published: 2010
+  Rating: 5
+  Read: 31 Jan '18
+  Reread: n
+  Title: Foster
+- Audiobook: n
+  Author: Paul Beatty
+  Pages: 304
+  Published: 2015
+  Rating: 5
+  Read: 30 Jan '18
+  Reread: n
+  Title: The Sellout
+- Audiobook: n
+  Author: "Honor\xE9 de Balzac"
+  Pages: 320
+  Published: 1837
+  Rating: 4
+  Read: 23 Jan '18
+  Reread: n
+  Title: Rise and Fall of Cesar Birotteau
+- Audiobook: n
+  Author: Benjamin Graham
+  Pages: 623
+  Published: 2006
+  Rating: 4
+  Read: 19 Jan '18
+  Reread: n
+  Title: The Intelligent Investor
+- Audiobook: n
+  Author: Laurence Gonzales
+  Pages: 336
+  Published: 1998
+  Rating: 1
+  Read: 17 Jan '18
+  Reread: n
+  Title: Deep Survival
+- Audiobook: n
+  Author: Joshua Slocum
+  Pages: 273
+  Published: 1900
+  Rating: 5
+  Read: 14 Jan '18
+  Reread: n
+  Title: Sailing Alone Around the World
+- Audiobook: n
+  Author: Jeff VanderMeer
+  Pages: 195
+  Published: 2014
+  Rating: 3
+  Read: 02 Jan '18
+  Reread: n
+  Title: Annihilation
+- Audiobook: n
+  Author: Thomas Piketty
+  Pages: 685
+  Published: 2014
+  Rating: 5
+  Read: 31 Dec '17
+  Reread: n
+  Title: Capital in the Twenty-First Century
+- Audiobook: n
+  Author: Mervyn King
+  Pages: 448
+  Published: 2016
+  Rating: 4
+  Read: 16 Dec '17
+  Reread: n
+  Title: The End of Alchemy
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 384
+  Published: 2013
+  Rating: 3
+  Read: 12 Dec '17
+  Reread: n
+  Title: Raising Steam
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 394
+  Published: 2007
+  Rating: 3
+  Read: 03 Dec '17
+  Reread: n
+  Title: Making Money
+- Audiobook: n
+  Author: Neil Gaiman
+  Pages: 635
+  Published: 2001
+  Rating: 3
+  Read: 27 Nov '17
+  Reread: n
+  Title: American Gods
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 394
+  Published: 2005
+  Rating: 4
+  Read: 18 Nov '17
+  Reread: n
+  Title: Going Postal
+- Audiobook: n
+  Author: Patricia Highsmith
+  Pages: 281
+  Published: 1950
+  Rating: 2
+  Read: 24 Oct '17
+  Reread: n
+  Title: Strangers on a Train
+- Audiobook: n
+  Author: Laura Esquivel
+  Pages: 246
+  Published: 1992
+  Rating: 4
+  Read: 06 Oct '17
+  Reread: n
+  Title: Like Water for Chocolate
+- Audiobook: n
+  Author: John Steinbeck
+  Pages: 336
+  Published: 1961
+  Rating: 4
+  Read: 30 Sep '17
+  Reread: n
+  Title: The Winter of Our Discontent
+- Audiobook: n
+  Author: Jorge Luis Borges
+  Pages: 137
+  Published: 1935
+  Rating: 4
+  Read: 13 Sep '17
+  Reread: n
+  Title: A Universal History of Infamy
+- Audiobook: n
+  Author: Max Du Preez
+  Pages: 288
+  Published: 2004
+  Rating: 3
+  Read: 11 Sep '17
+  Reread: n
+  Title: Of Warriors, Lovers and Prophets
+- Audiobook: n
+  Author: Peter Moskowitz
+  Pages: 272
+  Published: 2017
+  Rating: 3
+  Read: 10 Sep '17
+  Reread: n
+  Title: How to Kill a City
+- Audiobook: n
+  Author: Noam Chomsky
+  Pages: 416
+  Published: 2002
+  Rating: 5
+  Read: 05 Sep '17
+  Reread: n
+  Title: Understanding Power
+- Audiobook: n
+  Author: Joseph E. Stiglitz
+  Pages: 304
+  Published: 2002
+  Rating: 3
+  Read: 28 Aug '17
+  Reread: n
+  Title: Globalization and Its Discontents
+- Audiobook: n
+  Author: William Easterly
+  Pages: 416
+  Published: 2014
+  Rating: 4
+  Read: 20 Aug '17
+  Reread: n
+  Title: The Tyranny of Experts
+- Audiobook: n
+  Author: Amitav Ghosh
+  Pages: 333
+  Published: 2004
+  Rating: 5
+  Read: 15 Aug '17
+  Reread: n
+  Title: The Hungry Tide
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 288
+  Published: 1972
+  Rating: 3
+  Read: 04 Aug '17
+  Reread: n
+  Title: The Gods Themselves
+- Audiobook: n
+  Author: Mark Helprin
+  Pages: 768
+  Published: 1983
+  Rating: 4
+  Read: 03 Aug '17
+  Reread: n
+  Title: Winter's Tale
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 339
+  Published: 1970
+  Rating: 3
+  Read: 22 Jul '17
+  Reread: n
+  Title: Nightfall
+- Audiobook: n
+  Author: Peter Thiel
+  Pages: 195
+  Published: 2014
+  Rating: 3
+  Read: 21 Jul '17
+  Reread: n
+  Title: Zero to One
+- Audiobook: n
+  Author: Kurt Vonnegut
+  Pages: 224
+  Published: 1959
+  Rating: 4
+  Read: 11 Jul '17
+  Reread: n
+  Title: The Sirens of Titan
+- Audiobook: n
+  Author: Jalaluddin Rumi
+  Pages: 271
+  Published: 1270
+  Rating: 5
+  Read: 07 Jul '17
+  Reread: n
+  Title: The Masnavi
+- Audiobook: n
+  Author: Stefan Zweig
+  Pages: 104
+  Published: 1941
+  Rating: 5
+  Read: 05 Jul '17
+  Reread: n
+  Title: Chess Story
+- Audiobook: n
+  Author: William Faulkner
+  Pages: 320
+  Published: 1936
+  Rating: 0
+  Read: 02 Jul '17
+  Reread: n
+  Title: Absalom, Absalom!
+- Audiobook: n
+  Author: Thomas Pynchon
+  Pages: 152
+  Published: 1966
+  Rating: 5
+  Read: 10 Jun '17
+  Reread: n
+  Title: The Crying of Lot 49
+- Audiobook: n
+  Author: John Donoghue
+  Pages: 400
+  Published: 2015
+  Rating: 1
+  Read: 02 Jun '17
+  Reread: n
+  Title: The Death's Head Chess Club
+- Audiobook: n
+  Author: Robert Macfarlane
+  Pages: 320
+  Published: 2003
+  Rating: 3
+  Read: 30 May '17
+  Reread: n
+  Title: Mountains of the Mind
+- Audiobook: n
+  Author: Francis Chichester
+  Pages: 224
+  Published: 1964
+  Rating: 3
+  Read: 25 May '17
+  Reread: n
+  Title: The Lonely Sea and the Sky
+- Audiobook: n
+  Author: "Me\u0161a Selimovi\u0107"
+  Pages: 473
+  Published: 1966
+  Rating: 5
+  Read: 15 May '17
+  Reread: n
+  Title: Death and the Dervish
+- Audiobook: n
+  Author: Mark Z. Danielewski
+  Pages: 705
+  Published: 2000
+  Rating: 1
+  Read: 17 Apr '17
+  Reread: n
+  Title: House of Leaves
+- Audiobook: n
+  Author: John McPhee
+  Pages: 288
+  Published: 1989
+  Rating: 5
+  Read: 06 Apr '17
+  Reread: n
+  Title: The Control of Nature
+- Audiobook: n
+  Author: Andrew Lang
+  Pages: 518
+  Published: 2013
+  Rating: 5
+  Read: 22 Mar '17
+  Reread: n
+  Title: The Arabian Nights
+- Audiobook: n
+  Author: Nick Lane
+  Pages: 368
+  Published: 2015
+  Rating: 5
+  Read: 15 Mar '17
+  Reread: n
+  Title: The Vital Question
+- Audiobook: n
+  Author: Yuri Herrera
+  Pages: 112
+  Published: 2013
+  Rating: 3
+  Read: 12 Mar '17
+  Reread: n
+  Title: The Transmigration of Bodies
+- Audiobook: n
+  Author: Amitava Kumar
+  Pages: 344
+  Published: 2002
+  Rating: 2
+  Read: 11 Mar '17
+  Reread: n
+  Title: World Bank Literature
+- Audiobook: n
+  Author: James  West Davidson
+  Pages: 344
+  Published: 2015
+  Rating: 2
+  Read: 20 Feb '17
+  Reread: n
+  Title: A Little History of the United States
+- Audiobook: n
+  Author: Han Kang
+  Pages: 218
+  Published: 2014
+  Rating: 4
+  Read: 12 Feb '17
+  Reread: n
+  Title: Human Acts
+- Audiobook: n
+  Author: "Jos\xE9 Saramago"
+  Pages: 324
+  Published: 2002
+  Rating: 3
+  Read: 06 Feb '17
+  Reread: n
+  Title: The Double
+- Audiobook: n
+  Author: Jagdish N. Bhagwati
+  Pages: 351
+  Published: 1970
+  Rating: 3
+  Read: 15 Jan '17
+  Reread: n
+  Title: Foreign Aid
+- Audiobook: n
+  Author: "Felisberto Hern\xE1ndez"
+  Pages: 260
+  Published: 1993
+  Rating: 3
+  Read: 07 Jan '17
+  Reread: n
+  Title: Piano Stories
+- Audiobook: n
+  Author: "Roberto Bola\xF1o"
+  Pages: 577
+  Published: 1998
+  Rating: 5
+  Read: 29 Dec '16
+  Reread: n
+  Title: The Savage Detectives
+- Audiobook: n
+  Author: Joe Simpson
+  Pages: 218
+  Published: 1988
+  Rating: 3
+  Read: 17 Dec '16
+  Reread: n
+  Title: Touching the Void
+- Audiobook: n
+  Author: Craig Thompson
+  Pages: 672
+  Published: 2011
+  Rating: 3
+  Read: 09 Dec '16
+  Reread: n
+  Title: Habibi
+- Audiobook: n
+  Author: Riad Sattouf
+  Pages: 156
+  Published: 2014
+  Rating: 4
+  Read: 07 Dec '16
+  Reread: n
+  Title: The Arab of the Future
+- Audiobook: n
+  Author: Alex Honnold
+  Pages: 256
+  Published: 2015
+  Rating: 3
+  Read: 27 Nov '16
+  Reread: n
+  Title: Alone on the Wall
+- Audiobook: n
+  Author: Fyodor Dostoyevsky
+  Pages: 144
+  Published: 1846
+  Rating: 4
+  Read: 23 Nov '16
+  Reread: n
+  Title: The Double
+- Audiobook: n
+  Author: Jack London
+  Pages: 172
+  Published: 1903
+  Rating: 4
+  Read: 14 Nov '16
+  Reread: n
+  Title: The Call of the Wild
+- Audiobook: n
+  Author: Arundhati Roy
+  Pages: 340
+  Published: 1997
+  Rating: 5
+  Read: 13 Nov '16
+  Reread: n
+  Title: The God of Small Things
+- Audiobook: n
+  Author: Timur Vermes
+  Pages: 352
+  Published: 2012
+  Rating: 3
+  Read: 30 Oct '16
+  Reread: n
+  Title: Look Who's Back
+- Audiobook: n
+  Author: Salman Rushdie
+  Pages: 304
+  Published: 2015
+  Rating: 4
+  Read: 13 Oct '16
+  Reread: n
+  Title: Two Years Eight Months and Twenty-Eight Nights
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 308
+  Published: 1950
+  Rating: 4
+  Read: 29 Sep '16
+  Reread: n
+  Title: Pebble in the Sky
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 304
+  Published: 1951
+  Rating: 2
+  Read: 25 Sep '16
+  Reread: n
+  Title: The Stars, Like Dust
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 304
+  Published: 1952
+  Rating: 3
+  Read: 24 Sep '16
+  Reread: n
+  Title: The Currents of Space
+- Audiobook: n
+  Author: Rusty Young
+  Pages: 400
+  Published: 2003
+  Rating: 4
+  Read: 16 Sep '16
+  Reread: n
+  Title: Marching Powder
+- Audiobook: n
+  Author: F. Scott Fitzgerald
+  Pages: 288
+  Published: 1920
+  Rating: 3
+  Read: 09 Sep '16
+  Reread: n
+  Title: This Side of Paradise
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 368
+  Published: 1994
+  Rating: 3
+  Read: 29 Aug '16
+  Reread: n
+  Title: Interesting Times
+- Audiobook: n
+  Author: Kurt Vonnegut
+  Pages: 341
+  Published: 1952
+  Rating: 4
+  Read: 20 Aug '16
+  Reread: n
+  Title: Player Piano
+- Audiobook: n
+  Author: Sanjeev Sanyal
+  Pages: 352
+  Published: 2012
+  Rating: 3
+  Read: 14 Aug '16
+  Reread: n
+  Title: Land of the Seven Rivers
+- Audiobook: n
+  Author: Dante Alighieri
+  Pages: 400
+  Published: 1320
+  Rating: 4
+  Read: 06 Aug '16
+  Reread: n
+  Title: Paradiso
+- Audiobook: n
+  Author: Rudyard Kipling
+  Pages: 142
+  Published: 1895
+  Rating: 4
+  Read: 25 Jul '16
+  Reread: n
+  Title: The Second Jungle Book
+- Audiobook: n
+  Author: Rudyard Kipling
+  Pages: 277
+  Published: 1894
+  Rating: 4
+  Read: 20 Jul '16
+  Reread: n
+  Title: The Jungle Book
+- Audiobook: n
+  Author: Mario Vargas Llosa
+  Pages: 379
+  Published: 1962
+  Rating: 5
+  Read: 11 Jul '16
+  Reread: n
+  Title: The Time of the Hero
+- Audiobook: n
+  Author: Ari Shavit
+  Pages: 464
+  Published: 2013
+  Rating: 3
+  Read: 23 Jun '16
+  Reread: n
+  Title: My Promised Land
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 512
+  Published: 1985
+  Rating: 4
+  Read: 19 May '16
+  Reread: n
+  Title: Robots and Empire
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 435
+  Published: 1983
+  Rating: 3
+  Read: 15 May '16
+  Reread: n
+  Title: The Robots of Dawn
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 206
+  Published: 1954
+  Rating: 4
+  Read: 03 May '16
+  Reread: n
+  Title: The Caves of Steel
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 208
+  Published: 1957
+  Rating: 4
+  Read: 02 May '16
+  Reread: n
+  Title: The Naked Sun
+- Audiobook: n
+  Author: Greg Marinovich
+  Pages: 254
+  Published: 2000
+  Rating: 4
+  Read: 01 May '16
+  Reread: n
+  Title: The Bang-Bang Club
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 285
+  Published: 1983
+  Rating: 4
+  Read: 21 Apr '16
+  Reread: n
+  Title: The Colour of Magic
+- Audiobook: n
+  Author: Dante Alighieri
+  Pages: 357
+  Published: 1320
+  Rating: 3
+  Read: 19 Apr '16
+  Reread: n
+  Title: Purgatorio
+- Audiobook: n
+  Author: Steve Biko
+  Pages: 264
+  Published: 1978
+  Rating: 5
+  Read: 02 Apr '16
+  Reread: n
+  Title: I Write What I Like
+- Audiobook: n
+  Author: Kingsley Holgate
+  Pages: 248
+  Published: 2009
+  Rating: 3
+  Read: 28 Mar '16
+  Reread: n
+  Title: 'Afrika: Dispatches From The Outside Edge'
+- Audiobook: n
+  Author: Matt Ridley
+  Pages: 448
+  Published: 2010
+  Rating: 3
+  Read: 26 Mar '16
+  Reread: n
+  Title: The Rational Optimist
+- Audiobook: n
+  Author: Leonard Thompson
+  Pages: 416
+  Published: 1990
+  Rating: 3
+  Read: 17 Mar '16
+  Reread: n
+  Title: A History of South Africa
+- Audiobook: n
+  Author: Jon Krakauer
+  Pages: 337
+  Published: 1997
+  Rating: 5
+  Read: 11 Feb '16
+  Reread: n
+  Title: Into Thin Air
+- Audiobook: n
+  Author: "S\xF8ren Kierkegaard"
+  Pages: 208
+  Published: 1978
+  Rating: 4
+  Read: 08 Feb '16
+  Reread: n
+  Title: Two Ages
+- Audiobook: n
+  Author: "S\xF8ren Kierkegaard"
+  Pages: 232
+  Published: 1843
+  Rating: 4
+  Read: 04 Feb '16
+  Reread: n
+  Title: The Seducer's Diary
+- Audiobook: n
+  Author: Ferial Haffajee
+  Pages: 153
+  Published: 2015
+  Rating: 3
+  Read: 01 Feb '16
+  Reread: n
+  Title: What if there were no whites in South Africa?
+- Audiobook: n
+  Author: Salman Rushdie
+  Pages: 576
+  Published: 1999
+  Rating: 5
+  Read: 31 Jan '16
+  Reread: n
+  Title: The Ground Beneath Her Feet
+- Audiobook: n
+  Author: John Kennedy Toole
+  Pages: 416
+  Published: 1980
+  Rating: 5
+  Read: 26 Dec '15
+  Reread: n
+  Title: A Confederacy of Dunces
+- Audiobook: n
+  Author: Kurt Vonnegut
+  Pages: 306
+  Published: 1963
+  Rating: 5
+  Read: 13 Dec '15
+  Reread: n
+  Title: Cat's Cradle
+- Audiobook: n
+  Author: Salman Rushdie
+  Pages: 224
+  Published: 1990
+  Rating: 4
+  Read: 08 Dec '15
+  Reread: n
+  Title: Haroun and the Sea of Stories
+- Audiobook: n
+  Author: Xolela Mangcu
+  Pages: 348
+  Published: 2012
+  Rating: 4
+  Read: 15 Nov '15
+  Reread: n
+  Title: 'Biko: A Biography'
+- Audiobook: n
+  Author: John L. Esposito
+  Pages: 230
+  Published: 2007
+  Rating: 4
+  Read: 08 Nov '15
+  Reread: n
+  Title: Who Speaks For Islam?
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 285
+  Published: 1995
+  Rating: 3
+  Read: 30 Oct '15
+  Reread: n
+  Title: Maskerade
+- Audiobook: n
+  Author: Jacques Pauw
+  Pages: 416
+  Published: 2006
+  Rating: 3
+  Read: 27 Oct '15
+  Reread: n
+  Title: Dances with Devils
+- Audiobook: n
+  Author: Reza Aslan
+  Pages: 310
+  Published: 2005
+  Rating: 4
+  Read: 18 Oct '15
+  Reread: n
+  Title: No god but God
+- Audiobook: n
+  Author: "Honor\xE9 de Balzac"
+  Pages: 302
+  Published: 1834
+  Rating: 3
+  Read: 04 Oct '15
+  Reread: n
+  Title: Father Goriot
+- Audiobook: n
+  Author: Michael Frayn
+  Pages: 132
+  Published: 1998
+  Rating: 5
+  Read: 19 Sep '15
+  Reread: n
+  Title: Copenhagen
+- Audiobook: n
+  Author: Daniel Defoe
+  Pages: 320
+  Published: 1719
+  Rating: 1
+  Read: 14 Sep '15
+  Reread: n
+  Title: Robinson Crusoe
+- Audiobook: n
+  Author: Max Du Preez
+  Pages: 286
+  Published: 2003
+  Rating: 5
+  Read: 29 Aug '15
+  Reread: n
+  Title: Pale Native
+- Audiobook: n
+  Author: Haruki Murakami
+  Pages: 296
+  Published: 1987
+  Rating: 4
+  Read: 22 Aug '15
+  Reread: n
+  Title: Norwegian Wood
+- Audiobook: n
+  Author: Virginia Woolf
+  Pages: 209
+  Published: 1927
+  Rating: 5
+  Read: 17 Aug '15
+  Reread: n
+  Title: To the Lighthouse
+- Audiobook: n
+  Author: William Faulkner
+  Pages: 507
+  Published: 1932
+  Rating: 3
+  Read: 12 Aug '15
+  Reread: n
+  Title: Light in August
+- Audiobook: n
+  Author: F. Scott Fitzgerald
+  Pages: 317
+  Published: 1933
+  Rating: 5
+  Read: 01 Aug '15
+  Reread: n
+  Title: Tender Is the Night
+- Audiobook: n
+  Author: Wolfgang Sachs
+  Pages: 320
+  Published: 1991
+  Rating: 4
+  Read: 30 Jul '15
+  Reread: n
+  Title: The Development Dictionary
+- Audiobook: n
+  Author: Ernest Hemingway
+  Pages: 182
+  Published: 1964
+  Rating: 4
+  Read: 25 Jul '15
+  Reread: n
+  Title: A Moveable Feast
+- Audiobook: n
+  Author: Vladimir Nabokov
+  Pages: 223
+  Published: 1936
+  Rating: 3
+  Read: 24 Jul '15
+  Reread: n
+  Title: Invitation to a Beheading
+- Audiobook: n
+  Author: Vladimir Nabokov
+  Pages: 292
+  Published: 1932
+  Rating: 3
+  Read: 22 Jul '15
+  Reread: n
+  Title: Laughter in the Dark
+- Audiobook: n
+  Author: James Joyce
+  Pages: 810
+  Published: 1922
+  Rating: 5
+  Read: 21 Jul '15
+  Reread: n
+  Title: Ulysses
+- Audiobook: n
+  Author: Jorge Luis Borges
+  Pages: 256
+  Published: 1962
+  Rating: 5
+  Read: 03 Jul '15
+  Reread: n
+  Title: Labyrinths
+- Audiobook: n
+  Author: Joseph Heller
+  Pages: 453
+  Published: 1961
+  Rating: 5
+  Read: 27 Jun '15
+  Reread: n
+  Title: Catch-22
+- Audiobook: n
+  Author: John Steinbeck
+  Pages: 96
+  Published: 1947
+  Rating: 3
+  Read: 13 Jun '15
+  Reread: n
+  Title: The Pearl
+- Audiobook: n
+  Author: Alan Paton
+  Pages: 316
+  Published: 1948
+  Rating: 5
+  Read: 12 Jun '15
+  Reread: n
+  Title: Cry, the Beloved Country
+- Audiobook: n
+  Author: William Shakespeare
+  Pages: 237
+  Published: 1596
+  Rating: 5
+  Read: 28 May '15
+  Reread: n
+  Title: The Merchant of Venice
+- Audiobook: n
+  Author: Franz Kafka
+  Pages: 255
+  Published: 1925
+  Rating: 5
+  Read: 14 May '15
+  Reread: n
+  Title: The Trial
+- Audiobook: n
+  Author: Franz Kafka
+  Pages: 84
+  Published: 1924
+  Rating: 4
+  Read: 04 May '15
+  Reread: n
+  Title: A Hunger Artist
+- Audiobook: n
+  Author: J.M. Coetzee
+  Pages: 192
+  Published: 1983
+  Rating: 4
+  Read: 27 Apr '15
+  Reread: n
+  Title: Life and Times of Michael K
+- Audiobook: n
+  Author: Paul Auster
+  Pages: 308
+  Published: 1987
+  Rating: 3
+  Read: 14 Apr '15
+  Reread: n
+  Title: The New York Trilogy
+- Audiobook: n
+  Author: Art Spiegelman
+  Pages: 296
+  Published: 1986
+  Rating: 5
+  Read: 03 Apr '15
+  Reread: n
+  Title: The Complete Maus
+- Audiobook: n
+  Author: Ray Bradbury
+  Pages: 182
+  Published: 1950
+  Rating: 4
+  Read: 01 Apr '15
+  Reread: n
+  Title: The Martian Chronicles
+- Audiobook: n
+  Author: Henry David Thoreau
+  Pages: 60
+  Published: 1862
+  Rating: 3
+  Read: 29 Mar '15
+  Reread: n
+  Title: Walking
+- Audiobook: n
+  Author: Christopher Hitchens
+  Pages: 435
+  Published: 2010
+  Rating: 3
+  Read: 28 Mar '15
+  Reread: n
+  Title: 'Hitch-22: A Memoir'
+- Audiobook: n
+  Author: Simon Fairlie
+  Pages: 322
+  Published: 2010
+  Rating: 3
+  Read: 12 Mar '15
+  Reread: n
+  Title: 'Meat: A Benign Extravagance'
+- Audiobook: n
+  Author: John Reader
+  Pages: 816
+  Published: 1997
+  Rating: 5
+  Read: 26 Feb '15
+  Reread: n
+  Title: 'Africa: A Biography of the Continent'
+- Audiobook: n
+  Author: "Javier Mar\xEDas"
+  Pages: 401
+  Published: 2011
+  Rating: 2
+  Read: 29 Jan '15
+  Reread: n
+  Title: Los enamoramientos
+- Audiobook: n
+  Author: "Jos\xE9 Saramago"
+  Pages: 307
+  Published: 2004
+  Rating: 3
+  Read: 12 Jan '15
+  Reread: n
+  Title: Seeing
+- Audiobook: n
+  Author: Kurt Vonnegut
+  Pages: 324
+  Published: 1985
+  Rating: 2
+  Read: 05 Jan '15
+  Reread: n
+  Title: "Gal\xE1pagos"
+- Audiobook: n
+  Author: Jon Krakauer
+  Pages: 186
+  Published: 1990
+  Rating: 5
+  Read: 28 Dec '14
+  Reread: n
+  Title: Eiger Dreams
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 243
+  Published: 1987
+  Rating: 3
+  Read: 27 Dec '14
+  Reread: n
+  Title: Mort
+- Audiobook: n
+  Author: John Steinbeck
+  Pages: 601
+  Published: 1952
+  Rating: 5
+  Read: 21 Dec '14
+  Reread: n
+  Title: East of Eden
+- Audiobook: n
+  Author: Voltaire
+  Pages: 129
+  Published: 1759
+  Rating: 4
+  Read: 22 Nov '14
+  Reread: n
+  Title: Candide
+- Audiobook: n
+  Author: Antjie Krog
+  Pages: 432
+  Published: 1998
+  Rating: 5
+  Read: 14 Nov '14
+  Reread: n
+  Title: Country of My Skull
+- Audiobook: n
+  Author: "Niccol\xF2 Machiavelli"
+  Pages: 140
+  Published: 1532
+  Rating: 3
+  Read: 03 Nov '14
+  Reread: n
+  Title: The Prince
+- Audiobook: n
+  Author: Kirill Yeskov
+  Pages: 251
+  Published: 1999
+  Rating: 2
+  Read: 30 Oct '14
+  Reread: n
+  Title: The Last Ringbearer
+- Audiobook: n
+  Author: Garth Nix
+  Pages: 382
+  Published: 2014
+  Rating: 3
+  Read: 27 Oct '14
+  Reread: n
+  Title: Clariel
+- Audiobook: n
+  Author: James Joyce
+  Pages: 207
+  Published: 1914
+  Rating: 5
+  Read: 25 Oct '14
+  Reread: n
+  Title: Dubliners
+- Audiobook: n
+  Author: Gustave Flaubert
+  Pages: 329
+  Published: 1856
+  Rating: 3
+  Read: 20 Oct '14
+  Reread: n
+  Title: Madame Bovary
+- Audiobook: n
+  Author: J.M. Coetzee
+  Pages: 220
+  Published: 1999
+  Rating: 4
+  Read: 04 Oct '14
+  Reread: n
+  Title: Disgrace
+- Audiobook: n
+  Author: Ernest Hemingway
+  Pages: 256
+  Published: 1926
+  Rating: 4
+  Read: 29 Sep '14
+  Reread: n
+  Title: The Sun Also Rises
+- Audiobook: n
+  Author: J.M. Coetzee
+  Pages: 152
+  Published: 1980
+  Rating: 5
+  Read: 16 Sep '14
+  Reread: n
+  Title: Waiting for the Barbarians
+- Audiobook: n
+  Author: "Jos\xE9 Saramago"
+  Pages: 245
+  Published: 1997
+  Rating: 3
+  Read: 10 Sep '14
+  Reread: n
+  Title: All the Names
+- Audiobook: n
+  Author: Chinua Achebe
+  Pages: 209
+  Published: 1958
+  Rating: 4
+  Read: 09 Aug '14
+  Reread: n
+  Title: Things Fall Apart
+- Audiobook: n
+  Author: Terry Pratchett
+  Pages: 400
+  Published: 1992
+  Rating: 5
+  Read: 05 Aug '14
+  Reread: n
+  Title: Small Gods
+- Audiobook: n
+  Author: Douglas Adams
+  Pages: 240
+  Published: 1992
+  Rating: 3
+  Read: 31 Jul '14
+  Reread: n
+  Title: Mostly Harmless
+- Audiobook: n
+  Author: Mario Vargas Llosa
+  Pages: 568
+  Published: 1981
+  Rating: 5
+  Read: 19 Jun '14
+  Reread: n
+  Title: The War of the End of the World
+- Audiobook: n
+  Author: Cormac McCarthy
+  Pages: 241
+  Published: 2006
+  Rating: 2
+  Read: 09 Jun '14
+  Reread: n
+  Title: The Road
+- Audiobook: n
+  Author: John Steinbeck
+  Pages: 479
+  Published: 1939
+  Rating: 5
+  Read: 07 Jun '14
+  Reread: n
+  Title: The Grapes of Wrath
+- Audiobook: n
+  Author: Kurt Vonnegut
+  Pages: 282
+  Published: 1961
+  Rating: 5
+  Read: 02 Jun '14
+  Reread: n
+  Title: Mother Night
+- Audiobook: n
+  Author: David Mitchell
+  Pages: 509
+  Published: 2004
+  Rating: 4
+  Read: 01 Jun '14
+  Reread: n
+  Title: Cloud Atlas
+- Audiobook: n
+  Author: William Shakespeare
+  Pages: 112
+  Published: 1594
+  Rating: 3
+  Read: 29 May '14
+  Reread: n
+  Title: The Comedy of Errors
+- Audiobook: n
+  Author: Ray Bradbury
+  Pages: 227
+  Published: 1953
+  Rating: 4
+  Read: 28 May '14
+  Reread: n
+  Title: Fahrenheit 451
+- Audiobook: n
+  Author: Oscar Wilde
+  Pages: 70
+  Published: 1893
+  Rating: 3
+  Read: 26 May '14
+  Reread: n
+  Title: Lady Windermere's Fan
+- Audiobook: n
+  Author: Edwin A. Abbott
+  Pages: 96
+  Published: 1884
+  Rating: 4
+  Read: 25 May '14
+  Reread: n
+  Title: Flatland
+- Audiobook: n
+  Author: Brian Greene
+  Pages: 464
+  Published: 1999
+  Rating: 4
+  Read: 24 May '14
+  Reread: n
+  Title: The Elegant Universe
+- Audiobook: n
+  Author: John Steinbeck
+  Pages: 181
+  Published: 1945
+  Rating: 5
+  Read: 16 May '14
+  Reread: n
+  Title: Cannery Row
+- Audiobook: n
+  Author: Albert Camus
+  Pages: 123
+  Published: 1942
+  Rating: 3
+  Read: 12 May '14
+  Reread: n
+  Title: The Stranger
+- Audiobook: n
+  Author: Leo Tolstoy
+  Pages: 1392
+  Published: 1868
+  Rating: 5
+  Read: 07 May '14
+  Reread: n
+  Title: War and Peace
+- Audiobook: n
+  Author: Benjamin Hoff
+  Pages: 176
+  Published: 1982
+  Rating: 1
+  Read: 27 Apr '14
+  Reread: n
+  Title: The Tao of Pooh
+- Audiobook: n
+  Author: Charles C. Mann
+  Pages: 557
+  Published: 2011
+  Rating: 5
+  Read: 26 Apr '14
+  Reread: n
+  Title: '1493'
+- Audiobook: n
+  Author: Jonathan Swift
+  Pages: 306
+  Published: 1726
+  Rating: 3
+  Read: 24 Apr '14
+  Reread: n
+  Title: Gulliver's Travels
+- Audiobook: n
+  Author: "Jos\xE9 Saramago"
+  Pages: 326
+  Published: 1995
+  Rating: 4
+  Read: 21 Apr '14
+  Reread: n
+  Title: Blindness
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 528
+  Published: 1986
+  Rating: 3
+  Read: 17 Apr '14
+  Reread: n
+  Title: Foundation and Earth
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 450
+  Published: 1982
+  Rating: 3
+  Read: 13 Apr '14
+  Reread: n
+  Title: Foundation's Edge
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 464
+  Published: 1993
+  Rating: 3
+  Read: 08 Apr '14
+  Reread: n
+  Title: Forward the Foundation
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 464
+  Published: 1988
+  Rating: 3
+  Read: 06 Apr '14
+  Reread: n
+  Title: Prelude to Foundation
+- Audiobook: n
+  Author: Carl Sagan
+  Pages: 457
+  Published: 1995
+  Rating: 2
+  Read: 02 Apr '14
+  Reread: n
+  Title: The Demon-Haunted World
+- Audiobook: n
+  Author: Oscar Wilde
+  Pages: 78
+  Published: 1893
+  Rating: 5
+  Read: 20 Mar '14
+  Reread: n
+  Title: An Ideal Husband
+- Audiobook: n
+  Author: Richard Feynman
+  Pages: 391
+  Published: 1984
+  Rating: 4
+  Read: 19 Mar '14
+  Reread: n
+  Title: Surely You're Joking, Mr. Feynman!
+- Audiobook: n
+  Author: Oscar Wilde
+  Pages: 96
+  Published: 1894
+  Rating: 3
+  Read: 11 Mar '14
+  Reread: n
+  Title: A Woman of No Importance
+- Audiobook: n
+  Author: Haruki Murakami
+  Pages: 480
+  Published: 2002
+  Rating: 4
+  Read: 10 Mar '14
+  Reread: n
+  Title: Kafka on the Shore
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 256
+  Published: 1953
+  Rating: 4
+  Read: 07 Mar '14
+  Reread: n
+  Title: Second Foundation
+- Audiobook: n
+  Author: Franz Kafka
+  Pages: 201
+  Published: 1915
+  Rating: 3
+  Read: 04 Mar '14
+  Reread: n
+  Title: The Metamorphosis
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 256
+  Published: 1952
+  Rating: 4
+  Read: 28 Feb '14
+  Reread: n
+  Title: Foundation and Empire
+- Audiobook: n
+  Author: Jonathan C. Brown
+  Pages: 336
+  Published: 2002
+  Rating: 4
+  Read: 22 Feb '14
+  Reread: n
+  Title: A Brief History of Argentina
+- Audiobook: n
+  Author: Nelson Mandela
+  Pages: 656
+  Published: 1994
+  Rating: 5
+  Read: 18 Feb '14
+  Reread: n
+  Title: Long Walk to Freedom
+- Audiobook: n
+  Author: Jack Kerouac
+  Pages: 307
+  Published: 1955
+  Rating: 5
+  Read: 14 Feb '14
+  Reread: n
+  Title: On the Road
+- Audiobook: n
+  Author: Fyodor Dostoyevsky
+  Pages: 233
+  Published: 1864
+  Rating: 5
+  Read: 12 Feb '14
+  Reread: n
+  Title: Notes from Underground
+- Audiobook: n
+  Author: Rolf Potts
+  Pages: 224
+  Published: 2002
+  Rating: 3
+  Read: 08 Feb '14
+  Reread: n
+  Title: Vagabonding
+- Audiobook: n
+  Author: Douglas Adams
+  Pages: 167
+  Published: 1984
+  Rating: 2
+  Read: 07 Feb '14
+  Reread: n
+  Title: So Long, and Thanks for All the Fish
+- Audiobook: n
+  Author: Miguel de Cervantes Saavedra
+  Pages: 1023
+  Published: 1605
+  Rating: 5
+  Read: 25 Dec '13
+  Reread: n
+  Title: Don Quixote
+- Audiobook: n
+  Author: Jostein Gaarder
+  Pages: 403
+  Published: 1991
+  Rating: 3
+  Read: 30 Nov '13
+  Reread: n
+  Title: Sophie's World
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 244
+  Published: 1951
+  Rating: 4
+  Read: 17 Nov '13
+  Reread: n
+  Title: Foundation
+- Audiobook: n
+  Author: H.G. Wells
+  Pages: 192
+  Published: 1897
+  Rating: 3
+  Read: 15 Nov '13
+  Reread: n
+  Title: The War of the Worlds
+- Audiobook: n
+  Author: Kahlil Gibran
+  Pages: 127
+  Published: 1923
+  Rating: 3
+  Read: 11 Nov '13
+  Reread: n
+  Title: The Prophet
+- Audiobook: n
+  Author: J.R.R. Tolkien
+  Pages: 313
+  Published: 2007
+  Rating: 5
+  Read: 10 Nov '13
+  Reread: n
+  Title: "The Children of H\xFArin"
+- Audiobook: n
+  Author: Joseph Conrad
+  Pages: 188
+  Published: 1899
+  Rating: 4
+  Read: 08 Nov '13
+  Reread: n
+  Title: Heart of Darkness
+- Audiobook: n
+  Author: Kurt Vonnegut
+  Pages: 15
+  Published: 1962
+  Rating: 3
+  Read: 07 Nov '13
+  Reread: n
+  Title: 2BR02B
+- Audiobook: n
+  Author: Douglas Adams
+  Pages: 224
+  Published: 1982
+  Rating: 3
+  Read: 06 Nov '13
+  Reread: n
+  Title: Life, the Universe and Everything
+- Audiobook: n
+  Author: Vladimir Nabokov
+  Pages: 604
+  Published: 1969
+  Rating: 5
+  Read: 02 Nov '13
+  Reread: n
+  Title: Ada, or Ardor
+- Audiobook: n
+  Author: Ivan Turgenev
+  Pages: 64
+  Published: 1852
+  Rating: 3
+  Read: 22 Sep '13
+  Reread: n
+  Title: Three Sketches from a Hunter's Album
+- Audiobook: n
+  Author: Charles C. Mann
+  Pages: 541
+  Published: 2005
+  Rating: 4
+  Read: 21 Sep '13
+  Reread: n
+  Title: '1491'
+- Audiobook: n
+  Author: "Jos\xE9 Saramago"
+  Pages: 341
+  Published: 1991
+  Rating: 5
+  Read: 13 Sep '13
+  Reread: n
+  Title: The Gospel According to Jesus Christ
+- Audiobook: n
+  Author: Dante Alighieri
+  Pages: 320
+  Published: 1320
+  Rating: 5
+  Read: 07 Sep '13
+  Reread: n
+  Title: Inferno
+- Audiobook: n
+  Author: Mario Vargas Llosa
+  Pages: 475
+  Published: 2000
+  Rating: 5
+  Read: 01 Sep '13
+  Reread: n
+  Title: The Feast of the Goat
+- Audiobook: n
+  Author: William Shakespeare
+  Pages: 289
+  Published: 1600
+  Rating: 4
+  Read: 28 Aug '13
+  Reread: n
+  Title: Hamlet
+- Audiobook: n
+  Author: Aldous Huxley
+  Pages: 268
+  Published: 1932
+  Rating: 4
+  Read: 26 Aug '13
+  Reread: n
+  Title: Brave New World
+- Audiobook: n
+  Author: Martin Meredith
+  Pages: 752
+  Published: 2005
+  Rating: 5
+  Read: 23 Aug '13
+  Reread: n
+  Title: The State of Africa
+- Audiobook: n
+  Author: William Faulkner
+  Pages: 326
+  Published: 1929
+  Rating: 5
+  Read: 07 Jul '13
+  Reread: n
+  Title: The Sound and the Fury
+- Audiobook: n
+  Author: Carl Sagan
+  Pages: 384
+  Published: 1980
+  Rating: 4
+  Read: 26 Jun '13
+  Reread: n
+  Title: Cosmos
+- Audiobook: n
+  Author: Sigmund Freud
+  Pages: 102
+  Published: 2006
+  Rating: 3
+  Read: 19 Jun '13
+  Reread: n
+  Title: Deviant Love
+- Audiobook: n
+  Author: Norman Davies
+  Pages: 1392
+  Published: 1996
+  Rating: 5
+  Read: 19 Jun '13
+  Reread: n
+  Title: Europe
+- Audiobook: n
+  Author: James Joyce
+  Pages: 329
+  Published: 1916
+  Rating: 4
+  Read: 14 Jun '13
+  Reread: n
+  Title: A Portrait of the Artist as a Young Man
+- Audiobook: n
+  Author: F. Scott Fitzgerald
+  Pages: 180
+  Published: 1925
+  Rating: 5
+  Read: 13 Jun '13
+  Reread: n
+  Title: The Great Gatsby
+- Audiobook: n
+  Author: Roald Dahl
+  Pages: 213
+  Published: 1960
+  Rating: 4
+  Read: 25 May '13
+  Reread: n
+  Title: Skin and Other Stories
+- Audiobook: n
+  Author: Samuel Taylor Coleridge
+  Pages: 77
+  Published: 1798
+  Rating: 5
+  Read: 24 May '13
+  Reread: n
+  Title: The Rime of the Ancient Mariner
+- Audiobook: n
+  Author: Samuel Taylor Coleridge
+  Pages: 5
+  Published: 1816
+  Rating: 5
+  Read: 23 May '13
+  Reread: n
+  Title: Christabel
+- Audiobook: n
+  Author: John Updike
+  Pages: 106
+  Published: 2007
+  Rating: 3
+  Read: 21 May '13
+  Reread: n
+  Title: The Women Who Got Away
+- Audiobook: n
+  Author: William Trevor
+  Pages: 144
+  Published: 1992
+  Rating: 3
+  Read: 20 May '13
+  Reread: n
+  Title: Bodily Secrets
+- Audiobook: n
+  Author: "Ana\xEFs Nin"
+  Pages: 105
+  Published: 2007
+  Rating: 2
+  Read: 19 May '13
+  Reread: n
+  Title: Eros Unbound
+- Audiobook: n
+  Author: "Fran\xE7oise Sagan"
+  Pages: 153
+  Published: 1954
+  Rating: 4
+  Read: 18 May '13
+  Reread: n
+  Title: Bonjour tristesse
+- Audiobook: n
+  Author: D.H. Lawrence
+  Pages: 156
+  Published: 1930
+  Rating: 3
+  Read: 13 May '13
+  Reread: n
+  Title: The Virgin and the Gipsy
+- Audiobook: n
+  Author: Jules Verne
+  Pages: 394
+  Published: 1869
+  Rating: 3
+  Read: 11 May '13
+  Reread: n
+  Title: Twenty Thousand Leagues Under the Sea
+- Audiobook: n
+  Author: Katherine Mansfield
+  Pages: 110
+  Published: 1924
+  Rating: 3
+  Read: 11 May '13
+  Reread: n
+  Title: Something Childish But Very Natural
+- Audiobook: n
+  Author: "Jos\xE9 Saramago"
+  Pages: 238
+  Published: 2005
+  Rating: 5
+  Read: 28 Apr '13
+  Reread: n
+  Title: Death with Interruptions
+- Audiobook: n
+  Author: Leo Tolstoy
+  Pages: 128
+  Published: 1889
+  Rating: 5
+  Read: 07 Apr '13
+  Reread: n
+  Title: The Kreutzer Sonata
+- Audiobook: n
+  Author: Peter L. Bernstein
+  Pages: 383
+  Published: 1996
+  Rating: 2
+  Read: 01 Apr '13
+  Reread: n
+  Title: Against the Gods
+- Audiobook: n
+  Author: Thomas Hardy
+  Pages: 125
+  Published: 1885
+  Rating: 3
+  Read: 30 Mar '13
+  Reread: n
+  Title: A Mere Interlude
+- Audiobook: n
+  Author: Ivan Turgenev
+  Pages: 124
+  Published: 1856
+  Rating: 4
+  Read: 25 Mar '13
+  Reread: n
+  Title: First Love
+- Audiobook: n
+  Author: Roald Dahl
+  Pages: 240
+  Published: 1977
+  Rating: 4
+  Read: 22 Mar '13
+  Reread: n
+  Title: The Wonderful Story of Henry Sugar and Six More
+- Audiobook: n
+  Author: Stendhal
+  Pages: 120
+  Published: 1822
+  Rating: 2
+  Read: 14 Feb '13
+  Reread: n
+  Title: Cures for Love
+- Audiobook: n
+  Author: Giacomo Casanova
+  Pages: 110
+  Published: 1789
+  Rating: 4
+  Read: 13 Feb '13
+  Reread: n
+  Title: Of Mistresses, Tigresses and Other Conquests
+- Audiobook: n
+  Author: Salman Rushdie
+  Pages: 647
+  Published: 1981
+  Rating: 5
+  Read: 14 Jan '13
+  Reread: n
+  Title: Midnight's Children
+- Audiobook: n
+  Author: V.S. Naipaul
+  Pages: 224
+  Published: 2001
+  Rating: 4
+  Read: 11 Jan '13
+  Reread: n
+  Title: Half a Life
+- Audiobook: n
+  Author: Hunter S. Thompson
+  Pages: 204
+  Published: 1971
+  Rating: 4
+  Read: 10 Jan '13
+  Reread: n
+  Title: Fear and Loathing in Las Vegas
+- Audiobook: n
+  Author: Oscar Wilde
+  Pages: 2
+  Published: 1895
+  Rating: 5
+  Read: 09 Jan '13
+  Reread: n
+  Title: The Importance of Being Earnest
+- Audiobook: n
+  Author: Oscar Wilde
+  Pages: 224
+  Published: 1888
+  Rating: 4
+  Read: 04 Jan '13
+  Reread: n
+  Title: The Happy Prince and Other Stories
+- Audiobook: n
+  Author: Maurice Bucaille
+  Pages: 272
+  Published: 1364
+  Rating: 2
+  Read: 03 Jan '13
+  Reread: n
+  Title: The Bible, the Qur'an, and Science
+- Audiobook: n
+  Author: Simon Reid-Henry
+  Pages: 431
+  Published: 2009
+  Rating: 4
+  Read: 31 Dec '12
+  Reread: n
+  Title: Fidel and Che
+- Audiobook: n
+  Author: Francis S. Collins
+  Pages: 294
+  Published: 2006
+  Rating: 2
+  Read: 27 Dec '12
+  Reread: n
+  Title: The Language of God
+- Audiobook: n
+  Author: Jeffrey Archer
+  Pages: 538
+  Published: 2005
+  Rating: 1
+  Read: 24 Dec '12
+  Reread: n
+  Title: False Impression
+- Audiobook: n
+  Author: Matt Ridley
+  Pages: 265
+  Published: 1997
+  Rating: 4
+  Read: 20 Dec '12
+  Reread: n
+  Title: The Origins of Virtue
+- Audiobook: n
+  Author: John McPhee
+  Pages: 720
+  Published: 1998
+  Rating: 5
+  Read: 19 Dec '12
+  Reread: n
+  Title: Annals of the Former World
+- Audiobook: n
+  Author: Ovid
+  Pages: 723
+  Published: 8
+  Rating: 4
+  Read: 04 Dec '12
+  Reread: n
+  Title: Metamorphoses
+- Audiobook: n
+  Author: Josh McDowell
+  Pages: 128
+  Published: 1977
+  Rating: 1
+  Read: 28 Nov '12
+  Reread: n
+  Title: More Than a Carpenter
+- Audiobook: n
+  Author: Mark Twain
+  Pages: 327
+  Published: 1884
+  Rating: 4
+  Read: 26 Nov '12
+  Reread: n
+  Title: The Adventures of Huckleberry Finn
+- Audiobook: n
+  Author: Homer
+  Pages: 527
+  Published: -750
+  Rating: 5
+  Read: 21 Oct '12
+  Reread: n
+  Title: The Iliad of Homer
+- Audiobook: n
+  Author: Giovanni Boccaccio
+  Pages: 120
+  Published: 1353
+  Rating: 3
+  Read: 13 Sep '12
+  Reread: n
+  Title: The Eaten Heart
+- Audiobook: n
+  Author: "Carlos Ruiz Zaf\xF3n"
+  Pages: 288
+  Published: 2011
+  Rating: 4
+  Read: 12 Sep '12
+  Reread: n
+  Title: The Prisoner of Heaven
+- Audiobook: n
+  Author: "H\xE9lo\xEFse d'Argenteuil"
+  Pages: 112
+  Published: 1974
+  Rating: 3
+  Read: 10 Sep '12
+  Reread: n
+  Title: Forbidden Fruit
+- Audiobook: n
+  Author: Vladimir Nabokov
+  Pages: 114
+  Published: 1926
+  Rating: 5
+  Read: 24 Aug '12
+  Reread: n
+  Title: Mary
+- Audiobook: n
+  Author: Kurt Vonnegut
+  Pages: 303
+  Published: 1973
+  Rating: 4
+  Read: 22 Aug '12
+  Reread: n
+  Title: Breakfast of Champions
+- Audiobook: n
+  Author: Douglas Adams
+  Pages: 250
+  Published: 1980
+  Rating: 3
+  Read: 13 Aug '12
+  Reread: n
+  Title: The Restaurant at the End of the Universe
+- Audiobook: n
+  Author: Fyodor Dostoyevsky
+  Pages: 796
+  Published: 1880
+  Rating: 5
+  Read: 09 Aug '12
+  Reread: n
+  Title: The Brothers Karamazov
+- Audiobook: n
+  Author: Williamson Murray
+  Pages: 656
+  Published: 1990
+  Rating: 4
+  Read: 10 Jul '12
+  Reread: n
+  Title: A War to be Won
+- Audiobook: n
+  Author: Virgil
+  Pages: 442
+  Published: -19
+  Rating: 5
+  Read: 24 Jun '12
+  Reread: n
+  Title: The Aeneid
+- Audiobook: n
+  Author: Milton Crane
+  Pages: 571
+  Published: 1952
+  Rating: 3
+  Read: 19 Jun '12
+  Reread: n
+  Title: 50 Great Short Stories
+- Audiobook: n
+  Author: Anton Chekhov
+  Pages: 368
+  Published: 1998
+  Rating: 4
+  Read: 31 May '12
+  Reread: n
+  Title: The Essential Tales of Chekhov
+- Audiobook: n
+  Author: Jonathan Safran Foer
+  Pages: 276
+  Published: 2002
+  Rating: 2
+  Read: 01 May '12
+  Reread: n
+  Title: Everything Is Illuminated
+- Audiobook: n
+  Author: Vladimir Nabokov
+  Pages: 143
+  Published: 1953
+  Rating: 5
+  Read: 23 Apr '12
+  Reread: n
+  Title: Pnin
+- Audiobook: n
+  Author: James Muirden
+  Pages: 244
+  Published: 2009
+  Rating: 5
+  Read: 27 Mar '12
+  Reread: n
+  Title: The Rhyming Bible
+- Audiobook: n
+  Author: Douglas Adams
+  Pages: 216
+  Published: 1979
+  Rating: 5
+  Read: 20 Mar '12
+  Reread: n
+  Title: The Hitchhiker's Guide to the Galaxy
+- Audiobook: n
+  Author: Spike Milligan
+  Pages: 160
+  Published: 1963
+  Rating: 4
+  Read: 16 Mar '12
+  Reread: n
+  Title: Puckoon
+- Audiobook: n
+  Author: George Orwell
+  Pages: 126
+  Published: 1946
+  Rating: 4
+  Read: 04 Mar '12
+  Reread: n
+  Title: Books v. Cigarettes
+- Audiobook: n
+  Author: Alex Rosenberg
+  Pages: 368
+  Published: 2011
+  Rating: 3
+  Read: 24 Jan '12
+  Reread: n
+  Title: The Atheist's Guide to Reality
+- Audiobook: n
+  Author: Richard Miles
+  Pages: 521
+  Published: 2008
+  Rating: 4
+  Read: 20 Jan '12
+  Reread: n
+  Title: Carthage Must Be Destroyed
+- Audiobook: n
+  Author: Homer
+  Pages: 541
+  Published: -720
+  Rating: 5
+  Read: 15 Jan '12
+  Reread: n
+  Title: The Odyssey
+- Audiobook: n
+  Author: Joel R. Primack
+  Pages: 386
+  Published: 2006
+  Rating: 5
+  Read: 09 Jan '12
+  Reread: n
+  Title: The View From The Centre Of The Universe
+- Audiobook: n
+  Author: Fyodor Dostoyevsky
+  Pages: 614
+  Published: 1866
+  Rating: 5
+  Read: 04 Jan '12
+  Reread: n
+  Title: Crime and Punishment
+- Audiobook: n
+  Author: James Joyce
+  Pages: 32
+  Published: 1936
+  Rating: 5
+  Read: 02 Jan '12
+  Reread: n
+  Title: The Cat and the Devil
+- Audiobook: n
+  Author: Shel Silverstein
+  Pages: 64
+  Published: 1964
+  Rating: 3
+  Read: 01 Jan '12
+  Reread: n
+  Title: The Giving Tree
+- Audiobook: n
+  Author: Isaac Asimov
+  Pages: 225
+  Published: 1950
+  Rating: 4
+  Read: 07 Dec '11
+  Reread: n
+  Title: I, Robot
+- Audiobook: n
+  Author: Kent Greenfield
+  Pages: 256
+  Published: 2011
+  Rating: 3
+  Read: 03 Dec '11
+  Reread: n
+  Title: The Myth of Choice
+- Audiobook: n
+  Author: "Gabriel Garc\xEDa M\xE1rquez"
+  Pages: 457
+  Published: 1967
+  Rating: 3
+  Read: 28 Nov '11
+  Reread: n
+  Title: One Hundred Years of Solitude
+- Audiobook: n
+  Author: Charles Darwin
+  Pages: 703
+  Published: 1859
+  Rating: 5
+  Read: 20 Nov '11
+  Reread: n
+  Title: The Origin of Species
+- Audiobook: n
+  Author: Ian Morris
+  Pages: 768
+  Published: 2010
+  Rating: 5
+  Read: 01 Nov '11
+  Reread: n
+  Title: Why the West Rules-for Now
+- Audiobook: n
+  Author: Lemony Snicket
+  Pages: 214
+  Published: 2000
+  Rating: 3
+  Read: 21 Oct '11
+  Reread: n
+  Title: The Wide Window
+- Audiobook: n
+  Author: Lemony Snicket
+  Pages: 192
+  Published: 1999
+  Rating: 3
+  Read: 19 Oct '11
+  Reread: n
+  Title: The Reptile Room
+- Audiobook: n
+  Author: Charles Bukowski
+  Pages: 291
+  Published: 1978
+  Rating: 4
+  Read: 16 Oct '11
+  Reread: n
+  Title: Women
+- Audiobook: n
+  Author: Ernest Hemingway
+  Pages: 293
+  Published: 1929
+  Rating: 5
+  Read: 12 Oct '11
+  Reread: n
+  Title: A Farewell to Arms
+- Audiobook: n
+  Author: "Ernst J\xFCnger"
+  Pages: 320
+  Published: 1920
+  Rating: 4
+  Read: 03 Oct '11
+  Reread: n
+  Title: Storm of Steel
+- Audiobook: n
+  Author: Ernest Hemingway
+  Pages: 132
+  Published: 1952
+  Rating: 3
+  Read: 14 Sep '11
+  Reread: n
+  Title: The Old Man and the Sea
+- Audiobook: n
+  Author: Naomi Wolf
+  Pages: 368
+  Published: 1990
+  Rating: 3
+  Read: 30 Aug '11
+  Reread: n
+  Title: The Beauty Myth
+- Audiobook: n
+  Author: John Keegan
+  Pages: 475
+  Published: 1998
+  Rating: 4
+  Read: 20 Aug '11
+  Reread: n
+  Title: The First World War
+- Audiobook: n
+  Author: Robert Jordan
+  Pages: 1011
+  Published: 1994
+  Rating: 1
+  Read: 09 Aug '11
+  Reread: n
+  Title: Lord of Chaos
+- Audiobook: n
+  Author: Tina Fey
+  Pages: 283
+  Published: 2011
+  Rating: 1
+  Read: 06 Aug '11
+  Reread: n
+  Title: Bossypants
+- Audiobook: n
+  Author: Stieg Larsson
+  Pages: 563
+  Published: 2007
+  Rating: 2
+  Read: 05 Aug '11
+  Reread: n
+  Title: The Girl Who Kicked the Hornet's Nest
+- Audiobook: n
+  Author: Stieg Larsson
+  Pages: 752
+  Published: 2006
+  Rating: 2
+  Read: 04 Aug '11
+  Reread: n
+  Title: The Girl Who Played with Fire
+- Audiobook: n
+  Author: Markus Zusak
+  Pages: 550
+  Published: 2005
+  Rating: 3
+  Read: 01 Aug '11
+  Reread: n
+  Title: The Book Thief
+- Audiobook: n
+  Author: Hugh Williams
+  Pages: 414
+  Published: 2010
+  Rating: 3
+  Read: 20 Jul '11
+  Reread: n
+  Title: Fifty Things You Need to Know about World History
+- Audiobook: n
+  Author: Sun Tzu
+  Pages: 155
+  Published: -500
+  Rating: 3
+  Read: 14 Jul '11
+  Reread: n
+  Title: The Art of War
+- Audiobook: n
+  Author: Lemony Snicket
+  Pages: 176
+  Published: 1999
+  Rating: 3
+  Read: 11 Jul '11
+  Reread: n
+  Title: The Bad Beginning
+- Audiobook: n
+  Author: Stieg Larsson
+  Pages: 465
+  Published: 2005
+  Rating: 3
+  Read: 09 Jul '11
+  Reread: n
+  Title: The Girl with the Dragon Tattoo
+- Audiobook: n
+  Author: Malcolm Gladwell
+  Pages: 296
+  Published: 2005
+  Rating: 3
+  Read: 07 Jul '11
+  Reread: n
+  Title: Blink
+- Audiobook: n
+  Author: Paulo Coelho
+  Pages: 320
+  Published: 2006
+  Rating: 3
+  Read: 04 Jul '11
+  Reread: n
+  Title: The Witch Of Portobello
+- Audiobook: n
+  Author: Jeffrey Archer
+  Pages: 592
+  Published: 1979
+  Rating: 3
+  Read: 01 Jul '11
+  Reread: n
+  Title: Kane and Abel
+- Audiobook: n
+  Author: J.R.R. Tolkien
+  Pages: 452
+  Published: 1980
+  Rating: 4
+  Read: 19 Jun '11
+  Reread: n
+  Title: "Unfinished Tales of N\xFAmenor and Middle-Earth"
+- Audiobook: n
+  Author: George Orwell
+  Pages: 336
+  Published: 1984
+  Rating: 4
+  Read: 16 Jun '11
+  Reread: n
+  Title: Narrative Essays
+- Audiobook: n
+  Author: Yann Martel
+  Pages: 460
+  Published: 2001
+  Rating: 4
+  Read: 10 Jun '11
+  Reread: n
+  Title: Life of Pi
+- Audiobook: n
+  Author: Jon Krakauer
+  Pages: 207
+  Published: 1996
+  Rating: 4
+  Read: 05 Jun '11
+  Reread: n
+  Title: Into the Wild
+- Audiobook: n
+  Author: Christopher Hitchens
+  Pages: 307
+  Published: 2007
+  Rating: 4
+  Read: 23 May '11
+  Reread: n
+  Title: God is Not Great
+- Audiobook: n
+  Author: Hermann Hesse
+  Pages: 152
+  Published: 1922
+  Rating: 4
+  Read: 20 May '11
+  Reread: n
+  Title: Siddhartha
+- Audiobook: n
+  Author: Joseph Heller
+  Pages: 576
+  Published: 1974
+  Rating: 4
+  Read: 12 May '11
+  Reread: n
+  Title: Something Happened
+- Audiobook: n
+  Author: Joseph Heller
+  Pages: 462
+  Published: 1994
+  Rating: 4
+  Read: 03 May '11
+  Reread: n
+  Title: Closing Time
+- Audiobook: n
+  Author: Stephen Hawking
+  Pages: 212
+  Published: 1987
+  Rating: 4
+  Read: 22 Apr '11
+  Reread: n
+  Title: A Brief History of Time
+- Audiobook: n
+  Author: Stephen Hawking
+  Pages: 199
+  Published: 2010
+  Rating: 4
+  Read: 14 Apr '11
+  Reread: n
+  Title: The Grand Design
+- Audiobook: n
+  Author: Malcolm Gladwell
+  Pages: 301
+  Published: 2000
+  Rating: 4
+  Read: 10 Apr '11
+  Reread: n
+  Title: The Tipping Point
+- Audiobook: n
+  Author: Jared Diamond
+  Pages: 407
+  Published: 1991
+  Rating: 4
+  Read: 02 Apr '11
+  Reread: n
+  Title: The Third Chimpanzee
+- Audiobook: n
+  Author: Richard Dawkins
+  Pages: 470
+  Published: 2009
+  Rating: 4
+  Read: 22 Mar '11
+  Reread: n
+  Title: The Greatest Show on Earth
+- Audiobook: n
+  Author: Jean M. Auel
+  Pages: 512
+  Published: 1980
+  Rating: 4
+  Read: 17 Mar '11
+  Reread: n
+  Title: The Clan of the Cave Bear
+- Audiobook: n
+  Author: Oscar Wilde
+  Pages: 254
+  Published: 1891
+  Rating: 5
+  Read: 10 Mar '11
+  Reread: n
+  Title: The Picture of Dorian Gray
+- Audiobook: n
+  Author: Kurt Vonnegut
+  Pages: 275
+  Published: 1969
+  Rating: 5
+  Read: 06 Mar '11
+  Reread: n
+  Title: Slaughterhouse-Five
+- Audiobook: n
+  Author: Leo Tolstoy
+  Pages: 1235
+  Published: 1878
+  Rating: 5
+  Read: 24 Feb '11
+  Reread: n
+  Title: Anna Karenina
+- Audiobook: n
+  Author: John Steinbeck
+  Pages: 112
+  Published: 1937
+  Rating: 5
+  Read: 22 Feb '11
+  Reread: n
+  Title: Of Mice and Men
+- Audiobook: n
+  Author: Salman Rushdie
+  Pages: 576
+  Published: 1988
+  Rating: 5
+  Read: 12 Feb '11
+  Reread: n
+  Title: The Satanic Verses
+- Audiobook: n
+  Author: Erich Maria Remarque
+  Pages: 296
+  Published: 1929
+  Rating: 5
+  Read: 08 Feb '11
+  Reread: n
+  Title: All Quiet on the Western Front
+- Audiobook: n
+  Author: Boris Pasternak
+  Pages: 592
+  Published: 1957
+  Rating: 5
+  Read: 28 Jan '11
+  Reread: n
+  Title: Doctor Zhivago
+- Audiobook: n
+  Author: Vladimir Nabokov
+  Pages: 208
+  Published: 1930
+  Rating: 5
+  Read: 25 Jan '11
+  Reread: n
+  Title: The Defense
+- Audiobook: n
+  Author: Ernesto Che Guevara
+  Pages: 175
+  Published: 1993
+  Rating: 5
+  Read: 20 Jan '11
+  Reread: n
+  Title: The Motorcycle Diaries
+- Audiobook: n
+  Author: Antony Beevor
+  Pages: 560
+  Published: 1982
+  Rating: 5
+  Read: 03 Jan '11
+  Reread: n
+  Title: The Battle for Spain
+- Audiobook: n
+  Author: Robert Jordan
+  Pages: 912
+  Published: 1993
+  Rating: 2
+  Read: 02 Dec '10
+  Reread: n
+  Title: The Fires of Heaven
+- Audiobook: n
+  Author: Rupert Woodfin
+  Pages: 176
+  Published: 2004
+  Rating: 3
+  Read: 12 Nov '10
+  Reread: n
+  Title: Introducing Marxism
+- Audiobook: n
+  Author: Ziauddin Sardar
+  Pages: 176
+  Published: 1998
+  Rating: 3
+  Read: 07 Nov '10
+  Reread: n
+  Title: Introducing Chaos
+- Audiobook: n
+  Author: Robert Jordan
+  Pages: 1007
+  Published: 1992
+  Rating: 3
+  Read: 03 Nov '10
+  Reread: n
+  Title: The Shadow Rising
+- Audiobook: n
+  Author: Robert Jordan
+  Pages: 624
+  Published: 1991
+  Rating: 3
+  Read: 22 Oct '10
+  Reread: n
+  Title: The Dragon Reborn
+- Audiobook: n
+  Author: David Bodanis
+  Pages: 337
+  Published: 2000
+  Rating: 3
+  Read: 11 Oct '10
+  Reread: n
+  Title: "E=mc\xB2"
+- Audiobook: n
+  Author: "Carlos Ruiz Zaf\xF3n"
+  Pages: 531
+  Published: 2008
+  Rating: 4
+  Read: 25 Sep '10
+  Reread: n
+  Title: The Angel's Game
+- Audiobook: n
+  Author: Alex Vilenkin
+  Pages: 248
+  Published: 2006
+  Rating: 4
+  Read: 22 Sep '10
+  Reread: n
+  Title: Many Worlds in One
+- Audiobook: n
+  Author: Richard Dawkins
+  Pages: 688
+  Published: 2004
+  Rating: 5
+  Read: 20 Sep '10
+  Reread: n
+  Title: The Ancestor's Tale
+- Audiobook: n
+  Author: J.D. Salinger
+  Pages: 277
+  Published: 1951
+  Rating: 4
+  Read: 12 Sep '10
+  Reread: n
+  Title: The Catcher in the Rye
+- Audiobook: n
+  Author: J.P. McEvoy
+  Pages: 176
+  Published: 1992
+  Rating: 4
+  Read: 07 Aug '10
+  Reread: n
+  Title: Introducing Quantum Theory
+- Audiobook: n
+  Author: Harper Lee
+  Pages: 324
+  Published: 1960
+  Rating: 4
+  Read: 03 Aug '10
+  Reread: n
+  Title: To Kill a Mockingbird
+- Audiobook: n
+  Author: Robert Jordan
+  Pages: 705
+  Published: 1990
+  Rating: 4
+  Read: 03 Jul '10
+  Reread: n
+  Title: The Great Hunt
+- Audiobook: n
+  Author: Richard Dawkins
+  Pages: 374
+  Published: 2006
+  Rating: 5
+  Read: 20 Jun '10
+  Reread: n
+  Title: The God Delusion
+- Audiobook: n
+  Author: David Edmonds
+  Pages: 368
+  Published: 2003
+  Rating: 4
+  Read: 12 Jun '10
+  Reread: n
+  Title: Bobby Fischer Goes to War
+- Audiobook: n
+  Author: Robert Jordan
+  Pages: 814
+  Published: 1990
+  Rating: 4
+  Read: 01 Jun '10
+  Reread: n
+  Title: The Eye of the World
+- Audiobook: n
+  Author: Craig Callender
+  Pages: 176
+  Published: 2010
+  Rating: 4
+  Read: 04 May '10
+  Reread: n
+  Title: Introducing Time
+- Audiobook: n
+  Author: Bill Bryson
+  Pages: 254
+  Published: 1991
+  Rating: 4
+  Read: 01 May '10
+  Reread: n
+  Title: Neither Here nor There
+- Audiobook: n
+  Author: Bill Bryson
+  Pages: 288
+  Published: 2006
+  Rating: 4
+  Read: 22 Apr '10
+  Reread: n
+  Title: The Life and Times of the Thunderbolt Kid
+- Audiobook: n
+  Author: Jared Diamond
+  Pages: 480
+  Published: 1997
+  Rating: 5
+  Read: 10 Apr '10
+  Reread: n
+  Title: Guns, Germs and Steel
+- Audiobook: n
+  Author: Bruce Bassett
+  Pages: 176
+  Published: 2002
+  Rating: 4
+  Read: 18 Mar '10
+  Reread: n
+  Title: Introducing Relativity
+- Audiobook: n
+  Author: Vladimir Nabokov
+  Pages: 331
+  Published: 1955
+  Rating: 5
+  Read: 14 Mar '10
+  Reread: n
+  Title: Lolita
+- Audiobook: n
+  Author: Henry David Thoreau
+  Pages: 352
+  Published: 1854
+  Rating: 5
+  Read: 03 Mar '10
+  Reread: n
+  Title: Walden
+- Audiobook: n
+  Author: Jared Diamond
+  Pages: 608
+  Published: 2004
+  Rating: 5
+  Read: 12 Feb '10
+  Reread: n
+  Title: Collapse
+- Audiobook: n
+  Author: Anthony Burgess
+  Pages: 212
+  Published: 1962
+  Rating: 5
+  Read: 20 Dec '09
+  Reread: n
+  Title: A Clockwork Orange
+- Audiobook: n
+  Author: James May
+  Pages: 336
+  Published: 2008
+  Rating: 2
+  Read: 15 Oct '09
+  Reread: n
+  Title: James May's Magnificent Machines
+- Audiobook: n
+  Author: Jonathan Safran Foer
+  Pages: 326
+  Published: 2005
+  Rating: 3
+  Read: 12 Oct '09
+  Reread: n
+  Title: Extremely Loud and Incredibly Close
+- Audiobook: n
+  Author: Jeremy Clarkson
+  Pages: 340
+  Published: 2006
+  Rating: 3
+  Read: 09 Sep '09
+  Reread: n
+  Title: And Another Thing
+- Audiobook: n
+  Author: Hugh Thomas
+  Pages: 1120
+  Published: 1961
+  Rating: 4
+  Read: 01 Sep '09
+  Reread: n
+  Title: The Spanish Civil War
+- Audiobook: n
+  Author: Vikas Swarup
+  Pages: 318
+  Published: 2005
+  Rating: 4
+  Read: 02 Aug '09
+  Reread: n
+  Title: Q & A
+- Audiobook: n
+  Author: George Orwell
+  Pages: 376
+  Published: 1934
+  Rating: 4
+  Read: 10 Jul '09
+  Reread: n
+  Title: Burmese Days
+- Audiobook: n
+  Author: Anthony Kiedis
+  Pages: 465
+  Published: 2004
+  Rating: 4
+  Read: 06 Jul '09
+  Reread: n
+  Title: Scar Tissue
+- Audiobook: n
+  Author: Tom Feiling
+  Pages: 320
+  Published: 2009
+  Rating: 4
+  Read: 30 Jun '09
+  Reread: n
+  Title: The Candy Machine
+- Audiobook: n
+  Author: Jeremy Clarkson
+  Pages: 554
+  Published: 1999
+  Rating: 4
+  Read: 20 May '09
+  Reread: n
+  Title: Born to be Riled
+- Audiobook: n
+  Author: Charley Boorman
+  Pages: 320
+  Published: 2006
+  Rating: 4
+  Read: 10 Apr '09
+  Reread: n
+  Title: Race to Dakar
+- Audiobook: n
+  Author: William Shakespeare
+  Pages: 314
+  Published: 1603
+  Rating: 5
+  Read: 02 Apr '09
+  Reread: n
+  Title: Othello
+- Audiobook: n
+  Author: George Orwell
+  Pages: 122
+  Published: 1945
+  Rating: 5
+  Read: 20 Mar '09
+  Reread: n
+  Title: Animal Farm
+- Audiobook: n
+  Author: George Orwell
+  Pages: 328
+  Published: 1949
+  Rating: 5
+  Read: 12 Mar '09
+  Reread: n
+  Title: Nineteen Eighty-Four
+- Audiobook: n
+  Author: Jeremy Isaacs
+  Pages: 438
+  Published: 1998
+  Rating: 5
+  Read: 13 Feb '09
+  Reread: n
+  Title: Cold War
+- Audiobook: n
+  Author: John van de Ruit
+  Pages: 352
+  Published: 2008
+  Rating: 2
+  Read: 18 Oct '08
+  Reread: n
+  Title: 'Spud: The Madness Continues'
+- Audiobook: n
+  Author: Gamel Woolsey
+  Pages: 224
+  Published: 1939
+  Rating: 3
+  Read: 01 Oct '08
+  Reread: n
+  Title: Death's Other Kingdom
+- Audiobook: n
+  Author: Sue Townsend
+  Pages: 400
+  Published: 1999
+  Rating: 3
+  Read: 14 Sep '08
+  Reread: n
+  Title: 'Adrian Mole: The Cappuccino Years'
+- Audiobook: n
+  Author: C.J. Sansom
+  Pages: 549
+  Published: 2006
+  Rating: 3
+  Read: 13 Aug '08
+  Reread: n
+  Title: Winter in Madrid
+- Audiobook: n
+  Author: John van de Ruit
+  Pages: 352
+  Published: 2005
+  Rating: 3
+  Read: 24 Jun '08
+  Reread: n
+  Title: Spud
+- Audiobook: n
+  Author: Milan Kundera
+  Pages: 320
+  Published: 1984
+  Rating: 3
+  Read: 14 Jun '08
+  Reread: n
+  Title: The Unbearable Lightness of Being
+- Audiobook: n
+  Author: J.R.R. Tolkien
+  Pages: 386
+  Published: 1977
+  Rating: 4
+  Read: 04 Apr '08
+  Reread: n
+  Title: The Silmarillion
+- Audiobook: n
+  Author: William Shakespeare
+  Pages: 283
+  Published: 1597
+  Rating: 4
+  Read: 15 Mar '08
+  Reread: n
+  Title: Romeo and Juliet
+- Audiobook: n
+  Author: Henry Hitchings
+  Pages: 448
+  Published: 2008
+  Rating: 4
+  Read: 15 Feb '08
+  Reread: n
+  Title: The Secret Life of Words
+- Audiobook: n
+  Author: George Orwell
+  Pages: 232
+  Published: 1938
+  Rating: 5
+  Read: 01 Feb '08
+  Reread: n
+  Title: Homage to Catalonia
+- Audiobook: n
+  Author: Ernest Hemingway
+  Pages: 471
+  Published: 1940
+  Rating: 5
+  Read: 21 Oct '07
+  Reread: n
+  Title: For Whom the Bell Tolls
+- Audiobook: n
+  Author: Mark Haddon
+  Pages: 354
+  Published: 2006
+  Rating: 2
+  Read: 01 Oct '07
+  Reread: n
+  Title: A Spot of Bother
+- Audiobook: n
+  Author: William Shakespeare
+  Pages: 99
+  Published: 1595
+  Rating: 3
+  Read: 20 Sep '07
+  Reread: n
+  Title: A Midsummer Night's Dream
+- Audiobook: n
+  Author: J.K. Rowling
+  Pages: 759
+  Published: 2007
+  Rating: 3
+  Read: 20 May '07
+  Reread: n
+  Title: Harry Potter and the Deathly Hallows
+- Audiobook: n
+  Author: William Golding
+  Pages: 182
+  Published: 1954
+  Rating: 3
+  Read: 13 Mar '07
+  Reread: n
+  Title: Lord of the Flies
+- Audiobook: n
+  Author: Paulo Coelho
+  Pages: 197
+  Published: 1988
+  Rating: 4
+  Read: 20 Feb '07
+  Reread: n
+  Title: The Alchemist
+- Audiobook: n
+  Author: Bill Bryson
+  Pages: 560
+  Published: 2003
+  Rating: 5
+  Read: 05 Jan '07
+  Reread: n
+  Title: A Short History of Nearly Everything
+- Audiobook: n
+  Author: Dan Brown
+  Pages: 481
+  Published: 2003
+  Rating: 1
+  Read: 30 Sep '06
+  Reread: n
+  Title: The Da Vinci Code
+- Audiobook: n
+  Author: Dan Brown
+  Pages: 713
+  Published: 2000
+  Rating: 1
+  Read: 25 Sep '06
+  Reread: n
+  Title: Angels & Demons
+- Audiobook: n
+  Author: Dan Brown
+  Pages: 510
+  Published: 1998
+  Rating: 1
+  Read: 20 Sep '06
+  Reread: n
+  Title: Digital Fortress
+- Audiobook: n
+  Author: James Frey
+  Pages: 432
+  Published: 2003
+  Rating: 3
+  Read: 16 Aug '06
+  Reread: n
+  Title: A Million Little Pieces
+- Audiobook: n
+  Author: Bryce Courtenay
+  Pages: 544
+  Published: 1989
+  Rating: 3
+  Read: 03 May '06
+  Reread: n
+  Title: The Power of One
+- Audiobook: n
+  Author: Khaled Hosseini
+  Pages: 391
+  Published: 2003
+  Rating: 4
+  Read: 20 Apr '06
+  Reread: n
+  Title: The Kite Runner
+- Audiobook: n
+  Author: Mark Haddon
+  Pages: 226
+  Published: 2003
+  Rating: 4
+  Read: 14 Apr '06
+  Reread: n
+  Title: The Curious Incident of the Dog in the Night-Time
+- Audiobook: n
+  Author: "Carlos Ruiz Zaf\xF3n"
+  Pages: 487
+  Published: 2001
+  Rating: 5
+  Read: 02 Feb '06
+  Reread: n
+  Title: The Shadow of the Wind
+- Audiobook: n
+  Author: J.K. Rowling
+  Pages: 652
+  Published: 2005
+  Rating: 2
+  Read: 20 Dec '05
+  Reread: n
+  Title: Harry Potter and the Half-Blood Prince
+- Audiobook: n
+  Author: Garth Nix
+  Pages: 358
+  Published: 2003
+  Rating: 4
+  Read: 09 Dec '05
+  Reread: n
+  Title: Abhorsen
+- Audiobook: n
+  Author: Garth Nix
+  Pages: 464
+  Published: 2001
+  Rating: 4
+  Read: 05 Jul '05
+  Reread: n
+  Title: Lirael
+- Audiobook: n
+  Author: Richard Bach
+  Pages: 112
+  Published: 1970
+  Rating: 4
+  Read: 20 Mar '05
+  Reread: n
+  Title: Jonathan Livingston Seagull
+- Audiobook: n
+  Author: Garth Nix
+  Pages: 491
+  Published: 1995
+  Rating: 5
+  Read: 02 Feb '05
+  Reread: n
+  Title: Sabriel
+- Audiobook: n
+  Author: Lance Armstrong
+  Pages: 294
+  Published: 1999
+  Rating: 3
+  Read: 11 Nov '04
+  Reread: n
+  Title: It's Not About the Bike
+- Audiobook: n
+  Author: Sue Townsend
+  Pages: 304
+  Published: 1984
+  Rating: 4
+  Read: 22 Oct '04
+  Reread: n
+  Title: The Growing Pains of Adrian Mole
+- Audiobook: n
+  Author: Sue Townsend
+  Pages: 272
+  Published: 1982
+  Rating: 4
+  Read: 09 Oct '04
+  Reread: n
+  Title: 'The Secret Diary of Adrian Mole, Aged 13 3/4 '
+- Audiobook: n
+  Author: J.K. Rowling
+  Pages: 870
+  Published: 2003
+  Rating: 2
+  Read: 08 Sep '03
+  Reread: n
+  Title: Harry Potter and the Order of the Phoenix
+- Audiobook: n
+  Author: J.R.R. Tolkien
+  Pages: 1216
+  Published: 1955
+  Rating: 5
+  Read: 13 Mar '01
+  Reread: n
+  Title: The Lord of the Rings
+- Audiobook: n
+  Author: J.K. Rowling
+  Pages: 435
+  Published: 1999
+  Rating: 3
+  Read: 15 Feb '01
+  Reread: n
+  Title: Harry Potter and the Prisoner of Azkaban
+- Audiobook: n
+  Author: J.K. Rowling
+  Pages: 734
+  Published: 2000
+  Rating: 3
+  Read: 31 May '00
+  Reread: n
+  Title: Harry Potter and the Goblet of Fire
+- Audiobook: n
+  Author: J.R.R. Tolkien
+  Pages: 366
+  Published: 1937
+  Rating: 5
+  Read: 17 Apr '00
+  Reread: n
+  Title: The Hobbit
+- Audiobook: n
+  Author: J.K. Rowling
+  Pages: 341
+  Published: 1998
+  Rating: 2
+  Read: 30 Jun '99
+  Reread: n
+  Title: 'Harry Potter and the Chamber of Secrets '
+- Audiobook: n
+  Author: J.K. Rowling
+  Pages: 320
+  Published: 1997
+  Rating: 3
+  Read: 26 Mar '99
+  Reread: n
+  Title: Harry Potter and the Sorcerer's Stone
