@@ -45,8 +45,8 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-    ssid=...
-    psk=...
+    ssid="YourNetworkName"
+    psk="YourPassword"
     key_mgmt=WPA-PSK
 }
 ```
