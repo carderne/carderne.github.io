@@ -15,7 +15,7 @@ Once again, it was a stunning combination of beautiful mountains, fun bits of ea
 
 We slept (not much) with a cohort of cows clanking their bells around us, and the next day crossed into France, with the beautiful Mont Valier in the distance as our day's objective. Beautiful lakes, and no people (a common theme in the mountains in autumn) until we came to the wonderfully perched Refugi Estagnous. After a slightly exposed walk, we pitched our tent on the tiny Col du Faustin, made dinner ([couscous](https://rdrn.me/couscous/)) and had a quick jaunt up to the summit of Mont Valier (2838m) --- what views! Clouds and sunset and mountains all the way back to Aneto and beyond.
 
-{% include image.html url="/assets/images/2021/arp-valier.jpg" description="Looking South towards Val d'Aran. Colours!" %}
+{% include image.html url="/assets/images/2021/arp-valier.jpg" description="Looking South towards Val d'Aran. Colours! Javier took this, and probably the others too." %}
 
 Day three was an epic. Up a quick chimney to Petit Valier, down to Col de Peyre Blanc, and then a horrible, wet, misty slog down grassy slopes with plenty of no-fall areas and not much hint of a trail. It was a long day, and after Cabane d'Aula and its friendly horses and an uphill slog, we were happy to ask for a hitchhike when we hit a mountain road --- we skipped out another 1200m of descending down to Couflens. Then it was a quick hike up to the Gite d'Rouze, the most beautiful little French cottage converted into a hiking bunk. The farmer saw us coming and we were quickly won over by his offer of a fire, warm showers and comfy beds for just €15.
 
