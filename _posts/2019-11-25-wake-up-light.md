@@ -40,14 +40,14 @@ touch /path/to/boot/ssh
 Then, since this device will live at home and connect to one network, we want to pre-configure it with the network details. Still at the top level of `boot`, create a filed called `wpa_supplicant.conf` with the following contents (being sure to edit the country, SSID and PSK):
 
 ```
-country=ES
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+country=gb
 update_config=1
+ctrl_interface=/var/run/wpa_supplicant
 
 network={
+    scan_ssid=1
     ssid="YourNetworkName"
     psk="YourPassword"
-    key_mgmt=WPA-PSK
 }
 ```
 
