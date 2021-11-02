@@ -10,7 +10,7 @@ heading: '&nbsp;'
 I'm a geospatial data scientist with a strong interest in sustainable development, creating lasting value, and climbing mountains. I'm generally available for consultancy or advisory work wherever these interests overlap.
 
 <p align="center">
-    <img src="/assets/images/face.jpg" alt="profile picture" width="200" style="margin:-10px;width:200px;height:200px">
+    <img src="/assets/images/face.jpg" alt="profile picture" width="150" style="margin:-10px;width:150px;height:150px;mix-blend-mode:darken;">
 </p>
 
 I've worked extensively with the World Bank and other donors, top research institutions, and <span id="fire">hot</span> new startups in remote sensing. Recent highlights that I've enjoyed: worked with the [Humanitarian Openstreetmap Team](https://www.hotosm.org/) to map millions of buildings in East Africa; developed and published [gridfinder](https://www.nature.com/articles/s41597-019-0347-4); advising the EU on the use of AI in allocating development finance; working with a cross-disciplinary team on tracking pollution from industry.
