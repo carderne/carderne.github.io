@@ -3,6 +3,7 @@ layout: single
 title: "Alta Ruta Pirenaica, number 3.5"
 date: "2021-10-18"
 excerpt: "Only one more push before the Med"
+image: /assets/images/2021/arp-map.png
 ---
 
 *(3.5 because we also did a winter traverse of Monte Perdido which linked up #1 and #2.)*

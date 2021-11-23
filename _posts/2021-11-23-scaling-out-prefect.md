@@ -3,6 +3,7 @@ layout: single
 title: "Scaling out with Prefect"
 date: "2021-11-23"
 excerpt: "How to set up a production workflow on Prefect"
+image: /assets/images/2021/prefect.png
 ---
 
 Over the last two weeks, I went deep figuring out the best way to orchestrate some relatively involved satellite imagery and deep learning tasks. Some of the main objectives were:
@@ -76,7 +77,7 @@ Prefect's system for this is slightly complicated, and the terminology isn't alw
 3. Flow runs (plus Storage)
 4. Task execution
 
-{% include image.html url="/assets/images/2021/prefect.png" description="Does this make it seem simpler? Opinions differ." %}
+{% include image.html url="/assets/images/2021/prefect.png" description="Does this make it seem simpler? Opinions differ. Any credit to the always-useful Excalidraw." %}
 
 ### Orchestration
 The first component is orchestration. Up above this was simply running `prefect run` at the command line. Getting more serious, there is [Prefect Cloud](https://cloud.prefect.io) (their managed offering) or [Prefect Server](https://docs.prefect.io/orchestration/server/overview.html) (self-hosted). These provide a web UI, user management and a GraphQL API (changing to REST in the future, thankfully).
