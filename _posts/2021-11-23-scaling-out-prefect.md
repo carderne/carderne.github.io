@@ -79,7 +79,7 @@ Prefect's system for this is slightly complicated, and the terminology isn't alw
 
 {% include image.html url="/assets/images/2021/prefect.png" description="Does this make it seem simpler? Opinions differ. Any credit to the always-useful Excalidraw." %}
 
-### Orchestration
+## Orchestration
 The first component is orchestration. Up above this was simply running `prefect run` at the command line. Getting more serious, there is [Prefect Cloud](https://cloud.prefect.io) (their managed offering) or [Prefect Server](https://docs.prefect.io/orchestration/server/overview.html) (self-hosted). These provide a web UI, user management and a GraphQL API (changing to REST in the future, thankfully).
 
 You upload a Flow to the Cloud (or Server) by [registering](https://docs.prefect.io/orchestration/getting-started/registering-and-running-a-flow.html#register-a-flow) it.
@@ -92,7 +92,7 @@ This doesn't actually upload any of your business logic, but simply the metadata
 
 *Ops*: Every time we push code to GitHub, a GitHub Action re-registers all of our flows with Cloud, to ensure things stay up-to-date.
 
-### Agents
+## Agents
 The [Agents](https://docs.prefect.io/orchestration/agents/overview.html) are simple daemon-like processes that you point at the cloud. They look for tasks, run them if any are available (using tags to assign to different agents if needed) and update the Cloud when they're done.
 
 Prefect's nomenclature for agents was a bit confusing for me. They have a `LocalAgent`, `DockerAgent`, `ECSAgent` etc. All you need to realise is this: they're named after *where they run flows*, not after where they themselves run. So if you really wanted, you could have an FargateAgent running in Google Cloud and sending Flow runs back to Fargate on AWS.
@@ -103,7 +103,7 @@ Prefect's nomenclature for agents was a bit confusing for me. They have a `Local
 CMD prefect agent vertex start ...
 ```
 
-### Flow runs
+## Flow runs
 The Prefect docs don't really separate out this layer as I am, but I think it's clearer this way. This is where your Flows are actually run, as defined by the type of Agent you're using and the `run_config` you specify in your `Flow`. In our case, our `VertexAgent` sends Flow runs to Google Vertex. (Support for Google Vertex just landed in Prefect `0.15.8`.)
 
 ```python
@@ -134,7 +134,7 @@ with Flow("myflow", run_config=run_config, storage=storage) as flow:
 
 *Ops*: The Docker image is rebuilt by Google Cloud Build Triggers whenever the dependencies change. The Storage is always up-to-date, as it's available to the Flow as soon as its on GitHub. There's a lot of authentication going on at this point, with code moving between Prefect, Google and GitHub, so we use secret stores from each of them to provide them as needed to register flows, build images, load code, spin up compute.
 
-### Task execution
+## Task execution
 We're at layer four and finally some code can run! Prefect uses different `Executors`, which decide how this happens.
 
 By default, tasks will run in a single thread on the machine running the Flow. Unless your task has no potential for simultaneous tasks, or no mapping, you should run it on a `LocalDaskExecutor`, which uses a local [Dask](https://dask.org/) scheduler to use as much of the machines available resources as possible.
@@ -179,7 +179,7 @@ Prefect does a great job of passing state, data and context between these layers
 
 *Ops*: The Packer images are rebuilt whenever necessary, along with the Docker images.
 
-### Bringing it together
+## Bringing it together
 And now we have a lovely, robust system. Creating new Flows is as simple as writing a few lines of Python and pushing it. Moments later, you can pick your parameters (using nice forms or JSON, as you prefer) and submit your Flow run to be picked up by an Agent, run on Vertex and paralellised to your heart's desire.
 
 Vertex and GCE are both quite slow to start up, so we'll probably shift our Flow runs and Task execution to Kubernetes (with [GKE](https://cloud.google.com/kubernetes-engine)) at some point, using [KubernetesAgent](https://docs.prefect.io/api/latest/agent/kubernetes.html#kubernetesagent) together with [Dask-Kubernetes](https://kubernetes.dask.org/en/latest/kubecluster.html). For now, while we focus on flexibility, and while most of our Flows are quite long-running, the setup as described works well!

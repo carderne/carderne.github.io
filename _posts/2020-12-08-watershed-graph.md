@@ -3,6 +3,7 @@ layout: single
 title: "Oh, the places your pee will go"
 date: "2020-12-08"
 excerpt: "Graphing the world's water basins with Neo4j"
+image: /assets/images/2020/basin-geom.png
 ---
 
 The great compilation of river and watershed data from [HydroSHEDS](https://hydrosheds.org/) plus the power of [Neo4j](https://neo4j.com/) make it pretty easy to do some fun things with water.
