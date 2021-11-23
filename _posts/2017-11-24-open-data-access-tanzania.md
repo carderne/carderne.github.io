@@ -3,8 +3,7 @@ layout: single
 title: Open data and energy access in Tanzania
 date: '2017-11-24 12:01:00'
 excerpt: "Based on work in Tanzania with the government, several private developers and other stakeholders, two colleagues and I put together a report on the benefits of open data in off-grid access."
-tags:
-- inside
+image: /assets/images/2017/open1.png
 ---
 
 Based on work in Tanzania with the government, several private developers and other stakeholders, two colleagues and I put together a report on the benefits of open data in off-grid access. I also used it as an excuse to play with [seaborn](http://seaborn.pydata.org/).

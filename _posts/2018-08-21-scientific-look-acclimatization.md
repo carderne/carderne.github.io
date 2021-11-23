@@ -3,9 +3,7 @@ layout: single
 title: A semi-scientific look at acclimatization
 date: '2018-08-21 13:15:00'
 excerpt: "I've climbed about seven mountains above 4,000 metres. After my latest trip to Kyrgyzstan, where I took a very careful approach to acclimatization, I decided to have a look at my previous trips to see if anything of statistical value could be dredged out..."
-tags:
-- mountains
-- outside
+image: /assets/images/2018/acc1.png
 ---
 
 I've climbed about seven (depending on what we count) mountains above 4,000 metres, and lots more of other altitudes. After my latest trip (to [Ala Archa National Park](https://en.wikipedia.org/wiki/Ala_Archa_National_Park) in Kyrgyzstan) where I took a very careful approach to acclimatization, I decided to have a look at my previous trips to see if anything of statistical value could be dredged out...

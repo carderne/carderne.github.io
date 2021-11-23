@@ -3,8 +3,7 @@ layout: single
 title: Modelling hydrological networks at massive scale
 date: '2017-04-15 13:26:00'
 excerpt: "Ironically, a large part of my work at KTH's Division of Energy Systems Analysis was modelling complex hydrological systems. I set out to create a model that would conduct massive scale hydrological modelling."
-tags:
-- inside
+image: /assets/images/2017/hydro6.jpg
 ---
 
 Ironically, a large part of my work at KTH's Division of [Energy Systems Analysis](https://www.kth.se/en/itm/inst/energiteknik/forskning/desa/welcome-to-the-unit-of-energy-systems-analysis-kth-desa-1.197296) was modelling complex hydrological systems. Often, this was while modelling the 'nexus' between different systems, such as energy, water and climate – as opposed to treating these as separate fields of study.
@@ -86,7 +85,7 @@ Now that we have the network set up and ordered, it's time to do something with 
 
 {% include image.html url="/assets/images/2017/hydro5.jpg" description="For example, here's our same river overlaid with the DEM elevation data." %}
 
-Previously I used the laborious and buggy [ArcPy](http://pro.arcgis.com/en/pro-app/arcpy/get-started/what-is-arcpy-.htm)  t oextract all of this information in the network and nodes data structures, but now [rasterio](https://github.com/mapbox/rasterio) makes this a walk in the park. It's a straightforward library for reading raster GIS data and sampling and manipulating it, and takes only a few lines to load all of this new data.
+Previously I used the laborious and buggy [ArcPy](http://pro.arcgis.com/en/pro-app/arcpy/get-started/what-is-arcpy-.htm)  to extract all of this information in the network and nodes data structures, but now [rasterio](https://github.com/mapbox/rasterio) makes this a walk in the park. It's a straightforward library for reading raster GIS data and sampling and manipulating it, and takes only a few lines to load all of this new data.
 
 ## Calculating hydropower potential
 One thing that we can do with all of this data is replicate the hydropower estimates, from the paper we wrote, except now just for Dieprivier in Cape Town.Note that this is exclusively for [run-of-river](https://en.wikipedia.org/wiki/Run-of-the-river_hydroelectricity) mini-hydropower. To estimate power output, we use the hydropower formula as follows:
@@ -118,10 +117,3 @@ The code for this is all with the model in the [GitHub rep](https://github.com/c
 From there, it's not a huge step to add other point withdrawals (such as city water requirements or a farm) and use the model to make predictions about the system. For example, by including projected precipitation changes and increased population (and hence increased withdrawals) we could model whether there would be a water shortfall, and in which months this would be most severe.
 
 As I said, the model isn't quite there, but hopefully I'll come back to it at some point.
-
-[hydro1]: /assets/images/2017/hydro1.jpg
-[hydro2]: /assets/images/2017/hydro2.jpg
-[hydro3]: /assets/images/2017/hydro3.jpg
-[hydro4]: /assets/images/2017/hydro4.jpg
-[hydro5]: /assets/images/2017/hydro5.jpg
-[hydro6]: /assets/images/2017/hydro6.jpg

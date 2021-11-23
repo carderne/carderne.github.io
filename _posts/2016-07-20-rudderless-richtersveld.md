@@ -2,12 +2,11 @@
 layout: single
 title: Rudderless in the Richtersveld
 date: '2016-07-20 19:17:00'
-excerpt: "At the end of June I joined my brothers in South Africa for a jaunt to the border of Namibia and the &#124;Ai-&#124;Ais/Richtersveld Transfrontier Park. It’s a harsh and barren landscape, with the tail end of the Orange River providing the only evidence that water ever reaches the area."
-tags:
-- outside
+excerpt: "At the end of June I joined my brothers in South Africa for a jaunt to the border of Namibia and the |Ai-|Ais/Richtersveld Transfrontier Park. It’s a harsh and barren landscape, with the tail end of the Orange River providing the only evidence that water ever reaches the area."
+image: /assets/images/2016/r7.jpg
 ---
 
-At the end of June I joined my brothers in South Africa for a jaunt  to the border of Namibia and the &#124;Ai-&#124;Ais/Richtersveld Transfrontier Park. It’s a harsh and barren landscape, with the tail end of the Orange  River providing the only evidence that water ever reaches the area. The  80 km of super-corrugated mining roads at the end of our drive reminded  us repeatedly and shakily that we’d left the city.
+At the end of June I joined my brothers in South Africa for a jaunt  to the border of Namibia and the |Ai-|Ais/Richtersveld Transfrontier Park. It’s a harsh and barren landscape, with the tail end of the Orange  River providing the only evidence that water ever reaches the area. The  80 km of super-corrugated mining roads at the end of our drive reminded  us repeatedly and shakily that we’d left the city.
 
 When we arrived, the very frantic park ranger told us that he didn’t  think there’d be any water in the entire area, so it might not be  possible to complete the hike. We decided to shorten our target to three  days, ditched any non-essentials, and loaded about twelve litres of  water into our bags.
 
@@ -35,8 +34,8 @@ The Venstervalle is a beautiful arch, with a waterfall (dry now,  obviously) fl
 
 {% include image.html url="/assets/images/2016/r7.jpg" description="The Venstervalle, with Zoom in the bottom left and me on the right lying down" %}
 
-We pushed on to God’s Window, but it wasn’t very impressive and it’s  an overused name anyway, so we returned to camp to enjoy the most  peaceful sunset possible. No people or running water for at least 50 km  in any direction, and barely an animal either. Really intense silence,  followed after by sunset by the starry Northern Cape heavens opening  above us. The night was colder than the one before, so some time after  midnight Matt knocked on the tent door and came to join Zoom and me on  the (not actually so) cosy inside.
+We pushed on to God’s Window, but it wasn't very impressive and it’s  an overused name anyway, so we returned to camp to enjoy the most  peaceful sunset possible. No people or running water for at least 50 km  in any direction, and barely an animal either. Really intense silence,  followed after by sunset by the starry Northern Cape heavens opening  above us. The night was colder than the one before, so some time after  midnight Matt knocked on the tent door and came to join Zoom and me on  the (not actually so) cosy inside.
 
 The next day we’d set a rendezvous time with the park rangers (back  at our original starting point, so we set of early to wind our way back  out of the valley. Stopping only to summit [Dernberg](https://en.wikipedia.org/wiki/Dernberg)! Matt opted out of  the slightly hairy scramble to the top, so Zoom and I enjoyed our  panoramic view before rushing down to make the rendezvous on time.
 
-It was a really fun brotherly trip, made more awesome by the sheer  remoteness and aloneness it offered. ‘n Veldie was nooit beter gewes  nie. By the time the land cruiser picked us up again, we were completely  out of food, water, rusks and whiskey, and very much looking forward to  the relative civilisation offered by Sendelingsdrif border post.
+It was a really fun brotherly trip, made more awesome by the sheer  remoteness and aloneness it offered. ‘n Veldie was nooit beter gewes nie. By the time the land cruiser picked us up again, we were completely  out of food, water, rusks and whiskey, and very much looking forward to  the relative civilisation offered by Sendelingsdrif border post.

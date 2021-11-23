@@ -3,8 +3,7 @@ layout: single
 title: "Making a Raspberry Pi Wake-Up Light"
 date: "2019-11-25"
 excerpt: "Winter is coming, and with it, short days. I decided to make a bright, pleasing sunrise wake-up light to help us get up in the morning."
-tags:
-- inside
+image: /assets/images/2019/wake-up-light.jpg
 ---
 
 We need help getting up in the morning. I was moments from buying a [Philips Wake-up Light](https://www.usa.philips.com/c-p/HF3500_60/-), but the cheap one doesn't seem bright enough, and the expensive ones are expensive. So I decided to build one instead! I probably ended up spending more, but the money went to fun and learning rather a plastic thing on the shelf (plus I now have a soldering iron and a breadboard and bits of plastic).

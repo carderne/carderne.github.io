@@ -3,8 +3,7 @@ layout: single
 title: "'Lighting the World' - A paper I worked on"
 date: '2016-12-07 08:35:00'
 excerpt: "This model is used to determine the best way to achieve universal electrification, by suggesting for each location in a country whether to extend the electrical grid, use a mini-grid system, or rather to rely on stand-alone household solar PV systems."
-tags:
-- inside
+image: /assets/images/2016/onsset2.jpg
 ---
 
 I did my Master's thesis at KTH University of Technology on [A climate, land-use, energy and water nexus assessment of Bolivia](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Akth%3Adiva-189473). That is, I used various models and approaches to attempt to look holistically at Bolivia's land, energy and water use, taking into account the expected impacts of climate change. One of the models I used is called [OnSSET](http://www.onsset.org/) (EU-funding requires silly acronyms, apparently). This model (developed at KTH) is used to determine the best way to achieve universal electrification, by suggesting for each location in a country whether to extend the electrical grid, use a mini-grid system, or rather to rely on stand-alone household solar PV systems.

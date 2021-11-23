@@ -3,8 +3,7 @@ layout: single
 title: Visualizing book club cliques (and replacing them with AI)
 date: '2018-02-15 10:58:00'
 excerpt: "My book club is quite good about recording what we read each month, and noting what score each of us give each book. Let's see if it would be possible to do away with book club meetings altogether and replace my fellow book-readers with a less argumentative machine learning model."
-tags:
-- inside
+image: /assets/images/2018/mg1.png
 ---
 
 My book club is quite good about recording what we read each month, and noting what score each of us give each book (out of 13, for historical reasons) on a growing spreadsheet. The dataset is imperfect, as people have joined and left,and not everyone has read every book, but there should be enough meat for some fun.

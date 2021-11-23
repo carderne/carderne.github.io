@@ -3,9 +3,7 @@ layout: single
 title: "Recent things indoors and outdoors"
 date: "2019-05-06"
 excerpt: "Random updates as an excuse to publish a new post here. Some stuff from work, a pretty map, and outdoor trips I need to write about!"
-tags:
-- inside
-- outside
+image: /assets/images/2019/cape1.png
 ---
 
 A few days ago I found this [cool library](https://github.com/ColCarroll/ridge_map), which makes it very easy to make images like the one below. I fiddled with other areas and colours and gradients, but it's hard to beat Cape Town and plain black and white-ish. I submitted some code to make the maps from different viewpoints, which the author obligingly accepted; unfortunately no one else seems to think that upside-down (or tilted 90°) maps are very useful. The creators of the [AuthaGraph World Map](http://www.authagraph.com/projects/description/%e3%80%90%e4%bd%9c%e5%93%81%e8%a7%a3%e8%aa%ac%e3%80%91%e8%a8%98%e4%ba%8b01/?lang=en) would disagree, I'm sure.

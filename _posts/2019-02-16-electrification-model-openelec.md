@@ -3,8 +3,7 @@ layout: single
 title: "A new open source electrification model: openelec"
 date: '2019-02-16 12:29:00'
 excerpt: "In my work in electricity access and related issues, an issue that often comes up, and often frustrates me, is the lack of good open source tools. So building on some previous efforts, I've started to work on this issue by creating openelec."
-tags:
-- inside
+image: /assets/images/2019/oe1.png
 ---
 
 In my work in electricity access and related issues, an issue that often comes up, and often frustrates me, is the lack of good open source tools. I've been part of discussions where various planners are obliged to choose proprietary systems that come with significant lock-in, simply because the alternatives aren't as capable, or they aren't aware of them. Apart from being expensive and closed source, these tools are typically incapable of being adapted to a team's existing processes and workflows.

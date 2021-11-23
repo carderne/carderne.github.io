@@ -3,8 +3,7 @@ layout: single
 title: "Gridfinder work published in Nature SciData!"
 date: "2020-01-15"
 excerpt: "Our hard work mapping the global power grid finally got published!"
-tags:
-- inside
+image: /assets/images/2020/gridfinder.org.png
 ---
 
 Over the last year, I did some very fun work using satellite imagery (night-time lights) and OpenStreetMap data to predict the location of global electrical grid infrastructure. I wrote about it briefly on this blog [here](/night-time-lights-find-grid/) and as a World Bank blog [here](https://blogs.worldbank.org/energy/using-night-lights-map-electrical-grid-infrastructure). And now finally its seeing the light of day as a published article in Nature Scientific Data:
