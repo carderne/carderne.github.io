@@ -140,7 +140,7 @@ We're at layer four and finally some code can run! Prefect uses different `Execu
 By default, tasks will run in a single thread on the machine running the Flow. Unless your task has no potential for simultaneous tasks, or no mapping, you should run it on a `LocalDaskExecutor`, which uses a local [Dask](https://dask.org/) scheduler to use as much of the machines available resources as possible.
 ```python
 @task
-def crunch(array: List[np.ndarray]):
+def crunch(array: np.ndarray):
     # compute-intensive task here
 
 executor = LocalDaskExecutor()
@@ -173,11 +173,9 @@ executor = DaskExecutor(
 
 You can also simply supply the address of an existing Dask scheduler, and Prefect will use that for your flow runs.
 
-DaskCloudProvider runs on GCE, so it needs full OS images, not just Docker images. To this end, we have another Action to rebuild an OS image with [Packer](https://www.packer.io/) any time the definitions change. (All this image does is pull the Docker image and run it!)
-
 Prefect does a great job of passing state, data and context between these layers, so logging that happens inside your Dask worker on GCE bubbles its way back up to the Cloud interface.
 
-*Ops*: The Packer images are rebuilt whenever necessary, along with the Docker images.
+*Ops*: DaskCloudProvider runs on GCE, so it needs full OS images, not just Docker images. To this end, we have another Action to rebuild an OS image with [Packer](https://www.packer.io/) any time the definitions change. (All this image does is pull the Docker image and run it!)
 
 ## Bringing it together
 And now we have a lovely, robust system. Creating new Flows is as simple as writing a few lines of Python and pushing it. Moments later, you can pick your parameters (using nice forms or JSON, as you prefer) and submit your Flow run to be picked up by an Agent, run on Vertex and paralellised to your heart's desire.
