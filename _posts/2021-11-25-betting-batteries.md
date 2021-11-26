@@ -44,22 +44,27 @@ To compare coal with solar + batteries, let's construct a scenario. A 2GW coal p
 
 {% include image.html url="/assets/images/2021/solar-scenario.png" description="If you don't care what time your energy comes, solar wins easily." class="narrow-img" %}
 
-So let's add batteries. We want something that can output at least 2 GW (the peak output of the coal plant), and maintain it for 32 hours. So 2 GW capacity and 64 GWh of storage. (About [double](https://www.woodmac.com/news/opinion/the-growth-and-growth-of-the-global-energy-storage-market/) the total installed battery storage in 2021. )
+*Note: I have updated the following calculations thanks to some feedback! This doesn't change my conclusion directionally, except to maybe narrow the margins slightly.*
 
-This multiplier of 32 is far higher than typical grid-scale batteries, which are more likely to have around 5 hours. Based on this, I'm going to use purely the *energy* costs from Lazard, under the assumption that a battery with 64 GWh of storage will easily cover the required 2 GW peak output{%- include fn.html n=4 -%}. That number is 131 -- 232 $/MWh{%- include fn.html n=5 -%}, and multiplied in the same way added to the chart below.
+So let's add batteries. We want something that can output at least ~~2 GW~~ {%- include fn.html n=4 -%} 1 GW (the amount the 2 GW of coal can continuously deliver), and maintain it for 32 hours. So 1 GW capacity and 32 GWh of storage. (About [the same as](https://www.woodmac.com/news/opinion/the-growth-and-growth-of-the-global-energy-storage-market/) the total installed battery storage in 2021.)
+
+This multiplier of 32 is far higher than typical grid-scale batteries, which are more likely to have around 5 hours. Based on this, I'm going to use purely the *capacity* costs from Lazard, but will have to do some juggling to come up with a reasonable figure for a 32 hour battery. The number is around 240 - 451 USD/kw-year{%- include fn.html n=5 -%} for a 6 hour grid-connected battery. The chart below shows the following:
+- The 6-hour battery, multiplied up to a 1 GW capacity
+- Simply multiplying this value by 32/6 to get the cost of using these exact same batteries to provide 32 hours of storage
+- Finally, for the "fair" bar at the top, I [fit a logarithmic function](/assets/images/2021/battery-fit.png) of USD/kw-year/hour-of-storage using prices for four different durations of storage from Lazard.{%- include fn.html n=6 -%}
 
 {% include image.html url="/assets/images/2021/solar-batteries.png" description="Unfortunately, batteries complicate things somewhat..." class="narrow-img" %}
 
-So... *right now*, the cheapest possible solar + batteries is slightly more expensive than the highest estimate for coal. Solar is probably on the more expensive end in India (not quite sunny enough), while coal is complicated as it comes out of the ground and is probably subsidised in all sorts of ways. But I would guess it falls to the lower end of this spectrum? So maybe today, in 2021, solar + batteries is around 3x more expensive. So that cost needs to drop by ~66% to become competitive{%- include fn.html n=6 -%}. 
+So... *right now*, the cheapest possible solar + batteries is around the same as the highest estimate for coal. Solar is probably on the more expensive end in India (not quite sunny enough), while coal is complicated as it comes out of the ground and is probably subsidised in all sorts of ways. But I would guess it falls to the lower end of this spectrum? So maybe today, in 2021, solar + batteries is around 3x more expensive. So that cost needs to drop by ~66% to become competitive{%- include fn.html n=7 -%}. 
 
 ## The question
-The question is, will batteries drop in price by two-thirds by 2028? NREL has put together [some projections](https://www.nrel.gov/docs/fy21osti/79236.pdf) that expect costs to drop 25% - 60% by 2030. Within reach of losing me the bet! These projections are often wrong, and sometimes spectacularly so. Some people [citation needed] don't think batteries will have the same dramatic price curves as solar, as it is limited by chemistry and the physical quantities of material that are needed to store a certain amount of charge.
+The question is, will batteries drop in price by two-thirds by 2028? NREL has put together [some projections](https://www.nrel.gov/docs/fy21osti/79236.pdf) that expect costs to drop 25% - 60% by 2030. Within reach of losing me the bet! These projections are often wrong, and sometimes spectacularly so. Some people [citation needed] don't think batteries will have the same dramatic price curves as solar, as it is limited by chemistry and the physical quantities of material that are needed to store a certain amount of charge. But these people are generally wrong.
 
-{% include image.html url="/assets/images/2021/batteries.png" description="These things are always wrong, but at least I can point at something" class="narrow-img" %}
+{% include image.html url="/assets/images/2021/batteries.png" description="NREL paper figure 6. These things are always wrong, but at least I can point at something" class="narrow-img" %}
 
 So how sure am I in winning the bet... the stakes are high: the loser has to plant 100 trees, with the resulting carbon benefits accruing to the winner! And of course (labour obligations aside), I hope that I lose my bet. But do I think coal will be cheaper than solar+batteries (32 hours) in India in January 2028? I have no idea, but for posterity's sake I'm going to put my credibility on the line and say
 
-> yes (coal will be cheaper), with 60% confidence
+> yes (coal will be cheaper), with ~~60%~~ 55% confidence
 
 What if we include nuclear? Unlike coal, it might have a future of improved technology and learning curves... but probably not before 2028.
 
@@ -73,10 +78,12 @@ See you in six years!
 
 <span id="fn3">[3]&nbsp;<a href="#fn3b"><sup>go back</sup></a>&nbsp;</span><i>Except don't forget the [First Law of Thermodynamics](https://en.wikipedia.org/wiki/First_law_of_thermodynamics).</i>
 
-<span id="fn4">[4]&nbsp;<a href="#fn4b"><sup>go back</sup></a>&nbsp;</span><i>I'm probably disadvantaging storage by using numbers for batteries with a lower ratio, and presumably they could be cheaper for this level of energy if designed with such a high ratio in mind.</i>
+<span id="fn4">[4]&nbsp;<a href="#fn4b"><sup>go back</sup></a>&nbsp;</span><i>I originally forgot to include the fact that coal's 50% capacity factor means 2 GW can only provide 1 GW of continuous power.</i>
 
-<span id="fn5">[5]&nbsp;<a href="#fn5b"><sup>go back</sup></a>&nbsp;</span><i> Note that this is per MWh delivered, not per MWh of storage installed. That number is about 1,000 times higher.</i>
+<span id="fn5">[5]&nbsp;<a href="#fn5b"><sup>go back</sup></a>&nbsp;</span><i>This is the levelised cost to provide this much capacity availability for a year, not the cost to install this many kW of battery capacity.</i>
 
-<span id="fn6">[6]&nbsp;<a href="#fn6b"><sup>go back</sup></a>&nbsp;</span><i> A [report on LDES](https://www.ldescouncil.com/assets/LDES-2021-report-lowres.pdf) (long duration energy storage) suggests costs must drop by 60% for LDES specifically to be competitive. I imagine LDES is cheaper than Li-Ion (or has the potential to be). Anyway this feels like confirmation that I'm in the right ballpark.</i>
+<span id="fn6">[6]&nbsp;<a href="#fn6b"><sup>go back</sup></a>&nbsp;</span><i>The choice of logarithmic is I think supported to some degree by the final chart from NREL data, showing diminishing cost decreases as you get to longer duration batteries.</i>
+
+<span id="fn7">[7]&nbsp;<a href="#fn7b"><sup>go back</sup></a>&nbsp;</span><i> A [report on LDES](https://www.ldescouncil.com/assets/LDES-2021-report-lowres.pdf) (long duration energy storage) suggests costs must drop by 60% for LDES specifically to be competitive. I imagine LDES is cheaper than Li-Ion (or has the potential to be). Anyway this feels like confirmation that I'm in the right ballpark.</i>
 
 
