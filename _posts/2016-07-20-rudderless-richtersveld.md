@@ -2,7 +2,7 @@
 layout: single
 title: Rudderless in the Richtersveld
 date: '2016-07-20 19:17:00'
-excerpt: "At the end of June I joined my brothers in South Africa for a jaunt to the border of Namibia and the |Ai-|Ais/Richtersveld Transfrontier Park. It’s a harsh and barren landscape, with the tail end of the Orange River providing the only evidence that water ever reaches the area."
+excerpt: "At the end of June I joined my brothers for a jaunt in the Richtersveld Transfrontier Park. It’s a harsh and barren landscape."
 image: /assets/images/2016/r7.jpg
 ---
 
