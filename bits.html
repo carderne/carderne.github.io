@@ -1,0 +1,19 @@
+---
+layout: default
+title: Bits
+---
+
+<header style="margin-bottom:20px;">This is a work-in-progress...</header>
+<div class="bits">
+    {%- for bit in site.data.bits -%}
+    <a href="{{ bit.Url }}">
+        <div class="bit">
+            <img src="{{ bit.Image }}" alt="{{ big.Sub }}">
+            <div>
+                <span class="bit-title">{{ bit.Title }}</span>
+                <span>{{ bit.Sub }}</span>
+            </div>
+        </div>
+    </a>
+    {%- endfor -%}
+</div>

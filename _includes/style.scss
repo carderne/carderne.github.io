@@ -469,6 +469,39 @@ header, .header {
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAA1klEQVQokZ3SMUpDQRDG8d8+QgghSCqxCCleKanEUjyBZ/AURryIJ8gJtEmniI1gLQiChY2lIIgakbFZw/J4Ac0uC8Pu95+Z/XZTCP8dVdtmkoZJ6v4ZyuJT7K0sFY2JA3zirHlWaFTYQI19XCHwjkNsYwudEtrFHHd4xleGAi94wC1OUP1CPRznlqJlfeMa9bJSJns4wlsLdIlxeacqm/GBC7y2eHUT4mmV5TUGOX4sEkyaWTpFvIl7zHCOEaYYJqkbYrFUFjbWGDXeo48dhd0hpHX+3g+KsWiwq4//gAAAAABJRU5ErkJggg==");
 }
 
+.bits {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    font-size: 0.8rem;
+
+    @include md {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.bits a {
+    color: inherit;
+}
+
+.bit {
+    height: 100%;
+    width: 100%;
+}
+
+.bit img {
+    margin: 0;
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.bit-title {
+    font-weight: bold;
+}
+
 .photos {
     grid-column: 2 / 4;
     display: grid;
