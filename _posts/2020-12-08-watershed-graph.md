@@ -56,3 +56,11 @@ To make it clicky and pretty, I loaded the million basin geometries into Mapbox 
 {% include image.html url="/assets/images/2020/basin-geom.png" description="And we get this map for same point in the Breede River as the graph above. Red is the upstream drainage basin, and blue is downstream." %}
 
 [Give it a try!](https://water.rdrn.me/)
+
+**Update April 2022**: I've turned off the backend (can't pay Hetzner €4 pm for the rest of my life). The link above still works, but the fun part of the site is turned off. The video below shoes what it did, for posterity.
+
+<video preload="none" poster="/assets/videos/water.webm.png" width="100%" height="500" controls>
+    <source src="/assets/videos/water.webm" type="video/webm">
+    Your browser does not support the video tag.
+    </source>
+</video>
