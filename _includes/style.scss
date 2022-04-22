@@ -292,7 +292,9 @@ figcaption {
 }
 
 a.anchor {
-    margin-left: -2ch;
+    @include md {
+        margin-left: -2ch;
+    }
 }
 
 .big-header {
