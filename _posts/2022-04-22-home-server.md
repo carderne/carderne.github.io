@@ -47,6 +47,11 @@ Stop SSH login message:
 touch ~/.hushlogin
 ```
 
+Set hostname. Add the following to `/etc/hosts` (or edit if there's a similar line there):
+```
+127.0.1.1 box.local box
+```
+
 ## Firewall
 First open the new port in UFW!
 ```bash
@@ -663,6 +668,17 @@ Manually decrypt drive:
 sudo cryptsetup luksOpen /dev/sda1 sda1_crypt
 ```
 
+If that works, create a key so that it can be decrypted automatically:
+```bash
+dd if=/dev/random bs=32 count=1 of=/opt/backup_key
+cryptsetup luksAddKey /dev/sda1 /opt/backup_key
+```
+
+Then edit `/etc/crypttab`:
+```
+sda1_crypt /dev/sda1 /opt/backup_key
+```
+
 Create mountpoint:
 ```bash
 mkdir ~/backup
@@ -678,6 +694,7 @@ Mount:
 mount ~/backup
 ```
 
+*NB*: If there's something wrong with your `crypttab` or `fstab`, it will probably fail on boot! If that happens, pull out the microSD card and comment out the offending lines somewhere else.
 
 ## Things to do on the LAN router
 Set static IP.
