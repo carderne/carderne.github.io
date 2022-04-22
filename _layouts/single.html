@@ -8,4 +8,4 @@ layout: default
         {%- if page.date -%} <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %b %Y" }}</time> {%- endif -%}
     </span>
 </header>
-{{ content }}
+{% include anchor_headings.html html=content anchorBody="#" beforeHeading=true anchorClass="anchor" h_min=2 h_max=2 %}
