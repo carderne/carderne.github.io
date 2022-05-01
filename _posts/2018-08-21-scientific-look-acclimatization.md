@@ -22,13 +22,13 @@ I've climbed about seven (depending on what we count) mountains above 4,000 metr
 
 The twice-daily values from each trip are plotted in the chart below (created using [Bokeh](https://bokeh.pydata.org/en/latest/)). Note that I've squared the vertical axis to exaggerate the differences,so Kebnekaise appears quadruple Table Mountain, when it's actually double.
 
-The only time I've suffered altitude sickness was on our first Orizaba attempt(Mexico, day 5) where we got up to ~4,800 m just five days after leaving sea level. As you can see we quickly dropped down as low as we could and reassessed.After acclimatizing on Iztaccíhuatl, where we spent several hours above 5,000 metres, we returned to Orizaba for an easy climb to the top.
+The only time I've suffered altitude sickness was on our first Orizaba attempt(Mexico, day 5) where we got up to ~4,800 m just five days after leaving sea level. As you can see we quickly dropped down as low as we could and reassessed. After acclimatizing on Iztaccíhuatl, where we spent several hours above 5,000 metres, we returned to Orizaba for an easy climb to the top.
 
 The chart makes clear that Kazbek was easily the most steady ascent, and the graph doesn't even show that I'd been up to around 3,000 m in [Spain](https://en.wikipedia.org/wiki/GR_11_(Spain)) just over a week before – as a result, the 5,047 m summit was a breeze, physically.
 
 {% include image.html url="/assets/images/2018/acc1.png" description="Even if the only goal was to make a chart of mountains that looks like mountains... I think I've succeeded." %}
 
-The above is very attractive, but it doesn't make it very easy to compare altitudes. The bar chart below ditches the time axis to make this a bit easier.Each vertical jump represents a time where I ascended higher than I had previously been on that trip, ignoring times when I stayed still or descended.Bolivia starts at 2,810 m because I spent weeks in [Sucre](https://en.wikipedia.org/wiki/Sucre), so that almost became my 'sea level'.
+The above is very attractive, but it doesn't make it very easy to compare altitudes. The bar chart below ditches the time axis to make this a bit easier. Each vertical jump represents a time where I ascended higher than I had previously been on that trip, ignoring times when I stayed still or descended. Bolivia starts at 2,810 m because I spent weeks in [Sucre](https://en.wikipedia.org/wiki/Sucre), so that almost became my 'sea level'.
 
 Most of the big jumps are sensibly below 4,000 m, where altitude effects are generally less <sup>[[citation needed](https://en.wikipedia.org/wiki/Altitude_sickness)]</sup>. As you can see, the single biggest jump was in California, where, a day after exploring [Death Valley](https://en.wikipedia.org/wiki/Death_valley) (-86 m), we ascended 3,020 vertical metres (some by car) to Bishop Pass (3,649 m) and slept in the snow at pretty much that height.
 

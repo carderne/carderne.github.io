@@ -88,7 +88,7 @@ Now that we have the network set up and ordered, it's time to do something with 
 Previously I used the laborious and buggy [ArcPy](http://pro.arcgis.com/en/pro-app/arcpy/get-started/what-is-arcpy-.htm)  to extract all of this information in the network and nodes data structures, but now [rasterio](https://github.com/mapbox/rasterio) makes this a walk in the park. It's a straightforward library for reading raster GIS data and sampling and manipulating it, and takes only a few lines to load all of this new data.
 
 ## Calculating hydropower potential
-One thing that we can do with all of this data is replicate the hydropower estimates, from the paper we wrote, except now just for Dieprivier in Cape Town.Note that this is exclusively for [run-of-river](https://en.wikipedia.org/wiki/Run-of-the-river_hydroelectricity) mini-hydropower. To estimate power output, we use the hydropower formula as follows:
+One thing that we can do with all of this data is replicate the hydropower estimates, from the paper we wrote, except now just for Dieprivier in Cape Town. Note that this is exclusively for [run-of-river](https://en.wikipedia.org/wiki/Run-of-the-river_hydroelectricity) mini-hydropower. To estimate power output, we use the hydropower formula as follows:
 
  * P = ηρgQH
 
@@ -98,7 +98,7 @@ The head is simple: we get the height for our chosen point, and then look a set 
 
  * Q = runoff × catchment-area
 
-where catchment-area is the total area upstream of the selected point.Multiplying these together calculates the theoretical amount of water that should flow past this point.
+where catchment-area is the total area upstream of the selected point. Multiplying these together calculates the theoretical amount of water that should flow past this point.
 
 Applying this to Dieprivier, the model creates a point every 500 metres and calculates the head over the preceding 500 metres. By filtering to only include those with at least 10 metres of head and more than 100 kW output, we get the following suggested point of 162 kW, with 12 metres of head and flow rate of 2.75 m3/s.
 
@@ -111,7 +111,7 @@ To improve this, I extended the model to work with precipitation as an input ins
 
 Then every river section has a (potentially) more accurate discharge associated with it, which is now able to vary by month and day. So in the example above, we could specify not only the mean power output, but also show which months we expect to have lower and higher output.
 
-The code for this is all with the model in the [GitHub rep](https://github.com/carderne/hydro-networks), but be aware – it takes a lot of fiddling and calibration to get useful numbers out, and precipitation and stream-gauge data often require a lot more data wrangling to make ready for the model.I was on the verge of setting up the model to calibrate against some measurements automatically, but that'll have to be a project for another day.
+The code for this is all with the model in the [GitHub rep](https://github.com/carderne/hydro-networks), but be aware – it takes a lot of fiddling and calibration to get useful numbers out, and precipitation and stream-gauge data often require a lot more data wrangling to make ready for the model. I was on the verge of setting up the model to calibrate against some measurements automatically, but that'll have to be a project for another day.
 
 ## Towards a generalised model
 From there, it's not a huge step to add other point withdrawals (such as city water requirements or a farm) and use the model to make predictions about the system. For example, by including projected precipitation changes and increased population (and hence increased withdrawals) we could model whether there would be a water shortfall, and in which months this would be most severe.

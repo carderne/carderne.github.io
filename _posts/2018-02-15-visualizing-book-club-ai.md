@@ -12,7 +12,7 @@ First off, the scores look something like the table below, but with 17 more rows
 
 {% include image.html url="/assets/images/2018/book1.png" description="The books and their scores." %}
 
-We then pair everyone up, and calculate a 'disagreement' standard deviation between each possible pairing, ignoring books that either person didn't read.This gives us a nice looking heat map, where higher numbers indicate a higher level of disagreement. The biggest difference is between Kyle and Jeff, whose ratings differ by an SD of 4.8. The most closely paired are Adam and me, with an SD of 1.7.
+We then pair everyone up, and calculate a 'disagreement' standard deviation between each possible pairing, ignoring books that either person didn't read. This gives us a nice looking heat map, where higher numbers indicate a higher level of disagreement. The biggest difference is between Kyle and Jeff, whose ratings differ by an SD of 4.8. The most closely paired are Adam and me, with an SD of 1.7.
 
 {% include image.html url="/assets/images/2018/book2.png" description="These PNGs really need transparent backgrounds." %}
 

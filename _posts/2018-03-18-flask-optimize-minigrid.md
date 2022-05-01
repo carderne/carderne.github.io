@@ -19,7 +19,7 @@ In this post I'm focusing on mini-grids, mostly because it's a more interesting 
 So if you just want an example of a basic Flask app, go ahead and skip to the second section. Or just check out the [GitHub repo](https://github.com/carderne/minigrid-optimiser)  for the code for both sections.
 
 ## Optimising mini-grids in rural villages
-As I've covered [elsewhere](https://rdrn.me/open-data-access-tanzania/), data is one of the key barriers to ramping up off-grid development and investment.Machine learning and ML-supported manual mapping in OpenStreetMap (a strategy we applied in Tanzania) are starting to make inroads into this problem, at least for assessing demand.
+As I've covered [elsewhere](https://rdrn.me/open-data-access-tanzania/), data is one of the key barriers to ramping up off-grid development and investment. Machine learning and ML-supported manual mapping in OpenStreetMap (a strategy we applied in Tanzania) are starting to make inroads into this problem, at least for assessing demand.
 
 As a test case, I've chosen the village of Sipungu  in the Tabora region of Tanzania. To start off with, let's see how this village looks in OpenStreetMap compared to Google Maps. Each of the 444 little shapes on the left is a building, accurately traced by the [HOT team](https://www.hotosm.org/where-we-work/tanzania/) team in Dar es Salaam as part of the IFC project. Some are homes, some are stores, some are schools. As you can see, there's no information in Google Maps about this village – not even the road in.
 

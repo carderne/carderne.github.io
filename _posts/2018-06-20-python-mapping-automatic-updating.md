@@ -14,7 +14,7 @@ So (mostly for the fun of it) I decided to see if I could help out, using Folium
 
 {% include image.html url="/assets/images/2018/py1.png" description="I highly recommend draw.io for this type of stuff." %}
 
-Firstly there are two Google Sheets with a simple format. The [first](https://docs.google.com/spreadsheets/d/1WyZNokrgj5NmbyYrRIOQDa2mZ0_SEdbjBohR2RmKXp8/edit?usp=sharing) contains specific point data with coordinates in decimal degrees, and the [second](https://docs.google.com/spreadsheets/d/15t8dZIab3cNoN3y3WVYVy4a-RITFhfvlPWIKSKAuV0Y/edit?usp=sharing) contains summary state-level data with polygon representations of each state.These are then shared with anyone who might need access to updating the map data.
+Firstly there are two Google Sheets with a simple format. The [first](https://docs.google.com/spreadsheets/d/1WyZNokrgj5NmbyYrRIOQDa2mZ0_SEdbjBohR2RmKXp8/edit?usp=sharing) contains specific point data with coordinates in decimal degrees, and the [second](https://docs.google.com/spreadsheets/d/15t8dZIab3cNoN3y3WVYVy4a-RITFhfvlPWIKSKAuV0Y/edit?usp=sharing) contains summary state-level data with polygon representations of each state. These are then shared with anyone who might need access to updating the map data.
 
 Then the Python package [gspread](https://github.com/burnash/gspread) makes it extremely easy to pull this data using OAuth2. It has great instructions on how to set up a Google API key and access specific sheets. It's only a few lines of code to pull the data and convert into a [pandas](https://pandas.pydata.org/) DataFrame.
 
