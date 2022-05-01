@@ -309,7 +309,15 @@ a.anchor {
 }
 
 #fire {
-    text-shadow: 0 0 3px #fefcc9, 0px -2px 4px #feec85, -3px -3px 6px #ffae34, 3px -6px 7px #ec760c, -3px -8px 8px #cd4606, 0 -10px 9px #973716, 2px -12px 11px #451b0e;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {text-shadow: 0 0 3px #fefcc9, 0px -2px 4px #feec85, -3px -3px 6px #ffae34, 3px -6px 7px #ec760c, -3px -8px 8px #cd4606, 0 -10px 9px #973716, 2px -12px 11px #451b0e;}
+    50%  {text-shadow: 0 0 2px #fefcc9, 0px -1px 2px #feec85, -2px -2px 4px #ffae34, 2px -4px 4px #ec760c, -2px -5px 5px #cd4606, 0 -7px 7px #973716, 1px -9px 9px #451b0e;}
+    100% {text-shadow: 0 0 3px #fefcc9, 0px -2px 4px #feec85, -3px -3px 6px #ffae34, 3px -6px 7px #ec760c, -3px -8px 8px #cd4606, 0 -10px 9px #973716, 2px -12px 11px #451b0e;}
 }
 
 .big-taglines {
