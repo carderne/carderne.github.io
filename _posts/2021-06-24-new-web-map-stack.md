@@ -45,7 +45,7 @@ The easiest method that I've found is as follows:
 1. Download an OpenStreetMap extract from [Geofabrik](https://download.geofabrik.de/).
 2. Use [tilemaker](https://github.com/systemed/tilemaker) with the OpenMapTiles [_schema_](https://openmaptiles.org/schema/ ) to convert this into MBTiles.
 3. Then you can use [tileserver-gl-light](https://github.com/maptiler/tileserver-gl) together with a _style_ (OMT have a number of [free styles](https://github.com/openmaptiles/osm-bright-gl-style/) compatible with their schema) to serve this data to your frontend.
-4. Finally, you can use [MapLibre](https://github.com/maplibre/maplibre-gl-js) (forked from the last fully free Mapbox GL) to dismay your maps.
+4. Finally, you can use [MapLibre](https://github.com/maplibre/maplibre-gl-js) (forked from the last fully free Mapbox GL) to display your maps.
 5. You can also use [tippecanoe](https://github.com/mapbox/tippecanoe) to create additional non-OSM MBTiles from GeoJSON vectors. And [GDAL](https://gdal.org/programs/gdaldem.html) (don’t forget colour, these are harder to style in the front-end!) to do the same for raster data.
 6. You’ll presumably want to edit the style further, so there's [Maputnik](https://github.com/maputnik/editor) as an alternative to Mapbox Studio. (Note that you can also control this in the frontend code, or just hand-edit the JSON)
 

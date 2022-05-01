@@ -497,29 +497,64 @@ Enable memcache by editing `/var/www/nextcloud/config/config.php` and add the fo
 'memcache.locking' => '\OC\Memcache\Redis',
 ```
 ## pihole
-[Source](https://github.com/pi-hole/pi-hole/#one-step-automated-install).
+[Source](https://github.com/pi-hole/docker-pi-hole).
 
+Install Docker and docker-compose:
 ```bash
-# yuk!
-curl -sSL https://install.pi-hole.net | bash
+sudo apt install docker.io docker-compose
 ```
 
-No to web portal, logging stats etc.
-Set Router DNS to PiHole with 9.9.9.9 as backup.
-
-```bash
-# might want to add a comment
-ufw allow 53
+Get the [docker-compose.yml](https://github.com/pi-hole/docker-pi-hole/blob/master/docker-compose.yml.example):
+```yml
+version: "3"
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "8088:80/tcp"
+    environment:
+      TZ: 'Europe/London'
+      WEBPASSWORD: 'your-password-here'
+    volumes:
+      - './etc-pihole:/etc/pihole'
+      - './etc-dnsmasq.d:/etc/dnsmasq.d'
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
 ```
 
-Lists: [source](https://github.com/jessedp/pihole5-list-tool).
-
+Then do
 ```bash
-sudo apt install python3-pip
-sudo pip3 install pihole5-list-tool --upgrade
-sudo pihole5-list-tool
-pihole -g
+docker-compose up -d
 ```
+
+If there are issues with port conflicts, may need to:
+```bash
+sudo systemctl disable --now systemd-resolved
+```
+
+However, this will [break local DNS](https://github.com/pi-hole/docker-pi-hole/issues/945) (internet access on the RPi itself), so then must edit `/etc/resolv.conf` as follows:
+```bash
+nameserver 127.0.0.1       # localhost
+nameserver 192.168.x.y     # internal IP of RPi
+options edns0 trust-ad     # not sure what this is?
+search router.local        # router name/IP
+```
+
+Open ports in UFW:
+```bash
+sudo ufw allow from 192.168.178.0/24 to any port 53
+sudo ufw allow from 192.168.178.0/24 to any port 8088 proto tcp
+sudo ufw allow from 192.168.178.0/24 to any port 67 proto udp
+```
+
+Set Router DNS to PiHole IP with 9.9.9.9 as backup.
+
+Then go to the router admin page [http://box.local:8088/admin](http://box.local:8088/admin/) and go to Settings -> DNS and choose "Permit all Origins".
 
 Web admin console should be at `http://localhost:8088/admin/`.
 
