@@ -548,6 +548,7 @@ search router.local        # router name/IP
 Open ports in UFW:
 ```bash
 sudo ufw allow from 192.168.178.0/24 to any port 53
+sudo ufw allow from 192.168.178.0/24 to any port 53
 sudo ufw allow from 192.168.178.0/24 to any port 8088 proto tcp
 sudo ufw allow from 192.168.178.0/24 to any port 67 proto udp
 ```
@@ -730,6 +731,24 @@ mount ~/backup
 ```
 
 *NB*: If there's something wrong with your `crypttab` or `fstab`, it will probably fail on boot! If that happens, pull out the microSD card and comment out the offending lines somewhere else.
+
+## Power down external drive when not in use
+[source1](https://askubuntu.com/questions/586657/is-there-any-way-to-turn-off-a-usb-hdd-manually).
+[uhubctl](https://github.com/mvp/uhubctl).
+```bash
+sudo apt install uhubctl
+```
+
+```baash
+sudo umount ~/backup
+sudo cryptsetup luksClose sda1_crypt
+sudo udisksctl power-off -b /dev/sda1
+sudo uhubctl -l 2 -p 2 -a off
+
+sudo uhubctl -l 2 -p 2 -a on
+sudo systemctl start systemd-cryptsetup@sda1_crypt
+mount ~/backup
+```
 
 ## Things to do on the LAN router
 Set static IP.
