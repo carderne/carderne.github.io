@@ -16,7 +16,7 @@ def recurse(keep=0, throw=0):
     keep += 1
     throw += 1
     if keep < 3:
-        keep, _ = recurse(keep, throw)        
+        keep, _ = recurse(keep, throw)
     return keep, throw
 
 recurse()
@@ -62,11 +62,11 @@ def explore(node, current=[], best=[]):
     for child in node.children:
         best = explore(child, current, best)
     return best
-        
+
 explore(a)
 ```
 
-But this outputs `['a', 'b', 'd', 'c', 'e', 'f']` (that is, every node). This is because, in Python, assignment with `=` doesn't create objects; it creates a binding between a name and an object. With unmutable objects (2, for example, will always be 2), this does what we expect. But with mutable objects (such as lists), even though the scope would suggest we're dealing with a new variable, in actual fact they're all pointing to the same underlying object. As a demonstration, consider the following:
+But this outputs `['a', 'b', 'd', 'c', 'e', 'f']` (that is, every node). This is because, in Python, assignment with `=` doesn't create objects; it creates a binding between a name and an object. With immutable objects (2, for example, will always be 2), this does what we expect. But with mutable objects (such as lists), even though the scope would suggest we're dealing with a new variable, in actual fact they're all pointing to the same underlying object. As a demonstration, consider the following:
 
 ```python
 foo = [1]
@@ -81,14 +81,31 @@ This outputs `[1, 2]`, because foo and bar are bound to the same underlying obje
 def explore(node, current=[], best=[]):
     current = current.copy()
     current.append(node.name)
-    if node.gold:
+    if node.target:
         best = current
     for child in node.children:
         best = explore(child, current, best)
     return best
-        
+
 explore(a)
 ```
 
 And voilà, it produces `['a', 'c', 'e']`, as expected.
 
+## Addendum
+This is still not ideal though: assigning `[]` as a default parameter is a bad idea, as that object will be created at function definition time and carried around like a confusing nightmare. This is especially true with the `list.append()` method is used.
+
+The version below fixes these issues. No objects are created at definition time, and everything is treated as immutable (note that in this example, the value of `current` is never modified).
+```python
+def explore(node, current=None, best=None):
+    if not current:
+        current = []
+    new_current = current + [node.name]
+    if node.target:
+        best = new_current
+    for child in node.children:
+        best = explore(child, new_current, best)
+    return best
+
+explore(a)
+```
