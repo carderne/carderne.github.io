@@ -15,7 +15,7 @@ I did all this testing with Postgres using a very basic table `CREATE TABLE test
 
 As with Part I, I set up a simple benchmarking tool that also handles the setting-up and tearing-down of the database, and makes sure everything commits. You can [check it out here](https://github.com/carderne/benchmarking-sampling/blob/main/benchmark_sql.ipynb).
 
-# Round 1: Insert statements
+## Round 1: Insert statements
 First up, a simple dumb insert. Loop through the `DataFrame` row by row and insert the values.
 
 ```python
@@ -32,7 +32,7 @@ def insert(df, table):
 <div class="aside"><div>Unsurprisngly, slow: 129 seconds for a million rows.</div></div>
 
 
-# Round 2: execeute_values
+## Round 2: execeute_values
 A quick Google and [this post](https://naysan.ca/2020/05/09/pandas-to-postgresql-using-psycopg2-bulk-insert-performance-benchmark/) suggested that `psycopg2.extra.execute_values()` would be the fastest 'normal' method.
 
 Instead of looping through and `INSERT`ing again and again, it handles the rows under-the-hood, and all I need to do is throw my array at it.
@@ -44,7 +44,7 @@ def values(df, table):
 ```
 <div class="aside"><div>Much faster, at 28 seconds for the same rows.</div></div>
 
-# Round 2(b): Upsert
+## Round 2(b): Upsert
 I also wanted to see what impact there would be from using Postgres's `UPSERT` syntax. This allows for new data to be inserted, and to replace existing rows if there's a match on any fields (`date` and `loc` in this case). This won't frequently happen for us, but it makes it a bit easier to automatically deal with if we accidentally re-insert some existing rows.
 
 ```python
@@ -61,7 +61,7 @@ def upsert(df, table):
 ```
 <div class="aside"><div>I didn't test it with any conflicting data, but the extra checked introduced a 10% slowdown.</div></div>
 
-# Round 3: Copying
+## Round 3: Copying
 The blog I linked above also showed that using `COPY` would be the fastest. However, I was hesitant to try it initially, as it would mean first dumping everything to CSV, and then `COPY`ing that. This didn't seem ideal from a speed point of view, when the CSV could be 10's of GB at a time.
 
 But `execute_values()` wasn't fast enough for our 15 billion rows to load in a reasonable amount of time, so I had to try it out.
@@ -75,7 +75,7 @@ def copy(df, table):
 ```
 <div class="aside"><div>All inserted in 7.4 seconds!</div></div>
 
-# Round 4: Copy from memory
+## Round 4: Copy from memory
 Why make the round-trip to disk when we can just go straight from memory (so long as there's enough!).
 
 ```python
@@ -87,7 +87,7 @@ def copy_mem(df, table):
 ```
 <div class="aside"><div>Almost the same speed. Is my SSD really fast? Or my old RAM too slow...</div></div>
 
-# Round 4(b): Copy from memory with UPSERT
+## Round 4(b): Copy from memory with UPSERT
 Once again, let's see what impact the `UPSERT` approach has. We can't do it natively with `COPY`, so we have to do it in three steps:
 1. Create a temporary table
 2. `COPY` into the temporary table
@@ -127,7 +127,7 @@ def copy_mem_upsert(df, table):
 ```
 <div class="aside"><div>40% slower. Speed is hit by having to go row-by-row.</div></div>
 
-# Round 5: Time for binary!
+## Round 5: Time for binary!
 The problem with the above is that we have a Pandas `DataFrame` with each column carefully assigned a datatype of `float32`, `int32` etc, but then we write it to CSV and everything just becomes text! So a value of e.g. `0.2436123`, which occupied 4 bytes of `float32`, is now 9 horrible bytes of text. To make it worse, there's a large processing step in doing all this binary => text conversion. And worse still, Postgres has to do the reverse on the other side!
 
 Far better if everything stays in its native binary format. To do this, we need to make sure our `DataFrame` datatypes exactly match the datatypes specified for each column in the database table. We can't shove a `float32` into a hole made for a `float16`. We also need to convert the Pandas/Numpy data into something that Postgres natively understands.
@@ -163,7 +163,7 @@ def copy_bin(df, table):
 ```
 <div class="aside"><div>Another huge improvement to 2.4 seconds!</div></div>
 
-# Round 5(b): And one more upsert check
+## Round 5(b): And one more upsert check
 Let's just check what impact upserting has.
 ```python
 def copy_bin_upsert(df, table):
@@ -173,7 +173,7 @@ def copy_bin_upsert(df, table):
 ```
 <div class="aside"><div>Horrible - a 128% slowdown to 6.6 seconds.</div></div>
 
-# Round 5(c): Skip the DataFrame
+## Round 5(c): Skip the DataFrame
 I also explored NumPy Structured Arrays in my [sibling post](/optimising-sampling/), and it proved the fastest method for sampling. And we here we have DataFrame's being exported to Structured Arrays (`.to_records()`). Why waste time doing `recarray` => `DF` => `recarray`? Here's a last little snippet to see what changes when we assume the data is already in `recarray` format.
 
 ```python
@@ -185,19 +185,19 @@ def copy_bin_rec(data, table):
 
 This method didn't bring any speed-up by itself, but if you include not having to get the data into a `DataFrame` in the first place, there must be a few milliseconds in there!
 
-# Wrapping it up
+## Wrapping it up
 All in all, a 25x speed-up, and significantly lower memory usage (I didn't measure this, but fewer cloud machines bombed out). Also less data over the wire, and less load on the database itself from the more performant methods.
 
 {% include image.html url="/assets/images/2020/opt2-chart.png" description="Note that both axes are logarithmic, so each jump is 10x. I excluded some lines to make it a bit easier to read." %}
 
-# What have I missed?
+## What have I missed?
 I'm pretty out of my depth when it comes to fine-tuning databases. For a database of this size, I expect something like BigQuery or Snowflake is the way to go. And we haven't even gotten to querying the thing yet!
 
 I ran the final code (without `UPSERT`) in production on a machine with 96GB of memory and 24 vCPUs, and it took 45 minutes for the full dataset of 41 year x 365 days x 1 million points x 6 columns. The database (Postgres on Google Cloud SQL) was running on a machine with 4 vCPUs and 14GB of memory, in the same Google Cloud region (but not sure about zones).
 
 I first had a database with `NOT NULL` restrictions on each column and a `UNIQUE (date, loc)` requirement, but that ruined performance (about five times faster without them!). I also made the table `UNLOGGED` to eke out every bit of speed. I tried running a bunch of beefy machines in parallel, all pointing at the same database, but the bottleneck on the database side meant this didn't help at all.
 
-# Postscript
+## Postscript
 After adding an `INDEX` to the Postgres table (which took about an hour and another ~300GB of storage), I could query for results at about 18 seconds per location (about 15k rows each) on a small 2 vCPU/3GB machine. Not very fast, but plenty for our purposes. Buuut Google SQL SSD storage is very expensive (because you're basically paying for a fully-provisioned collocated SSD). So I decided it was time to investigate a switch to BigQuery (where storage is nearly 10x cheaper because it just sits on top of Google Storage).
 
 And what fun! I was happy to find that I could pipe my Postgres table directly to a Google Storage `.csv` on a tiny machine with a small hard drive:

@@ -11,12 +11,12 @@ This was put together by [Victoria Alexandar](https://twitter.com/victoriaalxndr
 
 The only modification I made was to drop some of the explicitly US-focused stuff (charities, organizations). It's all in the document at the link above. The rest is still relatively US-centric; if anyone can recommend good resources for South Africa and beyond then let me know.
 
-# Structural Racism vs Individual Racism
+## Structural Racism vs Individual Racism
 Racism describes a system of power and oppression/advantage and disadvantage based on race. Structural racism is a system, or series of systems, in which institutional practices, laws, policies, social- cultural standards, and socio-political decisions establish and reinforce norms that perpetuate racial group inequities. Within the context of the United State of America, and other nations, structural racism takes the form of white supremacy; the preferential treatment, privilege, power, access, networks, and access to opportunities available to white people, which often designate communities of color to chronic adverse outcomes.
 
 Individual racism refers to a person’s racist assumptions, beliefs, or behaviors. Individual racism stems from conscious and unconscious bias and is reinforced by structural racism. Please visit the list of books, videos, movies, and TV shows within this guide to learn more about how racism functions and affects all of our day-to-day lives.
 
-# Understanding Implicit Bias
+## Understanding Implicit Bias
 Implicit bias refers to the attitudes or stereotypes that affect our understanding, actions, and decisions in an unconscious manner. These are mental shortcuts that help us more easily make sense of our incredibly complex world. These biases, which encompass both favorable and unfavorable assessments, are activated involuntarily and without an individual’s awareness or intentional control. These associations develop over the course of a lifetime beginning at a very early age through exposure to direct and indirect messages.
 
 We all have implicit biases, no matter our identities and regardless of how educated we are on the topic. These biases manifest themselves in ways that have impacts we may not desire.
@@ -27,7 +27,7 @@ It is difficult for many of us to talk about implicit or explicit bias; we are o
 
 Though we can learn and internalize these messages and biases very early in our lives, implicit biases are malleable and the associations we form can be unlearned. You engaging with this resource guide, in a meaningful way, lets me know that you are interested in learning how to shift your implicit biases toward an anti-racist lens. To learn more about how bias is learned, internalized, unlearned, and changed, please visit the list of books, articles, tv shows, and movies included in this guide.
 
-# Steps to Becoming Anti-Racist
+## Steps to Becoming Anti-Racist
 Originally published by [WhereChangeStarted.com](https://www.wherechangestarted.com/).
 
 ### Awareness
@@ -60,7 +60,7 @@ In stage four, you incorporate what you’ve learned during your ongoing process
 
 This stage of the work will not be void of mistakes, but the way those are handled and the number of times they are repeated thereafter (as least as possible), is what will make the difference here. Because leading by example in your failures is but one of the many ways for you to do this work authentically.
 
-# Having Conversations about Racism and Bias
+## Having Conversations about Racism and Bias
 Reading books and watching documentaries on anti-racism is one thing but how are you bringing that energy into your day-to-day lives and interpersonal relationships? If you’re going to be on this journey toward being anti-racist, you must commit to combating racism and bias when you see it and hear it.
 
 Common questions include things like “what do I say when someone is racist but doesn’t mean it?” “Should I speak up when someone offends my identity at work?” “How can I talk to my parents about their racist language?” “How do I check my Uncle Bob when he’s actin’ a fool at the dinner table?” Like doing anything new, IT'S SCARY! But that’s okay! I’ve put together some quick references for you to read and practice so you can start changing the minds and hearts of people in your life. Remember, “It takes a great deal of bravery to stand up to your enemies, but a great deal more to stand up to your friends.” - *Albus Dumbledore*.
@@ -73,7 +73,7 @@ Common questions include things like “what do I say when someone is racist but
 - [The Cycle of Socialization](https://depts.washington.edu/fammed/wp-content/uploads/2018/06/Cycle_ofSocializationHandout.pdf), Adams, M., Bell, L. A., Griffin, P. (1997) Teaching for Diversity and Social Justice
 - [Eight Lessons for Talking About Race, Racism, and Racial Justice](https://www.opportunityagenda.org/explore/resources-publications/lessons-talking-about-race-racism-and-racial-justice), The Opportunity Agenda
 
-# Articles
+## Articles
 - [The 1619 Project. Nikole Hannah Jones, The New York Times.](https://www.nytimes.com/interactive/2019/08/14/magazine/1619-america-slavery.html)
 - [Anti-Racist Checklist for Whites. Robin DiAngelo, 2016.](https://robindiangelo.com/2018site/wp-content/uploads/2016/01/Antiracist-Checklist-2015.pdf)
 - [A Critique of "Our Constitution Is Color-Blind." Neil Gotanda, 1991.](https://www.jstor.org/stable/pdf/1228940.pdf)
@@ -98,7 +98,7 @@ Common questions include things like “what do I say when someone is racist but
 - [Who Gets To Be Afraid in America? Ibram X. Kendi](https://www.theatlantic.com/ideas/archive/2020/05/ahmaud-arbery/611539/)
 - [The Year I Gave Up White Comfort: An Ode to my White "Friends" on Being Better to Black Womxn. Rachel Ricketts, 2019. ](https://docs.google.com/document/d/1WuRau30FKFdZhV_kjPeo4aoHbGc2ozDOfPw1N6MHe-0/edit#heading=h.ru327hmkzfzf)
 
-# Books
+## Books
 ### Anti-Racist Starter Kit
 - A People’s History of the United States. Howard Zinn.
 - Stamped from the Beginning. Ibram X Kendi.
@@ -188,7 +188,7 @@ Common questions include things like “what do I say when someone is racist but
 - Medical Apartheid: The Dark History of Medical Experimentation on Black Americans from Colonial Times to the Present. Harriet A. Washington.
 - The Warmth of Other Suns. Isabel Wilkerson.
 
-# Videos
+## Videos
 - [The Urgency of Intersectionality](https://www.youtube.com/watch?v=akOe5-UsQ2o), Kimberle Crenshaw
 - [Danger of Silence](https://www.youtube.com/watch?v=NiKtZgImdlY), Clint Smith III
 - [Ibram X Kendi on the Solution for America's "Metastatic" Racism](https://www.youtube.com/watch?v=mG1tlZoSdZI), Ibram X. Kendi
@@ -205,7 +205,7 @@ Common questions include things like “what do I say when someone is racist but
 - [How Studying Privilege Systems Can Strengthen Compassion](https://youtu.be/e-BY9UEewHw), Peggy McIntosh
 - [The Power of Privilege](https://www.youtube.com/watch?v=N0acvkHIiZs), Tiffany Jana
 
-# Podcasts
+## Podcasts
 - [1619 (New York Times)](https://www.nytimes.com/2020/01/23/podcasts/1619-podcast.html)
 - [About Race](https://www.showaboutrace.com/)
 - [Afropunk Solution Sessions](https://afropunk.com/afropunk-solution-sessions/)
