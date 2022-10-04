@@ -8,7 +8,7 @@ layout: default
             <div class="header">
                 <span class="archive-item-title vert-center">
                     <a href="{{ post.url | relative_url }}" rel="permalink">
-                        {{ post.title }}
+                        {{ post.title | truncate: 40 }}
                     </a>
                 </span>
                 <span class="archive-item-date vert-center">
@@ -18,7 +18,7 @@ layout: default
                 </span>
             </div>
             <p class="archive-item-excerpt">
-                {{ post.excerpt | truncate: 200}}
+                {{ post.excerpt | truncate: 100}}
             </p>
         </div>
 {% endunless -%}

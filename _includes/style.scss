@@ -90,6 +90,7 @@ nav {
         border-bottom: none;
         text-align: right;
         padding: 0 2em;
+        margin-right: 1rem;
     }
 
     ul {
@@ -341,7 +342,6 @@ a.anchor {
 }
 
 .archive-item-date {
-    color: $muted-text-color;
     float: right;
     font-size: $type-size-6;
 }
@@ -356,23 +356,26 @@ a.anchor {
     max-width: calc(100vw - 110px);
 
     @include lg {
-        font-size: $type-size-3;
+        font-size: $type-size-5;
         max-width: 700px;
     }
 }
 
 .archive-item-excerpt {
+    color: #666;
     clear: both;
     margin-top: 0;
     display: none !important;
 
     @include lg {
         display: block !important;
+        font-size: .7em;
     }
 }
 
 .page-title {
     font-size: $type-size-3;
+    font-weight: bold;
     float: left;
 }
 
@@ -723,7 +726,7 @@ code.highlighter-rouge {
     background: mix(white, $gray, 50%);
     font-family: $monospace;
     font-size: $type-size-6;
-    border-radius: $border-radius;
+    //border-radius: $border-radius;
     padding: 0.1em 0.2em;
 }
 
