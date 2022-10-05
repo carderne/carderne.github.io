@@ -2,7 +2,7 @@
 layout: single
 title: A music app in Java, that still works eight years later!
 date: '2014-01-29 12:25:00'
-excerpt: "My high school IT class (so, 2010) culminated in a programming project – we were free to create whatever we wanted (in Java), so long as we demonstrated what we'd learned in the class."
+excerpt: "Flexing my Java skills in high-school."
 ---
 
 My high school IT class (so, 2010) culminated in a programming project – we were free to create whatever we wanted (in Java), so long as we demonstrated what we'd learned in the class. I'd started teaching myself Java two years earlier, with a very simple command-line based music organizer: you typed in metadata, had it displayed back to you in a simple table, and probably didn't expect it to still be there next time you ran the program.

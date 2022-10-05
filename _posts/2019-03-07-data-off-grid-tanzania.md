@@ -2,9 +2,7 @@
 layout: single
 title: "A new approach to data and mapping"
 date: "2019-03-07"
-excerpt: "Data is a key enabler in boosting (among other things) increased access to modern energy sources. We took a (slightly) more human-centric approach to residential data and mapping in Tanzania."
-tags:
-- inside
+excerpt: "Data is a key enabler in boosting increased access to modern energy sources."
 ---
 
 Data is a key enabler in boosting (among other things) increased access to modern energy sources. We took a (slightly) more human-centric approach to residential data and mapping in Tanzania.

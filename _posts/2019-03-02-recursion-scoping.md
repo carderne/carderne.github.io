@@ -2,9 +2,7 @@
 layout: single
 title: "Fun with recursion and scoping"
 date: "2019-03-02"
-excerpt: "Creating a smart, tree-aware algorithm for optimising electrical networks led to an interesting exploration of recursion and variable scoping."
-tags:
-- inside
+excerpt: "Recursion and objects in Python: footguns galore."
 ---
 
 Part of the core algorithm in [openelec](https://openelec.me/) is a routine that finds the best (read: cheapest) way to connect villages. This is based on a [minimum spanning tree](https://en.wikipedia.org/wiki/Minimum_spanning_tree) but, as the MST doesn't know about the existing grid (or the village populations, or whether there's a mountain between villages), I had to layer something on top of that. This 'something' (discussed [here](https://rdrn.me/modelling-universal-electrification/) about halfway down the page) starts at currently connected villages and explores outwards along the tree, finding the best configuration that brings electricity to the most people (or the highest demand) with the shortest amount of new wire. Naturally, this calls for a recursive function, which led to a fun exploration of variable scoping.

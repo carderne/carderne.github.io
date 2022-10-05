@@ -2,9 +2,7 @@
 layout: single
 title: A Flask app for mini-grid planning with a cost-optimised spanning tree
 date: '2018-03-18 13:20:00'
-excerpt: "We've mapped over 4 million buildings in Tanzania. This post explores the possibilities of this data for off-grid planning using a simple Flask web app."
-tags:
-- inside
+excerpt: "Using OSM data to plan mini-grid layouts."
 ---
 
 As part of ongoing work on energy access in Tanzania, we (the [IFC](https://www.ifc.org), together with Tanzania's Rural Energy Agency) have mapped over 4 million buildings in rural parts of the country. This gives loads of [new possibilities](https://tzmapping.github.io/) to those looking to work in these areas, and not only in the energy sector. One of these is the ability to conduct detailed site assessments, including sensible estimates of household populations and potential demand,along with wiring requirements to connect a village.

@@ -2,7 +2,7 @@
 layout: single
 title: "A new open source electrification model: openelec"
 date: '2019-02-16 12:29:00'
-excerpt: "In my work in electricity access and related issues, an issue that often comes up, and often frustrates me, is the lack of good open source tools. So building on some previous efforts, I've started to work on this issue by creating openelec."
+excerpt: "A better tool for planning electricity access."
 image: /assets/images/2019/oe1.png
 ---
 

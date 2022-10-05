@@ -2,9 +2,7 @@
 layout: single
 title: A hackathon with iRise in Mogadishu
 date: '2018-07-09 08:54:00'
-excerpt: "Together with a colleague at the World Bank, I ran a small project aimed at supporting the Mogadishu tech community. We worked with Awil Osman at iRise Hub to put together MogadishuWatt, focused on using technology to solve energy issues in Somalia."
-tags:
-- inside
+excerpt: "A small project aimed at supporting the Mogadishu tech community."
 ---
 
 Together with a colleague at the World Bank, I ran a small project aimed at supporting the Mogadishu tech community. We proposed this project to the Youth Innovation Fund and were supported with a small grant to carry out the project. We worked with Awil Osman at [iRise Hub](http://irisehub.so/) to put together [#MogadishuWatt](https://twitter.com/hashtag/MogadishuWatt), focused on using technology to solve energy issues in Somalia.

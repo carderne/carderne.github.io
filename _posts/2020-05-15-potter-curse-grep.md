@@ -2,9 +2,7 @@
 layout: single
 title: "Harry Potter and the Curse of the Grep"
 date: "2020-05-15"
-excerpt: "Adverbs, adverbs, every where, nor any use for them. (aka Rowling's editor needed regular expressions)"
-tags:
-- inside
+excerpt: "Adverbs, adverbs, every where, nor any use for them."
 ---
 
 I know I'm not the [first](https://www.livemint.com/Leisure/i8wjh4uNOfjbcZNuVvMPQM/The-adverbs-that-gave-JK-Rowling-away.html) [person](https://www.livewritethrive.com/2015/11/23/oh-those-lovely-adverbs/) to notice this. But it's fun anyway. Also: I don't have a problem with either Harry Potter or adverbs.

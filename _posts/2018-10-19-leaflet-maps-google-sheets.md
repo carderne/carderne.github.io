@@ -2,9 +2,7 @@
 layout: single
 title: Leaflet maps with data from Google Sheets
 date: '2018-10-19 17:51:19'
-excerpt: "I love working with Python, but as soon as you want to put something online, JavaScript's ability to process in the browser is a clear winner. In this post I'm going to go through making a web map in JavaScript that pulls data from Google Sheets – where non-coders can easily make updates."
-tags:
-- inside
+excerpt: "Making a web map in JavaScript that pulls data from Google Sheets."
 ---
 
 *I wrote another [post here](https://rdrn.me/python-mapping-automatic-updating/), outlining how this can be achieved without stepping out of a Python environment.*

@@ -2,7 +2,7 @@
 layout: single
 title: "Trip Report: The Bugaboos"
 date: "2017-09-08"
-excerpt: "A month-ish with great friends in some of the most beautiful mountains in the world, with one goal: Bugaboo Spire."
+excerpt: "A month in some beautiful mountains, with one goal: Bugaboo Spire."
 image: /assets/photos/2017-08-26-c.jpg
 ---
 

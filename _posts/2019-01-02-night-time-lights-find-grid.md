@@ -2,7 +2,7 @@
 layout: single
 title: Using NASA night time lights to guess where the grid is
 date: '2019-01-02 15:31:00'
-excerpt: "A lot of the work I do relates to finding the cost-optimal of bringing electricity to more people and businesses. Implicit in this is the assumption that we know where the people are who already have electricity access. Often we don't."
+excerpt: "A lot of the work I do relates to finding the cost-optimal of bringing electricity to more people."
 image: /assets/images/2019/gf3.png
 ---
 

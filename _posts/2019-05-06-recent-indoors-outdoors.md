@@ -2,7 +2,7 @@
 layout: single
 title: "Recent things indoors and outdoors"
 date: "2019-05-06"
-excerpt: "Random updates as an excuse to publish a new post here. Some stuff from work, a pretty map, and outdoor trips I need to write about!"
+excerpt: "Random updates as an excuse to publish a new post here."
 image: /assets/images/2019/cape1.png
 ---
 

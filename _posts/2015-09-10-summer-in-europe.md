@@ -2,7 +2,7 @@
 layout: single
 title: Summer of climbing in Europe
 date: '2015-09-10 08:20:00'
-excerpt: "This year I was lucky enough to join two UIAA youth meets. Youth rock climbing in Catalonia, organised by the FEEC, and the Kazbek mountaineering expedition, organised by the Mountaineering & Climbing Association of Georgia."
+excerpt: "Rock climbing in Catalonia and Kazbek mountaineering expedition."
 image: /assets/images/2015/k1.jpg
 ---
 

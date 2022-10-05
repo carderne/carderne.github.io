@@ -3,8 +3,6 @@ layout: single
 title: "Anti-Racist Resource Guide (not compiled by me obviously)"
 date: "2020-06-08"
 excerpt: "Guidance, steps, articles, books, videos etc to help be a better ally."
-tags:
-- inside
 ---
 
 This was put together by [Victoria Alexandar](https://twitter.com/victoriaalxndr). The full document is [here](https://docs.google.com/document/d/1a-lzdtxOlWuzYNGqwlYwxMWADtZ6vJGCpKhtJHHrS54). Go there and close this tab, it's probably been updated since I copy-pasted this.

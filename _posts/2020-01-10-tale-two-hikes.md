@@ -2,7 +2,7 @@
 layout: single
 title: "[Guest post] A Tale of Two Hikes: Trekking in the Eastern Sierra Nevada"
 date: "2020-01-10"
-excerpt: "Michael Kloos wrote about our time in California and got it published in the MCSA annual journal. Republished here with his kind permission."
+excerpt: "Michael Kloos wrote about our time in California and got it published in the MCSA journal."
 image: /assets/images/2018/nev1.jpg
 ---
 

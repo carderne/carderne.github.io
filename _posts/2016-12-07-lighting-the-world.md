@@ -2,7 +2,7 @@
 layout: single
 title: "'Lighting the World' - A paper I worked on"
 date: '2016-12-07 08:35:00'
-excerpt: "This model is used to determine the best way to achieve universal electrification, by suggesting for each location in a country whether to extend the electrical grid, use a mini-grid system, or rather to rely on stand-alone household solar PV systems."
+excerpt: "This model is used to determine the best way to achieve universal electrification."
 image: /assets/images/2016/onsset2.jpg
 ---
 

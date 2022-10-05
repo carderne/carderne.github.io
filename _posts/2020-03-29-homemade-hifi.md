@@ -2,7 +2,7 @@
 layout: single
 title: "I made millennial pink wireless speakers"
 date: "2020-03-29"
-excerpt: "The software side was disappointingly easy; the hardware unsurprisingly messy. They sound better than any smart speaker, and don't spy on me!"
+excerpt: "The software side was disappointingly easy; the hardware unsurprisingly messy."
 image: /assets/images/2020/hifi4.jpg
 ---
 

@@ -2,9 +2,7 @@
 layout: single
 title: "New sections for photos and books"
 date: "2019-04-10"
-excerpt: "I added two new sections to this site, one for photos and the other for books. And some couscous for good measure. Have a look!"
-tags:
-- inside
+excerpt: "I added two new sections to this site, one for photos and the other for books."
 ---
 
 I added two new sections to this site, one for [photos](/photos) and the other for [books](/books). Thanks to the minimalist trend that I've somehow jumped on, they both work without any JavaScript. Luckily I've been pretty fastidious about recording books since 2011 so it was easy to repurpose my growing Excel file for the blog.

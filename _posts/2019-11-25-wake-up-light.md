@@ -2,7 +2,7 @@
 layout: single
 title: "Making a Raspberry Pi Wake-Up Light"
 date: "2019-11-25"
-excerpt: "Winter is coming, and with it, short days. I decided to make a bright, pleasing sunrise wake-up light to help us get up in the morning."
+excerpt: "Winter is coming, and with it, short days. I decided to make a bright, pleasing sunrise light."
 image: /assets/images/2019/wake-up-light.jpg
 ---
 
