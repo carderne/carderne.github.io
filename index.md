@@ -14,7 +14,7 @@ Available for consultancy or advisory (or just advice) wherever these interests 
     <img src="/assets/images/face.jpg" alt="profile picture" width="150" style="margin:-10px;width:150px;height:150px;mix-blend-mode:darken;">
 </p>
 
-Since leaving the World Bank, I've enjoyed working with some <span id="fire">hot</span> startups in the climate, financial and energy spaces, supported top research institutions, and tried to focus on meaningful, impactful work.
+Since leaving the World Bank, I've enjoyed working with some <span class="fire">hot</span> startups in the climate, financial and energy spaces, supported top research institutions, and tried to focus on meaningful, impactful work.
 
 Some fun things, old and new, that I've enjoyed:
 working with [HOT](https://www.hotosm.org/) to map millions of buildings in East Africa;
