@@ -291,12 +291,31 @@ header, .header {
     overflow: auto;
 }
 
-.books > div {
-    position: relative;
-    grid-template-columns: 1fr;
+.books {
     display: grid;
-    grid-column-gap: 5px;
-    padding-top: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.book-title {
+    position: relative;
+}
+
+.book-author {
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.book-date {
+    padding-right: .25em;
+    color: var(--muted);
+    font-size: .9rem;
+    padding-top: 1px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -.012em;
+}
+
+.book-rating {
+    margin-bottom: 1rem;
 }
 
 .book-shade-ex {
@@ -314,13 +333,14 @@ header, .header {
     z-index: -10;
 }
 
-.books > div div {
+.books > div {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 3px 0 3px 6px;
 }
 
-.books .meta {
+.meta {
     font-size: 50%;
 }
 
@@ -552,20 +572,6 @@ table tr:nth-child(2n) {
         margin-left: -2ch;
     }
 
-    .books > div {
-        grid-template-columns: 1fr .75fr min-content 70px;
-    }
-
-    .books > div div:nth-child(3) {
-        display: block;
-        padding-right: .25em;
-        color: var(--muted);
-        font-size: 90%;
-        padding-top: 1px;
-        font-variant-numeric: tabular-nums;
-        letter-spacing: -.012em;
-    }
-
     .bits {
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 2rem;
@@ -579,6 +585,28 @@ table tr:nth-child(2n) {
     }
     .modal-arrow {
         font-size: 50px;
+    }
+
+    .books {
+        grid-template-columns: 1fr .6fr max-content max-content;
+        grid-column-gap: 1rem;
+    }
+
+    .book-title {
+        grid-column: 1;
+    }
+
+    .book-author {
+        grid-column: 2;
+    }
+
+    .book-date {
+        grid-column: 3;
+    }
+
+    .book-rating {
+        grid-column: 4;
+        margin-bottom: 0;
     }
 }
 

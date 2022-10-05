@@ -3,21 +3,24 @@ layout: default
 title: Books
 ---
 
+<header style="margin-bottom:20px;">
+    The
+    <span class="book-shade-ex">pink bars</span>
+    are book length...
+    <small class="meta">(RR) = Reread (AB) = Audiobook</small>
+</header>
 <div class="books">
-    <header style="margin-bottom:20px;">The <span class="book-shade-ex">pink bars</span> are book length... <small class="meta">(RR) = Reread (AB) = Audiobook</small></header>
     {%- for book in site.data.books -%}
-    <div itemprop=mainEntity itemscope itemtype=http://schema.org/Book>
+    <div class="book-title">
         <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
-        <div>
-            <span itemprop=name>{{ book.Title }}</span>
-            <span class="meta">{% if book.Reread != "n" %}(RR){% endif %}</span>
-            <span class="meta">{% if book.Audiobook != "n" %}(AB){% endif %}</span>
-        </div>
-        <div itemprop=author>{{ book.Author }}</div>
-        <div itemprop=dateCreated>{{ book.Read }}</div>
-        <div>
-            <div itemprop=reviewRating class=star style=width:{{ book.Rating | times: 13 }}px></div>
-        </div>
+        <span itemprop=name>{{ book.Title }}</span>
+        <span class="meta">{% if book.Reread != "n" %}(RR){% endif %}</span>
+        <span class="meta">{% if book.Audiobook != "n" %}(AB){% endif %}</span>
+    </div>
+    <div class="book-author" itemprop=author>{{ book.Author }}</div>
+    <div class="book-date" itemprop=dateCreated>{{ book.Read }}</div>
+    <div class="book-rating">
+        <div itemprop=reviewRating class=star style=width:{{ book.Rating | times: 13 }}px></div>
     </div>
     {%- endfor -%}
 </div>
