@@ -739,7 +739,7 @@ mount ~/backup
 sudo apt install uhubctl
 ```
 
-```baash
+```bash
 sudo umount ~/backup
 sudo cryptsetup luksClose sda1_crypt
 sudo udisksctl power-off -b /dev/sda1
@@ -751,5 +751,5 @@ mount ~/backup
 ```
 
 ## Things to do on the LAN router
-Set static IP.
-Port forwarding.
+- Set static IP.
+- Port forwarding.
