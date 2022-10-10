@@ -293,7 +293,8 @@ header, .header {
 
 .books {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr max-content;
+    font-size: .75rem;
 }
 
 .book-title {
@@ -302,19 +303,18 @@ header, .header {
 
 .book-author {
     color: var(--muted);
-    font-size: .9rem;
 }
 
 .book-date {
     padding-right: .25em;
     color: var(--muted);
-    font-size: .9rem;
     padding-top: 1px;
     font-variant-numeric: tabular-nums;
     letter-spacing: -.012em;
 }
 
 .book-rating {
+    display: none;
     margin-bottom: 1rem;
 }
 
@@ -590,6 +590,7 @@ table tr:nth-child(2n) {
     .books {
         grid-template-columns: 1fr .6fr max-content max-content;
         grid-column-gap: 1rem;
+        font-size: 1rem;
     }
 
     .book-title {
@@ -605,6 +606,7 @@ table tr:nth-child(2n) {
     }
 
     .book-rating {
+        display: initial;
         grid-column: 4;
         margin-bottom: 0;
     }
