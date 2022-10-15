@@ -158,7 +158,7 @@ del a {
 }
 
 blockquote {
-    margin: 2em 1em 2em 0;
+    margin: .5em 1em .5em;
     padding-left: 1em;
     padding-right: 1em;
     font-style: italic;
@@ -178,7 +178,7 @@ ul, ol {
 
 ul li,
 ol li {
-    margin-bottom: 0.5em;
+    margin: 0.5em auto;
 }
 
 li ul,
