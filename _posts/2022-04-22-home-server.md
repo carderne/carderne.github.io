@@ -5,7 +5,9 @@ date: "2022-04-22"
 excerpt: "Bits and pieces cobbled together setting up a Raspberry Pi home server"
 ---
 
-These are notes I've gathered setting up my Raspberry Pi home server, together with some apps and services that I use on it. I'm putting it here (instead of the jumble of Markdown files whence it came) for my own personal use; it's not intended to be useful to anyone else. That said, there might be snippets that are useful if some search engine led you here trying to figure out how to secure your SSH or something...
+These days I use a simpler [Docker Compose homeserver setup](https://github.com/carderne/homeserver) for my home server.
+
+These are older notes I've gathered setting up my Raspberry Pi home server, together with some apps and services that I use on it. I'm putting it here (instead of the jumble of Markdown files whence it came) for my own personal use; it's not really intended to be useful to anyone else. That said, there might be snippets that are useful if some search engine led you here trying to figure out how to secure your SSH or something...
 
 ## Installation
 This assumes that the Raspberry Pi (RPi from here on) will be connected over a wired connection. If it will _only_ connect over WiFi, there are some [additional instruction here](https://rdrn.me/wake-up-light/#setting-up-the-raspberry-pi).
