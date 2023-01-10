@@ -14,11 +14,11 @@ title: Books
     <div class="book-title">
         <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
         <span itemprop=name>{{ book.Title }}</span>
-        <span class="meta">{% if book.Reread != "n" %}(RR){% endif %}</span>
-        <span class="meta">{% if book.Audiobook != "n" %}(AB){% endif %}</span>
+        <span class="meta">{% if book.Reread and book.Reread != "n" %}(RR){% endif %}</span>
+        <span class="meta">{% if book.Audiobook and book.Audiobook != "n" %}(AB){% endif %}</span>
     </div>
     <div class="book-author" itemprop=author>{{ book.Author }}</div>
-    <div class="book-date" itemprop=dateCreated>{{ book.Read }}</div>
+    <div class="book-date" itemprop=dateCreated>{{ book.Read | date: "%d %b '%y" }}</div>
     <div class="book-rating">
         <div itemprop=reviewRating class=star style=width:{{ book.Rating | times: 13 }}px></div>
     </div>
