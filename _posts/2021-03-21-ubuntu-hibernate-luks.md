@@ -5,7 +5,7 @@ date: "2021-03-21"
 excerpt: "Workarounds abounds"
 ---
 
-As with many of my blog posts, sharing this to get it out of my notes, and on the off-change that it proves useful to future-me or anyone else.
+As with many of my blog posts, sharing this to get it out of my notes, and on the off-chance that it proves useful to future-me or anyone else.
 
 Hibernate doesn't work on Ubuntu by default with a LUKS-encrypted drive, and it takes some work to get it going...
 This is mostly because LVM introduces several layers of obfuscation between the physical drive and partitions (that I've been playing with since I was 14) and the mounted decrypted volume.
