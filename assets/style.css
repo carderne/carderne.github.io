@@ -565,6 +565,7 @@ table tr:nth-child(2n) {
 .mf, .mi, .se, .si, .l { color: #cb4b16; }
 .nc, .nn { color: #b58900; }
 .na, .nf, .nx { color: #1e6fa8; }
+.MathJax_Display .mi { color: black !important; }
 
 @media screen and (min-width: 768px) {
     a.anchor {
