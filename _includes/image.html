@@ -3,7 +3,10 @@
     <label for="{{ id }}">
         <figure class="image">
             <img load="lazy" src="{{ include.url }}" alt="{{ include.description }}" class="center-img {{ include.class | default: '' }}">
-            <figcaption>{{ include.description }}</figcaption>
+            <figcaption>
+              {{ include.description }}
+              {% if source != "" %}<a href="{{ include.source }}">{{ include.sourceText }}</a>{% endif %}
+            </figcaption>
         </figure>
     </label>
     <input class="modal-state" id="{{ id }}" type="checkbox">
@@ -12,7 +15,10 @@
             <div class="modal-content">
                 <img loading="lazy" class="modal-photo" src="{{ include.url }}" alt="{{ include.description }}">
                 <div>
-                    <span class="photo-caption">{{ include.description }}</span>
+                    <span class="photo-caption">
+                      {{ include.description }}
+                      {% if source != "" %}<a href="{{ include.source }}">{{ include.sourceText }}</a>{% endif %}
+                    </span>
                 </div>
             </div>
         </label>
