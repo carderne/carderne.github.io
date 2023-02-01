@@ -49,15 +49,14 @@ RETURN x
 
 I also added spatial data to each node, so that its possible to query by latitude-longitude coordinates and not just by ID. It's also simple to get everything downstream from a point simply by using `(n)-[:down*]->(d)` in the query above for the `MATCH`.
 
-To turn this into the fun web app, I wrapped the query into a Flask app, and am serving the results at a simple little API endpoint that you can try for yourself: e.g. [https://water.rdrn.me/api/1002300140/](https://water.rdrn.me/api/1002300140/).
+To turn this into the fun web app, I wrapped the query into a FastAPI app, and am serving the results at a simple little API endpoint on fly.io that you can try for yourself: e.g.
+https://water.fly.dev/api/1001657650
 
 To make it clicky and pretty, I loaded the million basin geometries into Mapbox and wrote some Javascript to filter the geometries based on the IDs that come back from the API. All the latitude-longitude and geometry stuff happens on the frontend to take the load off the little server I'm renting, but it would be trivial to add an API endpoint that accepts coordinates and returns a geometry.
 
 {% include image.html url="/assets/images/2020/basin-geom.png" description="And we get this map for same point in the Breede River as the graph above. Red is the upstream drainage basin, and blue is downstream." %}
 
 [Give it a try!](https://water.rdrn.me/)
-
-**Update April 2022**: I've turned off the backend (can't pay Hetzner €4 pm for the rest of my life). The link above still works, but the fun part of the site is turned off. The video below shoes what it did, for posterity.
 
 <video preload="none" poster="/assets/videos/water.webm.png" width="100%" height="500" controls>
     <source src="/assets/videos/water.webm" type="video/webm">
