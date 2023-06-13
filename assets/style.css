@@ -293,7 +293,7 @@ header, .header {
 
 .books {
     display: grid;
-    grid-template-columns: 1fr 1fr max-content;
+    grid-template-columns: max-content 1fr 1fr max-content;
     font-size: .75rem;
 }
 
@@ -316,6 +316,12 @@ header, .header {
 .book-rating {
     display: none;
     margin-bottom: 1rem;
+}
+
+.book-rating-num {
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .book-shade-ex {
@@ -345,10 +351,9 @@ header, .header {
 }
 
 .star {
-    width: 13px;
-    height: 13px;
+    width: .9em;
+    height: .9em;
     display: inline-block;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAA1klEQVQokZ3SMUpDQRDG8d8+QgghSCqxCCleKanEUjyBZ/AURryIJ8gJtEmniI1gLQiChY2lIIgakbFZw/J4Ac0uC8Pu95+Z/XZTCP8dVdtmkoZJ6v4ZyuJT7K0sFY2JA3zirHlWaFTYQI19XCHwjkNsYwudEtrFHHd4xleGAi94wC1OUP1CPRznlqJlfeMa9bJSJns4wlsLdIlxeacqm/GBC7y2eHUT4mmV5TUGOX4sEkyaWTpFvIl7zHCOEaYYJqkbYrFUFjbWGDXeo48dhd0hpHX+3g+KsWiwq4//gAAAAABJRU5ErkJggg==");
 }
 
 .bits {
@@ -611,6 +616,17 @@ table tr:nth-child(2n) {
         grid-column: 4;
         margin-bottom: 0;
     }
+
+    .book-rating-num {
+        display: none;
+    }
+
+    .star {
+        width: 13px;
+        height: 13px;
+        display: inline-block;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {

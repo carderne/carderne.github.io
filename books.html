@@ -11,6 +11,10 @@ title: Books
 </header>
 <div class="books">
     {%- for book in site.data.books -%}
+    <div class="book-rating-num" itemprop=reviewRating>
+      <span>{{ book.Rating }}</span>
+      {% if book.Rating > 0 %}<img class="star" src="/assets/star.svg"></span>{% endif %}
+    </div>
     <div class="book-title">
         <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
         <span itemprop=name>{{ book.Title }}</span>
@@ -20,7 +24,11 @@ title: Books
     <div class="book-author" itemprop=author>{{ book.Author }}</div>
     <div class="book-date" itemprop=dateCreated>{{ book.Read | date: "%d %b '%y" }}</div>
     <div class="book-rating">
-        <div itemprop=reviewRating class=star style=width:{{ book.Rating | times: 13 }}px></div>
+        {% if book.Rating >= 1 %}<img class="star" src="/assets/star.svg">{% endif %}
+        {% if book.Rating >= 2 %}<img class="star" src="/assets/star.svg">{% endif %}
+        {% if book.Rating >= 3 %}<img class="star" src="/assets/star.svg">{% endif %}
+        {% if book.Rating >= 4 %}<img class="star" src="/assets/star.svg">{% endif %}
+        {% if book.Rating >= 5 %}<img class="star" src="/assets/star.svg">{% endif %}
     </div>
     {%- endfor -%}
 </div>
