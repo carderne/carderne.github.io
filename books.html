@@ -13,7 +13,7 @@ title: Books
     {%- for book in site.data.books -%}
     <div class="book-rating-num" itemprop=reviewRating>
       <span>{{ book.Rating }}</span>
-      {% if book.Rating > 0 %}<img class="star" src="/assets/star.svg"></span>{% endif %}
+      {% if book.Rating > 0 %}<img class="star" src="/assets/star.svg">{% endif %}
     </div>
     <div class="book-title">
         <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
