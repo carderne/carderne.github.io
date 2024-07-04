@@ -12,10 +12,10 @@ And when outside, I'd ideally be climbing <a href="/photos/">mountains</a> but m
 
 <p align="center">
     <img
-        src="/assets/images/face.jpg"
+        src="/assets/images/profile.jpg"
         alt="profile picture"
-        width="150"
-        style="margin:10px; width:150px; height:150px; mix-blend-mode:darken;"
+        width="550"
+        style="margin: 10px auto; width:100%; mix-blend-mode:darken;"
     >
 </p>
 
