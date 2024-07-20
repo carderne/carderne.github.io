@@ -6,7 +6,7 @@ excerpt: Postmodern, anyone?
 ---
 It feels like eons, but it was actually just four years ago that [Hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/) did the rounds, going over the latest Best Practises™ for Python tooling. I remember reading it with a feeling of panic: I need to install like 20 packages, configure 30 more and do all this _stuff_ just to write some Python.
 
-But now it's 2024, and it's finally all easy! A bunch of people saw how easy all this stuff was in Go and Rust, and did some amazing work to drag the Python ecosystem forward. It's no longer clever or special to do this stuff, everyone should be doing it.
+But now it's 2024, and it's finally all easy! A bunch of people saw how easy all this stuff was in Go and Rust, and did some amazing work to drag the Python ecosystem forward. It's no longer clever or special to do this stuff; everyone should be doing it.
 
 I was prompted to write this by two things:
 1. I built a toy script for an interview the other day and in the discussion, it became clear that I had some evangelising to do.
@@ -16,17 +16,17 @@ If you just want the template, it's coming below in the TLDR. Otherwise hang in,
 1. [Setup](#setup)
 2. [Linting](#linting)
 3. [Typing](#typing)
-4. [Testing](#testing) (note I shifted this later, I think this makes more sense)
+4. [Testing](#testing)
 5. [Documentation](#documentation)
 6. [CI/CD](#cicd)
 7. [Monorepo](#monorepo)  (bonus section!)
 
-If you're already using Rye and friends, much of this won't be new to you. But the monorepo section is where things get a more interesting and there might be some new ideas there!
+If you're already using Rye and friends, much of this won't be new to you. But the monorepo section is where things get more interesting and there might be some new ideas there!
 
-**TLDR** Here's the template repository: [carderne/postmodern-python](https://github.com/carderne/postmodern-python). Start from that and the README will give you all the commands you need to know.
+**TLDR** Here's the template repository: [carderne/postmodern-python](https://github.com/carderne/postmodern-python). Start from there, and the README will give you all the commands you need to know.
 
 ## Setup
-Out with [pyenv](https://github.com/pyenv/pyenv) and [Poetry](https://python-poetry.org/), in with [Rye](https://rye.astral.sh/){%- include fn.html n=1 -%}. Created by Armin Ronacher (creator of Flask), and now adopted by [Astral](https://astral.sh/), Rye is the new cool kid on the block. Despite the npm-esque VC-backed vibes, it's actually really well-thought-through and entirely based on the new Python packaging standards. Unlike Poetry, which did what was necessary before those standards existed, but is now just a bit weird and unnecessarily different.
+Out with [pyenv](https://github.com/pyenv/pyenv) and [Poetry](https://python-poetry.org/), in with [Rye](https://rye.astral.sh/){%- include fn.html n=1 -%}. Created by Armin Ronacher (creator of [Flask](https://flask.palletsprojects.com/en/3.0.x/)), and now adopted by [Astral](https://astral.sh/), Rye is the new cool kid on the block. Despite the VC-backed vibes of Astral, it's actually really well-thought-through and entirely based on the new Python packaging standards. Unlike Poetry, which did what was necessary before those standards existed, but is now just a bit weird and unnecessarily different.
 
 Rye will also install Python for you, creating and respecting a `.python-version` in the process. Then it helps you manage your `pyproject.toml` dependencies in a standard way (or leaves you to do it yourself), creates lock files (but normal ones that `pip` can understand, not Poetry-specific ones) and mostly gets out of the way. And because it's all written in Rust (duh), it's _fast_. It also bundles a linter and formatter, which will make our later section a bit shorter.
 
@@ -45,8 +45,8 @@ Rye should have created a config directory with a config (modified by the comman
 
 So let's start a new project:
 ```bash
-mkdir myproj
-cd myproj
+mkdir postmodern
+cd postmodern
 rye init       # create pyproject.toml and .python-version
 rye sync       # create lockfiles and install Python + deps
 ```
@@ -65,14 +65,14 @@ $ tree .
 ├── requirements.lock      # lockfile for deps
 ├── requirements-dev.lock  # ditto for dev deps
 └── src
-    └── myproj
+    └── postmodern
         └── __init__.py    # code goes here
 ```
 
-Rye defaults to a `src/myproj/` layout, but you can also just do `myproj/` if you prefer (I generally do). The only really interesting thing here is the `pyproject.toml`. A quick history lesson: Python used to use a `setup.py` script for installing libraries, which everyone agreed was crazy. There was a brief dalliance with `setup.cfg` but then [PEP-518](https://peps.python.org/pep-0518/) [/PEP-621](https://peps.python.org/pep-0621/)/[PEP-631](https://peps.python.org/pep-0631/) came along and saved the day by standardising around `pyproject.toml`. Poetry started in the middle of all this, so it had to invent its own system. But now we have standards, so let's have a look:
+Rye defaults to a `src/postmodern/` layout, but you can also just do `postmodern/` if you prefer (I generally do). The only really interesting thing here is the `pyproject.toml`. A quick history lesson: Python used to use a `setup.py` script for installing libraries, which everyone agreed was crazy. There was a brief dalliance with `setup.cfg` but then [PEP-518](https://peps.python.org/pep-0518/) [/PEP-621](https://peps.python.org/pep-0621/)/[PEP-631](https://peps.python.org/pep-0631/) came along and saved the day by standardising around `pyproject.toml`. Poetry started in the middle of all this, so it had to invent its own system. But now we have standards, so let's have a look:
 ```toml
 [project]
-name = "myproj"
+name = "postmodern"
 version = "0.1.0"
 description = "Add your description here"
 authors = [{ name = "Your Name", email = "you@example.com" }]
@@ -81,7 +81,7 @@ readme = "README.md"
 # If you're building a public library, you'll want to be more lenient
 # with the Python versions you permit. If this is internal, then you
 # should use Python 3.12
-requires-python = "~= 3.12.2"
+requires-python = "~= 3.12"
 
 # Your empty (for now) dependency table
 dependencies = []
@@ -109,7 +109,7 @@ You can also just edit these dependencies manually (this is what I usually do), 
 annotated-types==0.7.0
     # via pydantic           # the comments explain why each dep is there
 pydantic==2.8.2
-    # via myproj
+    # via postmodern
 pydantic-core==2.20.1
     # via pydantic
 typing-extensions==4.12.2
@@ -117,31 +117,30 @@ typing-extensions==4.12.2
     # via pydantic-core
 ```
 
-### App projects
-There are a few different kinds of project you could be building, and that affects the kinds of things you'll want to add to the above. If you're building an "app" (i.e. something you can run, like a CLI or an API)) then what we have above is great. There are two things you might want to add, depending on how you're expecting people to use your app. The one is a `__main__.py` next to your `__init__.py`. This lets people run your code using `python -m myproj` which is vary handy if they don't want to mess with their `$PATH`.
+### Make it runnable
+There are a few different kinds of project you could be building, and that affects the kinds of things you'll want to add to the above. If you're building an a CLI tool or similar, there are two things you might want to add, depending on how you're expecting people to use it. The one is a `__main__.py` next to your `__init__.py`. This lets people run your code using `python -m postmodern` which is vary handy if they don't want to mess with their `$PATH`.
 ```python
-# myproj/__init__.py
+# postmodern/__init__.py
 def main() -> None:
     print("Hello!")
 
-# myproj/__main__.py
-from myproj import main
+# postmodern/__main__.py
+from postmodern import main
 main()
 ```
 
-The next is to add a script in the standard Python way. The example below will mean that, after installing your library/app with `pip`, it will be added to their `$PATH` and they can run it as `myproj` from the command line.
+The next is to add a script in the standard Python way. The example below will mean that, after installing your library/app with `pip`, it will be added to their `$PATH` and they can run it as `postmodern` from the command line.
 ```toml
 # add this to your pyproject.toml
 [project.scripts]
-# this means that running `myproj` will run the `myproj.main` function
-"myproj" = "myproj:main"
+# run `postmodern` will run the `postmodern.main` function
+"postmodern" = "postmodern:main"
 ```
 
-### Library projects
-Of course if your code will only ever be imported, you don't need an entrypoint. Now you have two options:
-1. If you're building a public library (i.e., you'll publish it to [pypi](https://pypi.org/)), you should decide how many Python version you want to support, and set the `requires-python` value appropriately. Python 3.8 is [about to hit end-of-life](https://devguide.python.org/versions/) so I think it's reasonable to support `>= 3.9` only. If you think your users are more cutting-edge you can nudge higher. The only downside of supporting older versions is missing out on the many improved things in [3.10](https://docs.python.org/3/whatsnew/3.10.html), [3.11](https://docs.python.org/3/whatsnew/3.11.html) and [3.12](https://docs.python.org/3/whatsnew/3.12.html).
-2. If it's an internal library, you should use a single version of Python across your libraries (and it should be Python 3.12) and you should manage a global lockfile (more on that [below](#monorepo).)
+### Public projects
+Of course if your code will only ever be imported, you don't need an entrypoint. But if you're building a public package (i.e., you'll publish it to [pypi](https://pypi.org/)), you should decide how many Python versions you want to support, and set the `requires-python` value appropriately. Python 3.8 is [about to hit end-of-life](https://devguide.python.org/versions/) so I think it's reasonable to support `>= 3.9` only. If you think your users are more cutting-edge you can nudge higher. The only downside of supporting older versions is missing out on the many improved things in [3.10](https://docs.python.org/3/whatsnew/3.10.html), [3.11](https://docs.python.org/3/whatsnew/3.11.html) and [3.12](https://docs.python.org/3/whatsnew/3.12.html).
 
+If it's an internal library or app, you should use a single version of Python across your libraries (and it should be Python 3.12) and you should manage a global lockfile (more on that [below](#monorepo).)
 ### Getting along with other Pythons
 There's one last thing to mention: Rye is great for managing Python projects, but it's not as good for random short-term Python environments for messing around, where bootstrapping a bunch of pyproject.toml stuff feels like overkill. You can try out using a "[Virtual Project](https://rye.astral.sh/guide/virtual/)" in Rye, but you can also just continue using pyenv+virtualenv. Just change this setting in Rye:
 ```bash
@@ -151,7 +150,7 @@ rye config --set behavior.global-python=false
 That will tell Rye to butt out of your other dirs where you want the `python` command to point somewhere else. Not that you asked, but I'd recommend checking out [mise-en-place](https://mise.jdx.dev/) as a replacement for pyenv, as it can also manage Node versions (so you can delete asdf), Ruby version etc...
 
 ## Linting
-(And formatting). The original series has Testing next, but I think Linting (and formatting) and Typing naturally come before Testing. This section will be very short. Throw out `black` and `isort` and `flake8` and all the other thingies, because [Ruff](https://docs.astral.sh/ruff/) now does everything they did, and Ruff comes for free with Rye!
+(And formatting). The original series has Testing next, but I think Linting, formatting, and Typing naturally come before Testing. This section will be very short. Throw out `black` and `isort` and `flake8` and all the rest, because [Ruff](https://docs.astral.sh/ruff/) now does everything they did, and Ruff comes for free with Rye!
 
 So all you need to do is:
 ```bash
@@ -159,7 +158,7 @@ rye fmt         # runs `ruff format`
 rye lint --fix  # runs `ruff check --fix`
 ```
 
-And that's basically it! Except since you obviously want a bit of control over how this works, so you can add the following to your pyproject (and fiddle with it your heart's content):
+And that's basically it! Except you obviously want a bit of control over how this works, so you can add the following to your pyproject (and fiddle with it as you like):
 ```toml
 [tool.ruff]
 # if this is a library, enter the _minimum_ version you
@@ -186,14 +185,14 @@ select = [
 
 [tool.ruff.lint.isort]
 # so it knows to group first-party stuff last
-known-first-party = ["myproj"]
+known-first-party = ["postmodern"]
 ```
 
 Anyway, that's all you need to know for linting (and formatting). Obviously you should get these integrated into your editor, but I'm [not going to tell you how to do that](https://rdrn.me/neovim/).
 ## Typing
-Types! Some people [don't like types](https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript) but writing maintainable, multi-contributor software in 2024 without types is something I want no part of. Many pixels have been spilled about the pros and cons of Python's approach to typing, and while it's great that for quick scripts and experiments you can ignore it, if you're starting something you except to care about in a few weeks, start on strict mode from day 1, don't wait until the debt builds.
+Types! Some people [don't like types](https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript) but writing maintainable, multi-contributor software in 2024 without types is some kind of black magic (that is best avoided). Many pixels have been spilled about the pros and cons of Python's approach to typing, and while it's great that for quick scripts and experiments you can ignore it, if you're starting something you except to care about in a few weeks, start with strict mode from day one. Don't wait until the debt builds.
 
-Hypermodern Python recommended mypy, but that's hard to do anymore except in specific cases. Pyright is [faster and generally a bit more useful](https://github.com/microsoft/pyright/blob/main/docs/mypy-comparison.md), and plays much better with your [LSP](https://microsoft.github.io/language-server-protocol/) (editor), which is where instant type feedback is most useful. The downside is it runs on Node and needs to download the rest of the universe to work, but until someone rewrites it in Rust, that's where we are.
+Hypermodern Python recommended [mypy](https://mypy.readthedocs.io/en/stable/), but that's hard to do anymore except in specific cases. Pyright is [faster and generally a bit more useful](https://github.com/microsoft/pyright/blob/main/docs/mypy-comparison.md), and plays much better with your [LSP](https://microsoft.github.io/language-server-protocol/) (editor), which is where instant type feedback is most useful. The downside is it runs on Node and needs to download the rest of the universe to work, but until someone rewrites it in Rust, that's where we are.
 
 So first install it:
 ```bash
@@ -224,6 +223,13 @@ From a nuts-and-bolts perspective all we need to do is install pytest:
 rye add --dev pytest
 ```
 
+I'll leave the testing to you, but we can setup a useless example to make sure that everything is working.
+```python
+# tests/test_nothing.py
+def test_nothing() -> None:
+    assert True
+```
+
 Now that we have a couple of tools setup, we may as well make it a bit easier to remember how to run them. You could always use a `Makefile`, but Rye has nice support for running simple scripts like this, so add this to the top (where it's easy to find) of your pyproject:
 ```toml
 [tool.rye.scripts]
@@ -234,7 +240,7 @@ test = "rye test"
 all = { chain = ["fmt", "lint", "check", "test"] }
 ```
 
-Then any time you've made some changes or are preparing to commit, you can just run `rye run all` and the full suite of tools will get to work for you!
+Then any time you've made some changes or are preparing to commit, you can run `rye run test` or just run `rye run all` and the full suite of tools will get to work for you!
 
 My predecessor recommended setting up [nox](https://nox.thea.codes/en/stable/) for automated testing in multiple Python environments. If you don't know what this means, or haven't heard of nox, then you probably don't need it. Unless you're writing a public library targetting multiple versions of Python, you don't need it. Even then, depending on the complexity of your project, you can probably get away with CI/CD alone (more below)x. And the simpler parts of nox (chaining linting, typechecking, testing) are already handled above by five lines of pyproject config.
 
@@ -288,6 +294,8 @@ The next thing you should do is write tests! I know, we covered that. But the cl
 
 An even better solution, and something that has been done to great effect in Rust, is to add tests to your docstrings as in the example below. Not only are these super useful to the users of your code, pytest will ensure that they stay up-to-date by failing your test suite if the tests fail!
 ```python
+# postmodern/adder.py
+
 # you can ignore the fancy Python 3.12 generic syntax if you like
 def add_two[T: (int, float)](num: T) -> T:
 	"""
@@ -297,7 +305,7 @@ def add_two[T: (int, float)](num: T) -> T:
 	>>> assert res == 2.5
 
 	>>> res = add_two(1)
-	>>> assert res == 3
+	>>> assert res == 4    # note this is wrong!
 	"""
 	return num + 2
 ```
@@ -309,13 +317,24 @@ To get pytest in on this, add the following to your config:
 addopts = "--doctest-modules"
 ```
 
-And if you're writing a public library, you'll likely want public documentation at some point. You can probably get quite far with a GitHub readme and good docstrings, since modern editors make it so easy to `goto-definition` on source files, but still. Sphinx or Mkdocs, you'll know when you need them, and they're not worth the trouble until then.
+Then when you run `rye run test`, you'll get an error something like below, so can can fix the test and get it green again.
+```bash
+_________ [doctest] postmodern.adder.add_two _________
+005     >>> res = add_two(0.5)
+006     >>> assert res == 2.5
+007
+008     >>> res = add_two(1)
+009     >>> assert res == 4
+UNEXPECTED EXCEPTION: AssertionError()
+```
+
+And if you're writing a public library, you'll likely want public documentation at some point. You can probably get quite far with a GitHub readme and good docstrings, since modern editors make it so easy to `goto-definition` on source files. Sphinx or Mkdocs are the next steps. You'll know when you need them, and they're not worth the trouble until then.
 
 ## CI/CD
-We're nearly there! Sharp-eyed readers will notice I didn't include [pre-commit](https://pre-commit.com/) anywhere above. This depends on your team and preferences, but there are cases where pre-commit becomes a bit of a configuration burden, doesn't play well with polyglot codebases (eg you also want to pre-commit your TypeScript code) and can just be annoying.
+We're nearly there! Sharp-eyed readers will notice I didn't include [pre-commit](https://pre-commit.com/) anywhere above. This depends on your team and preferences, but there are cases where pre-commit becomes a bit of a configuration burden, doesn't play well with polyglot codebases (eg you also want to pre-commit your TypeScript code) and can just be annoying. So I've excluded it by default, and we'll instead rely on our CI.
 
 ### Integration
-What you definitely do need, whether you use pre-commit or not, is enforce no-commit-to-main on your repository (duh) and then have a good CI pipeline running on your PRs that must be green before code is merged to main.
+What you definitely do need, whether you use pre-commit or not, is enforced no-commit-to-main on your repository and then a good CI pipeline running on your PRs that must be green before code is merged to main.
 
 Here's a simple example that runs all of our tools above on Github Actions. I've kept this as brief as possible, but you can see the fully-featured version [at the repository](https://github.com/carderne/postmodern-python/blob/main/.github/workflows/pr.yml). This will ensure, more strictly than pre-commit can, that everything that hits main is sparkling clean.
 ```yml
@@ -325,7 +344,7 @@ on:
   pull_request:
     types: [opened, reopened, synchronize]
 jobs:
-  test-myproj:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -356,7 +375,7 @@ And that's it! Now your code will get tested against two additional Python versi
 If you're building a library, you might be done once your code is merged. If it's a public library, you must tag and release a version, and push it to PyPI. You'll also need to set a version. You can either set one manually:
 ```toml
 [project]
-name = "myproj"
+name = "postmodern"
 version = "0.1.0"
 ...
 ```
@@ -364,7 +383,7 @@ version = "0.1.0"
 Or do it dynamically:
 ```toml
 [project]
-name = "myproj"
+name = "postmodern"
 dynamic = ["version"]
 ...
 
@@ -375,7 +394,7 @@ source = "scm"
 The latter approach will get the version from the git tag, and saves having to manually bump stuff all over the place. Also note that you don't need to set a `__version__ = "0.1.0"` anywhere in your code. Interested parties can get it with:
 ```python
 from importlib.metadata import version
-version("myproj")
+version("postmodern")
 ```
 
 With that done, you need to actually publish it. The Github Actions workflow below shows how you can do that. For this to work, you'll need to set up ["Trusted Publisher" with PyPI](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/). This allows you to publish without needing to copy-paste keys around (see, no keys in the workflow below!).
@@ -425,12 +444,12 @@ COPY . ./
 # if you DO want to install it, do that here
 
 # or however else you bootstrap your app
-CMD ["python", "/app/myproj/main.py"]
+CMD ["python", "/app/postmodern/main.py"]
 ```
 
 I'll wait while you go compare that to the Poetry approach, and I'll wait for you to figure out how to set up a multi-stage build so you don't have a pile of unneeded Poetry stuff left lying around in your final Docker image.
 ## Monorepo
-This is the bonus section that was promised! If you're building a library or a one-off, you might already be done. But if you're building something in a big team, and you don't have a monolith, you're likely to have multiple apps and libraries intermingling. Python's monorepo support isn't great, but it works, and it is far far better than the alternative repo-per-thingie approach that many companies take. The only place where separate repos make any sense is if you have teams with _very_ different code contribution patterns. For example, a data science team that uses GitHub to collaborate on Jupyter notebooks: minimal tests or CI, potentially meaningless commit messages. Apart from that, no matter the different languages, deployment patterns or products, there is no reason in 2024 to use repo-per-thingie.
+This is the bonus section that was promised! If you're building a library or a one-off, you might already be done. But if you're building something in a big team, and you don't have a monolith, you're likely to have multiple apps and libraries intermingling. Python's monorepo support isn't great, but it works, and it is far far better than the alternative repo-per-thingie approach that many teams take. The only place where separate repos make much sense is if you have teams with _very_ different code contribution patterns. For example, a data science team that uses GitHub to collaborate on Jupyter notebooks: minimal tests or CI, potentially meaningless commit messages. Apart from that, even with multiple languages and deployment patterns, you'll be far better off with a single repo than the repo-per-thing approach.
 
 So, how do you monorepo with Python? If you're in a bigger organisation, you might already have [Bazel](https://bazel.build/reference/be/python) or similar ([Pants](https://www.pantsbuild.org/), maybe?) set up for building your graph of libraries and dependencies. Although Python doesn't need to be "built" per se, a bunch of stuff does need to be installed and copied around and having these dependencies and connections properly controlled is valuable.
 
@@ -519,7 +538,7 @@ RUN pip install 'appA[local]' --constraint requirements.lock
 
 This is intentionally left a bit vague, as how exactly you want to manage this will depend on your team's preferences for clever-and-automated vs simple-and-reasonable solutions. For example, the Dockerfile above forces you to manually `COPY` the dependencies that you want for each library; a fancier solution would involve a script that automatically parses the pyproject.toml to figure out what's needed, copies just those directories into a build area, runs the Docker build... which is great and works, but people need to be on board with what exactly that script/process is getting up to!
 
-If anyone gets in touch and wants to see the fully-fledged version and working monorepo I'll be happy to write another post, but I suspect this is the point at which preferences and working styles overwhelm a cookiecutter approach.
+If anyone gets in touch and wants to see the fully-fledged version and working monorepo I'll be happy to write another post, but I suspect this is the point at which preferences and working styles overwhelm a cookiecutter approach. The alternative is to set up Bazel or Pants, or something like [Polylith](https://davidvujic.github.io/python-polylith-docs/), but all of those will also require significant buy-in from your team.
 
 And remember: even if the above sounds like a bit of a pain, it's still not a reason to have a hundred repos! You can just have a hundred non-workspaced packages instead, and use whatever dependency process you were already using.
 
