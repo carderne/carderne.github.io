@@ -8,10 +8,6 @@ It feels like eons, but it was actually just four years ago that [Hypermodern Py
 
 But now it's 2024, and it's finally all easy! A bunch of people saw how easy all this stuff was in Go and Rust, and did some amazing work to drag the Python ecosystem forward. It's no longer clever or special to do this stuff; everyone should be doing it.
 
-I was prompted to write this by two things:
-1. I built a toy script for an interview the other day and in the discussion, it became clear that I had some evangelising to do.
-3. [This 2024 blog post](https://matt.sh/python-project-structure-2024) which is recent and highly opinionated, but still missing out on the best bits of the modern tooling.
-
 If you just want the template, it's coming below in the TLDR. Otherwise hang in, I'm going to follow much the same structure as the original Hypermodern posts, as follows:
 1. [Setup](#setup)
 2. [Linting](#linting)
@@ -493,7 +489,7 @@ members = ["lib*", "app*"]  # these are the packages that are included
 
 Then you can create your library and app projects as usual. But there are a couple of gotchas around interdependencies that aren't very well-documented. I recommended way up at the start of this post to tell Rye to use the [PDM build backend](https://backend.pdm-project.org/) because it handles this situation slightly better than the the default [Hatch](https://github.com/pypa/hatch), although this might not be the case for long.
 
-The core complexity is this: you have a single virtual environment, so everything is installed and available all the time. If `libA` has `pydantic` as a dependency, in your _local development_, `appA` will be able to import pydantic as well; but in _production_ (which we'll cover in a bit) it definitely won't. In addition, you shouldn't try to do `rye add ../libA` from `appA`, as that's a relative path and pip will get mad if you try to do that. So what do you do?
+The core complexity is this: you have a single virtual environment, so everything is installed and available all the time. If `libA` has `pydantic` as a dependency, in your _local development_, `appA` will be able to import pydantic as well; but in _production_ (which we'll cover in a bit) it definitely won't. In addition, you shouldn't try to do `rye add libaA --path ../libA` from `appA`: it will work but it will use the absolute path to that lib, which means it won't work for anyone else.
 ### Testing dependencies in isolation
 The first thing is to make sure that your PR CI process runs its tests with the correct non-global dependencies installed. This is very simple: in the Github Actions workflow, instead of using Rye, just use plain pip as you did in the Dockerfile:
 ```yml
