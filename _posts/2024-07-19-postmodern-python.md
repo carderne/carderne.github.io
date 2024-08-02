@@ -133,6 +133,8 @@ The next is to add a script in the standard Python way. The example below will m
 "postmodern" = "postmodern:main"
 ```
 
+Thanks to [harkabeeparolus](https://github.com/harkabeeparolus) for pointing out that you can also just run `rye init --script` which will do both of these things for you!
+
 ### Public projects
 Of course if your code will only ever be imported, you don't need an entrypoint. But if you're building a public package (i.e., you'll publish it to [pypi](https://pypi.org/)), you should decide how many Python versions you want to support, and set the `requires-python` value appropriately. Python 3.8 is [about to hit end-of-life](https://devguide.python.org/versions/) so I think it's reasonable to support `>= 3.9` only. If you think your users are more cutting-edge you can nudge higher. The only downside of supporting older versions is missing out on the many improved things in [3.10](https://docs.python.org/3/whatsnew/3.10.html), [3.11](https://docs.python.org/3/whatsnew/3.11.html) and [3.12](https://docs.python.org/3/whatsnew/3.12.html).
 
