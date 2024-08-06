@@ -299,6 +299,7 @@ table.books, .books tr, .books td {
 
 table.books {
     font-size: 0.75rem;
+    overflow-x: clip;
 }
 
 tr.book-item {
