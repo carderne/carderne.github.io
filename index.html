@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h2 style="margin-top:0;">Latest posts</h2>
-{%- for post in site.posts | limit: 5 -%}
+{%- for post in site.posts limit: 5 -%}
 {%- unless post.exclude %}
 <a class="archive-item" href="{{ post.url | relative_url }}" rel="permalink">
   <div class="">
