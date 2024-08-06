@@ -4,22 +4,17 @@ layout: default
 
 {%- for post in site.posts -%}
 {%- unless post.exclude %}
-        <div>
-            <div class="header">
-                <span class="archive-item-title vert-center">
-                    <a href="{{ post.url | relative_url }}" rel="permalink">
-                        {{ post.title | truncate: 80 }}
-                    </a>
-                </span>
-                <span class="archive-item-date vert-center">
-                    <time datetime="{{ post.date | date_to_xmlschema }}">
-                        {{ post.date | date: "%e %b %Y" }}
-                    </time>
-                </span>
-            </div>
-            <p class="archive-item-excerpt">
-                {{ post.excerpt | truncate: 100}}
-            </p>
-        </div>
+<a class="archive-item" href="{{ post.url | relative_url }}" rel="permalink">
+  <div class="">
+    <span class="archive-item-title vert-center">
+      {{ post.title | truncate: 80 }}
+    </span>
+    <span class="archive-item-date vert-center">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%e %b %Y" }}
+      </time>
+    </span>
+  </div>
+</a>
 {% endunless -%}
 {%- endfor -%}

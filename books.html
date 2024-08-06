@@ -9,26 +9,26 @@ title: Books
     are book length...
     <small class="meta">(RR) = Reread (AB) = Audiobook</small>
 </header>
-<div class="books">
+<table class="books">
     {%- for book in site.data.books -%}
-    <div class="book-rating-num" itemprop=reviewRating>
-      <span>{{ book.Rating }}</span>
-      {% if book.Rating > 0 %}<img class="star" src="/assets/star.svg">{% endif %}
-    </div>
-    <div class="book-title">
-        <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
-        <span itemprop=name>{{ book.Title }}</span>
-        <span class="meta">{% if book.Reread and book.Reread != "n" %}(RR){% endif %}</span>
-        <span class="meta">{% if book.Audiobook and book.Audiobook != "n" %}(AB){% endif %}</span>
-    </div>
-    <div class="book-author" itemprop=author>{{ book.Author }}</div>
-    <div class="book-date" itemprop=dateCreated>{{ book.Read | date: "%d %b '%y" }}</div>
-    <div class="book-rating">
-        {% if book.Rating >= 1 %}<img class="star" src="/assets/star.svg">{% endif %}
-        {% if book.Rating >= 2 %}<img class="star" src="/assets/star.svg">{% endif %}
-        {% if book.Rating >= 3 %}<img class="star" src="/assets/star.svg">{% endif %}
-        {% if book.Rating >= 4 %}<img class="star" src="/assets/star.svg">{% endif %}
-        {% if book.Rating >= 5 %}<img class="star" src="/assets/star.svg">{% endif %}
-    </div>
+    <tr class="book-item">
+      <td class="book-title-cont">
+          <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
+          <span class="book-title">
+            <span itemprop=name>{{ book.Title }}</span>
+            <span class="meta">{% if book.Reread and book.Reread != "n" %}(RR){% endif %}</span>
+            <span class="meta">{% if book.Audiobook and book.Audiobook != "n" %}(AB){% endif %}</span>
+          </span>
+      </td>
+      <td class="book-author" itemprop=author>{{ book.Author }}</td>
+      <td class="book-date" itemprop=dateCreated>{{ book.Read | date: "%b %y" }}</td>
+      <td class="book-rating">
+          {% if book.Rating >= 1 %}<img class="star" src="/assets/star.svg">{% endif %}
+          {% if book.Rating >= 2 %}<img class="star" src="/assets/star.svg">{% endif %}
+          {% if book.Rating >= 3 %}<img class="star" src="/assets/star.svg">{% endif %}
+          {% if book.Rating >= 4 %}<img class="star" src="/assets/star.svg">{% endif %}
+          {% if book.Rating >= 5 %}<img class="star" src="/assets/star.svg">{% endif %}
+      </td>
+    </tr>
     {%- endfor -%}
-</div>
+</table>
