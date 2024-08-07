@@ -3,32 +3,24 @@ layout: default
 title: Books
 ---
 
-<header style="margin-bottom:20px;">
-    The
-    <span class="book-shade-ex">pink bars</span>
-    are book length...
-    <small class="meta">(RR) = Reread (AB) = Audiobook</small>
-</header>
 <table class="books">
-    {%- for book in site.data.books -%}
-    <tr class="book-item">
-      <td class="book-title-cont">
-          <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
-          <span class="book-title">
-            <span itemprop=name>{{ book.Title }}</span>
-            <span class="meta">{% if book.Reread and book.Reread != "n" %}(RR){% endif %}</span>
-            <span class="meta">{% if book.Audiobook and book.Audiobook != "n" %}(AB){% endif %}</span>
-          </span>
-      </td>
-      <td class="book-author" itemprop=author>{{ book.Author }}</td>
-      <td class="book-date" itemprop=dateCreated>{{ book.Read | date: "%b %y" }}</td>
-      <td class="book-rating">
-          {% if book.Rating >= 1 %}<img class="star" src="/assets/star.svg">{% endif %}
-          {% if book.Rating >= 2 %}<img class="star" src="/assets/star.svg">{% endif %}
-          {% if book.Rating >= 3 %}<img class="star" src="/assets/star.svg">{% endif %}
-          {% if book.Rating >= 4 %}<img class="star" src="/assets/star.svg">{% endif %}
-          {% if book.Rating >= 5 %}<img class="star" src="/assets/star.svg">{% endif %}
-      </td>
-    </tr>
-    {%- endfor -%}
+  {%- for book in site.data.books -%}
+  <tr class="book-item">
+    <td class="book-title-cont">
+      <span class="book-shade" style="--data-size:{{ book.Pages }}"></span>
+      <span class="book-title">
+        <span itemprop=name>{{ book.Title }}</span>
+        {% if book.Reread and book.Reread != "n" %}<span title="Re-read" class="meta">(RR)</span>{% endif %}
+        {% if book.Audiobook and book.Audiobook != "n" %}<span title="Audiobook" class="meta">(AB)</span>{% endif %}
+      </span>
+    </td>
+    <td class="book-author" itemprop=author>{{ book.Author }}</td>
+    <td class="book-date" itemprop=dateCreated>{{ book.Read | date: "%b %y" }}</td>
+    <td class="book-rating">
+      {% for i in (1..book.Rating) %}
+        <img class="star" src="/assets/star.svg">
+      {% endfor %}
+    </td>
+  </tr>
+  {%- endfor -%}
 </table>

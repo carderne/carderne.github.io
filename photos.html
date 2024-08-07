@@ -4,34 +4,42 @@ title: Photos
 ---
 
 <div class="photos">
-    {%- for photo in site.data.photos -%}
-    {%- assign a = photo.src | split: '/20' -%}
-    {%- assign id = a[1] | split: '.' -%}
-    {%- assign id = id[0] -%}
-    <div class="thumb" id="img-{{ id }}">
-        <label for="{{ forloop.index }}">
-            <img loading="lazy" class="thumb-image" src="{{ photo.src }}" alt="{{ photo.caption }}">
-            <div class="caption">
-                <span class="photo-date">{{ photo.date }}</span>
-                <span class="photo-caption">{{ photo.caption }}</span>
-            </div>
-        </label>
-        <input class="modal-state" id="{{ forloop.index }}" type="checkbox">
-        <div class="modal">
-            <div id="left-{{- forloop.index -}} " style="left:20px" class="modal-arrow">ᐸ</div>
-            <div id="right-{{- forloop.index -}}" style="right:20px" class="modal-arrow">ᐳ</div>
-            <label for="{{ forloop.index }}">
-                <div class="modal-content">
-                    <img loading="lazy" class="modal-photo" src="{{ photo.src }}" alt="{{ photo.caption }}">
-                    <div>
-                        <span class="photo-date">{{ photo.date }}</span>
-                        <span class="photo-caption">{{ photo.caption }}</span>
-                    </div>
-                </div>
-            </label>
+  {%- for photo in site.data.photos -%}
+  {%- assign a = photo.src | split: '20' -%}
+  {%- assign id = a[1] | split: '.' -%}
+  {%- assign id = id[0] -%}
+  <div class="thumb" id="img-{{ id }}">
+    <label for="{{ forloop.index }}">
+      <img loading="lazy" class="thumb-image" src="/assets/photos/{{ photo.src }}" alt="{{ photo.caption }}">
+      <div class="caption">
+        <span class="photo-date">{{ photo.date }}</span>
+        <span class="photo-caption">{{ photo.caption }}</span>
+      </div>
+    </label>
+    <input class="modal-state" id="{{ forloop.index }}" type="checkbox">
+    <div class="modal">
+      <div id="left-{{- forloop.index -}} " style="left:20px" class="modal-arrow">ᐸ</div>
+      <div id="right-{{- forloop.index -}}" style="right:20px" class="modal-arrow">ᐳ</div>
+      <label for="{{ forloop.index }}">
+        <div class="modal-content">
+          {% if photo.video %}
+            <video controls class="modal-photo">
+                <source src="/assets/photos/{{ photo.video }}" type="video/mp4">
+                  <img loading="lazy" class="modal-photo" src="/assets/photos/{{ photo.src }}" alt="{{ photo.caption }}">
+                </source>
+            </video>
+          {% else %}
+            <img loading="lazy" class="modal-photo" src="/assets/photos/{{ photo.src }}" alt="{{ photo.caption }}">
+          {% endif %}
+          <div>
+            <span class="photo-date">{{ photo.date }}</span>
+            <span class="photo-caption">{{ photo.caption }}</span>
+          </div>
         </div>
+      </label>
     </div>
-    {%- endfor -%}
+  </div>
+  {%- endfor -%}
 </div>
 
 <script>

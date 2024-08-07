@@ -1,117 +1,152 @@
-- src: /assets/photos/2020-08-31-b.jpg
+- src: 2024-05-01.jpg
+  date: May 2024
+  caption: May Morning, Oxford (click for video)
+  video: 2024-05-01.mp4
+- src: 2023-11-04.jpg
+  date: November 2023
+  caption: Thailand, showing off
+- src: 2023-05-06.jpg
+  date: May 2023
+  caption: Our walk along the Sfakiá coast
+- src: 2022-08-04.jpg
+  date: August 2022
+  caption: Sunrise on Mount of the Holy Cross (4,270m)
+- src: 2022-08-02.jpg
+  date: August 2022
+  caption: An unspoiled valley in Colorado
+- src: 2022-04-16.jpg
+  date: April 2022
+  caption: Tintagel Castle (King Arthur's birth place?)
+- src: 2022-01-11.jpg
+  date: January 2022
+  caption: Bird in the Binoculars
+- src: 2021-10-05.jpg
+  date: October 2021
+  caption: Leaving Andorra for Puigcerdà
+- src: 2021-10-04.jpg
+  date: October 2021
+  caption: Crossing into Andorra
+- src: 2021-09-28.jpg
+  date: September 2021
+  caption: Sleeping on Mont Valier (2,838m)
+- src: 2021-09-04.jpg
+  date: September 2021
+  caption: Bothy life in Skye
+
+- src: 2020-08-31-b.jpg
   date: Sep 2020
   caption: Camping is hard when there are cows everywhere
-- src: /assets/photos/2020-08-31-a.jpg
+- src: 2020-08-31-a.jpg
   date: Sep 2020
   caption: Fresh summer snow in the Pyrenees
-- src: /assets/photos/2020-08-04.jpg
+- src: 2020-08-04.jpg
   date: Aug 2020
   caption: Camping is easy when there's water everywhere!
-- src: /assets/photos/2020-01-04.jpg
+- src: 2020-01-04.jpg
   date: Jan 2020
   caption: Fantastic night's sleep next to La Brecha
-- src: /assets/photos/2019-12-28.jpg
+- src: 2019-12-28.jpg
   date: Dec 2019
   caption: Somewhere around Park Güell
-- src: /assets/photos/2019-10-01-b.jpg
+- src: 2019-10-01-b.jpg
   date: Oct 2019
   caption: Trail long gone, but smiles abound
-- src: /assets/photos/2019-08-08.jpg
+- src: 2019-08-08.jpg
   date: Aug 2019
   caption: All alone on my way to Zermatt
-- src: /assets/photos/2019-06-13.jpg
+- src: 2019-06-13.jpg
   date: June 2019
   caption: Floating somewhere in the Mediterranean
-- src: /assets/photos/2019-03-16.jpg
+- src: 2019-03-16.jpg
   date: Mar 2019
   caption: About to cross into the sun near the peak of Aneto
-- src: /assets/photos/2019-02-12.jpg
+- src: 2019-02-12.jpg
   date: Feb 2019
   caption: Benalauría, the coziest place to be in February
-- src: /assets/photos/2019-01-23.jpg
+- src: 2019-01-23.jpg
   date: Jan 2019
   caption: Kloofing near Cape Town
-- src: /assets/photos/2018-09-31-c.jpg
+- src: 2018-09-31-c.jpg
   date:  July 2018
   caption: Heading home from the top of Korona Peak, Kyrgyzstan
-- src: /assets/photos/2018-09-31-b.jpg
+- src: 2018-09-31-b.jpg
   date:  July 2018
   caption: Topping out a slightly sketchy ice-section
-- src: /assets/photos/2018-09-31-a.jpg
+- src: 2018-09-31-a.jpg
   date: July 2018
   caption: Always happy to be following
-- src: /assets/photos/2018-07-05.jpg
+- src: 2018-07-05.jpg
   date: July 2018
   caption: Having fun on Table Mountain
-- src: /assets/photos/2018-05-28-b.jpg
+- src: 2018-05-28-b.jpg
   date: May 2018
   caption: Moonrise near Bishop Pass in the Southern Sierra
-- src: /assets/photos/2018-05-28-a.jpg
+- src: 2018-05-28-a.jpg
   date: July 2018
   caption: Looking out west over the Sierra Nevada
-- src: /assets/photos/2018-05-27-a.jpg
+- src: 2018-05-27-a.jpg
   date: May 2018
   caption: Two South Africans learn about post-holing
-- src: /assets/photos/2018-04-05.jpg
+- src: 2018-04-05.jpg
   date: April 2018
   caption: Braving a mild spring tourist influx in DC
-- src: /assets/photos/2018-03-26.jpg
+- src: 2018-03-26.jpg
   date: March 2018
   caption: Touring in Sweden — 'it gets better, we promise!'
-- src: /assets/photos/2018-03-25.png
+- src: 2018-03-25.png
   date: March 2018
   caption: Braving a mild Spring blizzard in Jämtland
-- src: /assets/photos/2018-03-24.jpg
+- src: 2018-03-24.jpg
   date: March 2018
   caption: A beautiful spot in the woods, near Norway
-- src: /assets/photos/2018-03-08.jpg
+- src: 2018-03-08.jpg
   date: March 2018
   caption: Spanish POW
-- src: /assets/photos/2017-12-05.jpg
+- src: 2017-12-05.jpg
   date: December 2017
   caption: A very exposed time on 'Hoek en Lys' in Jonkershoek
-- src: /assets/photos/2017-11-05.jpg
+- src: 2017-11-05.jpg
   date: November 2017
   caption: An autumn treat in Washington DC's rock creek
-- src: /assets/photos/2017-10-26.jpg
+- src: 2017-10-26.jpg
   date: October 2017
   caption: Þingvellir; apparently they invented parliament here
-- src: /assets/photos/2017-08-26-c.jpg
+- src: 2017-08-26-c.jpg
   date: August 2017
   caption: Humbling sights (and scary ridges) in the Bugaboos
-- src: /assets/photos/2017-08-21-b.jpg
+- src: 2017-08-21-b.jpg
   date: August 2017
   caption: The top of Mt Adams - not a bad spot for the Great Eclipse
-- src: /assets/photos/2017-08-12.jpg
+- src: 2017-08-12.jpg
   date: August 2017
   caption: The Pacific Northwest sure is beautiful
-- src: /assets/photos/2017-07-31.jpg
+- src: 2017-07-31.jpg
   date: July 2017
   caption: Saying goodbye to Ometepe
-- src: /assets/photos/2017-05-07.jpg
+- src: 2017-05-07.jpg
   date: May 2017
   caption: A lucky stumble upon some Civil War re-enactment
-- src: /assets/photos/2016-07-26.jpg
+- src: 2016-07-26.jpg
   date: July 2016
   caption: Greetings to the Swedish coast guard
-- src: /assets/photos/2016-04-16.jpg
+- src: 2016-04-16.jpg
   date: April 2016
   caption: Getting vertical on some ice in Lappland
-- src: /assets/photos/2015-12-27-b.jpg
+- src: 2015-12-27-b.jpg
   date: December 2015
   caption: A mythical Michael on the Amathole Trail
-- src: /assets/photos/2015-07-08-a.jpg
+- src: 2015-07-08-a.jpg
   date: July 2015
   caption: Midi-d'Ossau and Anayet in the Pyrenees
-- src: /assets/photos/2015-05-20-a.jpg
+- src: 2015-05-20-a.jpg
   date: May 2015
   caption: First outside climbing of the year
-- src: /assets/photos/2015-05-16.jpg
+- src: 2015-05-16.jpg
   date: May 2015
   caption: Commandeering a bathtub in a Swedish lake
-- src: /assets/photos/2015-04-15.jpg
+- src: 2015-04-15.jpg
   date: April 2015
   caption: A pretty tree in Stockholm
-- src: /assets/photos/2015-02-04.jpg
+- src: 2015-02-04.jpg
   date: February 2015
   caption: The mythical Lapporten near Abisko, Swedish Lappland
