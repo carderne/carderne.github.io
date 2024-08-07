@@ -23,9 +23,9 @@ title: Photos
       <label for="{{ forloop.index }}">
         <div class="modal-content">
           {% if photo.video %}
-            <video controls class="modal-photo">
+            <video controls style="justify-content:center;width:70%;object-fit:scale-down;">
                 <source src="/assets/photos/{{ photo.video }}" type="video/mp4">
-                  <img loading="lazy" class="modal-photo" src="/assets/photos/{{ photo.src }}" alt="{{ photo.caption }}">
+                  Videos not supported
                 </source>
             </video>
           {% else %}
@@ -48,7 +48,14 @@ const get=document.getElementById.bind(document);
 const queryAll=document.querySelectorAll.bind(document);
 try{get(new URL(window.location.href).searchParams.get("i")).checked=true;}catch(e){}
 queryAll(".modal-arrow").forEach((el)=>{el.onclick=(e)=>{
-    [dir,idx]=e.target.id.split("-");
-    try{get((+idx+(dir=="right"?1:-1)).toString()).checked=true; get(idx).checked=false;}catch(e){}
+  [dir,idx]=e.target.id.split("-");
+  try{get((+idx+(dir=="right"?1:-1)).toString()).checked=true; get(idx).checked=false;}catch(e){}
 };});
+document.addEventListener("keydown", (e) => {
+  if (event.key === "Escape" || event.key === "Esc") {
+    queryAll(".modal-state").forEach((el)=>{
+      el.checked = false;
+    });
+  }
+});
 </script>
