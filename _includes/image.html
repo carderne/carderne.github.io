@@ -1,7 +1,7 @@
 {% assign id = include.url | split: "/" | last %}
 <div>
     <label for="{{ id }}">
-        <figure class="image">
+        <figure>
             <img load="lazy" src="{{ include.url }}" alt="{{ include.description }}" class="center-img {{ include.class | default: '' }}">
             <figcaption>
               {{ include.description }}

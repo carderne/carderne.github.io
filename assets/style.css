@@ -132,13 +132,12 @@ img {
 }
 
 .center-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: min(70ch, 100%);
+    padding: 0 0ch;
 }
 
 .narrow-img {
-    width: 70%;
+    padding: 0 4ch;
 }
 
 canvas {
@@ -637,7 +636,7 @@ table tr:nth-child(2n) {
     }
 
     .narrow-img {
-        width: 50%;
+        padding: 0 10ch;
     }
 
     figure {

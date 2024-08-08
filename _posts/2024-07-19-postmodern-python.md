@@ -3,7 +3,10 @@ layout: single
 title: "Beyond Hypermodern: Python is easy now"
 date: 2024-07-19
 excerpt: Postmodern, anyone?
+image: /assets/images/2024/postmodern.png
 ---
+{% include image.html url="/assets/images/2024/postmodern.png" description="" class="narrow-img" %}
+
 It feels like eons, but it was actually just four years ago that [Hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/) did the rounds, going over the latest Best Practises™ for Python tooling. I remember reading it with a feeling of panic: I need to install like 20 packages, configure 30 more and do all this _stuff_ just to write some Python.
 
 But now it's 2024, and it's finally all easy! A bunch of people saw how easy all this stuff was in Go and Rust, and did some amazing work to drag the Python ecosystem forward. It's no longer clever or special to do this stuff; everyone should be doing it.
