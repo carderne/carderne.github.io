@@ -7,6 +7,10 @@ image: /assets/images/2024/postmodern.png
 ---
 {% include image.html url="/assets/images/2024/postmodern.png" description="" class="narrow-img" %}
 
+_📢 Update: since writing this, I’ve released a new project called [Una](https://una.rdrn.me/) that makes Python monorepos easy. It's still alpha quality and currently only works with Rye + Hatch, but it's improving and growing'_
+
+-------------
+
 It feels like eons, but it was actually just four years ago that [Hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/) did the rounds, going over the latest Best Practises™ for Python tooling. I remember reading it with a feeling of panic: I need to install like 20 packages, configure 30 more and do all this _stuff_ just to write some Python.
 
 But now it's 2024, and it's finally all easy! A bunch of people saw how easy all this stuff was in Go and Rust, and did some amazing work to drag the Python ecosystem forward. It's no longer clever or special to do this stuff; everyone should be doing it.
@@ -467,14 +471,14 @@ $ tree .
 │   ├── pyproject.toml       # this only defines the workspace
 │   ├── requirements.lock    # lockfile for this workspace
 │   ├── .venv                # venv for this workspace
-│   ├── libA
+│   ├── lib_a
 │   │   ├── pyproject.toml   # a normal pyproject for this package
-│   │   └── libA
+│   │   └── lib_a
 │   │       └── __init__.py  # library code here
-│   └── appA
+│   └── app_a
 │       ├── pyproject.toml
-│       └── appA
-│           └── __init__.py  # app code here, probably imports libA
+│       └── app_a
+│           └── __init__.py  # app code here, probably imports lib_a
 └── workspace2
     └── ...                  # separate venv, lockfile etc
 ```
@@ -494,7 +498,7 @@ members = ["lib*", "app*"]  # these are the packages that are included
 
 Then you can create your library and app projects as usual. But there are a couple of gotchas around interdependencies that aren't very well-documented. I recommended way up at the start of this post to tell Rye to use the [PDM build backend](https://backend.pdm-project.org/) because it handles this situation slightly better than the the default [Hatch](https://github.com/pypa/hatch), although this might not be the case for long.
 
-The core complexity is this: you have a single virtual environment, so everything is installed and available all the time. If `libA` has `pydantic` as a dependency, in your _local development_, `appA` will be able to import pydantic as well; but in _production_ (which we'll cover in a bit) it definitely won't. In addition, you shouldn't try to do `rye add libaA --path ../libA` from `appA`: it will work but it will use the absolute path to that lib, which means it won't work for anyone else.
+The core complexity is this: you have a single virtual environment, so everything is installed and available all the time. If `lib_a` has `pydantic` as a dependency, in your _local development_, `app_a` will be able to import pydantic as well; but in _production_ (which we'll cover in a bit) it definitely won't. In addition, you shouldn't try to do `rye add lib_a --path ../lib_a` from `app_a`: it will work but it will use the absolute path to that lib, which means it won't work for anyone else.
 ### Testing dependencies in isolation
 The first thing is to make sure that your PR CI process runs its tests with the correct non-global dependencies installed. This is very simple: in the Github Actions workflow, instead of using Rye, just use plain pip as you did in the Dockerfile:
 ```yml
@@ -507,7 +511,7 @@ The first thing is to make sure that your PR CI process runs its tests with the 
         run: |
           # as with the Dockerfile, pip doesn't like 'file:.' entries
           sed -i '/^-e file:/d' requirements-dev.lock
-          pip install libA --constraint requirements-dev.lock
+          pip install lib_a --constraint requirements-dev.lock
           pip install ruff pyright pytest --constraint requirements-dev.lock
       - run: python -m ruff format --check
       - run: python -m ruff lint
@@ -517,11 +521,11 @@ The first thing is to make sure that your PR CI process runs its tests with the 
 
 So there's a downside that in local dev, you may accidentally import a library without realising you don't actually have it installed in that package, but at least your CI will catch you.
 ### Internal dependencies
-So how we do we start using `libA` from `appA`? There's no standardised method (yet), but I'll explain one approach. To start with, _manually_ add the following to appA's pyproject (this is the standardised method to specify [optional dependencies](https://setuptools.pypa.io/en/latest/userguide/dependency_management.html#optional-dependencies)):
+So how we do we start using `lib_a` from `app_a`? There's no standardised method (yet), but I'll explain one approach. To start with, _manually_ add the following to app_a's pyproject (this is the standardised method to specify [optional dependencies](https://setuptools.pypa.io/en/latest/userguide/dependency_management.html#optional-dependencies)):
 ```toml
 [project.optional-dependencies]
 local = [
-  "libA @ file:///${PROJECT_ROOT}/libA",
+  "lib_a @ file:///${PROJECT_ROOT}/lib_a",
 ]
 ```
 
@@ -532,15 +536,15 @@ That `${PROJECT_ROOT}` is how PDM gets around Python's aversion to relative path
 # RUN pip install . --constraint requirements.lock
 
 # we instead do the following (from workspace route)
-COPY appA appA
-COPY libA libA
-RUN pip install 'appA[local]' --constraint requirements.lock
+COPY app_a app_a
+COPY lib_a lib_a
+RUN pip install 'app_a[local]' --constraint requirements.lock
 ```
 
 This is intentionally left a bit vague, as how exactly you want to manage this will depend on your team's preferences for clever-and-automated vs simple-and-reasonable solutions. For example, the Dockerfile above forces you to manually `COPY` the dependencies that you want for each library; a fancier solution would involve a script that automatically parses the pyproject.toml to figure out what's needed, copies just those directories into a build area, runs the Docker build... which is great and works, but people need to be on board with what exactly that script/process is getting up to!
 
-If anyone gets in touch and wants to see the fully-fledged version and working monorepo I'll be happy to write another post, but I suspect this is the point at which preferences and working styles overwhelm a cookiecutter approach. The alternative is to set up Bazel or Pants, or something like [Polylith](https://davidvujic.github.io/python-polylith-docs/), but all of those will also require significant buy-in from your team.
-
-And remember: even if the above sounds like a bit of a pain, it's still not a reason to have a hundred repos! You can just have a hundred non-workspaced packages instead, and use whatever dependency process you were already using.
-
 That's that. Hopefully that was useful! Things have come a long way since Hypermodern Python was published, and writing maintainable Python has never been easier.
+
+--------------------
+
+_Update: since writing this, I've released a new project called [Una](https://una.rdrn.me/) that makes working with monorepos with Rye much easier. Basically it figures out all the co-dependencies for you at build-time so your Dockerfile can be as simple as `RUN pip install my_app.whl`. It's still in early development but it's growing!_
