@@ -7,7 +7,9 @@ image: /assets/images/2024/postmodern.png
 ---
 {% include image.html url="/assets/images/2024/postmodern.png" description="" class="narrow-img" %}
 
-_📢 Update: since writing this, I’ve released a new project called [Una](https://una.rdrn.me/) that makes Python monorepos easy. It's still alpha quality and currently only works with Rye + Hatch, but it's improving and growing'_
+_📢 Update: since writing this, I’ve released a new project called [Una](https://una.rdrn.me/) that makes Python monorepos easy. It's still alpha quality and currently only works with Rye + Hatch, but it's improving and growing._
+
+_📢 Update 2: [uv](https://github.com/astral-sh/uv) is nearing feature-parity with Rye, so at some point soon I'll update this post to use that instead. It'll be an almost drop-in replacement._
 
 -------------
 
