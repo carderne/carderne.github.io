@@ -15,7 +15,7 @@ title: Books
       </span>
     </td>
     <td class="book-author" itemprop=author>{{ book.Author }}</td>
-    <td class="book-date" itemprop=dateCreated>{{ book.Read | date: "%b %y" }}</td>
+    <td class="book-date" itemprop=dateCreated>{{ book.Read | date: "%e %b %Y" }}</td>
     <td class="book-rating">
       {% for i in (1..book.Rating) %}
         <img class="star" src="/assets/star.svg">

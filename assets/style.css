@@ -317,9 +317,6 @@ td.book-title-cont {
 .book-title {
   display: inline-block;
   max-width: 20ch;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 td.book-author {
@@ -328,15 +325,13 @@ td.book-author {
   line-height: 1rem;
   vertical-align: middle;
   max-width: 12ch;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: var(--muted);
 }
 
 td.book-date {
-  max-width: 10ch;
-  width: 10ch;
+  font-size: 0.6rem;
+  max-width: 16ch;
+  width: 16ch;
   padding-right: 1rem !important;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
@@ -592,15 +587,22 @@ table tr:nth-child(2n) {
 
     .book-title {
       max-width: 30ch;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     td.book-author {
       max-width: 18ch;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     td.book-date {
-      max-width: 12ch;
-      width: 12ch;
+      font-size: 0.8rem;
+      max-width: 15ch;
+      width: 15ch;
       padding-right: 1rem !important;
     }
 
