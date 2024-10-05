@@ -140,6 +140,10 @@ img {
     padding: 0 4ch;
 }
 
+.very-narrow-img {
+    padding: 0 10ch;
+}
+
 canvas {
     outline: none;
 }
@@ -639,6 +643,10 @@ table tr:nth-child(2n) {
 
     .narrow-img {
         padding: 0 10ch;
+    }
+
+    .very-narrow-img {
+        padding: 0 18ch;
     }
 
     figure {
