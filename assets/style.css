@@ -499,7 +499,7 @@ label figure {
 }
 
 .highlighter-rouge {
-    font-family: Monaco, Consolas, monospace;
+    font-family: monaco, consolas, monospace;
 }
 
 div.highlighter-rouge {
@@ -563,6 +563,19 @@ table tr:nth-child(2n) {
 .nc, .nn { color: #b58900; }
 .na, .nf, .nx { color: #1e6fa8; }
 .MathJax_Display .mi { color: black !important; }
+
+.wrapped-line {
+  display: inline-block;
+}
+.highlight-added {
+  background-color: rgba(0, 255, 0, 0.1) !important;
+  margin: 0 -1em;
+  padding: 0 1em;
+  width: calc(100% + 2em);
+}
+.highlight-deleted {
+  background-color: rgba(255, 0, 0, 0.1) !important;
+}
 
 @media screen and (min-width: 768px) {
     a.anchor {
