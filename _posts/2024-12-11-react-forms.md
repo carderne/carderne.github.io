@@ -12,18 +12,23 @@ _In the beginning_, the only way with React was single-page-apps (SPAs) with mou
 [Remix](https://remix.run/) pushed hard on forms and backend routing. Hit a form, reload. Next.js saw that this was good, so they created the App router and a nightmare transition for their users, but the dust is now settling (at least for greenfield projects). And now all this stuff has found its way into React itself, in the form [React Server Components](https://react.dev/reference/rsc/server-components) and new Form tooling.
 
 But they're new and slightly weird and the best patterns for some basic things still aren't obvious. Specifically:
-1. Data validation
-2. Handling errors
-3. Maintaining state
-4. Optimistic loading
+1. [Data validation](#data-validation)
+2. [Error handling](#error-handling)
+3. [Maintaining state](#maintaining-state)
+4. [Optimistic loading](#optimistic-loading)
+5. [Client validation](#client-validation)
 
-So I played around a bit and came up with what I think is a pretty good setup for fancy React 19 forms. I'm going to assume you're already familiar with with Server Components and `"use server"` and forms in general. If not, it's worth reading [the Next.js docs on the topic](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations) and following the interesting links where they lead. As always, you can just skip to the repo [carderne/react-forms](https://github.com/carderne/react-forms) (or scroll to the bottom) if you prefer.
+So I'm sharing what I think is a pretty good setup for fancy React 19 forms. I'm going to assume you're already familiar with with Server Components and `"use server"` and forms in general. If not, it's worth reading [the Next.js docs on the topic](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations) and following the interesting links where they lead. As always, you can just skip to the repo [carderne/react-forms](https://github.com/carderne/react-forms) (or scroll to the bottom) if you prefer.
 
-## Starting point
+This post is structured according to the five points above, with the idea that you can step off at any point: each step adds more goodies, but also more complexity and more client-side stuff.
+
+## Data validation
 A basic server action with some [zod](https://zod.dev/) validation. You can also use [zod-form-data](https://www.npmjs.com/package/zod-form-data) to make some of this more ergonomic.
 ```ts
 // actions.ts
+
 "use server";
+
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
@@ -44,6 +49,7 @@ export async function addItemAction(
 And a form to use it.
 ```tsx
 // form.tsx
+
 import Form from "next/form";
 import { addItemAction } from "./actions";
 
@@ -68,7 +74,9 @@ So of course you use `schema.safeParse(...)` but then what do you do with the er
 On the backend, we return an object with an `errors` field (you're obviously free to call this whatever you want). And we can use some handy `zod` methods to create error messages keyed to the schema fields.
 ```ts
 // actions.ts
+
 "use server";
+
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
@@ -99,6 +107,7 @@ export async function addItemAction(
 And the form. When there's a validation error from entering a too-short string, it'll display the "Please write more!" message above the input. We also get a nice Loading state with the `pending` value from the hook.
 ```tsx
 // form.tsx
+
 "use client"; // this must be client side now//+
 
 import Form from "next/form";
@@ -122,7 +131,7 @@ export function ItemForm() {
 }
 ```
 
-## Maintaining client state
+## Maintaining state
 That's a big improvement but there's still one problem: every time you hit a validation error, the form will reset. This is to maintain parity with native forms, which reset as soon as they're submitted. There's a massive thread at [facebook/react#29034](https://github.com/facebook/react/issues/29034) discussing this{%- include fn.html n=1 -%}, with two main approaches shared for getting around this:
 
 1. Submit the form manually using `onSubmit`
@@ -133,6 +142,7 @@ I'm going to show the second option, mostly because it lets us get further witho
 Here's our code again. I added some type helpers that you can re-use wherever you have a form. These take any `zod` schema and create a neat return type with the `FormData` plus an array of error messages for each field in the schema.
 ```ts
 // types.ts
+
 type InferFieldErrors<T extends z.ZodType> = {
   [K in keyof z.infer<T>]?: string[] | undefined;
 };
@@ -145,7 +155,9 @@ export type ActionState<T extends z.ZodType> = {
 And here's the action. The key differences being the fact that we now return `formData` in the error path (and the new `AddItemState` created using the helpers above).
 ```ts
 // actions.ts
+
 "use server";
+
 import { redirect } from "next/navigation";
 import { z } from "zod";
 import { type ActionState } from "./types";//+
@@ -175,6 +187,7 @@ export async function addItemAction(
 And the form. The type cast on the `defaultValue` isn't wonderful, and there are cases with `<select>` (not to mention file uploads) that will need more careful consideration (and probably just being controlled components client side).
 ```tsx
 // form.tsx
+
 "use client";
 
 import Form from "next/form";
@@ -206,7 +219,7 @@ export function ItemForm({ item }: { item: string }) {//+
 
 Now when the action returns an error, it will _also_ return the data we sent it. It's a bit silly flinging data back-and-forth like that, but so long as it's relatively small it should be fine. Also the returned `formData` doesn't need to be re-serialised, so that's nice.
 
-## Optimism
+## Optimistic loading
 Some Forms redirect somewhere (e.g. create a new thing, then redirect to it). But many are adding stuff to some form of table or list, and you just want to see your new item added to that. In client-side React, you'd typically have some `useState` and then push items into an array. Or with Tanstack, have a `useMutation` that invalidates a `useQuery` cache.
 
 And with our approach, instead of redirecting as we've been doing, we'll rather `revalidate` the path (in Next.js-speak). We'd also like to add an optimistic update to the Form: as soon as you hit submit, optimistically add the item to the table/list, then forward it to the backend action, and then reload the component with the new data. Note that this can force you down the path of validating your inputs on the frontend (as well as the backend), because otherwise you'll see things appearing and then disappearing if there's a validation error on the backend.
@@ -216,13 +229,13 @@ The way we do this is with React 19's new [useOptimistic](https://react.dev/refe
 Firstly, some pretty standard context code. This is almost 100% boilerplate, so you can use the same pattern in various places.
 ```tsx
 // optimistic.tsx
+
 "use client";
 
 import { createContext, useContext, useOptimistic } from "react";
-import { Item } from "./types";
 
 // The type here will need to include everything you show in the
-// table, which may be a superset/subset of the zod schema
+// table, which may be a superset or subset of the zod schema
 type Item = { ... }
 
 type ContextType = {
@@ -246,7 +259,8 @@ export function OptimisticProvider({
     }
   );
 
-  return <Context value={{ optimistic, addOptimistic }}>{children}</Context>;
+  return <Context value={% raw %}{{ optimistic, addOptimistic }}{% endraw %}>{children}
+  </Context>;
 }
 
 export function useOptimisticContext() {
@@ -257,6 +271,7 @@ export function useOptimisticContext() {
 Then in our containing page, which can remain a server component.
 ```tsx
 // page.tsx
+
 import { OptimisticProvider } from "./optimistic";
 import { ItemForm } from "./form";
 import { ItemTable } from "./table"; // we'll see this shortly
@@ -273,9 +288,11 @@ export default function Home() {
 }
 ```
 
-Now our Form component is quite different. If you want to pull out the Submit menu into a separate component (quite likely), you can use the other new [useFormStatus](https://react.dev/reference/react-dom/hooks/useFormStatus) hook to access the containing form's `pending` state without having to pass props around. Note that the backend action is unchanged for this round (phew!).
+Now our Form component is quite different. If you want to pull out the Submit menu into a separate component (quite likely), you can use the other new [useFormStatus](https://react.dev/reference/react-dom/hooks/useFormStatus) hook to access the containing form's `pending` state without having to pass props around.
+
 ```tsx
 // form.tsx
+
 "use client";
 
 import Form from "next/form";
@@ -312,9 +329,21 @@ export function ItemForm() {
 }
 ```
 
+The only change we make to the server action is to revalidate instead of redirect.
+```ts
+// actions.ts
+
+<snip>
+  redirect("/)//-
+  revalidatePath("/");//+
+  return { };//+
+}
+```
+
 And finally we can use our optimistically-updated data in some kind of table or list component:
 ```tsx
 // table.tsx
+
 "use client";
 
 import { useOptimisticContext } from "./optimistic";
@@ -332,13 +361,179 @@ export function ItemTable() {
 
 ```
 
-And that's it. You now have a fully-featured form that degrades gracefully in the absence of JavaScript, handles validation and errors with aplomb, and gives nice snappy SPA-esque optimistic loading of entered data.
+## Client validation
+I initially stopped there, preferring to keep data validation to the server to keep the client lightweight and (relatively) simple. But I got an [elegant suggestion](https://github.com/carderne/react-forms/issues/1) on how to add client-side data validation, and since most developers will probably end up needing this anyway, we might as well try to do it nicely.
+
+First we pull out the validation logic from the action to somewhere where it can be used on the backend and frontend.
+```ts
+// validate.ts
+
+import { z } from "zod";
+import { type ActionState } from "./types";
+
+const addItemSchema = z.object({
+  todo: z.string().min(3, { message: "Text must be longer" }),
+});
+export type AddItemState = ActionState<typeof addItemSchema>;
+
+export function validateItem(
+  formData: FormData,
+): AddItemState {
+  const formDataObj = Object.fromEntries(formData);
+  const { data, error } = addItemSchema.safeParse(formDataObj);
+  if (error) {
+    return {
+      formData,
+      errors: error.flatten().fieldErrors,
+    };
+  }
+  return { data };//+
+}
+```
+
+Since we're now returning `{ data }` in the success path, we'll need to update the `ActionState` to include that (previously it was only returning bad news).
+
+```ts
+// types.ts
+
+type InferFieldErrors<T extends z.ZodType> = {
+  [K in keyof z.infer<T>]?: string[] | undefined;
+};
+export type ActionStateError<T extends z.ZodType> = {//+
+  data?: never;//+
+  formData?: FormData;
+  errors: InferFieldErrors<T>;
+};
+
+export type ActionStateSuccess<T extends z.ZodType> = {//+
+  data: z.infer<T>;//+
+  formData?: never;//+
+  errors?: never;//+
+};//+
+
+export type ActionState<T extends z.ZodType> =//+
+  | ActionStateSuccess<T>//+
+  | ActionStateError<T>;//+
+```
+
+Now we update our action to use this new validation function:
+```ts
+// actions.ts
+
+"use server";
+
+import { redirect } from "next/navigation";
+import { validateItem, type AddItemState } from "./validate";//+
+
+export async function addItemAction(
+  _state: AddItemState,
+  formData: FormData,
+): Promise<AddItemState> {
+  const res = validateItem(formData);//+
+  if (res.errors) return res;//+
+  console.log(res.data);//+
+  revalidatePath("/");
+  return { errors: {} };//+
+}
+
+```
+
+And _finally_, we now use that exact same validation function in the form. Note that we apply it before we do anything optimistic, so we avoid embarrassing flashes of bad data!
+
+```tsx
+// form.tsx
+
+"use client";
+
+import Form from "next/form";
+import { useActionState, useRef } from "react";
+import { validateItem } from "./validate";//+
+import { useOptimisticContext } from "./optimistic";
+import { addItemAction, type AddItemState } from "./actions";
+
+export function ItemForm() {
+  const ref = useRef<HTMLFormElement>(null);
+  const { addOptimistic } = useOptimisticContext();
+  const [state, formAction, pending] = useActionState<AddItemState, FormData>(
+    (prev, formData) => {//+
+      const res = validateItem(formData);//+
+      if (res.errors) return res;//+
+      addOptimistic(res.data);//+
+      ref.current?.reset();//+
+      return addItemAction(prev, formData);//+
+    },//+
+    { errors: {} },//+
+  );
+  return (
+    // JSX is unchanged
+  );
+}
+```
+
+
+Aaaaand that's it! You now have a fully-featured form that degrades gracefully in the absence of JavaScript, handles validation and errors with aplomb, and gives nice snappy SPA-esque optimistic loading of entered data. That's a lot of code to submit a form, but you'll notice most of it can be squirrelled away into a library and re-used.
 
 You can find the full code at [carderne/react-forms](https://github.com/carderne/react-forms). I think the `ActionState` types and approach are relatively elegant, but I'm curious to see what other patterns emerge. I'm really enjoying Server Components: it seems like after all the misadventures of needless SPAs and Redux, there's a happy path for lightly stateful multi-page apps, that can gracefully upgrade and downgrade as required.
 
 And hopefully the fact that it's been upstreamed into React will make it easier for Remix (slash React Router) and other to continue to offer compelling alternatives to Next.js, who are worrying dominant.
 
-Yes yes, [Astro](https://astro.build/) is a thing too.
+## Bonus: Generic optimistic hook
+I've found that the above `optimistic.tsx` context code is _so_ boilerplate that we can actually just write it once and use it all over the place. Basically just take the code above and put it in a generic function that returns the `<Context>` provider and the `useOptimisticContext`.
+
+```tsx
+// lib.tsx
+import { createContext, useContext, useOptimistic } from "react";
+
+export function createOptimisticContext<T>() {//+
+  type ContextType = {
+    optimistic: T[];//+
+    addOptimistic: (_: T) => void;//+
+  };
+
+  const Context = createContext<ContextType | undefined>(undefined);
+
+  function OptimisticProvider({
+    children,
+    items,
+  }: {
+    children: React.ReactNode;
+    items: T[];//+
+  }) {
+    const [optimistic, addOptimistic] = useOptimistic(
+      items,
+      (state: T[], newItem: T) => {//+
+        return [...state, newItem];
+      }
+    );
+
+    return <Context value={% raw %}{{ optimistic, addOptimistic }}{% endraw %}>{children}</Context>;
+  }
+
+  function useOptimisticContext() {
+    const context = useContext(Context);
+    if (typeof context === "undefined") {
+      throw new Error("Context must be used within provider");
+    }
+    return context;
+  }
+
+  return { OptimisticProvider, useOptimisticContext };//+
+}
+```
+
+Then the optimistic provider code for your page just becomes:
+```tsx
+// optimistic.tsx
+"use client";
+
+import { createOptimisticContext } from "./lib";
+
+type Item = { ... }
+
+export const { OptimisticProvider, useOptimisticContext } =
+  createOptimisticContext<Item>();
+```
+
 
 ------------------------------
 
