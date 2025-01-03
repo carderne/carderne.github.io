@@ -334,7 +334,6 @@ The only change we make to the server action is to revalidate instead of redirec
 // actions.ts
 
 <snip>
-  redirect("/)//-
   revalidatePath("/");//+
   return { };//+
 }
