@@ -468,69 +468,39 @@ I'll wait while you go compare that to the Poetry approach, and I'll wait for yo
 
 You can go read the [uv docs on Docker](https://docs.astral.sh/uv/guides/integration/docker/#optimizations) to find some useful optimisations for your images.
 ## Monorepo
-This is the bonus section that was promised! If you're building a library or a one-off, you might already be done. But if you're building something in a big team, and you don't have a monolith, you're likely to have multiple apps and libraries intermingling. Python's monorepo support isn't great, but it works, and it is far better than the alternative repo-per-thingie approach that many teams take. The only place where separate repos make much sense is if you have teams with _very_ different code contribution patterns. For example, a data science team that uses GitHub to collaborate on Jupyter notebooks: minimal tests or CI, potentially meaningless commit messages. Apart from that, even with multiple languages and deployment patterns, you'll be far better off with a single repo than the repo-per-thing approach.
+TLDR: Just go look at the one I put together at [carderne/postmodern-mono](https://github.com/carderne/postmodern-mono).
+
+This is the bonus section! If you're building a library or a one-off, you might already be done. But if you're building something in a big team, and you don't have a monolith, you're likely to have multiple apps and libraries intermingling. Python's monorepo support isn't great, but it works, and it is far better than the alternative repo-per-thingie approach that many teams take. The only place where separate repos make much sense is if you have teams with _very_ different code contribution patterns. For example, a data science team that uses GitHub to collaborate on Jupyter notebooks: minimal tests or CI, potentially meaningless commit messages. Apart from that, even with multiple languages and deployment patterns, you'll be far better off with a single repo than the repo-per-thing approach.
 
 So, how do you monorepo with Python? If you're in a bigger organisation, you might already have [Bazel](https://bazel.build/reference/be/python) or similar ([Pants](https://www.pantsbuild.org/), maybe?) set up for building your graph of libraries and dependencies. Although Python doesn't need to be "built" per se, a bunch of stuff does need to be installed and copied around and having these dependencies and connections properly controlled is valuable.
 
-If your needs aren't that complex, you can get quite far with the standard modern tooling. uv has borrowed from Go/Rust the concept of a "workspace" that contains multiple packages that share a root. Notably, they share a lockfile (`requirements.lock` in this case). You need to decide how coupled you want your teams to be, but it's very likely that larger teams will need multiple workspaces in the single monorepo. This is because you can easily end up with incompatible versions, where, for example, Team A is using a library that enforces `pydantic<1.0` while Team B is desperate to use another library that requires `pydantic>=2.0`.
+If your needs aren't that complex, you can get quite far with the standard modern tooling. uv has borrowed from Go/Rust the concept of a "workspace" that contains multiple packages that share a root. Notably, they share a lockfile (`uv.lock` in this case). You need to decide how coupled you want your teams to be, but it's very likely that larger teams will need multiple workspaces in the single monorepo. This is because you can easily end up with incompatible versions, where, for example, Team A is using a library that enforces `pydantic<1.0` while Team B is desperate to use another library that requires `pydantic>=2.0`.
 
 It's an organisational choice the degree to which you want to keep everyone in lockstep versus giving the flexibility to use different versions. But definitely the number of separate lockfiles should be kept as low as possible. Regardless, you'll end up with something that looks like this:
 ```bash
-$ tree .
-
+> tree
 .
-├── .git
-├── .venv
-├── pyproject.toml       # this only defines the workspace
-├── requirements.lock    # lockfile for this workspace
-├── .venv                # venv for this workspace
-├── mylib
-│   ├── pyproject.toml   # a normal pyproject for this package
-│   └── mylib
-│       └── __init__.py  # library code here
-└── myserver
-    ├── pyproject.toml
-    └── myserver
-        └── __init__.py  # app code here, probably imports lib_a
+├── pyproject.toml              # root pyproject defines the workspace
+├── uv.lock
+├── libs
+│   └── greeter
+│       ├── pyproject.toml      # package dependencies here
+│       └── postmodern          # all packages are namespaced
+│           └── greeter
+│               └── __init__.py
+└── apps
+    └── server
+        ├── pyproject.toml      # this one depends on libs/greeter
+        ├── Dockerfile          # this one gets a Dockerfile
+        └── postmodern
+            └── server
+                └── __init__.py
 ```
 
-So, how do you make this work. First of all, have a glance at the uv [Workspace docs](https://docs.astral.sh/uv/concepts/projects/workspaces/). Then let's create a workspace with two packages in it:
-```bash
-uv init mono
-cd mono
-uv init mylib
-uv init myserver
-```
+The best place to start is to have a glance at the uv [Workspace docs](https://docs.astral.sh/uv/concepts/projects/workspaces/). Then I recommend checking out the example [carderne/postmodern-mono](https://github.com/carderne/postmodern-mono) that I put together. It follows everything discussed in the post, just with the extra workspace support.
 
-You'll have a root pyproject like this:
-```toml
-[project]
-name = "mono"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
-
-[tool.uv.workspace]
-# you can also use glob patterns here, like packages/*
-members = ["mylib", "myserver"]
-```
-
-### Testing dependencies in isolation
-One important note is this: you have a single virtual environment, so everything is installed and available all the time. Let's say you have a CLI app in your workspace called `scraper` that uses `requests` to do something. You'll then immediately be able to import `requests` in all your other apps and libraries, and your tests will all pass locally. But in production, your app _won't_ have it installed.
-
-The key thing is to make sure that your CI process runs its tests with the correct non-global dependencies installed. This is very simple: in your Pr workflow, just make sure to only sync the packages for the app/thing you're testing.
-```yml
-      - run: uv sync --all-extras --locked --package=myserver
-```
-
-So there's a downside that in local dev, you may accidentally import a library without realising you don't actually have it installed in that package, but at least your CI will catch you.
 
 That's that. Hopefully that was useful! Things have come a long way since Hypermodern Python was published, and writing maintainable Python has never been easier.
-
-### A functional monorepo
-Just go look at the one I put together at [carderne/postmodern-mono](https://github.com/carderne/postmodern-mono). It includes a basic example, plus a Dockerfile build and some important notes about getting Pyright to work with the monorepo setup.
 
 --------------------
 
