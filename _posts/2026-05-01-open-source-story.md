@@ -3,7 +3,7 @@ layout: single
 title: An open source story
 date: 2026-05-01
 ---
-A fun thing happened over the last few years. I contributed in a small way to part of the open source geospatial ecosystem. The [zarr](https://zarr.dev/) part, to be precise.
+A fun thing happened over the last few years. I contributed in a small way to part of the open source geospatial ecosystem.
 
 ## First, some background on geo
 
@@ -45,7 +45,7 @@ On the flipside to the above, some (not many) of my projects have been _more_ su
 
 [signal-export](https://github.com/carderne/signal-export) is a thing I created (well forked actually, though the original code is all gone) in 2019 when my family moved from WhatsApp to Signal and I needed a way to continue to do backups. It has slowly racked up 732 GitHub stars, and receives a steady stream of bug reports, pull requests, and also emails to my inbox filled with gratitude or questions needing answers. I use it myself once a year, and so long as it vaguely works I don't want to think about it more than that. The code is a mess. 
 
-But the maintenance burden is small, I write virtually none of the code now, and the community keeps it up-to-date with Singla's data model changes. And there's a fun give and take: I'm happy I don't have to do the work, and contributors seem generally excited to contribute some Open Source Code! And it's one area where LLMs have actually made the contributions better: it's no where near famous or important enough to attract slop, and now many people are able to fix small bugs or make updates. My job is just to make sure it remains safe to use. I don't really care about the codebase otherwise, so I'm not particularly opinionated.
+But the maintenance burden is small, I write virtually none of the code now, and the community keeps it up-to-date with Single's data model changes. And there's a fun give and take: I'm happy I don't have to do the work, and contributors seem generally excited to contribute some Open Source Code! And it's one area where LLMs have actually made the contributions better: it's no where near famous or important enough to attract slop, and now many people are able to fix small bugs or make updates. My job is just to make sure it remains safe to use. I don't really care about the codebase otherwise, so I'm not particularly opinionated.
 
 I have a similar story with [pi-sandbox](https://github.com/carderne/pi-sandbox). It's a little plugin I made for the [pi coding agent](https://pi.dev) that sandboxes network and filesystem access. I made it for myself, fixed a bunch of issues, got some stuff merged in [Anthropic's sandbox-runtime library](https://github.com/anthropic-experimental/sandbox-runtime/pulls?q=is%3Apr+author%3Acarderne+is%3Aclosed). Then I forgot about it and when I looked back a month or two later I had 10+ issues and a similar number of PRs that I hadn't noticed! Almost all were good quality and I'm working my way through them. I'm glad people find it useful and want to improve it, but it's still undeniably _work_.
 
